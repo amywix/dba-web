@@ -15,6 +15,7 @@ import tcLogo from "@assets/tc_logo_1779201943317.png";
 import tcScreen from "@assets/tc_screen_1779201943317.png";
 import featureCards from "@assets/ChatGPT_Image_May_18,_2026,_11_32_20_AM_1779201943317.png";
 import autoDialScreen from "../assets/autodial_nobg.png";
+import yardYakkaScreen from "@assets/screenshots/theyardyakkaboys_com_au.png";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 28 },
@@ -445,6 +446,102 @@ export default function Home() {
               </motion.div>
             </motion.div>
           </div>
+        </div>
+      </section>
+
+      {/* ─── CASE STUDY: YARD YAKKA BOYS ─────────────────────────── */}
+      <section className="py-28 px-6 bg-white/[0.02] border-y border-white/[0.04]">
+        <div className="container mx-auto max-w-6xl">
+          <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
+
+            <motion.div variants={fadeUp} className="text-center mb-14">
+              <SectionLabel icon={CheckCircle2}>Featured Success Story</SectionLabel>
+              <h2 className="text-4xl md:text-5xl font-black tracking-tight">
+                Real work. <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">Real results.</span>
+              </h2>
+            </motion.div>
+
+            <motion.div variants={fadeUp} className="rounded-3xl overflow-hidden border border-white/[0.08] bg-white/[0.03]">
+              {/* Header bar */}
+              <div className="bg-gradient-to-r from-[#1a4d1a] to-[#2d7a2d] px-8 py-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+                <div>
+                  <p className="text-white/60 text-xs font-bold uppercase tracking-widest mb-1">Client</p>
+                  <h3 className="text-white text-2xl font-black">The Yard Yakka Boys</h3>
+                  <p className="text-white/70 text-sm">Lawn & Garden Services · North Brisbane, QLD</p>
+                </div>
+                <a
+                  href="https://www.theyardyakkaboys.com.au"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 hover:bg-white/20 border border-white/20 text-white text-sm font-semibold transition-all shrink-0"
+                >
+                  <Globe className="w-3.5 h-3.5" /> theyardyakkaboys.com.au
+                </a>
+              </div>
+
+              <div className="grid md:grid-cols-2 gap-0">
+                {/* Website screenshot */}
+                <div className="relative overflow-hidden border-r border-white/[0.06]">
+                  <div className="bg-white/[0.04] px-5 py-2.5 border-b border-white/[0.06] flex items-center gap-2">
+                    <div className="flex gap-1.5">
+                      <span className="w-3 h-3 rounded-full bg-white/10" />
+                      <span className="w-3 h-3 rounded-full bg-white/10" />
+                      <span className="w-3 h-3 rounded-full bg-white/10" />
+                    </div>
+                    <span className="text-muted-foreground text-xs font-mono">theyardyakkaboys.com.au</span>
+                  </div>
+                  <img
+                    src={yardYakkaScreen}
+                    alt="The Yard Yakka Boys website"
+                    className="w-full object-cover object-top"
+                    style={{ maxHeight: 380 }}
+                  />
+                </div>
+
+                {/* Results */}
+                <div className="p-8 flex flex-col justify-between gap-8">
+                  <div className="space-y-5">
+                    <p className="text-muted-foreground text-sm leading-relaxed">
+                      Lucas runs a busy lawn mowing, landscaping, and NDIS maintenance business across North Brisbane. Before working with Done By Amy, missed calls were costing him jobs every week — and his online presence wasn't converting.
+                    </p>
+
+                    <div className="space-y-3">
+                      <p className="text-white font-black text-xs uppercase tracking-widest">What we built</p>
+                      {[
+                        { label: "Website Design",         desc: "Conversion-focused site with NDIS booking form & click-to-call" },
+                        { label: "TradieCatch",            desc: "Instant SMS auto-reply to every missed call" },
+                        { label: "AI Chatbot",             desc: "24/7 quote & booking assistant on the website" },
+                        { label: "Workflow Automation",    desc: "Lead capture → SMS notification → follow-up sequence" },
+                      ].map((item, i) => (
+                        <div key={i} className="flex items-start gap-3">
+                          <CheckCircle2 className="w-4 h-4 text-primary shrink-0 mt-0.5" />
+                          <div>
+                            <span className="text-white font-bold text-sm">{item.label}</span>
+                            <span className="text-muted-foreground text-sm"> — {item.desc}</span>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Results metrics */}
+                  <div className="grid grid-cols-3 gap-4 pt-6 border-t border-white/[0.06]">
+                    {[
+                      { value: "0",    label: "Missed leads lost" },
+                      { value: "48hr", label: "Full setup time"   },
+                      { value: "5★",   label: "Google rating"     },
+                    ].map((stat, i) => (
+                      <div key={i} className="text-center">
+                        <div className="text-2xl font-black text-primary">{stat.value}</div>
+                        <div className="text-muted-foreground text-xs mt-0.5">{stat.label}</div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+
+          </motion.div>
         </div>
       </section>
 
