@@ -54,6 +54,7 @@ export default function Home() {
             <a href="#tradiecatch" className="hover:text-primary transition-colors">Products</a>
             <a href="#pricing" className="hover:text-primary transition-colors">Pricing</a>
             <Link href="/about" className="hover:text-primary transition-colors">About</Link>
+            <Link href="/faq" className="hover:text-primary transition-colors">FAQ</Link>
             <Link href="/contact" className="hover:text-primary transition-colors">Contact</Link>
           </div>
           <Link href="/get-started">
