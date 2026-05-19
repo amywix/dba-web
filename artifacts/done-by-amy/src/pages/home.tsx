@@ -195,7 +195,7 @@ export default function Home() {
 
           <motion.div
             initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}
-            className="grid md:grid-cols-2 lg:grid-cols-3 gap-5"
+            className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5"
           >
             {[
               { icon: Bot,          title: "AI Chatbots & VAs",    desc: "24/7 customer chat, instant lead capture, and FAQ handling that never sleeps." },
