@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "wouter";
 import { 
   Bot, PhoneCall, Workflow, Globe, 
   CheckCircle2, ArrowRight, Zap, Briefcase, Building2, Store
@@ -44,9 +45,11 @@ export default function Home() {
             <a href="#tradiecatch" className="hover:text-primary transition-colors">TradieCatch</a>
             <a href="#pricing" className="hover:text-primary transition-colors">Pricing</a>
           </div>
-          <Button data-testid="nav-cta-button" className="bg-primary hover:bg-primary/90 text-white rounded-full px-6 font-semibold shadow-[0_0_20px_rgba(168,85,247,0.4)]">
-            Book Discovery Call
-          </Button>
+          <Link href="/get-started">
+            <Button data-testid="nav-cta-button" className="bg-primary hover:bg-primary/90 text-white rounded-full px-6 font-semibold shadow-[0_0_20px_rgba(168,85,247,0.4)]">
+              Tell Us About Your Business
+            </Button>
+          </Link>
         </div>
       </nav>
 
@@ -73,10 +76,12 @@ export default function Home() {
                 Feel like you need a Fortune 500 ops team? I build AI chatbots, missed call systems, and automated workflows so you can get back to what you do best.
               </p>
               <div className="flex flex-col sm:flex-row items-center gap-4 justify-center md:justify-start">
-                <Button data-testid="hero-cta-button" size="lg" className="h-14 px-8 text-lg rounded-full bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 shadow-[0_0_30px_rgba(168,85,247,0.5)]">
-                  Book Your Free Call
-                </Button>
-                <Button data-testid="hero-secondary-button" size="lg" variant="outline" className="h-14 px-8 text-lg rounded-full border-white/10 hover:bg-white/5">
+                <Link href="/get-started">
+                  <Button data-testid="hero-cta-button" size="lg" className="h-14 px-8 text-lg rounded-full bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 shadow-[0_0_30px_rgba(168,85,247,0.5)]">
+                    Tell Us About Your Business
+                  </Button>
+                </Link>
+                <Button data-testid="hero-secondary-button" size="lg" variant="outline" className="h-14 px-8 text-lg rounded-full border-white/10 hover:bg-white/5" onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}>
                   See How It Works
                 </Button>
               </div>
@@ -254,7 +259,9 @@ export default function Home() {
                 <li className="flex gap-3 text-muted-foreground"><CheckCircle2 className="text-primary shrink-0"/> 1 Core Automation Workflow</li>
                 <li className="flex gap-3 text-muted-foreground"><CheckCircle2 className="text-primary shrink-0"/> Training & Handoff</li>
               </ul>
-              <Button className="w-full" variant="outline">Enquire Now</Button>
+              <Link href="/get-started" className="block">
+                <Button data-testid="pricing-starter-cta" className="w-full" variant="outline">Tell Us About Your Business</Button>
+              </Link>
             </Card>
             
             <Card className="bg-gradient-to-b from-primary/20 to-white/5 border-primary/50 backdrop-blur-sm p-8 relative overflow-hidden">
@@ -267,7 +274,9 @@ export default function Home() {
                 <li className="flex gap-3 text-muted-foreground"><CheckCircle2 className="text-primary shrink-0"/> Multi-step Workflows</li>
                 <li className="flex gap-3 text-muted-foreground"><CheckCircle2 className="text-primary shrink-0"/> Priority Support</li>
               </ul>
-              <Button className="w-full bg-primary hover:bg-primary/90 text-white">Transform My Business</Button>
+              <Link href="/get-started" className="block">
+                <Button data-testid="pricing-suite-cta" className="w-full bg-primary hover:bg-primary/90 text-white">Tell Us About Your Business</Button>
+              </Link>
             </Card>
           </div>
         </div>
@@ -282,9 +291,11 @@ export default function Home() {
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-10">
             Let's chat about your business bottlenecks and find the exact automations that will save you 10+ hours this week.
           </p>
-          <Button data-testid="footer-cta-button" size="lg" className="h-16 px-10 text-xl rounded-full bg-white text-primary hover:bg-gray-100 font-bold shadow-[0_0_40px_rgba(255,255,255,0.3)]">
-            Book a Free Discovery Call
-          </Button>
+          <Link href="/get-started">
+            <Button data-testid="footer-cta-button" size="lg" className="h-16 px-10 text-xl rounded-full bg-white text-primary hover:bg-gray-100 font-bold shadow-[0_0_40px_rgba(255,255,255,0.3)]">
+              Tell Us About Your Business
+            </Button>
+          </Link>
         </div>
       </section>
 
