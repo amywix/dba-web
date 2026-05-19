@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { 
   Bot, PhoneCall, Workflow, Globe, 
-  CheckCircle2, ArrowRight, Zap, Briefcase, Building2, Store
+  CheckCircle2, ArrowRight, Zap, Briefcase, PhoneOutgoing, Users, Calendar
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -15,6 +15,7 @@ import daLogoWordmark from "@assets/da_logo_1779201943317.png";
 import tcLogo from "@assets/tc_logo_1779201943317.png";
 import tcScreen from "@assets/tc_screen_1779201943317.png";
 import featureCards from "@assets/ChatGPT_Image_May_18,_2026,_11_32_20_AM_1779201943317.png";
+import autoDialScreen from "@assets/ChatGPT_Image_May_20,_2026,_08_56_10_AM_1779231475381.png";
 
 const fadeIn = {
   hidden: { opacity: 0, y: 30 },
@@ -42,8 +43,10 @@ export default function Home() {
           </div>
           <div className="hidden md:flex items-center gap-8 text-sm font-medium text-muted-foreground">
             <a href="#services" className="hover:text-primary transition-colors">Services</a>
-            <a href="#tradiecatch" className="hover:text-primary transition-colors">TradieCatch</a>
+            <a href="#tradiecatch" className="hover:text-primary transition-colors">Products</a>
             <a href="#pricing" className="hover:text-primary transition-colors">Pricing</a>
+            <Link href="/about" className="hover:text-primary transition-colors">About</Link>
+            <Link href="/contact" className="hover:text-primary transition-colors">Contact</Link>
           </div>
           <Link href="/get-started">
             <Button data-testid="nav-cta-button" className="bg-primary hover:bg-primary/90 text-white rounded-full px-6 font-semibold shadow-[0_0_20px_rgba(168,85,247,0.4)]">
@@ -198,6 +201,102 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Virtual Help Desk — Amy Chat Window */}
+      <section className="py-24 px-6 relative overflow-hidden">
+        <div className="absolute left-0 top-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-primary/10 rounded-full blur-[100px] pointer-events-none" />
+        <div className="container mx-auto max-w-6xl">
+          <div className="flex flex-col md:flex-row items-center gap-16 relative z-10">
+            {/* Chat window mockup */}
+            <motion.div
+              initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}
+              className="flex-1 max-w-sm mx-auto w-full"
+            >
+              <div className="rounded-2xl overflow-hidden shadow-[0_0_60px_rgba(168,85,247,0.2)] border border-white/10">
+                {/* Chat header */}
+                <div className="bg-gradient-to-r from-primary to-secondary p-4 flex items-center justify-between">
+                  <div className="flex items-center gap-3">
+                    <div className="w-11 h-11 rounded-full bg-white/10 border-2 border-white/30 overflow-hidden flex items-center justify-center shrink-0">
+                      <img src={amyAvatar} alt="Amy" className="w-full h-full object-cover object-top scale-125" />
+                    </div>
+                    <div>
+                      <p className="text-white font-bold text-sm leading-tight">Amy — AI Assistant</p>
+                      <div className="flex items-center gap-1.5">
+                        <span className="w-2 h-2 rounded-full bg-green-400 inline-block" />
+                        <span className="text-white/80 text-xs">Online now</span>
+                      </div>
+                    </div>
+                  </div>
+                  <Bot className="w-5 h-5 text-white/60" />
+                </div>
+                {/* Chat body */}
+                <div className="bg-white p-5 space-y-3">
+                  {[
+                    { from: "bot", text: "Hi there! I'm Amy's AI assistant. How can I help your business today?" },
+                    { from: "user", text: "I keep missing calls when I'm on a job." },
+                    { from: "bot", text: "I can fix that! Our TradieCatch system sends an instant SMS to every missed caller so you never lose a lead. Want to know more?" },
+                    { from: "user", text: "Yes! How much does it cost?" },
+                    { from: "bot", text: "Just $99/month — and most tradies recover that in their first recovered job. Want me to set it up for you?" },
+                  ].map((msg, i) => (
+                    <div key={i} className={`flex ${msg.from === "user" ? "justify-end" : "justify-start"}`}>
+                      <div className={`px-4 py-2.5 rounded-2xl text-sm max-w-[80%] leading-relaxed ${
+                        msg.from === "bot"
+                          ? "bg-gray-100 text-gray-800 rounded-tl-sm"
+                          : "bg-gradient-to-r from-primary to-secondary text-white rounded-tr-sm"
+                      }`}>
+                        {msg.text}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+                {/* Chat input */}
+                <div className="bg-white border-t border-gray-100 px-4 py-3 flex items-center gap-3">
+                  <div className="flex-1 bg-gray-100 rounded-full px-4 py-2 text-sm text-gray-400">Type a message...</div>
+                  <div className="w-9 h-9 rounded-full bg-gradient-to-r from-primary to-secondary flex items-center justify-center shrink-0">
+                    <ArrowRight className="w-4 h-4 text-white" />
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Copy */}
+            <motion.div
+              initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeIn}
+              className="flex-1 space-y-6"
+            >
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-primary/30 text-primary text-sm font-medium">
+                <Bot className="w-4 h-4" /> AI Chatbots & Virtual Assistants
+              </div>
+              <h2 className="text-4xl md:text-5xl font-black leading-tight">
+                Your business, <br />
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">always online.</span>
+              </h2>
+              <p className="text-lg text-muted-foreground">
+                Amy's AI virtual assistants handle customer enquiries, capture leads, and answer FAQs around the clock — so you never miss an opportunity, even at 2am.
+              </p>
+              <ul className="space-y-4">
+                {[
+                  "Responds instantly to customer questions 24/7",
+                  "Captures lead name, phone, and job details automatically",
+                  "Handles FAQs, pricing queries, and booking requests",
+                  "Escalates complex issues to you when needed",
+                  "Fully customised to your business, tone, and services",
+                ].map((item, i) => (
+                  <li key={i} className="flex items-start gap-3 text-muted-foreground">
+                    <CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+              <Link href="/get-started">
+                <Button data-testid="chatbot-cta-button" className="rounded-full bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 shadow-[0_0_24px_rgba(168,85,247,0.4)]">
+                  Get Your AI Assistant <ArrowRight className="w-4 h-4 ml-2" />
+                </Button>
+              </Link>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
       {/* TradieCatch Feature */}
       <section id="tradiecatch" className="py-24 px-6 overflow-hidden relative">
         <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-secondary/10 rounded-full blur-[100px] pointer-events-none" />
@@ -223,6 +322,48 @@ export default function Home() {
             </div>
             <div className="flex-1 flex justify-center">
               <img src={tcScreen} alt="TradieCatch App" className="h-[500px] object-contain drop-shadow-[0_0_30px_rgba(124,58,237,0.3)]" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* AutoDial Feature */}
+      <section id="autodial" className="py-24 px-6 overflow-hidden relative bg-white/[0.02] border-y border-white/5">
+        <div className="absolute left-0 top-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/8 rounded-full blur-[120px] pointer-events-none" />
+        <div className="container mx-auto">
+          <div className="flex flex-col md:flex-row-reverse items-center gap-12 bg-white/5 rounded-3xl p-8 md:p-12 border border-white/10 shadow-2xl relative z-10 backdrop-blur-sm">
+            <div className="flex-1 space-y-6">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/30 text-primary text-sm font-bold uppercase tracking-wide">
+                <PhoneOutgoing className="w-4 h-4" /> New Product
+              </div>
+              <h2 className="text-3xl md:text-4xl font-black text-white leading-tight">
+                AutoDial — Your AI<br />
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">Telemarketing Agent</span>
+              </h2>
+              <p className="text-lg text-muted-foreground">
+                AutoDial makes outbound calls for you — sounding just like a real person. It dials your leads, starts natural conversations, handles objections, qualifies prospects, and books appointments straight into your calendar.
+              </p>
+              <ul className="space-y-3">
+                <li className="flex items-center gap-3 text-white"><CheckCircle2 className="text-primary w-5 h-5"/> Automatically dials leads and starts natural conversations</li>
+                <li className="flex items-center gap-3 text-white"><CheckCircle2 className="text-primary w-5 h-5"/> Sounds like a real person — builds trust instantly</li>
+                <li className="flex items-center gap-3 text-white"><CheckCircle2 className="text-primary w-5 h-5"/> Handles objections and qualifies leads for you</li>
+                <li className="flex items-center gap-3 text-white"><Calendar className="text-primary w-5 h-5"/> Books appointments directly into your calendar</li>
+                <li className="flex items-center gap-3 text-white"><Users className="text-primary w-5 h-5"/> Works 24/7 — more calls, more leads, zero fatigue</li>
+                <li className="flex items-center gap-3 text-white"><CheckCircle2 className="text-primary w-5 h-5"/> From $99/month (based on call volume)</li>
+              </ul>
+              <Link href="/get-started">
+                <Button data-testid="autodial-cta-button" className="mt-4 bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 text-white rounded-full shadow-[0_0_24px_rgba(168,85,247,0.4)]">
+                  Activate AutoDial <ArrowRight className="w-4 h-4 ml-2" />
+                </Button>
+              </Link>
+            </div>
+            <div className="flex-1 flex justify-center">
+              <img
+                src={autoDialScreen}
+                alt="AutoDial AI Calling Agent"
+                className="h-[520px] object-contain drop-shadow-[0_0_30px_rgba(168,85,247,0.25)]"
+                data-testid="autodial-screen-image"
+              />
             </div>
           </div>
         </div>
