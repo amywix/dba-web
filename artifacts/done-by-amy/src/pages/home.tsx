@@ -207,16 +207,19 @@ export default function Home() {
               <img src={tcLogo} alt="TradieCatch Logo" className="h-16 object-contain mb-4" />
               <h2 className="text-3xl md:text-4xl font-bold text-white">Never miss a job lead again.</h2>
               <p className="text-lg text-muted-foreground">
-                Amy's flagship product for Tradies. An automated missed call system that sends an instant SMS reply to capture the lead while you're on the tools.
+                Amy's flagship product for tradies. A mobile web app that catches every missed call and automatically sends an SMS reply — so you never lose a job lead while you're on the tools.
               </p>
               <ul className="space-y-3">
-                <li className="flex items-center gap-3 text-white"><CheckCircle2 className="text-primary w-5 h-5"/> Instant SMS auto-reply</li>
+                <li className="flex items-center gap-3 text-white"><CheckCircle2 className="text-primary w-5 h-5"/> Mobile web app — no download required</li>
+                <li className="flex items-center gap-3 text-white"><CheckCircle2 className="text-primary w-5 h-5"/> Instant SMS auto-reply to missed calls</li>
                 <li className="flex items-center gap-3 text-white"><CheckCircle2 className="text-primary w-5 h-5"/> Capture job details 24/7</li>
                 <li className="flex items-center gap-3 text-white"><CheckCircle2 className="text-primary w-5 h-5"/> Just $99/month</li>
               </ul>
-              <Button data-testid="tc-cta-button" className="mt-4 bg-white text-black hover:bg-gray-200 rounded-full">
-                Get TradieCatch Today <ArrowRight className="w-4 h-4 ml-2" />
-              </Button>
+              <Link href="/get-started">
+                <Button data-testid="tc-cta-button" className="mt-4 bg-white text-black hover:bg-gray-200 rounded-full">
+                  Get TradieCatch Today <ArrowRight className="w-4 h-4 ml-2" />
+                </Button>
+              </Link>
             </div>
             <div className="flex-1 flex justify-center">
               <img src={tcScreen} alt="TradieCatch App" className="h-[500px] object-contain drop-shadow-[0_0_30px_rgba(124,58,237,0.3)]" />
