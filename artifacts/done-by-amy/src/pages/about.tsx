@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "wouter";
+import { useSEO } from "@/hooks/use-seo";
 import { ArrowRight, CheckCircle2, Zap, Heart, Shield, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logoMark from "@assets/ChatGPT_Image_May_14,_2026,_04_49_39_PM_-_Copy_1779201943316.png";
@@ -17,6 +18,13 @@ const stagger = {
 };
 
 export default function About() {
+  useSEO({
+    title: "About Amy | AI Automation Specialist for Australian Small Businesses | Done By Amy",
+    description: "Meet Amy — Australia's AI automation specialist helping small businesses save time, catch more leads, and grow without the overwhelm. Creator of TradieCatch and AutoDial.",
+    keywords: "Amy AI automation Australia, Done By Amy founder, AI specialist Australia, small business automation expert, TradieCatch creator, Australian AI consultant",
+    canonical: "https://donebya.my/about",
+  });
+
   return (
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
 

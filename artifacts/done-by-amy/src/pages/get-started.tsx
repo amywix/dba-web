@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useLocation } from "wouter";
+import { useSEO } from "@/hooks/use-seo";
 import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -89,6 +90,13 @@ const fadeIn = {
 };
 
 export default function GetStarted() {
+  useSEO({
+    title: "Get Started with AI Automation | Done By Amy | TradieCatch & AutoDial",
+    description: "Tell Done By Amy about your business and get a tailored AI automation plan. Covering TradieCatch missed call systems, AutoDial AI calling, chatbots, and workflow automations for Australian small businesses.",
+    keywords: "get started AI automation Australia, TradieCatch sign up, AutoDial AI calling Australia, AI chatbot setup Australia, Done By Amy intake form, small business automation quote Australia",
+    canonical: "https://donebya.my/get-started",
+  });
+
   const [, setLocation] = useLocation();
   const [submitted, setSubmitted] = useState(false);
 

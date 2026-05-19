@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "wouter";
+import { useSEO } from "@/hooks/use-seo";
 import { 
   Bot, PhoneCall, Workflow, Globe, 
   CheckCircle2, ArrowRight, Zap, Briefcase, PhoneOutgoing, Users, Calendar
@@ -31,6 +32,13 @@ const staggerContainer = {
 };
 
 export default function Home() {
+  useSEO({
+    title: "Done By Amy | AI Automation for Australian Small Businesses | TradieCatch",
+    description: "Done By Amy builds AI chatbots, TradieCatch missed call systems, AutoDial AI calling agents, and workflow automations for small businesses across Australia. Smart Systems. Real Results. Zero Overwhelm.",
+    keywords: "AI automation Australia, TradieCatch, tradie missed call system, AI chatbot small business Australia, AutoDial AI calling, workflow automation Australia, virtual assistant Australia, AI automation Sydney Melbourne Brisbane, Done By Amy, small business automation",
+    canonical: "https://donebya.my",
+  });
+
   return (
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden selection:bg-primary/30">
       

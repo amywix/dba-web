@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "wouter";
+import { useSEO } from "@/hooks/use-seo";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
@@ -36,6 +37,13 @@ const fadeIn = {
 };
 
 export default function Contact() {
+  useSEO({
+    title: "Contact Done By Amy | AI Automation for Australian Businesses | TradieCatch Enquiries",
+    description: "Get in touch with Done By Amy for AI automation, TradieCatch missed call systems, AutoDial AI calling, or workflow automation for your Australian small business. Responds within 1 business day.",
+    keywords: "contact Done By Amy, TradieCatch enquiry, AI automation enquiry Australia, small business automation contact, hello@donebyamy.com.au",
+    canonical: "https://donebya.my/contact",
+  });
+
   const [submitted, setSubmitted] = useState(false);
 
   const form = useForm<FormData>({
