@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { useSEO } from "@/hooks/use-seo";
+import Navbar from "@/components/navbar";
 import { ArrowRight, CheckCircle2, Zap, Heart, Shield, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logoMark from "@assets/ChatGPT_Image_May_14,_2026,_04_49_39_PM_-_Copy_1779201943316.png";
@@ -29,24 +30,7 @@ export default function About() {
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
 
       {/* Nav */}
-      <nav className="fixed top-0 w-full z-50 border-b border-white/5 bg-background/80 backdrop-blur-md">
-        <div className="container mx-auto px-6 h-20 flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-3">
-            <img src={logoMark} alt="Done By Amy" className="w-10 h-10 object-contain" />
-            <img src={daLogoWordmark} alt="Done By Amy" className="h-5 hidden sm:block object-contain" />
-          </Link>
-          <div className="hidden md:flex items-center gap-8 text-sm font-medium text-muted-foreground">
-            <Link href="/#services" className="hover:text-primary transition-colors">Services</Link>
-            <Link href="/about" className="text-white">About</Link>
-            <Link href="/contact" className="hover:text-primary transition-colors">Contact</Link>
-          </div>
-          <Link href="/get-started">
-            <Button data-testid="about-nav-cta" className="bg-primary hover:bg-primary/90 text-white rounded-full px-6 font-semibold shadow-[0_0_20px_rgba(168,85,247,0.4)]">
-              Tell Us About Your Business
-            </Button>
-          </Link>
-        </div>
-      </nav>
+      <Navbar />
 
       {/* Hero */}
       <section className="pt-40 pb-20 px-6 relative overflow-hidden">

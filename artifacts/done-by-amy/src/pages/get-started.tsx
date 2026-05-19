@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useLocation } from "wouter";
 import { useSEO } from "@/hooks/use-seo";
+import Navbar from "@/components/navbar";
 import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -126,21 +127,7 @@ export default function GetStarted() {
   return (
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
       {/* Nav */}
-      <nav className="fixed top-0 w-full z-50 border-b border-white/5 bg-background/80 backdrop-blur-md">
-        <div className="container mx-auto px-6 h-20 flex items-center justify-between">
-          <button
-            data-testid="back-to-home-button"
-            onClick={() => setLocation("/")}
-            className="flex items-center gap-2 text-muted-foreground hover:text-white transition-colors text-sm font-medium"
-          >
-            <ArrowLeft className="w-4 h-4" /> Back to home
-          </button>
-          <div className="flex items-center gap-3">
-            <img src={logoMark} alt="Done By Amy" className="w-9 h-9 object-contain" />
-            <span className="font-bold text-white hidden sm:block tracking-wide text-sm">Done By Amy</span>
-          </div>
-        </div>
-      </nav>
+      <Navbar />
 
       <div className="pt-32 pb-24 px-6">
         <div className="container mx-auto max-w-3xl">

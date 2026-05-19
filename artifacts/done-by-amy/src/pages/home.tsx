@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { useSEO } from "@/hooks/use-seo";
+import Navbar from "@/components/navbar";
 import { 
   Bot, PhoneCall, Workflow, Globe, 
   CheckCircle2, ArrowRight, Zap, Briefcase, PhoneOutgoing, Users, Calendar
@@ -43,27 +44,7 @@ export default function Home() {
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden selection:bg-primary/30">
       
       {/* Navigation */}
-      <nav className="fixed top-0 w-full z-50 border-b border-white/5 bg-background/80 backdrop-blur-md">
-        <div className="container mx-auto px-6 h-20 flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <img src={logoMark} alt="Done By Amy Logo" className="w-10 h-10 object-contain" />
-            <img src={daLogoWordmark} alt="Done By Amy" className="h-5 hidden sm:block object-contain" />
-          </div>
-          <div className="hidden md:flex items-center gap-8 text-sm font-medium text-muted-foreground">
-            <a href="#services" className="hover:text-primary transition-colors">Services</a>
-            <a href="#tradiecatch" className="hover:text-primary transition-colors">Products</a>
-            <a href="#pricing" className="hover:text-primary transition-colors">Pricing</a>
-            <Link href="/about" className="hover:text-primary transition-colors">About</Link>
-            <Link href="/faq" className="hover:text-primary transition-colors">FAQ</Link>
-            <Link href="/contact" className="hover:text-primary transition-colors">Contact</Link>
-          </div>
-          <Link href="/get-started">
-            <Button data-testid="nav-cta-button" className="bg-primary hover:bg-primary/90 text-white rounded-full px-6 font-semibold shadow-[0_0_20px_rgba(168,85,247,0.4)]">
-              Tell Us About Your Business
-            </Button>
-          </Link>
-        </div>
-      </nav>
+      <Navbar />
 
       {/* Hero Section */}
       <section className="pt-32 pb-20 md:pt-48 md:pb-32 px-6 relative overflow-hidden">
