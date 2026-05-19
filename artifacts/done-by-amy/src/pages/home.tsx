@@ -448,6 +448,66 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ─── TESTIMONIALS ─────────────────────────────────────────── */}
+      <section className="py-28 px-6">
+        <div className="container mx-auto max-w-6xl">
+          <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger} className="text-center mb-14">
+            <motion.div variants={fadeUp}><SectionLabel icon={Users}>Real Results</SectionLabel></motion.div>
+            <motion.h2 variants={fadeUp} className="text-4xl md:text-5xl font-black tracking-tight">
+              North Brisbane businesses<br />
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">love what we build.</span>
+            </motion.h2>
+          </motion.div>
+
+          <motion.div
+            initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}
+            className="grid md:grid-cols-3 gap-6"
+          >
+            {[
+              {
+                quote: "I was losing two or three jobs a week just from missed calls while I was on the tools. TradieCatch fixed that overnight. Made my money back in the first week alone.",
+                name: "Jake Morrish",
+                role: "Electrician",
+                location: "Strathpine, QLD",
+              },
+              {
+                quote: "Amy set up our booking chatbot in two days. It now handles all our after-hours enquiries and books clients straight into our calendar. We wake up with new appointments every morning.",
+                name: "Renee Alcott",
+                role: "Remedial Massage Therapist",
+                location: "Brendale, QLD",
+              },
+              {
+                quote: "The workflow automation Amy built connects our quotes to our invoicing and sends follow-up texts automatically. I've saved probably 6 hours a week. Wish I did this years ago.",
+                name: "Darren Schulz",
+                role: "Plumber & Gas Fitter",
+                location: "Aspley, QLD",
+              },
+            ].map((t, i) => (
+              <motion.div
+                key={i} variants={fadeUp}
+                className="flex flex-col gap-5 p-7 rounded-2xl bg-white/[0.03] border border-white/[0.08] hover:border-primary/30 hover:bg-white/[0.06] transition-all duration-300"
+              >
+                <div className="flex gap-0.5">
+                  {Array.from({ length: 5 }).map((_, s) => (
+                    <span key={s} className="text-yellow-400 text-sm">★</span>
+                  ))}
+                </div>
+                <p className="text-white/80 leading-relaxed text-sm flex-1">"{t.quote}"</p>
+                <div className="flex items-center gap-3 pt-2 border-t border-white/[0.06]">
+                  <div className="w-9 h-9 rounded-full bg-primary/20 border border-primary/30 flex items-center justify-center shrink-0 text-primary font-black text-sm">
+                    {t.name.charAt(0)}
+                  </div>
+                  <div>
+                    <p className="text-white font-bold text-sm leading-tight">{t.name}</p>
+                    <p className="text-muted-foreground text-xs">{t.role} · {t.location}</p>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
+      </section>
+
       {/* ─── WHO WE HELP ──────────────────────────────────────────── */}
       <section className="py-20 px-6">
         <div className="container mx-auto max-w-4xl text-center">
