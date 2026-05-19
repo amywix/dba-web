@@ -5,7 +5,7 @@ import Navbar from "@/components/navbar";
 import { ArrowRight, CheckCircle2, Zap, Heart, Shield, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logoMark from "@assets/ChatGPT_Image_May_14,_2026,_04_49_39_PM_-_Copy_1779201943316.png";
-import amyAvatar from "@assets/avatar_1779201943316.png";
+import amyAvatar from "@assets/avatar_nobg.png";
 import daLogoWordmark from "@assets/da_logo_1779201943317.png";
 
 const fadeIn = {
