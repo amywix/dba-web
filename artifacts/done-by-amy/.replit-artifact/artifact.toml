@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Done By Amy"
+version = "1.0.0"
+id = "artifacts/done-by-amy"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 19524
+
+[services.development]
+run = "pnpm --filter @workspace/done-by-amy run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/done-by-amy", "run", "build" ]
+publicDir = "artifacts/done-by-amy/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "19524"
+BASE_PATH = "/"
