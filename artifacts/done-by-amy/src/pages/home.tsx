@@ -345,12 +345,27 @@ export default function Home() {
                   </motion.li>
                 ))}
               </motion.ul>
-              <motion.div variants={fadeUp}>
+              <motion.div variants={fadeUp} className="space-y-4">
                 <Link href="/get-started">
                   <Button data-testid="tc-cta-button" className="rounded-full bg-white text-black hover:bg-gray-100 font-bold shadow-[0_4px_24px_rgba(255,255,255,0.15)] hover:shadow-[0_4px_32px_rgba(255,255,255,0.25)] hover:-translate-y-0.5 transition-all">
                     Get TradieCatch Today <ArrowRight className="w-4 h-4 ml-2" />
                   </Button>
                 </Link>
+                <a
+                  href="sms:0485050788&body=Hi%2C%20I%27d%20like%20to%20watch%20the%20TradieCatch%20demo"
+                  data-testid="tc-sms-cta"
+                  className="flex items-center gap-3 group w-fit"
+                >
+                  <div className="w-10 h-10 rounded-full bg-white/10 border border-white/20 flex items-center justify-center shrink-0 group-hover:bg-white/20 group-hover:border-white/40 transition-all">
+                    <PhoneCall className="w-4 h-4 text-white" />
+                  </div>
+                  <div>
+                    <p className="text-white font-bold text-sm leading-tight group-hover:text-primary transition-colors">
+                      SMS <span className="tracking-wide">0485 050 788</span>
+                    </p>
+                    <p className="text-white/50 text-xs">to watch the demo &amp; get signed up</p>
+                  </div>
+                </a>
               </motion.div>
             </motion.div>
 
