@@ -75,7 +75,7 @@ export default function Home() {
               </motion.h1>
 
               <motion.p variants={fadeUp} className="text-lg md:text-xl text-muted-foreground mb-10 max-w-lg mx-auto md:mx-0 leading-relaxed">
-                Feel like you need a Fortune 500 ops team? I build AI chatbots, missed call systems, and automated workflows so you can get back to what you do best.
+                I build AI chatbots, missed call systems, and automated workflows so you can get back to what you do best.
               </motion.p>
 
               <motion.div variants={fadeUp} className="flex flex-col sm:flex-row items-center gap-4 justify-center md:justify-start">
