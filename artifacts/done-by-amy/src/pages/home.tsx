@@ -198,7 +198,7 @@ export default function Home() {
             className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5"
           >
             {[
-              { icon: Bot,          title: "AI Chatbots & VAs",    desc: "24/7 customer chat, instant lead capture, and FAQ handling that never sleeps." },
+              { icon: Bot,          title: "AI Chatbots",           desc: "24/7 customer chat, instant lead capture, and FAQ handling that never sleeps." },
               { icon: PhoneCall,    title: "AI Calling Systems",   desc: "Automated outbound calls, appointment reminders, and intelligent follow-ups." },
               { icon: Workflow,     title: "Workflow Automations", desc: "Connect your CRM, accounting, calendars & forms so every handoff is seamless." },
               { icon: Globe,        title: "Website Design",       desc: "Conversion-focused, lightning-fast, SEO-ready sites that turn visitors into leads." },
