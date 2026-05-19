@@ -202,7 +202,7 @@ export default function Home() {
               { icon: PhoneCall,    title: "AI Calling Systems",   desc: "Automated outbound calls, appointment reminders, and intelligent follow-ups." },
               { icon: Workflow,     title: "Workflow Automations", desc: "Connect your CRM, accounting, calendars & forms so every handoff is seamless." },
               { icon: Globe,        title: "Website Design",       desc: "Conversion-focused, lightning-fast, SEO-ready sites that turn visitors into leads." },
-              { icon: Zap,          title: "Custom Integration",   desc: "If it has an API, we can connect it, automate it, and make it work for you." },
+              { icon: Zap,          title: "Custom Apps",          desc: "If it has an API, we can connect it, automate it, and make it work for you." },
             ].map((srv, i) => (
               <motion.div
                 variants={fadeUp} key={i}
