@@ -15,7 +15,7 @@ import daLogoWordmark from "@assets/da_logo_1779201943317.png";
 import tcLogo from "@assets/tc_logo_1779201943317.png";
 import tcScreen from "@assets/tc_screen_1779201943317.png";
 import featureCards from "@assets/ChatGPT_Image_May_18,_2026,_11_32_20_AM_1779201943317.png";
-import autoDialScreen from "@assets/ChatGPT_Image_May_20,_2026,_08_56_10_AM_1779231475381.png";
+import autoDialScreen from "../assets/autodial_nobg.png";
 
 const fadeIn = {
   hidden: { opacity: 0, y: 30 },
