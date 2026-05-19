@@ -4,6 +4,7 @@ import logoMark from "@assets/ChatGPT_Image_May_14,_2026,_04_49_39_PM_-_Copy_177
 import daLogoWordmark from "@assets/da_logo_1779201943317.png";
 
 const links = [
+  { label: "Home",      href: "/"             },
   { label: "Services",  href: "/#services"   },
   { label: "Products",  href: "/#tradiecatch" },
   { label: "Pricing",   href: "/#pricing"     },
