@@ -477,7 +477,7 @@ export default function Home() {
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger} className="text-center mb-10">
             <motion.div variants={fadeUp}><SectionLabel icon={Users}>Real Results</SectionLabel></motion.div>
             <motion.h2 variants={fadeUp} className="text-4xl md:text-5xl font-black tracking-tight">
-              North Brisbane businesses<br />
+              Businesses<br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">love what we build.</span>
             </motion.h2>
           </motion.div>
