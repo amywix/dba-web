@@ -249,6 +249,8 @@ export default function Home() {
                   "Responds instantly to customer questions 24/7",
                   "Captures lead name, phone, and job details automatically",
                   "Handles FAQs, pricing queries, and booking requests",
+                  "Automates your social media inboxes — Facebook, Instagram & more",
+                  "Schedules and publishes social media posts automatically",
                   "Escalates complex issues to you when needed",
                   "Fully customised to your business, tone, and services",
                 ].map((item, i) => (
