@@ -203,11 +203,11 @@ export default function Home() {
                 </div>
                 <div className="bg-[#f5f5f7] p-4 space-y-3">
                   {[
-                    { from: "bot",  text: "Hi! I'm Amy's AI assistant. How can I help your business today?" },
-                    { from: "user", text: "I keep missing calls when I'm on a job." },
-                    { from: "bot",  text: "I can fix that! TradieCatch sends an instant SMS to every missed caller. Want to know more?" },
-                    { from: "user", text: "Yes! How much does it cost?" },
-                    { from: "bot",  text: "Just $99/month — most tradies recover that in their very first recovered lead 🎉" },
+                    { from: "bot",  text: "Hi there! How can I help you today?" },
+                    { from: "user", text: "Do you have availability this week?" },
+                    { from: "bot",  text: "Absolutely! I can book you in right now. What day suits you best?" },
+                    { from: "user", text: "Thursday afternoon would be great." },
+                    { from: "bot",  text: "Done — you're booked for Thursday at 2pm. A confirmation is on its way! 🎉" },
                   ].map((msg, i) => (
                     <div key={i} className={`flex ${msg.from === "user" ? "justify-end" : "justify-start"}`}>
                       <div className={`px-3.5 py-2.5 rounded-2xl text-xs max-w-[78%] leading-relaxed ${
