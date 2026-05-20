@@ -5,7 +5,6 @@ import Navbar from "@/components/navbar";
 import { ArrowRight, CheckCircle2, Zap, Heart, Shield, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logoMark from "@assets/ChatGPT_Image_May_14,_2026,_04_49_39_PM_-_Copy_1779201943316.png";
-import amyAvatar from "@assets/avatar_nobg.png";
 import daLogoWordmark from "@assets/da_logo_1779201943317.png";
 
 const fadeIn = {
@@ -61,20 +60,6 @@ export default function About() {
                   Work With Me <ArrowRight className="w-4 h-4 ml-2" />
                 </Button>
               </Link>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.7 }}
-              className="flex-1 flex justify-center"
-            >
-              <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-b from-primary/20 to-transparent rounded-full blur-3xl" />
-                <img
-                  src={amyAvatar}
-                  alt="Amy"
-                  className="relative z-10 h-[480px] object-contain drop-shadow-2xl"
-                  data-testid="about-amy-avatar"
-                />
-              </div>
             </motion.div>
           </div>
         </div>
