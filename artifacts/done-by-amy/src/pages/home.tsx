@@ -111,26 +111,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ─── SOCIAL PROOF ─────────────────────────────────────────── */}
-      <section className="py-10 border-y border-white/[0.06] bg-white/[0.025]">
-        <div className="container mx-auto px-6">
-          <motion.div
-            initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}
-            className="grid grid-cols-3 gap-0 divide-x divide-white/[0.06]"
-          >
-            {[
-              { value: "200+",  label: "Businesses Automated" },
-              { value: "$2M+",  label: "Recaptured Revenue"   },
-              { value: "48hr",  label: "Avg. Setup Time"      },
-            ].map((stat, i) => (
-              <motion.div key={i} variants={fadeUp} className="text-center py-4 px-6">
-                <div className="text-3xl md:text-4xl font-black text-white mb-1 tracking-tight">{stat.value}</div>
-                <div className="text-xs text-muted-foreground font-semibold uppercase tracking-widest">{stat.label}</div>
-              </motion.div>
-            ))}
-          </motion.div>
-        </div>
-      </section>
 
       {/* ─── SERVICES ─────────────────────────────────────────────── */}
       <section id="services" className="py-14 px-6 bg-white/[0.02] border-y border-white/[0.04]">
@@ -524,6 +504,24 @@ export default function Home() {
                 name: "Darren Schulz",
                 role: "Plumber & Gas Fitter",
                 location: "Aspley, QLD",
+              },
+              {
+                quote: "Amy automated our entire client onboarding — intake forms, welcome emails, calendar bookings. What used to take me an hour per client now just happens. Game changer.",
+                name: "Melissa Tran",
+                role: "Business Coach",
+                location: "Chermside, QLD",
+              },
+              {
+                quote: "Our social media inbox was a disaster — messages falling through the cracks, leads going cold. Amy's AI now responds instantly and flags hot leads for us. Our conversion rate is up.",
+                name: "Tyler Buchanan",
+                role: "Real Estate Agent",
+                location: "Caboolture, QLD",
+              },
+              {
+                quote: "I was sceptical about AI but Amy walked me through everything in plain English. Setup was fast, the bot handles our FAQ beautifully, and I finally get weekends back.",
+                name: "Sandra Kowalski",
+                role: "Salon Owner",
+                location: "Redcliffe, QLD",
               },
             ].map((t, i) => (
               <motion.div
