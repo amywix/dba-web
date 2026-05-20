@@ -105,7 +105,7 @@ export default function Home() {
               className="flex-1 relative w-full max-w-lg"
             >
               <div className="absolute inset-0 bg-primary/20 rounded-3xl blur-[80px] scale-90" />
-              <img src={featureCards} alt="AI Automation Features" className="relative z-10 w-full h-auto rounded-2xl shadow-[0_0_60px_rgba(168,85,247,0.2)] border border-white/[0.08]" />
+              <img src={tcScreen} alt="TradieCatch App" className="relative z-10 h-[480px] object-contain drop-shadow-2xl" />
             </motion.div>
           </div>
         </div>
