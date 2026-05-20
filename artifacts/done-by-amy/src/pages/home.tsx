@@ -156,9 +156,9 @@ export default function Home() {
             className="grid grid-cols-1 md:grid-cols-3 gap-5"
           >
             {[
+              { icon: Bot,       title: "AI Automations",        price: "from $99 + setup", desc: "AI chatbots, missed call systems, workflows — all running 24/7 on autopilot." },
               { icon: Globe,     title: "Websites",              price: "from $199", desc: "Conversion-focused, SEO-ready sites that turn visitors into paying customers." },
               { icon: Zap,       title: "Apps",                  price: "from $199", desc: "Custom web apps and tools that connect your systems and automate the boring stuff." },
-              { icon: Bot,       title: "AI Automations",        price: "from $99 + setup", desc: "AI chatbots, missed call systems, workflows — all running 24/7 on autopilot." },
             ].map((srv, i) => (
               <motion.div
                 variants={fadeUp} key={i}
@@ -592,9 +592,9 @@ export default function Home() {
             className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-10"
           >
             {[
+              { icon: Bot,      title: "AI Automations",      price: "$99",  note: "/month + setup fee", popular: true,  includes: ["AI chatbot or missed call SMS", "Workflow automations", "Ongoing support & updates"] },
               { icon: Globe,    title: "Websites",            price: "$199", note: "from · one-off",   popular: false, includes: ["Mobile-optimised design", "SEO-ready build", "Click-to-call & forms"] },
               { icon: Zap,      title: "Apps",                price: "$199", note: "from · one-off",   popular: false, includes: ["Custom web app", "System integrations", "Tailored to your workflow"] },
-              { icon: Bot,      title: "AI Automations",      price: "$99",  note: "/month + setup fee", popular: true,  includes: ["AI chatbot or missed call SMS", "Workflow automations", "Ongoing support & updates"] },
             ].map((plan, i) => (
               <motion.div
                 variants={fadeUp} key={i}
