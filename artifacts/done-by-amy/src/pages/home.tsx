@@ -3,7 +3,7 @@ import { Link } from "wouter";
 import { useSEO } from "@/hooks/use-seo";
 import Navbar from "@/components/navbar";
 import { 
-  Bot, PhoneCall, Workflow, Globe, FileText,
+  Bot, PhoneCall, Workflow, Globe,
   CheckCircle2, ArrowRight, Zap, Briefcase, PhoneOutgoing, Users, Calendar, Sparkles
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -153,11 +153,9 @@ export default function Home() {
 
           <motion.div
             initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}
-            className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5"
+            className="grid grid-cols-1 md:grid-cols-3 gap-5"
           >
             {[
-              { icon: Sparkles,  title: "Logos",                 price: "from $49",  desc: "Professional brand marks that make your business look the part from day one." },
-              { icon: FileText,  title: "Business Form Packs",   price: "from $99",  desc: "Custom intake forms, quote requests, and booking flows built for your business." },
               { icon: Globe,     title: "Websites",              price: "from $199", desc: "Conversion-focused, SEO-ready sites that turn visitors into paying customers." },
               { icon: Zap,       title: "Apps",                  price: "from $199", desc: "Custom web apps and tools that connect your systems and automate the boring stuff." },
               { icon: Bot,       title: "AI Automations",        price: "from $99 + setup", desc: "AI chatbots, missed call systems, workflows — all running 24/7 on autopilot." },
@@ -594,8 +592,6 @@ export default function Home() {
             className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-10"
           >
             {[
-              { icon: Sparkles, title: "Logos",               price: "$49",  note: "one-off",          popular: false, includes: ["Custom logo design", "Multiple concepts", "Final files (PNG, SVG)"] },
-              { icon: FileText, title: "Business Form Packs", price: "$99",  note: "one-off",          popular: false, includes: ["Intake & quote forms", "Booking flows", "Auto-confirmation emails"] },
               { icon: Globe,    title: "Websites",            price: "$199", note: "from · one-off",   popular: false, includes: ["Mobile-optimised design", "SEO-ready build", "Click-to-call & forms"] },
               { icon: Zap,      title: "Apps",                price: "$199", note: "from · one-off",   popular: false, includes: ["Custom web app", "System integrations", "Tailored to your workflow"] },
               { icon: Bot,      title: "AI Automations",      price: "$99",  note: "/month + setup fee", popular: true,  includes: ["AI chatbot or missed call SMS", "Workflow automations", "Ongoing support & updates"] },
