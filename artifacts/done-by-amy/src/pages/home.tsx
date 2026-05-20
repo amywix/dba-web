@@ -9,7 +9,6 @@ import {
 import { Button } from "@/components/ui/button";
 
 import logoMark from "@assets/ChatGPT_Image_May_14,_2026,_04_49_39_PM_-_Copy_1779201943316.png";
-import amyAvatar from "@assets/avatar_nobg.png";
 import linkBanner from "@assets/link_img_1779201943317.png";
 import tcLogo from "@assets/tc_logo_1779201943317.png";
 import tcScreen from "@assets/tc_screen_1779201943317.png";
@@ -101,10 +100,10 @@ export default function Home() {
               initial={{ opacity: 0, scale: 0.92, y: 20 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
-              className="flex-1 relative w-full max-w-md"
+              className="flex-1 relative w-full max-w-lg"
             >
-              <div className="absolute inset-0 bg-primary/20 rounded-full blur-[80px] scale-75" />
-              <img src={amyAvatar} alt="Amy Avatar" className="relative z-10 w-full h-auto object-contain drop-shadow-2xl" />
+              <div className="absolute inset-0 bg-primary/20 rounded-3xl blur-[80px] scale-90" />
+              <img src={featureCards} alt="AI Automation Features" className="relative z-10 w-full h-auto rounded-2xl shadow-[0_0_60px_rgba(168,85,247,0.2)] border border-white/[0.08]" />
             </motion.div>
           </div>
         </div>
@@ -129,49 +128,6 @@ export default function Home() {
               </motion.div>
             ))}
           </motion.div>
-        </div>
-      </section>
-
-      {/* ─── VALUE PROPS ──────────────────────────────────────────── */}
-      <section className="py-28 px-6">
-        <div className="container mx-auto max-w-6xl">
-          <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
-            <motion.div
-              initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}
-              className="flex-1"
-            >
-              <img src={featureCards} alt="Feature Cards" className="w-full h-auto rounded-2xl shadow-[0_0_60px_rgba(168,85,247,0.15)] border border-white/[0.08]" />
-            </motion.div>
-
-            <motion.div
-              initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}
-              className="flex-1 space-y-10"
-            >
-              <div>
-                <SectionLabel icon={Zap}>Why Done By Amy</SectionLabel>
-                <h2 className="text-4xl md:text-5xl font-black leading-tight tracking-tight">
-                  Run your business.<br />
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">Let the systems run the rest.</span>
-                </h2>
-              </div>
-
-              <div className="space-y-7">
-                {[
-                  { n: "01", title: "Save Time Every Week",          desc: "Cut repetitive tasks — follow-ups, bookings, reminders, invoicing, customer messages. All automated." },
-                  { n: "02", title: "Catch More Leads",              desc: "Reply to customers instantly, even when you're busy, offline, on another job, or after hours." },
-                  { n: "03", title: "Make Your Apps Work Together",  desc: "Connect your website, CRM, calendars, QuickBooks & more so nothing ever falls through the cracks." },
-                ].map((prop, i) => (
-                  <motion.div variants={fadeUp} key={i} className="flex gap-5">
-                    <div className="text-xs font-black text-primary/50 mt-1 w-7 shrink-0 tracking-widest">{prop.n}</div>
-                    <div>
-                      <h3 className="text-lg font-black text-white mb-1">{prop.title}</h3>
-                      <p className="text-muted-foreground text-sm leading-relaxed">{prop.desc}</p>
-                    </div>
-                  </motion.div>
-                ))}
-              </div>
-            </motion.div>
-          </div>
         </div>
       </section>
 
@@ -233,8 +189,8 @@ export default function Home() {
             >
               <div className="rounded-3xl overflow-hidden shadow-[0_24px_80px_rgba(0,0,0,0.5),0_0_40px_rgba(168,85,247,0.15)] border border-white/[0.08]">
                 <div className="bg-gradient-to-r from-primary to-secondary px-5 py-4 flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-white/10 border-2 border-white/30 overflow-hidden shrink-0">
-                    <img src={amyAvatar} alt="Amy" className="w-full h-full object-cover object-top scale-125" />
+                  <div className="w-10 h-10 rounded-full bg-white/20 border-2 border-white/30 flex items-center justify-center shrink-0">
+                    <span className="text-white font-black text-sm">A</span>
                   </div>
                   <div className="flex-1 min-w-0">
                     <p className="text-white font-bold text-sm">Amy — AI Assistant</p>

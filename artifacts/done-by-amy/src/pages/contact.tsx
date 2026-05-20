@@ -90,7 +90,6 @@ export default function Contact() {
             >
               {/* Amy card */}
               <div className="bg-white/[0.03] border border-white/10 rounded-2xl p-6 flex flex-col items-center text-center">
-                <img src={amyAvatar} alt="Amy" className="h-36 object-contain mb-3" data-testid="contact-amy-avatar" />
                 <h3 className="text-lg font-bold text-white">Amy</h3>
                 <p className="text-sm text-muted-foreground">Founder & AI Automation Specialist</p>
                 <p className="text-sm text-primary mt-1 font-medium">Responds within 1 business day</p>
