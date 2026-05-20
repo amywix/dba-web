@@ -114,13 +114,12 @@ export default function Home() {
         <div className="container mx-auto px-6">
           <motion.div
             initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}
-            className="grid grid-cols-2 md:grid-cols-4 gap-0 divide-x divide-white/[0.06]"
+            className="grid grid-cols-3 gap-0 divide-x divide-white/[0.06]"
           >
             {[
               { value: "200+",  label: "Businesses Automated" },
               { value: "$2M+",  label: "Recaptured Revenue"   },
               { value: "48hr",  label: "Avg. Setup Time"      },
-              { value: "5.0★",  label: "Google Rating"        },
             ].map((stat, i) => (
               <motion.div key={i} variants={fadeUp} className="text-center py-4 px-6">
                 <div className="text-3xl md:text-4xl font-black text-white mb-1 tracking-tight">{stat.value}</div>
