@@ -50,7 +50,7 @@ export default function Navbar() {
             data-testid="nav-cta-button"
             className="bg-primary hover:bg-primary/90 text-white rounded-full px-6 font-semibold shadow-[0_0_20px_rgba(168,85,247,0.4)]"
           >
-            Tell Us About Your Business
+            Get Your Free Audit
           </Button>
         </Link>
       </div>

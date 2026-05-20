@@ -83,7 +83,7 @@ export default function Home() {
               <motion.div variants={fadeUp} className="flex flex-col sm:flex-row items-center gap-4 justify-center md:justify-start">
                 <Link href="/get-started">
                   <Button data-testid="hero-cta-button" size="lg" className="h-14 px-9 text-base rounded-full font-bold bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 shadow-[0_0_40px_rgba(168,85,247,0.5)] transition-all duration-300 hover:shadow-[0_0_60px_rgba(168,85,247,0.65)] hover:-translate-y-0.5">
-                    Tell Us About Your Business
+                    Get Your Free Audit
                   </Button>
                 </Link>
                 <Button
@@ -672,7 +672,7 @@ export default function Home() {
                   size="lg"
                   className="h-16 px-12 text-lg rounded-full bg-white text-black hover:bg-white/90 font-black shadow-[0_0_60px_rgba(255,255,255,0.2)] hover:shadow-[0_0_80px_rgba(255,255,255,0.3)] hover:-translate-y-0.5 transition-all duration-300"
                 >
-                  Tell Us About Your Business <ArrowRight className="w-5 h-5 ml-2" />
+                  Get Your Free Audit <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
               </Link>
             </motion.div>

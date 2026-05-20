@@ -123,7 +123,7 @@ export default function Contact() {
                 <p className="text-xs text-muted-foreground mb-3">Fill out the business intake form for a detailed AI recommendations report.</p>
                 <Link href="/get-started">
                   <Button data-testid="contact-intake-link" size="sm" className="w-full rounded-lg bg-primary hover:bg-primary/90 text-white text-xs">
-                    Tell Us About Your Business
+                    Get Your Free Audit
                   </Button>
                 </Link>
               </div>

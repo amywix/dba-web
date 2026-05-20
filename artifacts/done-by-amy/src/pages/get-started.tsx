@@ -47,6 +47,9 @@ const formSchema = z.object({
   industry: z.string().min(1, "Please select your industry"),
   businessSize: z.string().min(1, "Please select your team size"),
   currentTools: z.string().optional(),
+  websiteUrl: z.string().optional(),
+  dailyTasks: z.string().min(20, "Please describe your daily tasks in at least 20 characters"),
+  leadProcess: z.string().min(10, "Please describe how you handle leads"),
   biggestChallenge: z.string().min(20, "Please describe your challenge in at least 20 characters"),
   automationGoals: z.string().min(20, "Please describe your goals in at least 20 characters"),
   monthlyRevenue: z.string().optional(),
@@ -125,6 +128,9 @@ export default function GetStarted() {
       industry: "",
       businessSize: "",
       currentTools: "",
+      websiteUrl: "",
+      dailyTasks: "",
+      leadProcess: "",
       biggestChallenge: "",
       automationGoals: "",
       monthlyRevenue: "",
@@ -153,16 +159,16 @@ export default function GetStarted() {
                 className="text-center mb-14"
               >
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-primary/30 text-primary text-sm font-medium mb-6">
-                  <Zap className="w-4 h-4" /> Free AI Strategy Assessment
+                  <Zap className="w-4 h-4" /> 100% Free — No Obligation
                 </div>
                 <h1 className="text-4xl md:text-6xl font-black leading-tight mb-5 tracking-tight">
-                  Tell us about<br />
+                  Get your free<br />
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">
-                    your business.
+                    Automation Audit today.
                   </span>
                 </h1>
                 <p className="text-lg text-muted-foreground max-w-xl mx-auto">
-                  The more we know, the better we can tailor the right AI systems for your exact situation. Takes about 3 minutes.
+                  Fill in a few details and Amy will personally review your business and map out exactly where automation can save you time and money.
                 </p>
               </motion.div>
 
@@ -383,9 +389,63 @@ export default function GetStarted() {
 
                     {/* Section 3 — Automation needs */}
                     <div>
-                      <h2 className="text-xl font-bold text-white mb-1">Your automation needs</h2>
+                      <h2 className="text-xl font-bold text-white mb-1">Your workflow</h2>
                       <p className="text-sm text-muted-foreground mb-6">This is where the magic happens — be as specific as you like.</p>
                       <div className="space-y-5">
+                        <FormField
+                          control={form.control}
+                          name="dailyTasks"
+                          render={({ field }) => (
+                            <FormItem>
+                              <FormLabel className="text-white/80">Walk me through a typical work day — what tasks do you do over and over?</FormLabel>
+                              <FormControl>
+                                <Textarea
+                                  data-testid="textarea-daily-tasks"
+                                  placeholder="e.g. Answer the same questions on Facebook, manually send invoices after each job, call back missed leads, copy job details into spreadsheets..."
+                                  className="bg-white/5 border-white/10 text-white placeholder:text-muted-foreground/50 focus:border-primary/60 rounded-xl min-h-[110px] resize-none"
+                                  {...field}
+                                />
+                              </FormControl>
+                              <FormMessage />
+                            </FormItem>
+                          )}
+                        />
+                        <FormField
+                          control={form.control}
+                          name="leadProcess"
+                          render={({ field }) => (
+                            <FormItem>
+                              <FormLabel className="text-white/80">How do you currently handle new enquiries or leads?</FormLabel>
+                              <FormControl>
+                                <Textarea
+                                  data-testid="textarea-lead-process"
+                                  placeholder="e.g. They call or text my mobile, I reply when I can. Sometimes I miss them and they go elsewhere. I don't have a system for following up..."
+                                  className="bg-white/5 border-white/10 text-white placeholder:text-muted-foreground/50 focus:border-primary/60 rounded-xl min-h-[100px] resize-none"
+                                  {...field}
+                                />
+                              </FormControl>
+                              <FormMessage />
+                            </FormItem>
+                          )}
+                        />
+                        <FormField
+                          control={form.control}
+                          name="websiteUrl"
+                          render={({ field }) => (
+                            <FormItem>
+                              <FormLabel className="text-white/80">Your website URL <span className="text-muted-foreground/60">(optional)</span></FormLabel>
+                              <FormControl>
+                                <Input
+                                  data-testid="input-website-url"
+                                  placeholder="e.g. www.mybusiness.com.au"
+                                  className="bg-white/5 border-white/10 text-white placeholder:text-muted-foreground/50 focus:border-primary/60 h-12 rounded-xl"
+                                  {...field}
+                                />
+                              </FormControl>
+                              <FormMessage />
+                            </FormItem>
+                          )}
+                        />
                         <FormField
                           control={form.control}
                           name="biggestChallenge"

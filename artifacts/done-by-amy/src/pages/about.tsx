@@ -176,7 +176,7 @@ export default function About() {
           </p>
           <Link href="/get-started">
             <Button data-testid="about-footer-cta" size="lg" className="h-14 px-10 text-lg rounded-full bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 shadow-[0_0_30px_rgba(168,85,247,0.4)]">
-              Tell Us About Your Business <ArrowRight className="w-5 h-5 ml-2" />
+              Get Your Free Audit <ArrowRight className="w-5 h-5 ml-2" />
             </Button>
           </Link>
         </motion.div>
