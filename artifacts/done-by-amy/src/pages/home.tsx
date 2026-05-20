@@ -3,7 +3,7 @@ import { Link } from "wouter";
 import { useSEO } from "@/hooks/use-seo";
 import Navbar from "@/components/navbar";
 import { 
-  Bot, PhoneCall, Workflow, Globe, 
+  Bot, PhoneCall, Workflow, Globe, FileText,
   CheckCircle2, ArrowRight, Zap, Briefcase, PhoneOutgoing, Users, Calendar, Sparkles
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -154,20 +154,21 @@ export default function Home() {
             className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5"
           >
             {[
-              { icon: Bot,          title: "AI Chatbots",           desc: "24/7 customer chat, instant lead capture, and FAQ handling that never sleeps." },
-              { icon: PhoneCall,    title: "AI Calling Systems",   desc: "Automated outbound calls, appointment reminders, and intelligent follow-ups." },
-              { icon: Workflow,     title: "Workflow Automations", desc: "Connect your CRM, accounting, calendars & forms so every handoff is seamless." },
-              { icon: Globe,        title: "Website Design",       desc: "Conversion-focused, lightning-fast, SEO-ready sites that turn visitors into leads." },
-              { icon: Zap,          title: "Custom Apps",          desc: "If it has an API, we can connect it, automate it, and make it work for you." },
+              { icon: Sparkles,  title: "Logos",                 price: "from $49",  desc: "Professional brand marks that make your business look the part from day one." },
+              { icon: FileText,  title: "Business Form Packs",   price: "from $99",  desc: "Custom intake forms, quote requests, and booking flows built for your business." },
+              { icon: Globe,     title: "Websites",              price: "from $199", desc: "Conversion-focused, SEO-ready sites that turn visitors into paying customers." },
+              { icon: Zap,       title: "Apps",                  price: "from $199", desc: "Custom web apps and tools that connect your systems and automate the boring stuff." },
+              { icon: Bot,       title: "AI Automations",        price: "from $99 + setup", desc: "AI chatbots, missed call systems, workflows — all running 24/7 on autopilot." },
             ].map((srv, i) => (
               <motion.div
                 variants={fadeUp} key={i}
-                className="group relative p-6 rounded-2xl bg-white/[0.03] border border-white/[0.08] hover:border-primary/40 transition-all duration-300 hover:bg-white/[0.06] hover:-translate-y-1"
+                className="group relative p-6 rounded-2xl bg-white/[0.03] border border-white/[0.08] hover:border-primary/40 transition-all duration-300 hover:bg-white/[0.06] hover:-translate-y-1 flex flex-col"
               >
                 <div className="w-12 h-12 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center mb-5 group-hover:bg-primary/20 group-hover:border-primary/40 transition-colors">
                   <srv.icon className="w-6 h-6 text-primary" />
                 </div>
-                <h3 className="text-base font-black text-white mb-2">{srv.title}</h3>
+                <h3 className="text-base font-black text-white mb-1">{srv.title}</h3>
+                <p className="text-primary text-xs font-bold mb-2">{srv.price}</p>
                 <p className="text-muted-foreground text-sm leading-relaxed">{srv.desc}</p>
               </motion.div>
             ))}
@@ -600,51 +601,62 @@ export default function Home() {
 
           <motion.div
             initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}
-            className="grid md:grid-cols-2 gap-6"
+            className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-10"
           >
-            {/* Starter */}
-            <motion.div variants={fadeUp} className="rounded-2xl bg-white/[0.04] border border-white/[0.08] p-8 flex flex-col hover:border-white/20 transition-colors">
-              <h3 className="text-xl font-black text-white mb-1">AI Automation Starter Pack</h3>
-              <p className="text-muted-foreground text-sm mb-6">Perfect for getting started with one core automation.</p>
-              <div className="text-primary text-4xl font-black mb-1">$297</div>
-              <div className="text-muted-foreground text-sm mb-8">one-off setup</div>
-              <ul className="space-y-3 mb-10 flex-1">
-                {["Custom AI Chatbot Setup", "1 Core Automation Workflow", "Training & Handoff"].map((item, i) => (
-                  <li key={i} className="flex items-center gap-3 text-sm text-muted-foreground">
-                    <CheckCircle2 className="text-primary w-4 h-4 shrink-0" /> {item}
-                  </li>
-                ))}
-              </ul>
-              <Link href="/get-started" className="block">
-                <Button data-testid="pricing-starter-cta" className="w-full rounded-full border border-white/20 bg-white/5 hover:bg-white/10 text-white font-semibold" variant="ghost">
-                  Tell Us About Your Business
-                </Button>
-              </Link>
-            </motion.div>
-
-            {/* Suite */}
-            <motion.div variants={fadeUp} className="relative rounded-2xl bg-gradient-to-b from-primary/20 via-primary/10 to-white/[0.03] border border-primary/40 p-8 flex flex-col overflow-hidden hover:border-primary/60 transition-colors shadow-[0_0_60px_rgba(168,85,247,0.12)]">
-              <div className="absolute top-0 right-0 bg-gradient-to-r from-primary to-secondary text-white text-[10px] font-black px-4 py-1.5 rounded-bl-xl rounded-tr-2xl uppercase tracking-widest">
-                Most Popular
-              </div>
-              <h3 className="text-xl font-black text-white mb-1">Done For You Suite</h3>
-              <p className="text-muted-foreground text-sm mb-6">The full-stack system for serious growth.</p>
-              <div className="text-primary text-4xl font-black mb-1">$997</div>
-              <div className="text-muted-foreground text-sm mb-8">one-off setup</div>
-              <ul className="space-y-3 mb-10 flex-1">
-                {["Advanced AI Chatbots & Calling", "Full CRM Integration", "Multi-step Workflows", "Priority Support"].map((item, i) => (
-                  <li key={i} className="flex items-center gap-3 text-sm text-white/80">
-                    <CheckCircle2 className="text-primary w-4 h-4 shrink-0" /> {item}
-                  </li>
-                ))}
-              </ul>
-              <Link href="/get-started" className="block">
-                <Button data-testid="pricing-suite-cta" className="w-full rounded-full bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 text-white font-bold shadow-[0_0_24px_rgba(168,85,247,0.3)]">
-                  Tell Us About Your Business
-                </Button>
-              </Link>
-            </motion.div>
+            {[
+              { icon: Sparkles, title: "Logos",               price: "$49",  note: "one-off",          popular: false, includes: ["Custom logo design", "Multiple concepts", "Final files (PNG, SVG)"] },
+              { icon: FileText, title: "Business Form Packs", price: "$99",  note: "one-off",          popular: false, includes: ["Intake & quote forms", "Booking flows", "Auto-confirmation emails"] },
+              { icon: Globe,    title: "Websites",            price: "$199", note: "from · one-off",   popular: false, includes: ["Mobile-optimised design", "SEO-ready build", "Click-to-call & forms"] },
+              { icon: Zap,      title: "Apps",                price: "$199", note: "from · one-off",   popular: false, includes: ["Custom web app", "System integrations", "Tailored to your workflow"] },
+              { icon: Bot,      title: "AI Automations",      price: "$99",  note: "/month + setup fee", popular: true,  includes: ["AI chatbot or missed call SMS", "Workflow automations", "Ongoing support & updates"] },
+            ].map((plan, i) => (
+              <motion.div
+                variants={fadeUp} key={i}
+                className={`relative rounded-2xl p-7 flex flex-col transition-colors ${
+                  plan.popular
+                    ? "bg-gradient-to-b from-primary/20 via-primary/10 to-white/[0.03] border border-primary/40 hover:border-primary/60 shadow-[0_0_60px_rgba(168,85,247,0.12)]"
+                    : "bg-white/[0.04] border border-white/[0.08] hover:border-white/20"
+                }`}
+              >
+                {plan.popular && (
+                  <div className="absolute top-0 right-0 bg-gradient-to-r from-primary to-secondary text-white text-[10px] font-black px-4 py-1.5 rounded-bl-xl rounded-tr-2xl uppercase tracking-widest">
+                    Most Popular
+                  </div>
+                )}
+                <div className={`w-11 h-11 rounded-xl flex items-center justify-center mb-5 ${plan.popular ? "bg-primary/30 border border-primary/50" : "bg-primary/10 border border-primary/20"}`}>
+                  <plan.icon className="w-5 h-5 text-primary" />
+                </div>
+                <h3 className="text-lg font-black text-white mb-1">{plan.title}</h3>
+                <div className="flex items-baseline gap-1.5 mb-1">
+                  <span className="text-primary text-3xl font-black">{plan.price}</span>
+                </div>
+                <p className="text-muted-foreground text-xs mb-6">{plan.note}</p>
+                <ul className="space-y-2.5 mb-8 flex-1">
+                  {plan.includes.map((item, j) => (
+                    <li key={j} className="flex items-center gap-2.5 text-sm text-muted-foreground">
+                      <CheckCircle2 className="text-primary w-4 h-4 shrink-0" /> {item}
+                    </li>
+                  ))}
+                </ul>
+                <Link href="/get-started" className="block">
+                  <Button
+                    data-testid={`pricing-${plan.title.toLowerCase().replace(/\s+/g, '-')}-cta`}
+                    className={`w-full rounded-full font-semibold ${
+                      plan.popular
+                        ? "bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 text-white font-bold shadow-[0_0_24px_rgba(168,85,247,0.3)]"
+                        : "border border-white/20 bg-white/5 hover:bg-white/10 text-white"
+                    }`}
+                    variant="ghost"
+                  >
+                    Get Started
+                  </Button>
+                </Link>
+              </motion.div>
+            ))}
           </motion.div>
+          <motion.p initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} className="text-center text-muted-foreground/60 text-sm">
+            Every project is custom-scoped — <Link href="/get-started" className="text-primary hover:underline">tell us about your business</Link> for an accurate quote.
+          </motion.p>
         </div>
       </section>
 
