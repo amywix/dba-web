@@ -44,7 +44,6 @@ export default function About() {
                 <Heart className="w-4 h-4" /> The person behind the systems
               </div>
               <h1 className="text-5xl md:text-6xl font-black leading-tight mb-6 tracking-tight">
-                Hi, I'm Amy.<br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">
                   I build businesses that run themselves.
                 </span>

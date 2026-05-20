@@ -6,7 +6,6 @@ import daLogoWordmark from "@assets/da_logo_1779201943317.png";
 const links = [
   { label: "Home",      href: "/"             },
   { label: "Services",  href: "/#services"   },
-  { label: "Products",  href: "/#tradiecatch" },
   { label: "Pricing",   href: "/#pricing"     },
   { label: "About",     href: "/about"        },
   { label: "FAQ",       href: "/faq"          },
