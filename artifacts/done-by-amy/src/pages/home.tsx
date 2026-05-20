@@ -39,7 +39,7 @@ export default function Home() {
     title: "Done By Amy | AI Automation for Australian Small Businesses | TradieCatch",
     description: "Done By Amy builds AI chatbots, TradieCatch missed call systems, AutoDial AI calling agents, and workflow automations for small businesses across Australia. Smart Systems. Real Results. Zero Overwhelm.",
     keywords: "AI automation Australia, TradieCatch, tradie missed call system, AI chatbot small business Australia, AutoDial AI calling, workflow automation Australia, virtual assistant Australia, AI automation Sydney Melbourne Brisbane, Done By Amy, small business automation",
-    canonical: "https://donebya.my",
+    canonical: "https://www.donebyamy.com",
   });
 
   return (
@@ -691,9 +691,9 @@ export default function Home() {
           <div className="text-muted-foreground/60 text-center">
             <p>Australia-based · Working with businesses nationally</p>
             <p className="mt-1">
-              <a href="mailto:hello@donebyamy.com.au" className="hover:text-primary transition-colors">hello@donebyamy.com.au</a>
+              <a href="mailto:admin@donebyamy.com" className="hover:text-primary transition-colors">admin@donebyamy.com</a>
               {" · "}
-              <a href="https://donebya.my" className="hover:text-primary transition-colors">donebya.my</a>
+              <a href="https://www.donebyamy.com" className="hover:text-primary transition-colors">www.donebyamy.com</a>
             </p>
           </div>
           <p className="text-muted-foreground/40">&copy; {new Date().getFullYear()} Done By Amy.</p>

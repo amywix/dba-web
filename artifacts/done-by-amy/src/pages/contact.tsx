@@ -41,8 +41,8 @@ export default function Contact() {
   useSEO({
     title: "Contact Done By Amy | AI Automation for Australian Businesses | TradieCatch Enquiries",
     description: "Get in touch with Done By Amy for AI automation, TradieCatch missed call systems, AutoDial AI calling, or workflow automation for your Australian small business. Responds within 1 business day.",
-    keywords: "contact Done By Amy, TradieCatch enquiry, AI automation enquiry Australia, small business automation contact, hello@donebyamy.com.au",
-    canonical: "https://donebya.my/contact",
+    keywords: "contact Done By Amy, TradieCatch enquiry, AI automation enquiry Australia, small business automation contact, admin@donebyamy.com",
+    canonical: "https://www.donebyamy.com/contact",
   });
 
   const [submitted, setSubmitted] = useState(false);
@@ -98,8 +98,8 @@ export default function Contact() {
               {/* Contact details */}
               <div className="space-y-4">
                 {[
-                  { icon: Mail, label: "Email", value: "hello@donebyamy.com.au", href: "mailto:hello@donebyamy.com.au" },
-                  { icon: Globe, label: "Website", value: "donebya.my", href: "https://donebya.my" },
+                  { icon: Mail, label: "Email", value: "admin@donebyamy.com", href: "mailto:admin@donebyamy.com" },
+                  { icon: Globe, label: "Website", value: "www.donebyamy.com", href: "https://www.donebyamy.com" },
                   { icon: Phone, label: "Location", value: "Australia — serving businesses nationally", href: null },
                 ].map((item, i) => (
                   <div key={i} className="flex items-start gap-4 bg-white/[0.03] border border-white/10 rounded-xl p-4">

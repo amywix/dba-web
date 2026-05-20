@@ -23,7 +23,7 @@ export default function About() {
     title: "About Amy | AI Automation Specialist for Australian Small Businesses | Done By Amy",
     description: "Meet Amy — Australia's AI automation specialist helping small businesses save time, catch more leads, and grow without the overwhelm. Creator of TradieCatch and AutoDial.",
     keywords: "Amy AI automation Australia, Done By Amy founder, AI specialist Australia, small business automation expert, TradieCatch creator, Australian AI consultant",
-    canonical: "https://donebya.my/about",
+    canonical: "https://www.donebyamy.com/about",
   });
 
   return (

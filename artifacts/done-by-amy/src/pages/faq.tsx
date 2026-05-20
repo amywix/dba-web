@@ -160,7 +160,7 @@ export default function FAQ() {
     title: "FAQ | Done By Amy | AI Automation, TradieCatch & AutoDial Questions Answered",
     description: "Frequently asked questions about Done By Amy's AI automation services, TradieCatch missed call system, AutoDial AI calling agent, chatbots, workflow automations, and pricing for Australian small businesses.",
     keywords: "Done By Amy FAQ, TradieCatch questions, AutoDial FAQ, AI automation questions Australia, small business automation FAQ, how does TradieCatch work, AI chatbot FAQ Australia, automation pricing Australia",
-    canonical: "https://donebya.my/faq",
+    canonical: "https://www.donebyamy.com/faq",
   });
 
   const [activeCategory, setActiveCategory] = useState<string | null>(null);

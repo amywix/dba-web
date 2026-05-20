@@ -95,7 +95,7 @@ export default function GetStarted() {
     title: "Get Started with AI Automation | Done By Amy | TradieCatch & AutoDial",
     description: "Tell Done By Amy about your business and get a tailored AI automation plan. Covering TradieCatch missed call systems, AutoDial AI calling, chatbots, and workflow automations for Australian small businesses.",
     keywords: "get started AI automation Australia, TradieCatch sign up, AutoDial AI calling Australia, AI chatbot setup Australia, Done By Amy intake form, small business automation quote Australia",
-    canonical: "https://donebya.my/get-started",
+    canonical: "https://www.donebyamy.com/get-started",
   });
 
   const [, setLocation] = useLocation();
