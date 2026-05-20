@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useLocation } from "wouter";
+import { useLocation, useSearch } from "wouter";
 import { useSEO } from "@/hooks/use-seo";
 import Navbar from "@/components/navbar";
 import { motion } from "framer-motion";
@@ -28,7 +28,17 @@ import {
 import logoMark from "@assets/ChatGPT_Image_May_14,_2026,_04_49_39_PM_-_Copy_1779201943316.png";
 import amyAvatar from "@assets/avatar_1779201943316.png";
 
+const serviceOptions = [
+  "AI Automations",
+  "TradieCatch — Missed Call SMS",
+  "AI Caller (AutoDial)",
+  "Website",
+  "App",
+  "Not sure — help me decide",
+];
+
 const formSchema = z.object({
+  serviceInterest: z.string().min(1, "Please select a service"),
   firstName: z.string().min(2, "Please enter your first name"),
   lastName: z.string().min(2, "Please enter your last name"),
   email: z.string().email("Please enter a valid email address"),
@@ -100,10 +110,13 @@ export default function GetStarted() {
 
   const [, setLocation] = useLocation();
   const [submitted, setSubmitted] = useState(false);
+  const search = useSearch();
+  const serviceParam = new URLSearchParams(search).get("service") ?? "";
 
   const form = useForm<FormData>({
     resolver: zodResolver(formSchema),
     defaultValues: {
+      serviceInterest: serviceParam,
       firstName: "",
       lastName: "",
       email: "",
@@ -159,6 +172,36 @@ export default function GetStarted() {
               >
                 <Form {...form}>
                   <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-10">
+
+                    {/* Service Interest */}
+                    <div>
+                      <h2 className="text-xl font-bold text-white mb-1">What can we help you with?</h2>
+                      <p className="text-sm text-muted-foreground mb-6">Select the service you're most interested in.</p>
+                      <FormField
+                        control={form.control}
+                        name="serviceInterest"
+                        render={({ field }) => (
+                          <FormItem>
+                            <FormLabel className="text-white/80">I'm interested in</FormLabel>
+                            <Select onValueChange={field.onChange} defaultValue={field.value}>
+                              <FormControl>
+                                <SelectTrigger data-testid="select-service-interest" className="bg-white/5 border-white/10 text-white h-12 rounded-xl focus:border-primary/60">
+                                  <SelectValue placeholder="Select a service…" />
+                                </SelectTrigger>
+                              </FormControl>
+                              <SelectContent className="bg-card border-white/10">
+                                {serviceOptions.map((opt) => (
+                                  <SelectItem key={opt} value={opt} className="text-white focus:bg-primary/20">{opt}</SelectItem>
+                                ))}
+                              </SelectContent>
+                            </Select>
+                            <FormMessage />
+                          </FormItem>
+                        )}
+                      />
+                    </div>
+
+                    <div className="border-t border-white/5" />
 
                     {/* Section 1 — Contact Details */}
                     <div>

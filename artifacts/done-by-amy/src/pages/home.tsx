@@ -394,7 +394,7 @@ export default function Home() {
                 ))}
               </motion.ul>
               <motion.div variants={fadeUp}>
-                <Link href="/get-started">
+                <Link href="/get-started?service=AI+Caller+(AutoDial)">
                   <Button data-testid="autodial-cta-button" className="rounded-full bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 shadow-[0_0_24px_rgba(168,85,247,0.35)] hover:shadow-[0_0_40px_rgba(168,85,247,0.5)] hover:-translate-y-0.5 transition-all">
                     Activate AutoDial <ArrowRight className="w-4 h-4 ml-2" />
                   </Button>
