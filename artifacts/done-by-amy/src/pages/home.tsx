@@ -99,10 +99,10 @@ export default function Home() {
               initial={{ opacity: 0, scale: 0.92, y: 20 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
-              className="flex-1 relative w-full max-w-lg"
+              className="flex-1 relative w-full max-w-lg flex justify-center"
             >
               <div className="absolute inset-0 bg-primary/20 rounded-3xl blur-[80px] scale-90" />
-              <img src={tcScreen} alt="TradieCatch App" className="relative z-10 h-[480px] object-contain drop-shadow-2xl" />
+              <img src={tcScreen} alt="TradieCatch App" className="relative z-10 h-[480px] object-contain drop-shadow-2xl mx-auto" />
             </motion.div>
           </div>
         </div>
