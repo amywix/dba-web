@@ -536,24 +536,6 @@ export default function Home() {
                 role: "Plumber & Gas Fitter",
                 location: "Aspley, QLD",
               },
-              {
-                quote: "Amy automated our entire client onboarding — intake forms, welcome emails, calendar bookings. What used to take me an hour per client now just happens. Game changer.",
-                name: "Melissa Tran",
-                role: "Business Coach",
-                location: "Chermside, QLD",
-              },
-              {
-                quote: "Our social media inbox was a disaster — messages falling through the cracks, leads going cold. Amy's AI now responds instantly and flags hot leads for us. Our conversion rate is up.",
-                name: "Tyler Buchanan",
-                role: "Real Estate Agent",
-                location: "Caboolture, QLD",
-              },
-              {
-                quote: "I was sceptical about AI but Amy walked me through everything in plain English. Setup was fast, the bot handles our FAQ beautifully, and I finally get weekends back.",
-                name: "Sandra Kowalski",
-                role: "Salon Owner",
-                location: "Redcliffe, QLD",
-              },
             ].map((t, i) => (
               <motion.div
                 key={i} variants={fadeUp}
