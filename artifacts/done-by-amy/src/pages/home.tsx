@@ -14,6 +14,7 @@ import tcLogo from "@assets/tc_logo_1779201943317.png";
 import tcScreen from "@assets/tc_screen_1779201943317.png";
 import featureCards from "@assets/ChatGPT_Image_May_18,_2026,_11_32_20_AM_1779201943317.png";
 import autoDialScreen from "../assets/autodial_nobg.png";
+import yardYakkaApp from "@assets/FB060F94-1AD8-424D-B178-388CFC4050C3_1779333740152.png";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 28 },
@@ -399,10 +400,24 @@ export default function Home() {
               <p className="text-muted-foreground max-w-xl mx-auto">Lawn care & NDIS maintenance — Mackay, QLD</p>
             </motion.div>
 
-            {/* Intro */}
-            <motion.p variants={fadeUp} className="text-muted-foreground leading-relaxed text-center max-w-2xl mx-auto mb-12">
-              Mark runs a busy lawn mowing, landscaping, and NDIS maintenance business. His biggest pain point wasn't finding work — it was the admin mountain that came with it. Invoicing, chasing payments, and NDIS portal uploads were eating hours every week. Done By Amy automated the entire back-office so Mark can stay on the tools.
-            </motion.p>
+            {/* Intro + App mockup */}
+            <div className="grid md:grid-cols-2 gap-10 items-center mb-14">
+              <motion.div variants={fadeUp} className="order-last md:order-first">
+                <p className="text-muted-foreground leading-relaxed mb-4">
+                  Mark runs a busy lawn mowing, landscaping, and NDIS maintenance business. His biggest pain point wasn't finding work — it was the admin mountain that came with it. Invoicing, chasing payments, and NDIS portal uploads were eating hours every week.
+                </p>
+                <p className="text-muted-foreground leading-relaxed">
+                  Done By Amy built him a custom job-management app and automated the entire back-office workflow behind it — so Mark can stay on the tools.
+                </p>
+              </motion.div>
+              <motion.div variants={fadeUp} className="flex justify-center">
+                <img
+                  src={yardYakkaApp}
+                  alt="The Yard Yakka Boys custom job-management app"
+                  className="w-full max-w-[280px] h-auto drop-shadow-[0_24px_60px_rgba(168,85,247,0.25)]"
+                />
+              </motion.div>
+            </div>
 
             {/* Workflow steps */}
             <motion.div variants={fadeUp} className="space-y-4 mb-12">
