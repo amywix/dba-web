@@ -90,7 +90,7 @@ export default function Home() {
                   className="h-14 px-8 text-base rounded-full border border-white/10 hover:border-white/20 hover:bg-white/5 text-muted-foreground hover:text-white transition-all"
                   onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
                 >
-                  See How It Works <ArrowRight className="w-4 h-4 ml-2" />
+                  What We Do <ArrowRight className="w-4 h-4 ml-2" />
                 </Button>
               </motion.div>
             </motion.div>
