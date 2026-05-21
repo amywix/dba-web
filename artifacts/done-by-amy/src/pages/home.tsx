@@ -404,10 +404,10 @@ export default function Home() {
             <div className="grid md:grid-cols-2 gap-10 items-center mb-14">
               <motion.div variants={fadeUp} className="order-last md:order-first">
                 <p className="text-muted-foreground leading-relaxed mb-4">
-                  Mark runs a busy lawn mowing, landscaping, and NDIS maintenance business. His biggest pain point wasn't finding work — it was the admin mountain that came with it. Invoicing, chasing payments, and NDIS portal uploads were eating hours every week.
+                  Lucas runs a busy lawn mowing, landscaping, and NDIS maintenance business. His biggest pain point wasn't finding work — it was the admin mountain that came with it. Invoicing, chasing payments, and NDIS portal uploads were eating hours every week.
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
-                  Done By Amy built him a custom job-management app and automated the entire back-office workflow behind it — so Mark can stay on the tools.
+                  Done By Amy built him a custom job-management app and automated the entire back-office workflow behind it — so Lucas can stay on the tools.
                 </p>
               </motion.div>
               <motion.div variants={fadeUp} className="flex justify-center">
@@ -433,7 +433,7 @@ export default function Home() {
                 {
                   step: "02",
                   title: "Job Marked Complete",
-                  desc: "When Mark marks the job complete in the app, the automation fires instantly. No manual action required.",
+                  desc: "When Lucas marks the job complete in the app, the automation fires instantly. No manual action required.",
                   tag: "Action",
                 },
                 {
@@ -495,7 +495,7 @@ export default function Home() {
               <p className="text-white font-bold text-lg leading-relaxed mb-2">
                 "What used to take me half a day every week now just happens. Invoices go out, the NDIS sheet fills itself, and I can actually see what's been paid without digging through emails."
               </p>
-              <p className="text-primary font-semibold text-sm">— Mark, The Yard Yakka Boys · Mackay, QLD</p>
+              <p className="text-primary font-semibold text-sm">— Lucas, The Yard Yakka Boys · Mackay, QLD</p>
             </motion.div>
 
           </motion.div>
