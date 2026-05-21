@@ -385,6 +385,108 @@ export default function Home() {
       </section>
 
 
+      {/* ─── CASE STUDY: YARD YAKKA BOYS ─────────────────────────── */}
+      <section className="py-14 px-6 bg-white/[0.02] border-y border-white/[0.04]">
+        <div className="container mx-auto max-w-5xl">
+          <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
+
+            {/* Header */}
+            <motion.div variants={fadeUp} className="text-center mb-12">
+              <SectionLabel icon={CheckCircle2}>Case Study</SectionLabel>
+              <h2 className="text-4xl md:text-5xl font-black tracking-tight mb-3">
+                The Yard Yakka Boys
+              </h2>
+              <p className="text-muted-foreground max-w-xl mx-auto">Lawn care & NDIS maintenance — Mackay, QLD</p>
+            </motion.div>
+
+            {/* Intro */}
+            <motion.p variants={fadeUp} className="text-muted-foreground leading-relaxed text-center max-w-2xl mx-auto mb-12">
+              Mark runs a busy lawn mowing, landscaping, and NDIS maintenance business. His biggest pain point wasn't finding work — it was the admin mountain that came with it. Invoicing, chasing payments, and NDIS portal uploads were eating hours every week. Done By Amy automated the entire back-office so Mark can stay on the tools.
+            </motion.p>
+
+            {/* Workflow steps */}
+            <motion.div variants={fadeUp} className="space-y-4 mb-12">
+              <p className="text-xs font-black uppercase tracking-widest text-primary mb-6 text-center">The automation workflow</p>
+
+              {[
+                {
+                  step: "01",
+                  title: "Job Booked in App",
+                  desc: "Client books through the app. Job details — client name, address, service type, and whether the participant is agency-managed — are captured automatically.",
+                  tag: "Trigger",
+                },
+                {
+                  step: "02",
+                  title: "Job Marked Complete",
+                  desc: "When Mark marks the job complete in the app, the automation fires instantly. No manual action required.",
+                  tag: "Action",
+                },
+                {
+                  step: "03",
+                  title: "Invoice Created in QuickBooks",
+                  desc: "An invoice is automatically generated in QuickBooks with the correct line items, amounts, and client details — then sent directly to the appropriate billing email for payment.",
+                  tag: "QuickBooks",
+                },
+                {
+                  step: "04",
+                  title: "NDIS Portal Spreadsheet Updated",
+                  desc: "If the participant is agency-managed, the automation also adds the relevant entry to the monthly spreadsheet that gets uploaded to the NDIS portal — zero manual data entry.",
+                  tag: "Conditional",
+                  highlight: true,
+                },
+                {
+                  step: "05",
+                  title: "Unpaid Invoice Reminders",
+                  desc: "If an invoice isn't paid within the set timeframe, automated follow-up reminders are sent — no more chasing clients manually.",
+                  tag: "Follow-up",
+                },
+                {
+                  step: "06",
+                  title: "Remittance Reconciliation",
+                  desc: "When a remittance advice email arrives (often covering multiple invoices), the automation reads the email, extracts every invoice number and amount, matches them in QuickBooks, and marks them as paid — all in one pass.",
+                  tag: "Smart Match",
+                  highlight: true,
+                },
+              ].map((item, i) => (
+                <div
+                  key={i}
+                  className={`flex gap-5 p-6 rounded-2xl border transition-all ${
+                    item.highlight
+                      ? "bg-primary/[0.07] border-primary/30"
+                      : "bg-white/[0.03] border-white/[0.07]"
+                  }`}
+                >
+                  <div className="shrink-0 flex flex-col items-center gap-2">
+                    <div className={`w-9 h-9 rounded-xl flex items-center justify-center font-black text-xs ${item.highlight ? "bg-primary/30 border border-primary/50 text-primary" : "bg-white/5 border border-white/10 text-white/50"}`}>
+                      {item.step}
+                    </div>
+                    {i < 5 && <div className="w-px flex-1 min-h-[20px] bg-white/[0.06]" />}
+                  </div>
+                  <div className="flex-1 pt-1">
+                    <div className="flex flex-wrap items-center gap-2 mb-1">
+                      <span className="text-white font-bold text-sm">{item.title}</span>
+                      <span className={`text-[10px] font-black uppercase tracking-widest px-2 py-0.5 rounded-full ${item.highlight ? "bg-primary/20 text-primary" : "bg-white/5 text-white/40"}`}>
+                        {item.tag}
+                      </span>
+                    </div>
+                    <p className="text-muted-foreground text-sm leading-relaxed">{item.desc}</p>
+                  </div>
+                </div>
+              ))}
+            </motion.div>
+
+            {/* Result callout */}
+            <motion.div variants={fadeUp} className="rounded-2xl p-8 text-center bg-gradient-to-b from-primary/10 to-white/[0.02] border border-primary/20">
+              <p className="text-white font-bold text-lg leading-relaxed mb-2">
+                "What used to take me half a day every week now just happens. Invoices go out, the NDIS sheet fills itself, and I can actually see what's been paid without digging through emails."
+              </p>
+              <p className="text-primary font-semibold text-sm">— Mark, The Yard Yakka Boys · Mackay, QLD</p>
+            </motion.div>
+
+          </motion.div>
+        </div>
+      </section>
+
       {/* ─── TESTIMONIALS ─────────────────────────────────────────── */}
       <section className="py-14 px-6">
         <div className="container mx-auto max-w-6xl">
