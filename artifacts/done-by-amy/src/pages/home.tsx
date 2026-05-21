@@ -162,7 +162,7 @@ export default function Home() {
             {/* Chat window */}
             <motion.div
               initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}
-              className="flex-1 max-w-[360px] mx-auto w-full"
+              className="flex-1 max-w-[360px] mx-auto w-full order-last md:order-first"
             >
               <div className="rounded-3xl overflow-hidden shadow-[0_24px_80px_rgba(0,0,0,0.5),0_0_40px_rgba(168,85,247,0.15)] border border-white/[0.08]">
                 <div className="bg-gradient-to-r from-primary to-secondary px-5 py-4 flex items-center gap-3">
