@@ -10,6 +10,7 @@ import { ArrowLeft, ArrowRight, CheckCircle2, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { Checkbox } from "@/components/ui/checkbox";
 import {
   Form,
   FormControl,
@@ -43,50 +44,51 @@ const formSchema = z.object({
   lastName: z.string().min(2, "Please enter your last name"),
   email: z.string().email("Please enter a valid email address"),
   phone: z.string().min(8, "Please enter a valid phone number"),
-  businessName: z.string().min(2, "Please enter your business name"),
-  industry: z.string().min(1, "Please select your industry"),
-  businessSize: z.string().min(1, "Please select your team size"),
-  currentTools: z.string().optional(),
   websiteUrl: z.string().optional(),
-  dailyTasks: z.string().min(20, "Please describe your daily tasks in at least 20 characters"),
-  leadProcess: z.string().min(10, "Please describe how you handle leads"),
-  biggestChallenge: z.string().min(20, "Please describe your challenge in at least 20 characters"),
-  automationGoals: z.string().min(20, "Please describe your goals in at least 20 characters"),
-  monthlyRevenue: z.string().optional(),
+  businessName: z.string().min(2, "Please enter your business name"),
+  currentTools: z.string().optional(),
+  timeWasters: z.array(z.string()).min(1, "Pick at least one"),
+  leadChannels: z.array(z.string()).min(1, "Pick at least one"),
+  automationWishlist: z.array(z.string()).min(1, "Pick at least one"),
+  anythingElse: z.string().optional(),
   hearAboutUs: z.string().optional(),
 });
 
 type FormData = z.infer<typeof formSchema>;
 
-const industries = [
-  "Trades & Construction",
-  "Real Estate",
-  "Allied Health & Clinics",
-  "Coaching & Consulting",
-  "Hospitality & Cafes",
-  "Retail & eCommerce",
-  "Legal & Professional Services",
-  "Beauty & Wellness",
-  "Education & Training",
-  "Finance & Accounting",
-  "Other",
+const timeWasterOptions = [
+  "Answering the same enquiries over and over",
+  "Missed calls / chasing missed leads",
+  "Sending quotes & invoices manually",
+  "Chasing unpaid invoices",
+  "Following up cold leads",
+  "Booking & rescheduling appointments",
+  "Copying info between spreadsheets / apps",
+  "Replying to social media DMs",
+  "Onboarding new clients",
+  "Posting on social media",
 ];
 
-const businessSizes = [
-  "Just me (solo operator)",
-  "2–5 team members",
-  "6–15 team members",
-  "16–50 team members",
-  "50+ team members",
+const leadChannelOptions = [
+  "Phone calls",
+  "Website enquiries",
+  "Facebook / Instagram DMs",
+  "Email",
+  "Word of mouth / referrals",
+  "Google Maps / local search",
+  "Walk-ins",
 ];
 
-const revenueRanges = [
-  "Under $100k/year",
-  "$100k – $250k/year",
-  "$250k – $500k/year",
-  "$500k – $1M/year",
-  "Over $1M/year",
-  "Prefer not to say",
+const automationWishlistOptions = [
+  "Auto-reply to missed calls (SMS)",
+  "AI chatbot on my website",
+  "AI chatbot on Facebook/Instagram",
+  "Auto-create invoices from completed jobs",
+  "Auto-follow-up unpaid invoices",
+  "Auto-book appointments into my calendar",
+  "Sync data between my apps (Xero, CRM, etc.)",
+  "AI outbound calling (AutoDial)",
+  "Custom workflow / something not listed",
 ];
 
 const hearAboutOptions = [
@@ -124,16 +126,13 @@ export default function GetStarted() {
       lastName: "",
       email: "",
       phone: "",
-      businessName: "",
-      industry: "",
-      businessSize: "",
-      currentTools: "",
       websiteUrl: "",
-      dailyTasks: "",
-      leadProcess: "",
-      biggestChallenge: "",
-      automationGoals: "",
-      monthlyRevenue: "",
+      businessName: "",
+      currentTools: "",
+      timeWasters: [],
+      leadChannels: [],
+      automationWishlist: [],
+      anythingElse: "",
       hearAboutUs: "",
     },
   });
@@ -288,21 +287,11 @@ export default function GetStarted() {
                             </FormItem>
                           )}
                         />
-                      </div>
-                    </div>
-
-                    <div className="border-t border-white/5" />
-
-                    {/* Section 2 — Business Info */}
-                    <div>
-                      <h2 className="text-xl font-bold text-white mb-1">About your business</h2>
-                      <p className="text-sm text-muted-foreground mb-6">Help us understand your setup.</p>
-                      <div className="grid sm:grid-cols-2 gap-5">
                         <FormField
                           control={form.control}
                           name="businessName"
                           render={({ field }) => (
-                            <FormItem className="sm:col-span-2">
+                            <FormItem>
                               <FormLabel className="text-white/80">Business name</FormLabel>
                               <FormControl>
                                 <Input
@@ -318,66 +307,18 @@ export default function GetStarted() {
                         />
                         <FormField
                           control={form.control}
-                          name="industry"
+                          name="websiteUrl"
                           render={({ field }) => (
                             <FormItem>
-                              <FormLabel className="text-white/80">Industry</FormLabel>
-                              <Select onValueChange={field.onChange} defaultValue={field.value}>
-                                <FormControl>
-                                  <SelectTrigger data-testid="select-industry" className="bg-white/5 border-white/10 text-white h-12 rounded-xl focus:border-primary/60">
-                                    <SelectValue placeholder="Select your industry" />
-                                  </SelectTrigger>
-                                </FormControl>
-                                <SelectContent className="bg-card border-white/10">
-                                  {industries.map((ind) => (
-                                    <SelectItem key={ind} value={ind} className="text-white focus:bg-primary/20">{ind}</SelectItem>
-                                  ))}
-                                </SelectContent>
-                              </Select>
-                              <FormMessage />
-                            </FormItem>
-                          )}
-                        />
-                        <FormField
-                          control={form.control}
-                          name="businessSize"
-                          render={({ field }) => (
-                            <FormItem>
-                              <FormLabel className="text-white/80">Team size</FormLabel>
-                              <Select onValueChange={field.onChange} defaultValue={field.value}>
-                                <FormControl>
-                                  <SelectTrigger data-testid="select-business-size" className="bg-white/5 border-white/10 text-white h-12 rounded-xl focus:border-primary/60">
-                                    <SelectValue placeholder="Select team size" />
-                                  </SelectTrigger>
-                                </FormControl>
-                                <SelectContent className="bg-card border-white/10">
-                                  {businessSizes.map((size) => (
-                                    <SelectItem key={size} value={size} className="text-white focus:bg-primary/20">{size}</SelectItem>
-                                  ))}
-                                </SelectContent>
-                              </Select>
-                              <FormMessage />
-                            </FormItem>
-                          )}
-                        />
-                        <FormField
-                          control={form.control}
-                          name="monthlyRevenue"
-                          render={({ field }) => (
-                            <FormItem className="sm:col-span-2">
-                              <FormLabel className="text-white/80">Annual revenue <span className="text-muted-foreground/60">(optional)</span></FormLabel>
-                              <Select onValueChange={field.onChange} defaultValue={field.value}>
-                                <FormControl>
-                                  <SelectTrigger data-testid="select-revenue" className="bg-white/5 border-white/10 text-white h-12 rounded-xl focus:border-primary/60">
-                                    <SelectValue placeholder="Select a range" />
-                                  </SelectTrigger>
-                                </FormControl>
-                                <SelectContent className="bg-card border-white/10">
-                                  {revenueRanges.map((r) => (
-                                    <SelectItem key={r} value={r} className="text-white focus:bg-primary/20">{r}</SelectItem>
-                                  ))}
-                                </SelectContent>
-                              </Select>
+                              <FormLabel className="text-white/80">Website URL <span className="text-muted-foreground/60">(optional)</span></FormLabel>
+                              <FormControl>
+                                <Input
+                                  data-testid="input-website-url"
+                                  placeholder="www.mybusiness.com.au"
+                                  className="bg-white/5 border-white/10 text-white placeholder:text-muted-foreground/50 focus:border-primary/60 h-12 rounded-xl"
+                                  {...field}
+                                />
+                              </FormControl>
                               <FormMessage />
                             </FormItem>
                           )}
@@ -387,120 +328,200 @@ export default function GetStarted() {
 
                     <div className="border-t border-white/5" />
 
-                    {/* Section 3 — Automation needs */}
-                    <div>
-                      <h2 className="text-xl font-bold text-white mb-1">Your workflow</h2>
-                      <p className="text-sm text-muted-foreground mb-6">This is where the magic happens — be as specific as you like.</p>
-                      <div className="space-y-5">
-                        <FormField
-                          control={form.control}
-                          name="dailyTasks"
-                          render={({ field }) => (
-                            <FormItem>
-                              <FormLabel className="text-white/80">Walk me through a typical work day — what tasks do you do over and over?</FormLabel>
-                              <FormControl>
-                                <Textarea
-                                  data-testid="textarea-daily-tasks"
-                                  placeholder="e.g. Answer the same questions on Facebook, manually send invoices after each job, call back missed leads, copy job details into spreadsheets..."
-                                  className="bg-white/5 border-white/10 text-white placeholder:text-muted-foreground/50 focus:border-primary/60 rounded-xl min-h-[110px] resize-none"
-                                  {...field}
-                                />
-                              </FormControl>
-                              <FormMessage />
-                            </FormItem>
-                          )}
-                        />
-                        <FormField
-                          control={form.control}
-                          name="leadProcess"
-                          render={({ field }) => (
-                            <FormItem>
-                              <FormLabel className="text-white/80">How do you currently handle new enquiries or leads?</FormLabel>
-                              <FormControl>
-                                <Textarea
-                                  data-testid="textarea-lead-process"
-                                  placeholder="e.g. They call or text my mobile, I reply when I can. Sometimes I miss them and they go elsewhere. I don't have a system for following up..."
-                                  className="bg-white/5 border-white/10 text-white placeholder:text-muted-foreground/50 focus:border-primary/60 rounded-xl min-h-[100px] resize-none"
-                                  {...field}
-                                />
-                              </FormControl>
-                              <FormMessage />
-                            </FormItem>
-                          )}
-                        />
-                        <FormField
-                          control={form.control}
-                          name="websiteUrl"
-                          render={({ field }) => (
-                            <FormItem>
-                              <FormLabel className="text-white/80">Your website URL <span className="text-muted-foreground/60">(optional)</span></FormLabel>
-                              <FormControl>
-                                <Input
-                                  data-testid="input-website-url"
-                                  placeholder="e.g. www.mybusiness.com.au"
-                                  className="bg-white/5 border-white/10 text-white placeholder:text-muted-foreground/50 focus:border-primary/60 h-12 rounded-xl"
-                                  {...field}
-                                />
-                              </FormControl>
-                              <FormMessage />
-                            </FormItem>
-                          )}
-                        />
-                        <FormField
-                          control={form.control}
-                          name="biggestChallenge"
-                          render={({ field }) => (
-                            <FormItem>
-                              <FormLabel className="text-white/80">What is your biggest day-to-day challenge right now?</FormLabel>
-                              <FormControl>
-                                <Textarea
-                                  data-testid="textarea-challenge"
-                                  placeholder="e.g. I miss calls when I'm on a job, and I lose leads because I can't reply straight away. I also spend hours every week following up quotes manually..."
-                                  className="bg-white/5 border-white/10 text-white placeholder:text-muted-foreground/50 focus:border-primary/60 rounded-xl min-h-[110px] resize-none"
-                                  {...field}
-                                />
-                              </FormControl>
-                              <FormMessage />
-                            </FormItem>
-                          )}
-                        />
-                        <FormField
-                          control={form.control}
-                          name="automationGoals"
-                          render={({ field }) => (
-                            <FormItem>
-                              <FormLabel className="text-white/80">What would you most like to automate or improve?</FormLabel>
-                              <FormControl>
-                                <Textarea
-                                  data-testid="textarea-goals"
-                                  placeholder="e.g. Automatically reply to missed calls, send appointment reminders, follow up leads, connect my booking system to my invoicing..."
-                                  className="bg-white/5 border-white/10 text-white placeholder:text-muted-foreground/50 focus:border-primary/60 rounded-xl min-h-[110px] resize-none"
-                                  {...field}
-                                />
-                              </FormControl>
-                              <FormMessage />
-                            </FormItem>
-                          )}
-                        />
-                        <FormField
-                          control={form.control}
-                          name="currentTools"
-                          render={({ field }) => (
-                            <FormItem>
-                              <FormLabel className="text-white/80">What tools or software do you currently use? <span className="text-muted-foreground/60">(optional)</span></FormLabel>
-                              <FormControl>
-                                <Input
-                                  data-testid="input-current-tools"
-                                  placeholder="e.g. ServiceM8, Xero, Mailchimp, Google Workspace, HubSpot..."
-                                  className="bg-white/5 border-white/10 text-white placeholder:text-muted-foreground/50 focus:border-primary/60 h-12 rounded-xl"
-                                  {...field}
-                                />
-                              </FormControl>
-                              <FormMessage />
-                            </FormItem>
-                          )}
-                        />
+                    {/* Section — Your workflow (checkbox-based) */}
+                    <div className="space-y-10">
+                      <div>
+                        <h2 className="text-xl font-bold text-white mb-1">Your workflow</h2>
+                        <p className="text-sm text-muted-foreground mb-6">Just tick what applies — takes 30 seconds.</p>
                       </div>
+
+                      {/* Time wasters */}
+                      <FormField
+                        control={form.control}
+                        name="timeWasters"
+                        render={() => (
+                          <FormItem>
+                            <FormLabel className="text-white/90 text-base font-semibold">What's eating your time right now? <span className="text-muted-foreground/60 font-normal text-sm">(tick all that apply)</span></FormLabel>
+                            <div className="grid sm:grid-cols-2 gap-2 mt-3">
+                              {timeWasterOptions.map((opt) => (
+                                <FormField
+                                  key={opt}
+                                  control={form.control}
+                                  name="timeWasters"
+                                  render={({ field }) => {
+                                    const checked = field.value?.includes(opt);
+                                    return (
+                                      <FormItem className="m-0">
+                                        <FormLabel
+                                          className={`flex items-start gap-3 p-3 rounded-xl border cursor-pointer transition-colors ${
+                                            checked
+                                              ? "bg-primary/15 border-primary/50 text-white"
+                                              : "bg-white/[0.03] border-white/10 text-white/80 hover:border-white/20"
+                                          }`}
+                                        >
+                                          <FormControl>
+                                            <Checkbox
+                                              data-testid={`checkbox-timewaster-${opt}`}
+                                              checked={checked}
+                                              onCheckedChange={(c) => {
+                                                const next = c
+                                                  ? [...(field.value ?? []), opt]
+                                                  : (field.value ?? []).filter((v: string) => v !== opt);
+                                                field.onChange(next);
+                                              }}
+                                              className="mt-0.5 border-white/30 data-[state=checked]:bg-primary data-[state=checked]:border-primary"
+                                            />
+                                          </FormControl>
+                                          <span className="text-sm font-normal leading-snug">{opt}</span>
+                                        </FormLabel>
+                                      </FormItem>
+                                    );
+                                  }}
+                                />
+                              ))}
+                            </div>
+                            <FormMessage />
+                          </FormItem>
+                        )}
+                      />
+
+                      {/* Lead channels */}
+                      <FormField
+                        control={form.control}
+                        name="leadChannels"
+                        render={() => (
+                          <FormItem>
+                            <FormLabel className="text-white/90 text-base font-semibold">How do leads currently reach you? <span className="text-muted-foreground/60 font-normal text-sm">(tick all that apply)</span></FormLabel>
+                            <div className="grid sm:grid-cols-2 gap-2 mt-3">
+                              {leadChannelOptions.map((opt) => (
+                                <FormField
+                                  key={opt}
+                                  control={form.control}
+                                  name="leadChannels"
+                                  render={({ field }) => {
+                                    const checked = field.value?.includes(opt);
+                                    return (
+                                      <FormItem className="m-0">
+                                        <FormLabel
+                                          className={`flex items-start gap-3 p-3 rounded-xl border cursor-pointer transition-colors ${
+                                            checked
+                                              ? "bg-primary/15 border-primary/50 text-white"
+                                              : "bg-white/[0.03] border-white/10 text-white/80 hover:border-white/20"
+                                          }`}
+                                        >
+                                          <FormControl>
+                                            <Checkbox
+                                              data-testid={`checkbox-leadchannel-${opt}`}
+                                              checked={checked}
+                                              onCheckedChange={(c) => {
+                                                const next = c
+                                                  ? [...(field.value ?? []), opt]
+                                                  : (field.value ?? []).filter((v: string) => v !== opt);
+                                                field.onChange(next);
+                                              }}
+                                              className="mt-0.5 border-white/30 data-[state=checked]:bg-primary data-[state=checked]:border-primary"
+                                            />
+                                          </FormControl>
+                                          <span className="text-sm font-normal leading-snug">{opt}</span>
+                                        </FormLabel>
+                                      </FormItem>
+                                    );
+                                  }}
+                                />
+                              ))}
+                            </div>
+                            <FormMessage />
+                          </FormItem>
+                        )}
+                      />
+
+                      {/* Automation wishlist */}
+                      <FormField
+                        control={form.control}
+                        name="automationWishlist"
+                        render={() => (
+                          <FormItem>
+                            <FormLabel className="text-white/90 text-base font-semibold">What would you most like to automate? <span className="text-muted-foreground/60 font-normal text-sm">(tick all that apply)</span></FormLabel>
+                            <div className="grid sm:grid-cols-2 gap-2 mt-3">
+                              {automationWishlistOptions.map((opt) => (
+                                <FormField
+                                  key={opt}
+                                  control={form.control}
+                                  name="automationWishlist"
+                                  render={({ field }) => {
+                                    const checked = field.value?.includes(opt);
+                                    return (
+                                      <FormItem className="m-0">
+                                        <FormLabel
+                                          className={`flex items-start gap-3 p-3 rounded-xl border cursor-pointer transition-colors ${
+                                            checked
+                                              ? "bg-primary/15 border-primary/50 text-white"
+                                              : "bg-white/[0.03] border-white/10 text-white/80 hover:border-white/20"
+                                          }`}
+                                        >
+                                          <FormControl>
+                                            <Checkbox
+                                              data-testid={`checkbox-wishlist-${opt}`}
+                                              checked={checked}
+                                              onCheckedChange={(c) => {
+                                                const next = c
+                                                  ? [...(field.value ?? []), opt]
+                                                  : (field.value ?? []).filter((v: string) => v !== opt);
+                                                field.onChange(next);
+                                              }}
+                                              className="mt-0.5 border-white/30 data-[state=checked]:bg-primary data-[state=checked]:border-primary"
+                                            />
+                                          </FormControl>
+                                          <span className="text-sm font-normal leading-snug">{opt}</span>
+                                        </FormLabel>
+                                      </FormItem>
+                                    );
+                                  }}
+                                />
+                              ))}
+                            </div>
+                            <FormMessage />
+                          </FormItem>
+                        )}
+                      />
+
+                      <FormField
+                        control={form.control}
+                        name="currentTools"
+                        render={({ field }) => (
+                          <FormItem>
+                            <FormLabel className="text-white/80">What tools or software do you currently use? <span className="text-muted-foreground/60">(optional)</span></FormLabel>
+                            <FormControl>
+                              <Input
+                                data-testid="input-current-tools"
+                                placeholder="e.g. ServiceM8, Xero, Mailchimp, Google Workspace, HubSpot..."
+                                className="bg-white/5 border-white/10 text-white placeholder:text-muted-foreground/50 focus:border-primary/60 h-12 rounded-xl"
+                                {...field}
+                              />
+                            </FormControl>
+                            <FormMessage />
+                          </FormItem>
+                        )}
+                      />
+
+                      <FormField
+                        control={form.control}
+                        name="anythingElse"
+                        render={({ field }) => (
+                          <FormItem>
+                            <FormLabel className="text-white/80">Anything else we should know? <span className="text-muted-foreground/60">(optional)</span></FormLabel>
+                            <FormControl>
+                              <Textarea
+                                data-testid="textarea-anything-else"
+                                placeholder="e.g. Specific deadline, a custom workflow you have in mind, the one thing that would change everything for you..."
+                                className="bg-white/5 border-white/10 text-white placeholder:text-muted-foreground/50 focus:border-primary/60 rounded-xl min-h-[90px] resize-none"
+                                {...field}
+                              />
+                            </FormControl>
+                            <FormMessage />
+                          </FormItem>
+                        )}
+                      />
                     </div>
 
                     <div className="border-t border-white/5" />
