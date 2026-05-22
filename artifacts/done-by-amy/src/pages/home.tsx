@@ -288,160 +288,89 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ─── TRADIECATCH (FLAGSHIP) ───────────────────────────────── */}
-      <section id="tradiecatch" className="py-24 px-6 overflow-hidden relative">
+      {/* ─── FEATURED PRODUCTS & CASE STUDY ───────────────────────── */}
+      <section id="featured" className="py-24 px-6 overflow-hidden relative">
         <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-secondary/10 rounded-full blur-[140px] pointer-events-none" />
+        <div className="absolute left-0 bottom-0 w-[500px] h-[500px] bg-primary/10 rounded-full blur-[140px] pointer-events-none" />
         <div className="container mx-auto max-w-6xl relative z-10">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            
-            <motion.div
-              initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={stagger}
-              className="order-2 lg:order-1 space-y-8"
-            >
-              <motion.div variants={fadeUp}>
-                <img src={tcLogo} alt="TradieCatch Logo" className="h-10 sm:h-12 object-contain mb-8" />
-                <h2 className="text-4xl md:text-5xl font-black leading-tight tracking-tight text-white mb-6">
-                  Never lose a job to<br/>a missed call again.
-                </h2>
-                <p className="text-lg text-muted-foreground leading-relaxed max-w-lg">
-                  When you're on the tools, you can't always answer the phone. TradieCatch automatically fires a custom SMS back to missed callers instantly, capturing the lead before they ring your competitor.
+          <motion.div
+            initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={stagger}
+            className="text-center max-w-3xl mx-auto mb-16"
+          >
+            <motion.div variants={fadeUp} className="flex justify-center"><SectionBadge>Featured Work</SectionBadge></motion.div>
+            <motion.h2 variants={fadeUp} className="text-4xl md:text-5xl font-black tracking-tight text-white leading-tight mb-6">
+              Two flagship products. One real-world result.
+            </motion.h2>
+            <motion.p variants={fadeUp} className="text-lg text-muted-foreground leading-relaxed">
+              Dive into the systems we're best known for — and see what they look like in the wild.
+            </motion.p>
+          </motion.div>
+
+          <motion.div
+            initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={stagger}
+            className="grid md:grid-cols-3 gap-6"
+          >
+            {/* TradieCatch card */}
+            <motion.div variants={fadeUp} className="group flex flex-col p-8 rounded-3xl bg-white/[0.02] border border-white/[0.06] hover:border-primary/40 hover:bg-white/[0.04] transition-all duration-500 relative overflow-hidden">
+              <div className="absolute -top-12 -right-12 w-48 h-48 bg-secondary/10 rounded-full blur-3xl pointer-events-none" />
+              <div className="relative z-10 flex flex-col h-full">
+                <div className="text-xs font-bold tracking-[0.2em] text-primary mb-4">PRODUCT · $99/MO</div>
+                <img src={tcLogo} alt="TradieCatch" className="h-9 object-contain object-left mb-6" />
+                <h3 className="text-2xl font-black text-white mb-3 tracking-tight leading-snug">Never miss a job to a missed call.</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed mb-8">
+                  Instant SMS auto-reply to every missed call. Capture the lead before your competitor does.
                 </p>
-              </motion.div>
-              
-              <motion.ul variants={stagger} className="space-y-4 pt-4">
-                {[
-                  "Works instantly — zero app downloads needed",
-                  "Fully customizable auto-reply messaging",
-                  "Captures job details while you keep working",
-                  "Pays for itself with just one saved job",
-                ].map((item, i) => (
-                  <motion.li variants={fadeUp} key={i} className="flex items-start gap-4 text-white/80">
-                    <div className="mt-1 bg-primary/20 p-1 rounded-full"><CheckCircle2 className="text-primary w-4 h-4" /></div>
-                    <span className="leading-snug">{item}</span>
-                  </motion.li>
-                ))}
-              </motion.ul>
-              
-              <motion.div variants={fadeUp} className="flex flex-col sm:flex-row gap-4 pt-6">
-                <Link href="/get-started?service=TradieCatch">
-                  <Button className="h-14 px-8 rounded-full bg-white text-black hover:bg-white/90 font-bold w-full sm:w-auto">
-                    Get TradieCatch — $99/mo
-                  </Button>
+                <div className="mt-auto pt-6 flex justify-center">
+                  <img src={tcScreen} alt="TradieCatch screen" className="w-full max-w-[200px] object-contain drop-shadow-2xl mb-6" />
+                </div>
+                <Link href="/tradiecatch" className="inline-flex items-center gap-2 text-white font-bold text-sm group-hover:text-primary transition-colors">
+                  Explore TradieCatch <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
                 </Link>
-                <Button variant="outline" className="h-14 px-8 rounded-full border-white/10 hover:bg-white/5 hover:border-white/20 w-full sm:w-auto text-white">
-                  SMS Demo: 0485 050 788
-                </Button>
-              </motion.div>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ duration: 0.8, ease: "easeOut" }}
-              className="order-1 lg:order-2 flex justify-center lg:justify-end relative"
-            >
-              <div className="relative w-full max-w-[400px]">
-                <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-secondary/20 rounded-[40px] blur-2xl transform rotate-6 scale-95" />
-                <img src={tcScreen} alt="TradieCatch Interface" className="relative z-10 w-full object-contain drop-shadow-2xl" />
-              </div>
-            </motion.div>
-            
-          </div>
-        </div>
-      </section>
-
-      {/* ─── AUTODIAL ─────────────────────────────────────────────── */}
-      <section id="autodial" className="py-24 px-6 overflow-hidden relative bg-white/[0.01] border-y border-white/[0.04]">
-        <div className="absolute left-0 top-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/10 rounded-full blur-[140px] pointer-events-none" />
-        <div className="container mx-auto max-w-6xl relative z-10">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            
-            <motion.div
-              initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.8, ease: "easeOut" }}
-              className="flex justify-center lg:justify-start relative"
-            >
-              <div className="relative w-full max-w-[460px]">
-                <div className="absolute inset-0 bg-primary/15 rounded-full blur-3xl scale-75" />
-                <img src={autoDialScreen} alt="AutoDial Dashboard" className="relative z-10 w-full object-contain drop-shadow-2xl" />
               </div>
             </motion.div>
 
-            <motion.div
-              initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={stagger}
-              className="space-y-8"
-            >
-              <motion.div variants={fadeUp}>
-                <SectionBadge>AI Outbound Calling</SectionBadge>
-                <h2 className="text-4xl md:text-5xl font-black leading-tight tracking-tight text-white mb-6">
-                  AutoDial. Your tireless<br/>telemarketing agent.
-                </h2>
-                <p className="text-lg text-muted-foreground leading-relaxed max-w-lg">
-                  An AI voice agent that sounds human, works 24/7, handles objections, qualifies leads, and books appointments straight into your calendar. Scale your outreach instantly.
+            {/* AutoDial card */}
+            <motion.div variants={fadeUp} className="group flex flex-col p-8 rounded-3xl bg-white/[0.02] border border-white/[0.06] hover:border-primary/40 hover:bg-white/[0.04] transition-all duration-500 relative overflow-hidden">
+              <div className="absolute -top-12 -left-12 w-48 h-48 bg-primary/10 rounded-full blur-3xl pointer-events-none" />
+              <div className="relative z-10 flex flex-col h-full">
+                <div className="text-xs font-bold tracking-[0.2em] text-primary mb-4">PRODUCT · AI VOICE</div>
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="w-10 h-10 rounded-2xl bg-primary/15 border border-primary/30 flex items-center justify-center">
+                    <PhoneOutgoing className="w-5 h-5 text-primary" />
+                  </div>
+                  <span className="text-2xl font-black text-white tracking-tight">AutoDial</span>
+                </div>
+                <h3 className="text-2xl font-black text-white mb-3 tracking-tight leading-snug">Your tireless AI sales agent.</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed mb-8">
+                  A human-sounding voice agent that qualifies leads, handles objections and books appointments — 24/7.
                 </p>
-              </motion.div>
-              
-              <motion.ul variants={stagger} className="grid sm:grid-cols-2 gap-6 pt-4">
-                {[
-                  { title: "Human-Like Voice", desc: "Natural pauses, intonations, and instant replies." },
-                  { title: "Smart Qualifying", desc: "Filters tire-kickers and finds the real buyers." },
-                  { title: "Direct Booking", desc: "Integrates with Calendly to book appointments." },
-                  { title: "Endless Scale", desc: "Make 10 calls or 10,000 calls simultaneously." },
-                ].map((feature, i) => (
-                  <motion.li variants={fadeUp} key={i} className="bg-white/[0.03] p-5 rounded-2xl border border-white/[0.06]">
-                    <h4 className="text-white font-bold text-sm mb-2">{feature.title}</h4>
-                    <p className="text-muted-foreground text-xs leading-relaxed">{feature.desc}</p>
-                  </motion.li>
-                ))}
-              </motion.ul>
-              
-              <motion.div variants={fadeUp} className="pt-4">
-                <Link href="/get-started?service=AutoDial">
-                  <Button className="h-14 px-8 rounded-full bg-primary hover:bg-primary/90 text-white font-bold w-full sm:w-auto">
-                    Deploy AutoDial
-                  </Button>
+                <div className="mt-auto pt-6 flex justify-center">
+                  <img src={autoDialScreen} alt="AutoDial" className="w-full max-w-[220px] object-contain drop-shadow-2xl mb-6" />
+                </div>
+                <Link href="/autodial" className="inline-flex items-center gap-2 text-white font-bold text-sm group-hover:text-primary transition-colors">
+                  Explore AutoDial <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
                 </Link>
-              </motion.div>
-            </motion.div>
-            
-          </div>
-        </div>
-      </section>
-
-      {/* ─── CASE STUDY: YARD YAKKA ───────────────────────────────── */}
-      <section className="py-24 px-6">
-        <div className="container mx-auto max-w-5xl">
-          <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={stagger}>
-            
-            <motion.div variants={fadeUp} className="text-center mb-16">
-              <SectionBadge>Case Study</SectionBadge>
-              <h2 className="text-4xl md:text-5xl font-black tracking-tight text-white mb-4">
-                The Yard Yakka Boys
-              </h2>
-              <p className="text-muted-foreground text-lg">Lawn Care & NDIS Maintenance · Mackay, QLD</p>
+              </div>
             </motion.div>
 
-            <div className="grid md:grid-cols-12 gap-12 items-center bg-white/[0.02] border border-white/[0.06] rounded-[40px] p-8 md:p-12 overflow-hidden relative">
-              <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/10 rounded-full blur-[100px] pointer-events-none" />
-              
-              <motion.div variants={fadeUp} className="md:col-span-7 space-y-6 relative z-10">
-                <h3 className="text-2xl font-bold text-white mb-4">From admin chaos to total clarity.</h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  Lucas was losing half his week to admin: generating invoices, uploading to NDIS portals, and chasing unpaid bills. The work was flowing in, but the back-office was choking the business.
+            {/* Yard Yakka card */}
+            <motion.div variants={fadeUp} className="group flex flex-col p-8 rounded-3xl bg-white/[0.02] border border-white/[0.06] hover:border-primary/40 hover:bg-white/[0.04] transition-all duration-500 relative overflow-hidden">
+              <div className="absolute -bottom-12 -right-12 w-48 h-48 bg-primary/10 rounded-full blur-3xl pointer-events-none" />
+              <div className="relative z-10 flex flex-col h-full">
+                <div className="text-xs font-bold tracking-[0.2em] text-primary mb-4">CASE STUDY</div>
+                <h3 className="text-2xl font-black text-white mb-2 tracking-tight leading-snug">The Yard Yakka Boys</h3>
+                <p className="text-muted-foreground text-xs uppercase tracking-widest font-bold mb-6">Lawn care & NDIS · Mackay, QLD</p>
+                <p className="text-muted-foreground text-sm leading-relaxed mb-8">
+                  A bespoke mobile app + 6-step workflow gave Lucas back half a week — invoicing, NDIS reporting and reconciliation, all hands-off.
                 </p>
-                <p className="text-muted-foreground leading-relaxed">
-                  We built a bespoke mobile app for his team and wired up a 6-step automation workflow. Now, when a job is marked complete on-site, the invoice is instantly generated in QuickBooks, the NDIS spreadsheet is updated, and automated follow-ups handle late payments.
-                </p>
-                <blockquote className="border-l-2 border-primary pl-5 py-2 mt-8">
-                  <p className="text-white italic text-sm md:text-base leading-relaxed mb-3">
-                    "What used to take me half a day every week now just happens. Invoices go out, the NDIS sheet fills itself, and I can actually see what's been paid without digging through emails."
-                  </p>
-                  <footer className="text-primary text-xs font-bold uppercase tracking-wider">— Lucas, Owner</footer>
-                </blockquote>
-              </motion.div>
-
-              <motion.div variants={fadeUp} className="md:col-span-5 flex justify-center relative z-10">
-                <img src={yardYakkaApp} alt="Yard Yakka App" className="w-full max-w-[260px] object-contain drop-shadow-2xl" />
-              </motion.div>
-            </div>
-
+                <div className="mt-auto pt-6 flex justify-center">
+                  <img src={yardYakkaApp} alt="Yard Yakka App" className="w-full max-w-[160px] object-contain drop-shadow-2xl mb-6" />
+                </div>
+                <Link href="/case-studies/yard-yakka" className="inline-flex items-center gap-2 text-white font-bold text-sm group-hover:text-primary transition-colors">
+                  Read the case study <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+                </Link>
+              </div>
+            </motion.div>
           </motion.div>
         </div>
       </section>
