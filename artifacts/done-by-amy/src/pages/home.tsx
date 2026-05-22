@@ -49,63 +49,43 @@ export default function Home() {
 
       {/* ─── HERO ─────────────────────────────────────────────────── */}
       <section className="relative pt-36 pb-24 md:pt-52 md:pb-36 px-6 overflow-hidden">
-        {/* Background radial glow */}
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[900px] bg-primary/15 rounded-full blur-[140px]" />
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/10 to-primary/20" />
+          <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[900px] h-[500px] bg-primary/20 rounded-full blur-[140px]" />
           <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-secondary/10 rounded-full blur-[100px]" />
         </div>
-
-        <div className="container mx-auto relative z-10">
-          <div className="flex flex-col md:flex-row items-center gap-12 lg:gap-20">
-            <motion.div
-              initial="hidden" animate="visible" variants={stagger}
-              className="flex-1 text-center md:text-left"
-            >
-              <motion.div variants={fadeUp}>
-                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/40 text-primary text-sm font-semibold mb-8">
-                  <Sparkles className="w-4 h-4" /> AI Automation for Aussie Small Business
-                </div>
-              </motion.div>
-
-              <motion.h1 variants={fadeUp} className="text-6xl md:text-7xl lg:text-8xl font-black leading-[0.95] mb-7 tracking-tight text-white">
-                Smart<br />Systems.<br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-accent to-secondary">
-                  Real Results.
-                </span>
-              </motion.h1>
-
-              <motion.p variants={fadeUp} className="text-lg md:text-xl text-muted-foreground mb-10 max-w-lg mx-auto md:mx-0 leading-relaxed">
-                I build AI chatbots, missed call systems, and automated workflows so you can get back to what you do best.
-              </motion.p>
-
-              <motion.div variants={fadeUp} className="flex flex-col sm:flex-row items-center gap-4 justify-center md:justify-start">
-                <Link href="/get-started">
-                  <Button data-testid="hero-cta-button" size="lg" className="h-14 px-9 text-base rounded-full font-bold bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 shadow-[0_0_40px_rgba(168,85,247,0.5)] transition-all duration-300 hover:shadow-[0_0_60px_rgba(168,85,247,0.65)] hover:-translate-y-0.5">
-                    Get Your Free Audit
-                  </Button>
-                </Link>
+        <div className="container mx-auto text-center relative z-10 max-w-3xl">
+          <motion.div initial="hidden" animate="visible" variants={stagger}>
+            <motion.div variants={fadeUp}>
+              <img src={linkBanner} alt="Done By Amy" className="h-24 md:h-28 mx-auto mb-10 object-contain rounded-2xl shadow-2xl" />
+            </motion.div>
+            <motion.h1 variants={fadeUp} className="text-5xl md:text-7xl font-black text-white mb-6 leading-[1.05] tracking-tight">
+              Ready to stop doing<br />everything yourself?
+            </motion.h1>
+            <motion.p variants={fadeUp} className="text-lg md:text-xl text-muted-foreground max-w-xl mx-auto mb-10 leading-relaxed">
+              Let's chat about your business bottlenecks and find the exact automations that will save you 10+ hours this week.
+            </motion.p>
+            <motion.div variants={fadeUp} className="flex flex-col sm:flex-row items-center gap-4 justify-center">
+              <Link href="/get-started">
                 <Button
-                  data-testid="hero-secondary-button"
+                  data-testid="hero-cta-button"
                   size="lg"
-                  variant="ghost"
-                  className="h-14 px-8 text-base rounded-full border border-white/10 hover:border-white/20 hover:bg-white/5 text-muted-foreground hover:text-white transition-all"
-                  onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
+                  className="h-16 px-12 text-lg rounded-full bg-white text-black hover:bg-white/90 font-black shadow-[0_0_60px_rgba(255,255,255,0.2)] hover:shadow-[0_0_80px_rgba(255,255,255,0.3)] hover:-translate-y-0.5 transition-all duration-300"
                 >
-                  What We Do <ArrowRight className="w-4 h-4 ml-2" />
+                  Get Your Free Audit <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
-              </motion.div>
+              </Link>
+              <Button
+                data-testid="hero-secondary-button"
+                size="lg"
+                variant="ghost"
+                className="h-14 px-8 text-base rounded-full border border-white/10 hover:border-white/20 hover:bg-white/5 text-muted-foreground hover:text-white transition-all"
+                onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
+              >
+                What We Do <ArrowRight className="w-4 h-4 ml-2" />
+              </Button>
             </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, scale: 0.92, y: 20 }}
-              animate={{ opacity: 1, scale: 1, y: 0 }}
-              transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
-              className="flex-1 relative w-full max-w-lg flex justify-center"
-            >
-              <div className="absolute inset-0 bg-primary/20 rounded-3xl blur-[80px] scale-90" />
-              <img src={tcScreen} alt="TradieCatch App" className="relative z-10 h-[480px] object-contain drop-shadow-2xl mx-auto" />
-            </motion.div>
-          </div>
+          </motion.div>
         </div>
       </section>
 
@@ -591,38 +571,6 @@ export default function Home() {
         </div>
       </section>
 
-
-      {/* ─── FINAL CTA ────────────────────────────────────────────── */}
-      <section className="py-20 px-6 relative overflow-hidden">
-        <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/10 to-primary/20" />
-          <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-primary/20 rounded-full blur-[120px]" />
-        </div>
-        <div className="container mx-auto text-center relative z-10 max-w-3xl">
-          <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
-            <motion.div variants={fadeUp}>
-              <img src={linkBanner} alt="Done By Amy" className="h-20 mx-auto mb-10 object-contain rounded-2xl shadow-2xl" />
-            </motion.div>
-            <motion.h2 variants={fadeUp} className="text-5xl md:text-6xl font-black text-white mb-5 leading-tight tracking-tight">
-              Ready to stop doing<br />everything yourself?
-            </motion.h2>
-            <motion.p variants={fadeUp} className="text-lg text-muted-foreground max-w-xl mx-auto mb-10">
-              Let's chat about your business bottlenecks and find the exact automations that will save you 10+ hours this week.
-            </motion.p>
-            <motion.div variants={fadeUp}>
-              <Link href="/get-started">
-                <Button
-                  data-testid="footer-cta-button"
-                  size="lg"
-                  className="h-16 px-12 text-lg rounded-full bg-white text-black hover:bg-white/90 font-black shadow-[0_0_60px_rgba(255,255,255,0.2)] hover:shadow-[0_0_80px_rgba(255,255,255,0.3)] hover:-translate-y-0.5 transition-all duration-300"
-                >
-                  Get Your Free Audit <ArrowRight className="w-5 h-5 ml-2" />
-                </Button>
-              </Link>
-            </motion.div>
-          </motion.div>
-        </div>
-      </section>
 
       {/* ─── FOOTER ───────────────────────────────────────────────── */}
       <footer className="border-t border-white/[0.06] bg-background py-10 px-6">
