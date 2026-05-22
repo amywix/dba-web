@@ -3,7 +3,7 @@ import { Link } from "wouter";
 import { useSEO } from "@/hooks/use-seo";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
-import { ChevronRight, Zap, Shield, Users } from "lucide-react";
+import { ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const fadeIn: Variants = {
@@ -55,53 +55,6 @@ export default function About() {
                 That's what Done By Amy fixes. I bring enterprise-grade automation down to the small business level, custom-built for how you actually work.
               </p>
             </motion.div>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Values */}
-      <section className="py-24 px-6 bg-white/[0.01] border-y border-white/[0.04]">
-        <div className="container mx-auto max-w-5xl">
-          <motion.div
-            initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={fadeIn}
-            className="text-center mb-16"
-          >
-            <h2 className="text-3xl md:text-5xl font-black tracking-tight text-white mb-4">How I work</h2>
-            <p className="text-muted-foreground text-lg">Three non-negotiable principles for every system I build.</p>
-          </motion.div>
-
-          <motion.div
-            initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={stagger}
-            className="grid md:grid-cols-3 gap-8"
-          >
-            {[
-              {
-                icon: Zap,
-                title: "Results, not features",
-                desc: "I don't build automations for the sake of it. Every system is designed to save hours, catch leads, or accelerate cash flow. If it doesn't move the needle, we don't build it.",
-              },
-              {
-                icon: Shield,
-                title: "Zero overwhelm",
-                desc: "I handle the technical heavy lifting completely. You get handed a working system that integrates with your current tools, along with plain-English instructions.",
-              },
-              {
-                icon: Users,
-                title: "Bespoke to your business",
-                desc: "No copy-paste templates. Every solution is tailored to your exact workflow, tools, and goals because your business operations are unique.",
-              },
-            ].map((v, i) => (
-              <motion.div
-                key={i} variants={fadeIn}
-                className="bg-white/[0.02] border border-white/[0.06] rounded-3xl p-8 hover:bg-white/[0.04] hover:border-primary/30 transition-all duration-500"
-              >
-                <div className="w-12 h-12 rounded-2xl bg-white/[0.04] border border-white/10 flex items-center justify-center mb-6 text-primary">
-                  <v.icon className="w-5 h-5" />
-                </div>
-                <h3 className="text-xl font-bold text-white mb-3 tracking-tight">{v.title}</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">{v.desc}</p>
-              </motion.div>
-            ))}
           </motion.div>
         </div>
       </section>
