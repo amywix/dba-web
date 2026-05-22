@@ -539,36 +539,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ─── WHO WE HELP ──────────────────────────────────────────── */}
-      <section className="py-20 px-6">
-        <div className="container mx-auto max-w-4xl text-center">
-          <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
-            <motion.div variants={fadeUp}><SectionLabel icon={Briefcase}>Industries</SectionLabel></motion.div>
-            <motion.h2 variants={fadeUp} className="text-3xl md:text-4xl font-black tracking-tight mb-10">
-              Built for businesses like yours.
-            </motion.h2>
-            <motion.div variants={stagger} className="flex flex-wrap justify-center gap-3">
-              {[
-                "Tradies & Contractors",
-                "Real Estate Agents",
-                "Clinics & Allied Health",
-                "Coaches & Consultants",
-                "Hospitality & Cafes",
-                "Retail & eCommerce",
-              ].map((industry, i) => (
-                <motion.div
-                  variants={fadeUp} key={i}
-                  className="flex items-center gap-2 px-5 py-2.5 rounded-full border border-white/10 bg-white/[0.04] text-sm text-muted-foreground hover:text-white hover:border-primary/40 hover:bg-white/[0.07] transition-all cursor-default"
-                >
-                  <Briefcase className="w-3.5 h-3.5 text-primary shrink-0" /> {industry}
-                </motion.div>
-              ))}
-            </motion.div>
-          </motion.div>
-        </div>
-      </section>
-
-
       {/* ─── FOOTER ───────────────────────────────────────────────── */}
       <footer className="border-t border-white/[0.06] bg-background py-10 px-6">
         <div className="container mx-auto max-w-6xl flex flex-col md:flex-row items-center justify-between gap-5 text-sm">
