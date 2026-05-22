@@ -113,27 +113,6 @@ export default function About() {
         </div>
       </section>
 
-      {/* Stats */}
-      <section className="py-20 px-6 bg-white/[0.02] border-y border-white/5">
-        <div className="container mx-auto max-w-4xl">
-          <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeIn}>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              {[
-                { value: "200+", label: "Businesses automated" },
-                { value: "$2M+", label: "Revenue recaptured" },
-                { value: "48hr", label: "Average setup time" },
-                { value: "5.0★", label: "Google rating" },
-              ].map((s, i) => (
-                <div key={i} className="bg-white/[0.04] border border-white/10 rounded-2xl p-6 text-center">
-                  <div className="text-3xl font-black text-white mb-1">{s.value}</div>
-                  <div className="text-xs text-muted-foreground uppercase tracking-wider font-medium">{s.label}</div>
-                </div>
-              ))}
-            </div>
-          </motion.div>
-        </div>
-      </section>
-
       {/* CTA */}
       <section className="py-24 px-6 text-center relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-primary/10 pointer-events-none" />
