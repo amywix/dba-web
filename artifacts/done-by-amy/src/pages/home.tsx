@@ -186,47 +186,6 @@ export default function Home() {
             ))}
           </motion.div>
 
-          {/* Before / After contrast */}
-          <motion.div
-            initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={stagger}
-            className="mt-20 grid md:grid-cols-2 gap-6"
-          >
-            <motion.div variants={fadeUp} className="p-8 rounded-3xl bg-white/[0.02] border border-white/[0.06]">
-              <div className="text-xs font-bold tracking-[0.2em] text-muted-foreground mb-6">BEFORE AUTOMATION</div>
-              <ul className="space-y-4">
-                {[
-                  "Missed calls become missed jobs",
-                  "Sundays disappear into invoicing and admin",
-                  "Leads sit unanswered until 9pm",
-                  "Quotes get forgotten in your inbox",
-                  "Growth means hiring — and hiring means risk",
-                ].map((item, i) => (
-                  <li key={i} className="flex items-start gap-3 text-white/60 line-through decoration-white/20">
-                    <span className="mt-2 w-1.5 h-1.5 rounded-full bg-white/30 flex-shrink-0" />
-                    <span className="leading-snug">{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </motion.div>
-
-            <motion.div variants={fadeUp} className="p-8 rounded-3xl bg-primary/[0.06] border border-primary/30">
-              <div className="text-xs font-bold tracking-[0.2em] text-primary mb-6">AFTER AUTOMATION</div>
-              <ul className="space-y-4">
-                {[
-                  "Every missed call books the next job",
-                  "Sundays belong to you again",
-                  "Enquiries get answered in 30 seconds, day or night",
-                  "Quotes send themselves the moment a lead comes in",
-                  "You scale by adding systems, not headcount",
-                ].map((item, i) => (
-                  <li key={i} className="flex items-start gap-3 text-white">
-                    <CheckCircle2 className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
-                    <span className="leading-snug">{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </motion.div>
-          </motion.div>
         </div>
       </section>
 
