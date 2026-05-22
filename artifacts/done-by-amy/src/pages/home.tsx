@@ -56,9 +56,6 @@ export default function Home() {
         </div>
         <div className="container mx-auto text-center relative z-10 max-w-3xl">
           <motion.div initial="hidden" animate="visible" variants={stagger}>
-            <motion.div variants={fadeUp}>
-              <img src={linkBanner} alt="Done By Amy" className="h-24 md:h-28 mx-auto mb-10 object-contain rounded-2xl shadow-2xl" />
-            </motion.div>
             <motion.h1 variants={fadeUp} className="text-5xl md:text-7xl font-black text-white mb-6 leading-[1.05] tracking-tight">
               Ready to stop doing<br />everything yourself?
             </motion.h1>
