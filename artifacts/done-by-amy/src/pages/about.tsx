@@ -113,44 +113,24 @@ export default function About() {
         </div>
       </section>
 
-      {/* What Amy does */}
+      {/* Stats */}
       <section className="py-20 px-6 bg-white/[0.02] border-y border-white/5">
-        <div className="container mx-auto max-w-5xl">
-          <div className="flex flex-col md:flex-row gap-16 items-center">
-            <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeIn} className="flex-1">
-              <h2 className="text-4xl font-black mb-6">What I specialise in</h2>
-              <ul className="space-y-4">
-                {[
-                  "AI chatbots that handle enquiries, capture leads, and answer FAQs 24/7",
-                  "Missed call automation — instant SMS replies so no lead slips away",
-                  "AI calling systems that follow up, qualify, and book appointments",
-                  "Workflow automations connecting your CRM, calendar, forms, and accounting",
-                  "Conversion-focused website design built for real results",
-                  "Products: TradieCatch & AutoDial — purpose-built for Australian businesses",
-                ].map((item, i) => (
-                  <li key={i} className="flex gap-3 text-muted-foreground">
-                    <CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </motion.div>
-            <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeIn} className="flex-1 space-y-6">
-              <div className="grid grid-cols-2 gap-4">
-                {[
-                  { value: "200+", label: "Businesses automated" },
-                  { value: "$2M+", label: "Revenue recaptured" },
-                  { value: "48hr", label: "Average setup time" },
-                  { value: "5.0★", label: "Google rating" },
-                ].map((s, i) => (
-                  <div key={i} className="bg-white/[0.04] border border-white/10 rounded-2xl p-6 text-center">
-                    <div className="text-3xl font-black text-white mb-1">{s.value}</div>
-                    <div className="text-xs text-muted-foreground uppercase tracking-wider font-medium">{s.label}</div>
-                  </div>
-                ))}
-              </div>
-            </motion.div>
-          </div>
+        <div className="container mx-auto max-w-4xl">
+          <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeIn}>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              {[
+                { value: "200+", label: "Businesses automated" },
+                { value: "$2M+", label: "Revenue recaptured" },
+                { value: "48hr", label: "Average setup time" },
+                { value: "5.0★", label: "Google rating" },
+              ].map((s, i) => (
+                <div key={i} className="bg-white/[0.04] border border-white/10 rounded-2xl p-6 text-center">
+                  <div className="text-3xl font-black text-white mb-1">{s.value}</div>
+                  <div className="text-xs text-muted-foreground uppercase tracking-wider font-medium">{s.label}</div>
+                </div>
+              ))}
+            </div>
+          </motion.div>
         </div>
       </section>
 
