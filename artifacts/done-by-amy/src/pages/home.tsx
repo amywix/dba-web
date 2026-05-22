@@ -14,7 +14,7 @@ import tcLogo from "@assets/tc_logo_1779201943317.png";
 import tcScreen from "@assets/tc_screen_1779201943317.png";
 import featureCards from "@assets/ChatGPT_Image_May_18,_2026,_11_32_20_AM_1779201943317.png";
 import autoDialScreen from "../assets/autodial_nobg.png";
-import yardYakkaApp from "@assets/FB060F94-1AD8-424D-B178-388CFC4050C3_1779333740152.png";
+import yardYakkaApp from "../assets/yard_yakka_app_nobg.png";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 28 },

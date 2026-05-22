@@ -1,7 +1,6 @@
 import { Link, useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
-import logoMark from "@assets/ChatGPT_Image_May_14,_2026,_04_49_39_PM_-_Copy_1779201943316.png";
-import daLogoWordmark from "@assets/da_logo_1779201943317.png";
+import linkBanner from "@assets/link_img_1779201943317.png";
 
 const links = [
   { label: "Home",      href: "/"             },
@@ -23,9 +22,8 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 w-full z-50 border-b border-white/5 bg-background/80 backdrop-blur-md">
       <div className="container mx-auto px-6 h-20 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-3" data-testid="nav-logo">
-          <img src={logoMark} alt="Done By Amy" className="w-10 h-10 object-contain" />
-          <img src={daLogoWordmark} alt="Done By Amy" className="h-5 hidden sm:block object-contain" />
+        <Link href="/" className="flex items-center" data-testid="nav-logo">
+          <img src={linkBanner} alt="Done By Amy" className="h-12 object-contain rounded-lg" />
         </Link>
 
         <div className="hidden md:flex items-center gap-7 text-sm font-medium">
