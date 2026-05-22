@@ -46,7 +46,7 @@ export default function Home() {
       <Navbar />
 
       {/* ─── HERO ─────────────────────────────────────────────────── */}
-      <section className="relative pt-40 pb-28 md:pt-56 md:pb-40 px-6 overflow-hidden">
+      <section className="relative pt-32 pb-28 md:pt-56 md:pb-40 px-6 overflow-hidden">
         {/* Abstract Glows */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] bg-primary/20 rounded-full blur-[160px] opacity-50 pointer-events-none" />
         <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-secondary/10 rounded-full blur-[120px] pointer-events-none" />
@@ -97,7 +97,7 @@ export default function Home() {
       </section>
 
       {/* ─── WHY AUTOMATE (BENEFITS) ──────────────────────────────── */}
-      <section id="benefits" className="py-24 px-6 relative overflow-hidden">
+      <section id="benefits" className="py-16 px-6 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/[0.03] to-transparent pointer-events-none" />
         <div className="container mx-auto max-w-6xl relative z-10">
           <motion.div
@@ -231,7 +231,7 @@ export default function Home() {
       </section>
 
       {/* ─── SERVICES OVERVIEW ────────────────────────────────────── */}
-      <section id="services" className="py-24 px-6 bg-white/[0.01] border-y border-white/[0.04]">
+      <section id="services" className="py-16 px-6 bg-white/[0.01] border-y border-white/[0.04]">
         <div className="container mx-auto max-w-6xl">
           <motion.div
             initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={stagger}
@@ -289,7 +289,7 @@ export default function Home() {
       </section>
 
       {/* ─── FEATURED PRODUCTS & CASE STUDY ───────────────────────── */}
-      <section id="featured" className="py-24 px-6 overflow-hidden relative">
+      <section id="featured" className="py-16 px-6 overflow-hidden relative">
         <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-secondary/10 rounded-full blur-[140px] pointer-events-none" />
         <div className="absolute left-0 bottom-0 w-[500px] h-[500px] bg-primary/10 rounded-full blur-[140px] pointer-events-none" />
         <div className="container mx-auto max-w-6xl relative z-10">
@@ -320,8 +320,8 @@ export default function Home() {
                 <p className="text-muted-foreground text-sm leading-relaxed mb-8">
                   Instant SMS auto-reply to every missed call. Capture the lead before your competitor does.
                 </p>
-                <div className="mt-auto pt-6 flex justify-center">
-                  <img src={tcScreen} alt="TradieCatch screen" className="w-full max-w-[200px] object-contain drop-shadow-2xl mb-6" />
+                <div className="mt-auto pt-6 flex justify-center h-48 items-end">
+                  <img src={tcScreen} alt="TradieCatch screen" className="max-h-44 w-auto object-contain drop-shadow-2xl mb-6" />
                 </div>
                 <Link href="/tradiecatch" className="inline-flex items-center gap-2 text-white font-bold text-sm group-hover:text-primary transition-colors">
                   Explore TradieCatch <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
@@ -344,8 +344,8 @@ export default function Home() {
                 <p className="text-muted-foreground text-sm leading-relaxed mb-8">
                   A human-sounding voice agent that qualifies leads, handles objections and books appointments — 24/7.
                 </p>
-                <div className="mt-auto pt-6 flex justify-center">
-                  <img src={autoDialScreen} alt="AutoDial" className="w-full max-w-[220px] object-contain drop-shadow-2xl mb-6" />
+                <div className="mt-auto pt-6 flex justify-center h-48 items-end">
+                  <img src={autoDialScreen} alt="AutoDial" className="max-h-44 w-auto object-contain drop-shadow-2xl mb-6" />
                 </div>
                 <Link href="/autodial" className="inline-flex items-center gap-2 text-white font-bold text-sm group-hover:text-primary transition-colors">
                   Explore AutoDial <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
@@ -363,8 +363,8 @@ export default function Home() {
                 <p className="text-muted-foreground text-sm leading-relaxed mb-8">
                   A bespoke mobile app + 6-step workflow gave Lucas back half a week — invoicing, NDIS reporting and reconciliation, all hands-off.
                 </p>
-                <div className="mt-auto pt-6 flex justify-center">
-                  <img src={yardYakkaApp} alt="Yard Yakka App" className="w-full max-w-[160px] object-contain drop-shadow-2xl mb-6" />
+                <div className="mt-auto pt-6 flex justify-center h-48 items-end">
+                  <img src={yardYakkaApp} alt="Yard Yakka App" className="max-h-44 w-auto object-contain drop-shadow-2xl mb-6" />
                 </div>
                 <Link href="/case-studies/yard-yakka" className="inline-flex items-center gap-2 text-white font-bold text-sm group-hover:text-primary transition-colors">
                   Read the case study <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
@@ -376,7 +376,7 @@ export default function Home() {
       </section>
 
       {/* ─── TESTIMONIALS ─────────────────────────────────────────── */}
-      <section className="py-24 px-6 bg-white/[0.01] border-t border-white/[0.04]">
+      <section className="py-16 px-6 bg-white/[0.01] border-t border-white/[0.04]">
         <div className="container mx-auto max-w-6xl">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger} className="text-center mb-16">
             <motion.h2 variants={fadeUp} className="text-3xl md:text-4xl font-black tracking-tight text-white mb-4">
@@ -429,7 +429,7 @@ export default function Home() {
       </section>
 
       {/* ─── FINAL CTA ────────────────────────────────────────────── */}
-      <section className="py-32 px-6 relative overflow-hidden">
+      <section className="py-14 px-6 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-primary/10 pointer-events-none" />
         <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-primary/20 rounded-t-full blur-[120px] pointer-events-none" />
         

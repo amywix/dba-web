@@ -29,7 +29,7 @@ export default function About() {
       <Navbar />
 
       {/* Hero */}
-      <section className="pt-40 pb-24 px-6 relative overflow-hidden">
+      <section className="pt-32 pb-24 px-6 relative overflow-hidden">
         <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-primary/10 rounded-full blur-[150px] pointer-events-none" />
         
         <div className="container mx-auto max-w-4xl relative z-10">
@@ -60,7 +60,7 @@ export default function About() {
       </section>
 
       {/* CTA */}
-      <section className="py-32 px-6 text-center">
+      <section className="py-14 px-6 text-center">
         <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeIn} className="max-w-2xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-black text-white mb-6 tracking-tight">Ready to build?</h2>
           <p className="text-lg text-muted-foreground mb-10">

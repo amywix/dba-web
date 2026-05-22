@@ -3,7 +3,7 @@ import daLogoWordmark from "@assets/da_logo_1779201943317.png";
 
 export default function Footer() {
   return (
-    <footer className="border-t border-white/[0.04] bg-background pt-20 pb-10 px-6 mt-auto">
+    <footer className="border-t border-white/[0.04] bg-background pt-14 pb-10 px-6 mt-auto">
       <div className="container mx-auto max-w-6xl">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-8 mb-16">
           <div className="md:col-span-5 lg:col-span-4">

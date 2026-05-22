@@ -47,7 +47,7 @@ export default function YardYakka() {
       <Navbar />
 
       {/* HERO */}
-      <section className="pt-40 pb-20 px-6 relative overflow-hidden">
+      <section className="pt-32 pb-20 px-6 relative overflow-hidden">
         <div className="absolute right-0 top-1/4 w-[700px] h-[700px] bg-primary/10 rounded-full blur-[160px] pointer-events-none" />
         <div className="container mx-auto max-w-6xl relative z-10">
           <div className="grid lg:grid-cols-12 gap-16 items-center">
@@ -81,7 +81,7 @@ export default function YardYakka() {
       </section>
 
       {/* THE PROBLEM */}
-      <section className="py-20 px-6 bg-white/[0.01] border-y border-white/[0.04]">
+      <section className="py-14 px-6 bg-white/[0.01] border-y border-white/[0.04]">
         <div className="container mx-auto max-w-4xl">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={stagger} className="space-y-6">
             <motion.div variants={fadeUp}><SectionBadge>The Problem</SectionBadge></motion.div>
@@ -96,7 +96,7 @@ export default function YardYakka() {
       </section>
 
       {/* THE BUILD */}
-      <section className="py-24 px-6">
+      <section className="py-16 px-6">
         <div className="container mx-auto max-w-6xl">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={stagger} className="text-center max-w-3xl mx-auto mb-16">
             <motion.div variants={fadeUp} className="flex justify-center"><SectionBadge>The Build</SectionBadge></motion.div>
@@ -143,7 +143,7 @@ export default function YardYakka() {
       </section>
 
       {/* RESULTS + QUOTE */}
-      <section className="py-24 px-6 bg-white/[0.01] border-y border-white/[0.04]">
+      <section className="py-16 px-6 bg-white/[0.01] border-y border-white/[0.04]">
         <div className="container mx-auto max-w-6xl">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={stagger} className="grid lg:grid-cols-2 gap-16 items-center">
             <motion.div variants={fadeUp}>
@@ -188,7 +188,7 @@ export default function YardYakka() {
       </section>
 
       {/* CTA */}
-      <section className="py-24 px-6">
+      <section className="py-16 px-6">
         <div className="container mx-auto max-w-4xl text-center">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}>
             <h2 className="text-4xl md:text-5xl font-black text-white mb-6 tracking-tight">

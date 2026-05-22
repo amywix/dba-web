@@ -39,7 +39,7 @@ export default function TradieCatch() {
       <Navbar />
 
       {/* HERO */}
-      <section className="pt-40 pb-20 px-6 relative overflow-hidden">
+      <section className="pt-32 pb-20 px-6 relative overflow-hidden">
         <div className="absolute right-0 top-1/3 w-[700px] h-[700px] bg-secondary/10 rounded-full blur-[160px] pointer-events-none" />
         <div className="container mx-auto max-w-6xl relative z-10">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -84,7 +84,7 @@ export default function TradieCatch() {
       </section>
 
       {/* HOW IT WORKS */}
-      <section className="py-24 px-6 bg-white/[0.01] border-y border-white/[0.04]">
+      <section className="py-16 px-6 bg-white/[0.01] border-y border-white/[0.04]">
         <div className="container mx-auto max-w-5xl">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={stagger} className="text-center mb-16">
             <motion.div variants={fadeUp} className="flex justify-center"><SectionBadge>How It Works</SectionBadge></motion.div>
@@ -116,7 +116,7 @@ export default function TradieCatch() {
       </section>
 
       {/* FEATURES */}
-      <section className="py-24 px-6">
+      <section className="py-16 px-6">
         <div className="container mx-auto max-w-6xl">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={stagger} className="grid lg:grid-cols-2 gap-16 items-start">
             <motion.div variants={fadeUp}>
@@ -149,7 +149,7 @@ export default function TradieCatch() {
       </section>
 
       {/* PRICING CALLOUT */}
-      <section className="py-24 px-6 bg-white/[0.01] border-y border-white/[0.04]">
+      <section className="py-16 px-6 bg-white/[0.01] border-y border-white/[0.04]">
         <div className="container mx-auto max-w-4xl">
           <motion.div
             initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}
@@ -176,7 +176,7 @@ export default function TradieCatch() {
       </section>
 
       {/* TRUST STRIP */}
-      <section className="py-20 px-6">
+      <section className="py-14 px-6">
         <div className="container mx-auto max-w-5xl grid sm:grid-cols-3 gap-8 text-center">
           {[
             { icon: Clock, label: "Live within 48 hours of signup" },

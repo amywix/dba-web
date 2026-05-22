@@ -38,7 +38,7 @@ export default function AutoDial() {
       <Navbar />
 
       {/* HERO */}
-      <section className="pt-40 pb-20 px-6 relative overflow-hidden">
+      <section className="pt-32 pb-20 px-6 relative overflow-hidden">
         <div className="absolute left-0 top-1/3 w-[700px] h-[700px] bg-primary/10 rounded-full blur-[160px] pointer-events-none" />
         <div className="container mx-auto max-w-6xl relative z-10">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -84,7 +84,7 @@ export default function AutoDial() {
       </section>
 
       {/* CAPABILITIES */}
-      <section className="py-24 px-6 bg-white/[0.01] border-y border-white/[0.04]">
+      <section className="py-16 px-6 bg-white/[0.01] border-y border-white/[0.04]">
         <div className="container mx-auto max-w-6xl">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={stagger} className="max-w-3xl mb-16">
             <motion.div variants={fadeUp}><SectionBadge>Capabilities</SectionBadge></motion.div>
@@ -116,7 +116,7 @@ export default function AutoDial() {
       </section>
 
       {/* USE CASES */}
-      <section className="py-24 px-6">
+      <section className="py-16 px-6">
         <div className="container mx-auto max-w-6xl">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={stagger} className="text-center max-w-3xl mx-auto mb-16">
             <motion.div variants={fadeUp} className="flex justify-center"><SectionBadge>Where It Works Best</SectionBadge></motion.div>
@@ -147,7 +147,7 @@ export default function AutoDial() {
       </section>
 
       {/* CTA */}
-      <section className="py-24 px-6 bg-white/[0.01] border-t border-white/[0.04]">
+      <section className="py-16 px-6 bg-white/[0.01] border-t border-white/[0.04]">
         <div className="container mx-auto max-w-4xl text-center">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}>
             <h2 className="text-4xl md:text-5xl font-black text-white mb-6 tracking-tight">Put an AI on the phones this month.</h2>
