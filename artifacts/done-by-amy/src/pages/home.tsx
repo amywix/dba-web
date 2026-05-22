@@ -4,7 +4,8 @@ import { useSEO } from "@/hooks/use-seo";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import { 
-  Bot, PhoneCall, Globe, ArrowRight, Zap, PhoneOutgoing, Users, CheckCircle2, ChevronRight
+  Bot, PhoneCall, Globe, ArrowRight, Zap, PhoneOutgoing, Users, CheckCircle2, ChevronRight,
+  Clock, TrendingUp, Wallet, MoonStar, ShieldCheck
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -90,6 +91,140 @@ export default function Home() {
               >
                 Explore Services
               </Button>
+            </motion.div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* ─── WHY AUTOMATE (BENEFITS) ──────────────────────────────── */}
+      <section id="benefits" className="py-24 px-6 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/[0.03] to-transparent pointer-events-none" />
+        <div className="container mx-auto max-w-6xl relative z-10">
+          <motion.div
+            initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={stagger}
+            className="max-w-3xl mx-auto text-center mb-16"
+          >
+            <motion.div variants={fadeUp} className="flex justify-center mb-6">
+              <SectionBadge>Why Automate</SectionBadge>
+            </motion.div>
+            <motion.h2 variants={fadeUp} className="text-4xl md:text-5xl font-black tracking-tight text-white leading-tight mb-6">
+              What automation actually does for your business.
+            </motion.h2>
+            <motion.p variants={fadeUp} className="text-lg text-muted-foreground leading-relaxed">
+              You don't need more hustle. You need leverage. Here's what happens the day your systems start doing the work for you.
+            </motion.p>
+          </motion.div>
+
+          {/* Headline metrics */}
+          <motion.div
+            initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={stagger}
+            className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-16"
+          >
+            {[
+              { stat: "10+", label: "hours given back to your week", sub: "Typical client result after 30 days" },
+              { stat: "24/7", label: "lead capture, even while you sleep", sub: "Missed calls, after-hours enquiries, weekends" },
+              { stat: "1 job", label: "is all it takes to pay for itself", sub: "Most setups break even in the first week" },
+            ].map((m, i) => (
+              <motion.div
+                variants={fadeUp} key={i}
+                className="p-8 rounded-3xl bg-white/[0.03] border border-white/[0.06] hover:border-primary/40 transition-all duration-500"
+              >
+                <div className="text-5xl md:text-6xl font-black text-primary mb-3 tracking-tight">{m.stat}</div>
+                <div className="text-white font-semibold mb-2 leading-snug">{m.label}</div>
+                <div className="text-muted-foreground text-sm leading-relaxed">{m.sub}</div>
+              </motion.div>
+            ))}
+          </motion.div>
+
+          {/* Six concrete benefits */}
+          <motion.div
+            initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={stagger}
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+          >
+            {[
+              {
+                icon: Clock,
+                title: "Buy back your time",
+                desc: "Quoting, invoicing, follow-ups, data entry — automated end to end. Your week stops being eaten by admin you shouldn't be doing."
+              },
+              {
+                icon: PhoneCall,
+                title: "Stop losing leads",
+                desc: "Every missed call gets an instant SMS. Every web enquiry gets a reply in seconds. Leads that used to slip through now book themselves in."
+              },
+              {
+                icon: Wallet,
+                title: "Get paid faster",
+                desc: "Invoices fire the moment a job is marked complete. Polite reminders chase the unpaid ones. Cash flow stops depending on you remembering."
+              },
+              {
+                icon: MoonStar,
+                title: "Operate 24/7",
+                desc: "AI agents answer questions, book appointments and qualify leads while you're on the tools, with the kids, or asleep. Your business never closes."
+              },
+              {
+                icon: TrendingUp,
+                title: "Scale without hiring",
+                desc: "Handle 2x the jobs, calls and enquiries without adding payroll. Systems absorb the volume that would otherwise force you to hire too early."
+              },
+              {
+                icon: ShieldCheck,
+                title: "Nothing falls through",
+                desc: "Quotes get sent. Clients get reminded. NDIS paperwork gets reconciled. The mental load of remembering everything stops being yours."
+              },
+            ].map((b, i) => (
+              <motion.div
+                variants={fadeUp} key={i}
+                className="group p-8 rounded-3xl bg-white/[0.02] border border-white/[0.06] hover:border-primary/40 hover:bg-white/[0.04] transition-all duration-500 flex flex-col h-full"
+              >
+                <div className="w-12 h-12 rounded-2xl bg-primary/10 border border-primary/20 flex items-center justify-center mb-6 group-hover:bg-primary/20 group-hover:scale-110 transition-all duration-500">
+                  <b.icon className="w-5 h-5 text-primary" />
+                </div>
+                <h3 className="text-xl font-bold text-white mb-3 leading-snug">{b.title}</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">{b.desc}</p>
+              </motion.div>
+            ))}
+          </motion.div>
+
+          {/* Before / After contrast */}
+          <motion.div
+            initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={stagger}
+            className="mt-20 grid md:grid-cols-2 gap-6"
+          >
+            <motion.div variants={fadeUp} className="p-8 rounded-3xl bg-white/[0.02] border border-white/[0.06]">
+              <div className="text-xs font-bold tracking-[0.2em] text-muted-foreground mb-6">BEFORE AUTOMATION</div>
+              <ul className="space-y-4">
+                {[
+                  "Missed calls become missed jobs",
+                  "Sundays disappear into invoicing and admin",
+                  "Leads sit unanswered until 9pm",
+                  "Quotes get forgotten in your inbox",
+                  "Growth means hiring — and hiring means risk",
+                ].map((item, i) => (
+                  <li key={i} className="flex items-start gap-3 text-white/60 line-through decoration-white/20">
+                    <span className="mt-2 w-1.5 h-1.5 rounded-full bg-white/30 flex-shrink-0" />
+                    <span className="leading-snug">{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
+
+            <motion.div variants={fadeUp} className="p-8 rounded-3xl bg-primary/[0.06] border border-primary/30">
+              <div className="text-xs font-bold tracking-[0.2em] text-primary mb-6">AFTER AUTOMATION</div>
+              <ul className="space-y-4">
+                {[
+                  "Every missed call books the next job",
+                  "Sundays belong to you again",
+                  "Enquiries get answered in 30 seconds, day or night",
+                  "Quotes send themselves the moment a lead comes in",
+                  "You scale by adding systems, not headcount",
+                ].map((item, i) => (
+                  <li key={i} className="flex items-start gap-3 text-white">
+                    <CheckCircle2 className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
+                    <span className="leading-snug">{item}</span>
+                  </li>
+                ))}
+              </ul>
             </motion.div>
           </motion.div>
         </div>
