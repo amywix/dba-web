@@ -8,6 +8,8 @@ import GetStarted from "@/pages/get-started";
 import About from "@/pages/about";
 import Contact from "@/pages/contact";
 import FAQ from "@/pages/faq";
+import Blog from "@/pages/blog";
+import BlogPost from "@/pages/blog-post";
 
 const queryClient = new QueryClient();
 
@@ -19,6 +21,8 @@ function Router() {
       <Route path="/about" component={About} />
       <Route path="/contact" component={Contact} />
       <Route path="/faq" component={FAQ} />
+      <Route path="/blog" component={Blog} />
+      <Route path="/blog/:slug" component={BlogPost} />
       <Route component={NotFound} />
     </Switch>
   );
