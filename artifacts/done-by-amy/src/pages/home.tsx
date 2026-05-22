@@ -240,7 +240,7 @@ export default function Home() {
             <div className="max-w-2xl">
               <motion.div variants={fadeUp}><SectionBadge>What We Build</SectionBadge></motion.div>
               <motion.h2 variants={fadeUp} className="text-4xl md:text-5xl font-black tracking-tight text-white leading-tight">
-                Enterprise-grade automation, scaled for small business.
+                Big-business systems, built for your business.
               </motion.h2>
             </div>
             <motion.p variants={fadeUp} className="text-muted-foreground max-w-md leading-relaxed">
