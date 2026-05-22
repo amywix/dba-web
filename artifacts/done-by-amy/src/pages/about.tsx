@@ -45,7 +45,7 @@ export default function About() {
               </div>
               <h1 className="text-5xl md:text-6xl font-black leading-tight mb-6 tracking-tight">
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">
-                  I build businesses that run themselves.
+                  I build systems that run themselves.
                 </span>
               </h1>
               <p className="text-lg text-muted-foreground mb-6 max-w-lg">
