@@ -64,18 +64,6 @@ export default function About() {
         </div>
       </section>
 
-      {/* Mission */}
-      <section className="py-20 px-6 bg-white/[0.02] border-y border-white/5">
-        <div className="container mx-auto max-w-4xl text-center">
-          <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeIn}>
-            <p className="text-2xl md:text-3xl font-bold text-white leading-relaxed">
-              "Every small business deserves the same powerful systems that big companies take for granted — without the enterprise price tag or the tech overwhelm."
-            </p>
-            <p className="mt-6 text-primary font-semibold">— Amy, Founder of Done By Amy</p>
-          </motion.div>
-        </div>
-      </section>
-
       {/* Values */}
       <section className="py-24 px-6">
         <div className="container mx-auto max-w-5xl">
