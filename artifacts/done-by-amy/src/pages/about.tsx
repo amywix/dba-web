@@ -59,21 +59,6 @@ export default function About() {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="py-14 px-6 text-center">
-        <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeIn} className="max-w-2xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-black text-white mb-6 tracking-tight">Ready to build?</h2>
-          <p className="text-lg text-muted-foreground mb-10">
-            Tell me about your business and I'll map out a custom automation plan — zero technical jargon, no hard sell.
-          </p>
-          <Link href="/get-started">
-            <Button size="lg" className="h-16 px-10 text-lg rounded-full bg-white text-black hover:bg-white/90 font-black shadow-[0_0_40px_rgba(255,255,255,0.15)]">
-              Get Your Free Audit <ChevronRight className="w-5 h-5 ml-2" />
-            </Button>
-          </Link>
-        </motion.div>
-      </section>
-
       <Footer />
     </div>
   );
