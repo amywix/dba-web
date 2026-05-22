@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap');
 @import "tailwindcss";
 @import "tw-animate-css";
 @plugin "@tailwindcss/typography";
@@ -59,17 +59,17 @@
   --elevate-2: rgba(255,255,255, .09);
 
   /* Deep space luxury - default to dark theme */
-  --background: 240 7% 4%; /* #070708 */
+  --background: 240 6% 6%; /* Super dark, rich gray-black #0e0e11 */
   --foreground: 0 0% 100%;
-  --border: 271 91% 65%; /* primary purple border for glow */
+  --border: 240 5% 15%; 
   
-  --card: 240 13% 6%;
+  --card: 240 6% 8%;
   --card-foreground: 0 0% 100%;
-  --card-border: 271 91% 65%;
+  --card-border: 240 5% 16%;
   
-  --popover: 240 13% 6%;
+  --popover: 240 6% 8%;
   --popover-foreground: 0 0% 100%;
-  --popover-border: 271 91% 65%;
+  --popover-border: 240 5% 16%;
 
   --primary: 271 91% 65%; /* #A855F7 */
   --primary-foreground: 0 0% 100%;
@@ -77,8 +77,8 @@
   --secondary: 262 83% 58%; /* #7C3AED */
   --secondary-foreground: 0 0% 100%;
   
-  --muted: 240 7% 12%;
-  --muted-foreground: 240 10% 75%; /* #B8B8C4 */
+  --muted: 240 6% 12%;
+  --muted-foreground: 240 5% 65%; /* Restrained, highly legible gray */
   
   --accent: 292 84% 61%; /* #D946EF */
   --accent-foreground: 0 0% 100%;
@@ -86,13 +86,13 @@
   --destructive: 0 84% 60%;
   --destructive-foreground: 0 0% 100%;
 
-  --input: 240 7% 15%;
+  --input: 240 6% 12%;
   --ring: 271 91% 65%;
 
   --app-font-sans: 'Poppins', sans-serif;
   --app-font-serif: Georgia, serif;
   --app-font-mono: Menlo, monospace;
-  --radius: .5rem;
+  --radius: .75rem;
 
   --sidebar: var(--background);
   --sidebar-foreground: var(--foreground);
@@ -111,7 +111,7 @@
 }
 
 .dark {
-  /* Same as root since it's a dark-themed site */
+  /* Site is universally dark themed */
 }
 
 @layer base {
@@ -120,7 +120,7 @@
   }
 
   body {
-    @apply font-sans antialiased bg-background text-foreground;
+    @apply font-sans antialiased bg-background text-foreground selection:bg-primary/30;
   }
   
   h1, h2, h3, h4, h5, h6 {

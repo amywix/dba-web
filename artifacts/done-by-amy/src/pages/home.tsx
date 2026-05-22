@@ -1,490 +1,324 @@
-import { motion } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 import { Link } from "wouter";
 import { useSEO } from "@/hooks/use-seo";
 import Navbar from "@/components/navbar";
+import Footer from "@/components/footer";
 import { 
-  Bot, PhoneCall, Workflow, Globe,
-  CheckCircle2, ArrowRight, Zap, Briefcase, PhoneOutgoing, Users, Calendar, Sparkles
+  Bot, PhoneCall, Globe, ArrowRight, Zap, PhoneOutgoing, Users, CheckCircle2, ChevronRight
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-import logoMark from "@assets/ChatGPT_Image_May_14,_2026,_04_49_39_PM_-_Copy_1779201943316.png";
-import linkBanner from "@assets/link_img_1779201943317.png";
 import tcLogo from "@assets/tc_logo_1779201943317.png";
 import tcScreen from "@assets/tc_screen_1779201943317.png";
-import featureCards from "@assets/ChatGPT_Image_May_18,_2026,_11_32_20_AM_1779201943317.png";
 import autoDialScreen from "../assets/autodial_nobg.png";
 import yardYakkaApp from "../assets/yard_yakka_app_nobg.png";
 
-const fadeUp = {
-  hidden: { opacity: 0, y: 28 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.55, ease: [0.22, 1, 0.36, 1] } }
+const fadeUp: Variants = {
+  hidden: { opacity: 0, y: 30 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
 };
 
-const stagger = {
+const stagger: Variants = {
   hidden: { opacity: 0 },
   visible: { opacity: 1, transition: { staggerChildren: 0.1 } }
 };
 
-function SectionLabel({ icon: Icon, children }: { icon: React.ElementType; children: React.ReactNode }) {
+function SectionBadge({ children }: { children: React.ReactNode }) {
   return (
-    <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/5 border border-primary/30 text-primary text-xs font-bold uppercase tracking-widest mb-6">
-      <Icon className="w-3.5 h-3.5" /> {children}
+    <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/[0.03] border border-white/[0.08] text-white/70 text-xs font-bold uppercase tracking-widest mb-8">
+      {children}
     </div>
   );
 }
 
 export default function Home() {
   useSEO({
-    title: "Done By Amy | AI Automation for Australian Small Businesses | TradieCatch",
-    description: "Done By Amy builds AI chatbots, TradieCatch missed call systems, AutoDial AI calling agents, and workflow automations for small businesses across Australia. Smart Systems. Real Results. Zero Overwhelm.",
-    keywords: "AI automation Australia, TradieCatch, tradie missed call system, AI chatbot small business Australia, AutoDial AI calling, workflow automation Australia, virtual assistant Australia, AI automation Sydney Melbourne Brisbane, Done By Amy, small business automation",
+    title: "Done By Amy | AI Automation for Australian Small Businesses",
+    description: "Premium AI chatbots, TradieCatch missed call systems, AutoDial AI calling agents, and workflow automations for Australian small businesses. Smart Systems. Real Results. Zero Overwhelm.",
+    keywords: "AI automation Australia, TradieCatch, AI chatbot small business Australia, AutoDial AI calling, workflow automation Australia",
     canonical: "https://www.donebyamy.com",
   });
 
   return (
-    <div className="min-h-screen bg-background text-foreground overflow-x-hidden selection:bg-primary/30">
+    <div className="min-h-screen flex flex-col bg-background text-foreground overflow-x-hidden selection:bg-primary/30">
       
       <Navbar />
 
       {/* ─── HERO ─────────────────────────────────────────────────── */}
-      <section className="relative pt-36 pb-24 md:pt-52 md:pb-36 px-6 overflow-hidden">
-        <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/10 to-primary/20" />
-          <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[900px] h-[500px] bg-primary/20 rounded-full blur-[140px]" />
-          <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-secondary/10 rounded-full blur-[100px]" />
-        </div>
-        <div className="container mx-auto text-center relative z-10 max-w-3xl">
+      <section className="relative pt-40 pb-28 md:pt-56 md:pb-40 px-6 overflow-hidden">
+        {/* Abstract Glows */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] bg-primary/20 rounded-full blur-[160px] opacity-50 pointer-events-none" />
+        <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-secondary/10 rounded-full blur-[120px] pointer-events-none" />
+        
+        <div className="container mx-auto text-center relative z-10 max-w-4xl">
           <motion.div initial="hidden" animate="visible" variants={stagger}>
-            <motion.h1 variants={fadeUp} className="text-5xl md:text-7xl font-black text-white mb-6 leading-[1.05] tracking-tight">
-              Ready to stop doing<br />everything yourself?
+            <motion.div variants={fadeUp} className="mb-6 flex justify-center">
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-bold uppercase tracking-widest backdrop-blur-md">
+                <span className="relative flex h-2 w-2">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+                </span>
+                Australia's Premier AI Automation Agency
+              </div>
+            </motion.div>
+            
+            <motion.h1 variants={fadeUp} className="text-5xl sm:text-6xl md:text-[80px] font-black text-white mb-8 leading-[1.05] tracking-tight">
+              Systems that run your business. <br className="hidden md:block"/>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">Not the other way around.</span>
             </motion.h1>
-            <motion.p variants={fadeUp} className="text-lg md:text-xl text-muted-foreground max-w-xl mx-auto mb-10 leading-relaxed">
-              Let's chat about your business bottlenecks and find the exact automations that will save you 10+ hours this week.
+            
+            <motion.p variants={fadeUp} className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-12 leading-relaxed">
+              We build AI chatbots, missed-call responders, and custom workflow automations that buy back 10+ hours of your week. Zero jargon. Zero overwhelm.
             </motion.p>
+            
             <motion.div variants={fadeUp} className="flex flex-col sm:flex-row items-center gap-4 justify-center">
               <Link href="/get-started">
                 <Button
                   data-testid="hero-cta-button"
                   size="lg"
-                  className="h-16 px-12 text-lg rounded-full bg-white text-black hover:bg-white/90 font-black shadow-[0_0_60px_rgba(255,255,255,0.2)] hover:shadow-[0_0_80px_rgba(255,255,255,0.3)] hover:-translate-y-0.5 transition-all duration-300"
+                  className="h-14 sm:h-16 px-8 sm:px-10 text-base sm:text-lg rounded-full bg-white text-black hover:bg-white/90 font-black shadow-[0_0_40px_rgba(255,255,255,0.15)] hover:shadow-[0_0_60px_rgba(255,255,255,0.25)] hover:-translate-y-0.5 transition-all duration-300"
                 >
-                  Get Your Free Audit <ArrowRight className="w-5 h-5 ml-2" />
+                  Get Your Free Audit
                 </Button>
               </Link>
               <Button
                 data-testid="hero-secondary-button"
                 size="lg"
-                variant="ghost"
-                className="h-14 px-8 text-base rounded-full border border-white/10 hover:border-white/20 hover:bg-white/5 text-muted-foreground hover:text-white transition-all"
+                variant="outline"
+                className="h-14 sm:h-16 px-8 sm:px-10 text-base sm:text-lg rounded-full border-white/10 hover:bg-white/5 text-white hover:border-white/20 transition-all duration-300"
                 onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
               >
-                What We Do <ArrowRight className="w-4 h-4 ml-2" />
+                Explore Services
               </Button>
             </motion.div>
           </motion.div>
         </div>
       </section>
 
-
-      {/* ─── SERVICES ─────────────────────────────────────────────── */}
-      <section id="services" className="py-14 px-6 bg-white/[0.02] border-y border-white/[0.04]">
+      {/* ─── SERVICES OVERVIEW ────────────────────────────────────── */}
+      <section id="services" className="py-24 px-6 bg-white/[0.01] border-y border-white/[0.04]">
         <div className="container mx-auto max-w-6xl">
           <motion.div
-            initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}
-            className="text-center mb-16"
+            initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={stagger}
+            className="flex flex-col md:flex-row justify-between items-end gap-8 mb-16"
           >
-            <motion.div variants={fadeUp}>
-              <SectionLabel icon={Bot}>What We Build</SectionLabel>
-            </motion.div>
-            <motion.h2 variants={fadeUp} className="text-4xl md:text-5xl font-black tracking-tight mb-4">
-              Expert automation,{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">done for you.</span>
-            </motion.h2>
-            <motion.p variants={fadeUp} className="text-muted-foreground max-w-lg mx-auto">
-              Custom AI systems designed specifically for your daily operations — no tech knowledge required.
+            <div className="max-w-2xl">
+              <motion.div variants={fadeUp}><SectionBadge>What We Build</SectionBadge></motion.div>
+              <motion.h2 variants={fadeUp} className="text-4xl md:text-5xl font-black tracking-tight text-white leading-tight">
+                Enterprise-grade automation, scaled for small business.
+              </motion.h2>
+            </div>
+            <motion.p variants={fadeUp} className="text-muted-foreground max-w-md leading-relaxed">
+              We don't sell software subscriptions. We sell outcomes. If it saves time, captures leads, or speeds up cash flow, we build it.
             </motion.p>
           </motion.div>
 
           <motion.div
-            initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}
-            className="grid grid-cols-1 md:grid-cols-3 gap-5"
+            initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={stagger}
+            className="grid grid-cols-1 md:grid-cols-3 gap-6"
           >
             {[
-              { icon: Bot,       title: "AI Automations",        price: "from $99 + setup", desc: "AI chatbots, missed call systems, workflows — all running 24/7 on autopilot." },
-              { icon: Globe,     title: "Websites",              price: "from $199", desc: "Conversion-focused, SEO-ready sites that turn visitors into paying customers." },
-              { icon: Zap,       title: "Apps",                  price: "from $199", desc: "Custom web apps and tools that connect your systems and automate the boring stuff." },
+              { 
+                icon: Bot, 
+                title: "AI Automations", 
+                price: "From $99 + setup", 
+                desc: "Intelligent chatbots, CRM syncs, and 24/7 virtual assistants that handle the repetitive work." 
+              },
+              { 
+                icon: Globe, 
+                title: "Conversion Websites", 
+                price: "From $199", 
+                desc: "Lightning-fast, SEO-optimized sites designed specifically to turn visitors into booked jobs." 
+              },
+              { 
+                icon: Zap, 
+                title: "Custom Apps", 
+                price: "From $199", 
+                desc: "Bespoke web tools that bridge the gap between your existing software stack." 
+              },
             ].map((srv, i) => (
               <motion.div
                 variants={fadeUp} key={i}
-                className="group relative p-6 rounded-2xl bg-white/[0.03] border border-white/[0.08] hover:border-primary/40 transition-all duration-300 hover:bg-white/[0.06] hover:-translate-y-1 flex flex-col"
+                className="group p-8 rounded-3xl bg-white/[0.02] border border-white/[0.06] hover:border-primary/40 transition-all duration-500 hover:bg-white/[0.04] flex flex-col h-full"
               >
-                <div className="w-12 h-12 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center mb-5 group-hover:bg-primary/20 group-hover:border-primary/40 transition-colors">
-                  <srv.icon className="w-6 h-6 text-primary" />
+                <div className="w-14 h-14 rounded-2xl bg-white/[0.04] border border-white/10 flex items-center justify-center mb-8 group-hover:scale-110 group-hover:bg-primary/20 group-hover:border-primary/40 transition-all duration-500">
+                  <srv.icon className="w-6 h-6 text-white group-hover:text-primary transition-colors" />
                 </div>
-                <h3 className="text-base font-black text-white mb-1">{srv.title}</h3>
-                <p className="text-primary text-xs font-bold mb-2">{srv.price}</p>
-                <p className="text-muted-foreground text-sm leading-relaxed">{srv.desc}</p>
+                <h3 className="text-xl font-bold text-white mb-2">{srv.title}</h3>
+                <p className="text-primary text-sm font-bold mb-4">{srv.price}</p>
+                <p className="text-muted-foreground text-sm leading-relaxed mt-auto">{srv.desc}</p>
               </motion.div>
             ))}
           </motion.div>
         </div>
       </section>
 
-      {/* ─── AI CHATBOT ───────────────────────────────────────────── */}
-      <section className="py-14 px-6 relative overflow-hidden">
-        <div className="absolute left-0 top-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-primary/10 rounded-full blur-[120px] pointer-events-none" />
+      {/* ─── TRADIECATCH (FLAGSHIP) ───────────────────────────────── */}
+      <section id="tradiecatch" className="py-24 px-6 overflow-hidden relative">
+        <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-secondary/10 rounded-full blur-[140px] pointer-events-none" />
         <div className="container mx-auto max-w-6xl relative z-10">
-          <div className="flex flex-col md:flex-row items-center gap-16">
-
-            {/* Chat window */}
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            
             <motion.div
-              initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}
-              className="flex-1 max-w-[360px] mx-auto w-full order-last md:order-first"
-            >
-              <div className="rounded-3xl overflow-hidden shadow-[0_24px_80px_rgba(0,0,0,0.5),0_0_40px_rgba(168,85,247,0.15)] border border-white/[0.08]">
-                <div className="bg-gradient-to-r from-primary to-secondary px-5 py-4 flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-white/20 border-2 border-white/30 flex items-center justify-center shrink-0">
-                    <span className="text-white font-black text-sm">A</span>
-                  </div>
-                  <div className="flex-1 min-w-0">
-                    <p className="text-white font-bold text-sm">Amy — AI Assistant</p>
-                    <div className="flex items-center gap-1.5 mt-0.5">
-                      <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 inline-block" />
-                      <span className="text-white/70 text-xs">Online now</span>
-                    </div>
-                  </div>
-                  <Bot className="w-4 h-4 text-white/50 shrink-0" />
-                </div>
-                <div className="bg-[#f5f5f7] p-4 space-y-3">
-                  {[
-                    { from: "bot",  text: "Hi there! How can I help you today?" },
-                    { from: "user", text: "Do you have availability this week?" },
-                    { from: "bot",  text: "Absolutely! I can book you in right now. What day suits you best?" },
-                    { from: "user", text: "Thursday afternoon would be great." },
-                    { from: "bot",  text: "Done — you're booked for Thursday at 2pm. A confirmation is on its way! 🎉" },
-                  ].map((msg, i) => (
-                    <div key={i} className={`flex ${msg.from === "user" ? "justify-end" : "justify-start"}`}>
-                      <div className={`px-3.5 py-2.5 rounded-2xl text-xs max-w-[78%] leading-relaxed ${
-                        msg.from === "bot"
-                          ? "bg-white text-gray-700 rounded-tl-sm shadow-sm"
-                          : "bg-gradient-to-r from-primary to-secondary text-white rounded-tr-sm"
-                      }`}>
-                        {msg.text}
-                      </div>
-                    </div>
-                  ))}
-                </div>
-                <div className="bg-[#f5f5f7] border-t border-black/[0.06] px-4 py-3 flex items-center gap-3">
-                  <div className="flex-1 bg-white rounded-full px-4 py-2 text-xs text-gray-400 shadow-sm">Type a message...</div>
-                  <div className="w-8 h-8 rounded-full bg-gradient-to-r from-primary to-secondary flex items-center justify-center shrink-0 shadow-sm">
-                    <ArrowRight className="w-3.5 h-3.5 text-white" />
-                  </div>
-                </div>
-              </div>
-            </motion.div>
-
-            {/* Copy */}
-            <motion.div
-              initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}
-              className="flex-1 space-y-6"
+              initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={stagger}
+              className="order-2 lg:order-1 space-y-8"
             >
               <motion.div variants={fadeUp}>
-                <SectionLabel icon={Bot}>AI Chatbots & Virtual Assistants</SectionLabel>
-              </motion.div>
-              <motion.h2 variants={fadeUp} className="text-4xl md:text-5xl font-black leading-tight tracking-tight">
-                Your business,<br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">always online.</span>
-              </motion.h2>
-              <motion.p variants={fadeUp} className="text-muted-foreground leading-relaxed">
-                Amy's AI virtual assistants handle customer enquiries, capture leads, and answer FAQs around the clock — so you never miss an opportunity, even at 2am.
-              </motion.p>
-              <motion.ul variants={stagger} className="space-y-3">
-                {[
-                  "Responds instantly to customer questions 24/7",
-                  "Captures lead name, phone, and job details automatically",
-                  "Handles FAQs, pricing queries, and booking requests",
-                  "Automates your social media inboxes — Facebook, Instagram & more",
-                  "Schedules and publishes social media posts automatically",
-                  "Escalates complex issues to you when needed",
-                  "Fully customised to your business, tone, and services",
-                ].map((item, i) => (
-                  <motion.li variants={fadeUp} key={i} className="flex items-start gap-3 text-sm text-muted-foreground">
-                    <CheckCircle2 className="w-4 h-4 text-primary shrink-0 mt-0.5" /> {item}
-                  </motion.li>
-                ))}
-              </motion.ul>
-              <motion.div variants={fadeUp}>
-                <Link href="/get-started">
-                  <Button data-testid="chatbot-cta-button" className="rounded-full bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 shadow-[0_0_24px_rgba(168,85,247,0.35)] hover:shadow-[0_0_40px_rgba(168,85,247,0.5)] hover:-translate-y-0.5 transition-all">
-                    Get Your AI Assistant <ArrowRight className="w-4 h-4 ml-2" />
-                  </Button>
-                </Link>
-              </motion.div>
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* ─── TRADIECATCH ──────────────────────────────────────────── */}
-      <section id="tradiecatch" className="py-14 px-6 overflow-hidden relative">
-        <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-secondary/8 rounded-full blur-[140px] pointer-events-none" />
-        <div className="container mx-auto max-w-6xl relative z-10">
-          <div className="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
-            <motion.div
-              initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}
-              className="space-y-7"
-            >
-              <motion.div variants={fadeUp}>
-                <img src={tcLogo} alt="TradieCatch Logo" className="h-14 object-contain" />
-              </motion.div>
-              <motion.div variants={fadeUp}>
-                <SectionLabel icon={PhoneCall}>Flagship Product for Tradies</SectionLabel>
-                <h2 className="text-4xl md:text-5xl font-black leading-tight tracking-tight text-white">
-                  Never miss a job<br />lead again.
+                <img src={tcLogo} alt="TradieCatch Logo" className="h-10 sm:h-12 object-contain mb-8" />
+                <h2 className="text-4xl md:text-5xl font-black leading-tight tracking-tight text-white mb-6">
+                  Never lose a job to<br/>a missed call again.
                 </h2>
+                <p className="text-lg text-muted-foreground leading-relaxed max-w-lg">
+                  When you're on the tools, you can't always answer the phone. TradieCatch automatically fires a custom SMS back to missed callers instantly, capturing the lead before they ring your competitor.
+                </p>
               </motion.div>
-              <motion.p variants={fadeUp} className="text-muted-foreground leading-relaxed">
-                A mobile web app that catches every missed call and automatically sends an SMS reply — so you never lose a job while you're on the tools.
-              </motion.p>
-              <motion.ul variants={stagger} className="space-y-3">
+              
+              <motion.ul variants={stagger} className="space-y-4 pt-4">
                 {[
-                  "Mobile web app — no download required",
-                  "Instant SMS auto-reply to missed calls",
-                  "Captures job details automatically, 24/7",
-                  "Just $99/month — pays for itself in one job",
+                  "Works instantly — zero app downloads needed",
+                  "Fully customizable auto-reply messaging",
+                  "Captures job details while you keep working",
+                  "Pays for itself with just one saved job",
                 ].map((item, i) => (
-                  <motion.li variants={fadeUp} key={i} className="flex items-center gap-3 text-sm text-white/80">
-                    <CheckCircle2 className="text-primary w-4 h-4 shrink-0" /> {item}
+                  <motion.li variants={fadeUp} key={i} className="flex items-start gap-4 text-white/80">
+                    <div className="mt-1 bg-primary/20 p-1 rounded-full"><CheckCircle2 className="text-primary w-4 h-4" /></div>
+                    <span className="leading-snug">{item}</span>
                   </motion.li>
                 ))}
               </motion.ul>
-              <motion.div variants={fadeUp} className="space-y-4">
-                <Link href="/get-started">
-                  <Button data-testid="tc-cta-button" className="rounded-full bg-white text-black hover:bg-gray-100 font-bold shadow-[0_4px_24px_rgba(255,255,255,0.15)] hover:shadow-[0_4px_32px_rgba(255,255,255,0.25)] hover:-translate-y-0.5 transition-all">
-                    Get TradieCatch Today <ArrowRight className="w-4 h-4 ml-2" />
+              
+              <motion.div variants={fadeUp} className="flex flex-col sm:flex-row gap-4 pt-6">
+                <Link href="/get-started?service=TradieCatch">
+                  <Button className="h-14 px-8 rounded-full bg-white text-black hover:bg-white/90 font-bold w-full sm:w-auto">
+                    Get TradieCatch — $99/mo
                   </Button>
                 </Link>
-                <a
-                  href="sms:0485050788&body=Hi%2C%20I%27d%20like%20to%20watch%20the%20TradieCatch%20demo"
-                  data-testid="tc-sms-cta"
-                  className="flex items-center gap-3 group w-fit"
-                >
-                  <div className="w-10 h-10 rounded-full bg-white/10 border border-white/20 flex items-center justify-center shrink-0 group-hover:bg-white/20 group-hover:border-white/40 transition-all">
-                    <PhoneCall className="w-4 h-4 text-white" />
-                  </div>
-                  <div>
-                    <p className="text-white font-bold text-sm leading-tight group-hover:text-primary transition-colors">
-                      SMS <span className="tracking-wide">0485 050 788</span>
-                    </p>
-                    <p className="text-white/50 text-xs">to watch the demo &amp; get signed up</p>
-                  </div>
-                </a>
+                <Button variant="outline" className="h-14 px-8 rounded-full border-white/10 hover:bg-white/5 hover:border-white/20 w-full sm:w-auto text-white">
+                  SMS Demo: 0485 050 788
+                </Button>
               </motion.div>
             </motion.div>
 
             <motion.div
-              initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7 }}
-              className="flex justify-center"
+              initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ duration: 0.8, ease: "easeOut" }}
+              className="order-1 lg:order-2 flex justify-center lg:justify-end relative"
             >
-              <div className="relative">
-                <div className="absolute inset-0 bg-primary/20 rounded-full blur-[60px] scale-90" />
-                <img src={tcScreen} alt="TradieCatch App" className="relative z-10 h-[480px] object-contain drop-shadow-2xl" />
+              <div className="relative w-full max-w-[400px]">
+                <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-secondary/20 rounded-[40px] blur-2xl transform rotate-6 scale-95" />
+                <img src={tcScreen} alt="TradieCatch Interface" className="relative z-10 w-full object-contain drop-shadow-2xl" />
               </div>
             </motion.div>
+            
           </div>
         </div>
       </section>
 
       {/* ─── AUTODIAL ─────────────────────────────────────────────── */}
-      <section id="autodial" className="py-14 px-6 overflow-hidden relative bg-white/[0.02] border-y border-white/[0.04]">
-        <div className="absolute left-0 top-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-primary/8 rounded-full blur-[140px] pointer-events-none" />
+      <section id="autodial" className="py-24 px-6 overflow-hidden relative bg-white/[0.01] border-y border-white/[0.04]">
+        <div className="absolute left-0 top-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/10 rounded-full blur-[140px] pointer-events-none" />
         <div className="container mx-auto max-w-6xl relative z-10">
-          <div className="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
-
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            
             <motion.div
-              initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7 }}
-              className="flex justify-center order-2 md:order-1"
+              initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.8, ease: "easeOut" }}
+              className="flex justify-center lg:justify-start relative"
             >
-              <div className="relative">
-                <div className="absolute inset-0 bg-primary/15 rounded-full blur-[60px] scale-90" />
-                <img
-                  src={autoDialScreen}
-                  alt="AutoDial AI Calling Agent"
-                  className="relative z-10 h-[500px] object-contain drop-shadow-2xl"
-                  data-testid="autodial-screen-image"
-                />
+              <div className="relative w-full max-w-[460px]">
+                <div className="absolute inset-0 bg-primary/15 rounded-full blur-3xl scale-75" />
+                <img src={autoDialScreen} alt="AutoDial Dashboard" className="relative z-10 w-full object-contain drop-shadow-2xl" />
               </div>
             </motion.div>
 
             <motion.div
-              initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}
-              className="space-y-7 order-1 md:order-2"
+              initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={stagger}
+              className="space-y-8"
             >
               <motion.div variants={fadeUp}>
-                <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/30 text-primary text-xs font-black uppercase tracking-widest mb-2">
-                  <PhoneOutgoing className="w-3.5 h-3.5" /> New Product
-                </div>
-              </motion.div>
-              <motion.div variants={fadeUp}>
-                <SectionLabel icon={PhoneOutgoing}>AI Outbound Calling</SectionLabel>
-                <h2 className="text-4xl md:text-5xl font-black leading-tight tracking-tight">
-                  AutoDial — your AI<br />
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">telemarketing agent.</span>
+                <SectionBadge>AI Outbound Calling</SectionBadge>
+                <h2 className="text-4xl md:text-5xl font-black leading-tight tracking-tight text-white mb-6">
+                  AutoDial. Your tireless<br/>telemarketing agent.
                 </h2>
+                <p className="text-lg text-muted-foreground leading-relaxed max-w-lg">
+                  An AI voice agent that sounds human, works 24/7, handles objections, qualifies leads, and books appointments straight into your calendar. Scale your outreach instantly.
+                </p>
               </motion.div>
-              <motion.p variants={fadeUp} className="text-muted-foreground leading-relaxed">
-                AutoDial makes outbound calls for you — sounding just like a real person. It dials leads, starts natural conversations, handles objections, qualifies prospects, and books appointments straight into your calendar.
-              </motion.p>
-              <motion.ul variants={stagger} className="space-y-3">
+              
+              <motion.ul variants={stagger} className="grid sm:grid-cols-2 gap-6 pt-4">
                 {[
-                  { icon: CheckCircle2, text: "Automatically dials leads and starts natural conversations" },
-                  { icon: CheckCircle2, text: "Sounds like a real person — builds trust instantly"         },
-                  { icon: CheckCircle2, text: "Handles objections and qualifies leads for you"             },
-                  { icon: Calendar,     text: "Books appointments directly into your calendar"             },
-                  { icon: Users,        text: "Works 24/7 — more calls, more leads, zero fatigue"         },
-                  { icon: CheckCircle2, text: "From $99/month based on call volume"                       },
-                ].map(({ icon: Icon, text }, i) => (
-                  <motion.li variants={fadeUp} key={i} className="flex items-center gap-3 text-sm text-white/80">
-                    <Icon className="text-primary w-4 h-4 shrink-0" /> {text}
+                  { title: "Human-Like Voice", desc: "Natural pauses, intonations, and instant replies." },
+                  { title: "Smart Qualifying", desc: "Filters tire-kickers and finds the real buyers." },
+                  { title: "Direct Booking", desc: "Integrates with Calendly to book appointments." },
+                  { title: "Endless Scale", desc: "Make 10 calls or 10,000 calls simultaneously." },
+                ].map((feature, i) => (
+                  <motion.li variants={fadeUp} key={i} className="bg-white/[0.03] p-5 rounded-2xl border border-white/[0.06]">
+                    <h4 className="text-white font-bold text-sm mb-2">{feature.title}</h4>
+                    <p className="text-muted-foreground text-xs leading-relaxed">{feature.desc}</p>
                   </motion.li>
                 ))}
               </motion.ul>
-              <motion.div variants={fadeUp}>
-                <Link href="/get-started?service=AI+Caller+(AutoDial)">
-                  <Button data-testid="autodial-cta-button" className="rounded-full bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 shadow-[0_0_24px_rgba(168,85,247,0.35)] hover:shadow-[0_0_40px_rgba(168,85,247,0.5)] hover:-translate-y-0.5 transition-all">
-                    Activate AutoDial <ArrowRight className="w-4 h-4 ml-2" />
+              
+              <motion.div variants={fadeUp} className="pt-4">
+                <Link href="/get-started?service=AutoDial">
+                  <Button className="h-14 px-8 rounded-full bg-primary hover:bg-primary/90 text-white font-bold w-full sm:w-auto">
+                    Deploy AutoDial
                   </Button>
                 </Link>
               </motion.div>
             </motion.div>
+            
           </div>
         </div>
       </section>
 
-
-      {/* ─── CASE STUDY: YARD YAKKA BOYS ─────────────────────────── */}
-      <section className="py-14 px-6 bg-white/[0.02] border-y border-white/[0.04]">
+      {/* ─── CASE STUDY: YARD YAKKA ───────────────────────────────── */}
+      <section className="py-24 px-6">
         <div className="container mx-auto max-w-5xl">
-          <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
-
-            {/* Header */}
-            <motion.div variants={fadeUp} className="text-center mb-12">
-              <SectionLabel icon={CheckCircle2}>Case Study</SectionLabel>
-              <h2 className="text-4xl md:text-5xl font-black tracking-tight mb-3">
+          <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={stagger}>
+            
+            <motion.div variants={fadeUp} className="text-center mb-16">
+              <SectionBadge>Case Study</SectionBadge>
+              <h2 className="text-4xl md:text-5xl font-black tracking-tight text-white mb-4">
                 The Yard Yakka Boys
               </h2>
-              <p className="text-muted-foreground max-w-xl mx-auto">Lawn care & NDIS maintenance — Mackay, QLD</p>
+              <p className="text-muted-foreground text-lg">Lawn Care & NDIS Maintenance · Mackay, QLD</p>
             </motion.div>
 
-            {/* Intro + App mockup */}
-            <div className="grid md:grid-cols-2 gap-10 items-center mb-14">
-              <motion.div variants={fadeUp} className="order-last md:order-first">
-                <p className="text-muted-foreground leading-relaxed mb-4">
-                  Lucas runs a busy lawn mowing, landscaping, and NDIS maintenance business. His biggest pain point wasn't finding work — it was the admin mountain that came with it. Invoicing, chasing payments, and NDIS portal uploads were eating hours every week.
+            <div className="grid md:grid-cols-12 gap-12 items-center bg-white/[0.02] border border-white/[0.06] rounded-[40px] p-8 md:p-12 overflow-hidden relative">
+              <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/10 rounded-full blur-[100px] pointer-events-none" />
+              
+              <motion.div variants={fadeUp} className="md:col-span-7 space-y-6 relative z-10">
+                <h3 className="text-2xl font-bold text-white mb-4">From admin chaos to total clarity.</h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  Lucas was losing half his week to admin: generating invoices, uploading to NDIS portals, and chasing unpaid bills. The work was flowing in, but the back-office was choking the business.
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
-                  Done By Amy built him a custom job-management app and automated the entire back-office workflow behind it — so Lucas can stay on the tools.
+                  We built a bespoke mobile app for his team and wired up a 6-step automation workflow. Now, when a job is marked complete on-site, the invoice is instantly generated in QuickBooks, the NDIS spreadsheet is updated, and automated follow-ups handle late payments.
                 </p>
+                <blockquote className="border-l-2 border-primary pl-5 py-2 mt-8">
+                  <p className="text-white italic text-sm md:text-base leading-relaxed mb-3">
+                    "What used to take me half a day every week now just happens. Invoices go out, the NDIS sheet fills itself, and I can actually see what's been paid without digging through emails."
+                  </p>
+                  <footer className="text-primary text-xs font-bold uppercase tracking-wider">— Lucas, Owner</footer>
+                </blockquote>
               </motion.div>
-              <motion.div variants={fadeUp} className="flex justify-center">
-                <img
-                  src={yardYakkaApp}
-                  alt="The Yard Yakka Boys custom job-management app"
-                  className="w-full max-w-[280px] h-auto drop-shadow-[0_24px_60px_rgba(168,85,247,0.25)]"
-                />
+
+              <motion.div variants={fadeUp} className="md:col-span-5 flex justify-center relative z-10">
+                <img src={yardYakkaApp} alt="Yard Yakka App" className="w-full max-w-[260px] object-contain drop-shadow-2xl" />
               </motion.div>
             </div>
-
-            {/* Workflow steps */}
-            <motion.div variants={fadeUp} className="mb-12">
-              <p className="text-xs font-black uppercase tracking-widest text-primary mb-6 text-center">The automation workflow</p>
-
-              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
-                {[
-                  {
-                    step: "01",
-                    title: "Job Booked in App",
-                    desc: "Client details, address, service type & NDIS status captured automatically.",
-                    tag: "Trigger",
-                  },
-                  {
-                    step: "02",
-                    title: "Job Marked Complete",
-                    desc: "Lucas ticks done — automation fires instantly. No manual action.",
-                    tag: "Action",
-                  },
-                  {
-                    step: "03",
-                    title: "Invoice Created in QuickBooks",
-                    desc: "Invoice auto-generated with correct line items & sent to the right billing email.",
-                    tag: "QuickBooks",
-                  },
-                  {
-                    step: "04",
-                    title: "NDIS Spreadsheet Updated",
-                    desc: "Agency-managed jobs get auto-added to the monthly NDIS upload sheet.",
-                    tag: "Conditional",
-                    highlight: true,
-                  },
-                  {
-                    step: "05",
-                    title: "Unpaid Invoice Reminders",
-                    desc: "Overdue invoices trigger automated follow-up reminders. No chasing.",
-                    tag: "Follow-up",
-                  },
-                  {
-                    step: "06",
-                    title: "Remittance Reconciliation",
-                    desc: "Remittance emails are parsed and matched against invoices in QuickBooks in one pass.",
-                    tag: "Smart Match",
-                    highlight: true,
-                  },
-                ].map((item, i) => (
-                  <div
-                    key={i}
-                    className={`relative p-5 rounded-2xl border transition-all ${
-                      item.highlight
-                        ? "bg-primary/[0.07] border-primary/30"
-                        : "bg-white/[0.03] border-white/[0.07]"
-                    }`}
-                  >
-                    <div className="flex items-center justify-between mb-3">
-                      <div className={`w-9 h-9 rounded-xl flex items-center justify-center font-black text-xs ${item.highlight ? "bg-primary/30 border border-primary/50 text-primary" : "bg-white/5 border border-white/10 text-white/50"}`}>
-                        {item.step}
-                      </div>
-                      <span className={`text-[10px] font-black uppercase tracking-widest px-2 py-0.5 rounded-full ${item.highlight ? "bg-primary/20 text-primary" : "bg-white/5 text-white/40"}`}>
-                        {item.tag}
-                      </span>
-                    </div>
-                    <h4 className="text-white font-bold text-sm mb-1.5 leading-snug">{item.title}</h4>
-                    <p className="text-muted-foreground text-xs leading-relaxed">{item.desc}</p>
-                  </div>
-                ))}
-              </div>
-            </motion.div>
-
-            {/* Result callout */}
-            <motion.div variants={fadeUp} className="rounded-2xl p-8 text-center bg-gradient-to-b from-primary/10 to-white/[0.02] border border-primary/20">
-              <p className="text-white font-bold text-lg leading-relaxed mb-2">
-                "What used to take me half a day every week now just happens. Invoices go out, the NDIS sheet fills itself, and I can actually see what's been paid without digging through emails."
-              </p>
-              <p className="text-primary font-semibold text-sm">— Lucas, The Yard Yakka Boys · Mackay, QLD</p>
-            </motion.div>
 
           </motion.div>
         </div>
       </section>
 
       {/* ─── TESTIMONIALS ─────────────────────────────────────────── */}
-      <section className="py-14 px-6">
+      <section className="py-24 px-6 bg-white/[0.01] border-t border-white/[0.04]">
         <div className="container mx-auto max-w-6xl">
-          <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger} className="text-center mb-10">
-            <motion.div variants={fadeUp}><SectionLabel icon={Users}>Real Results</SectionLabel></motion.div>
-            <motion.h2 variants={fadeUp} className="text-4xl md:text-5xl font-black tracking-tight">
-              Businesses<br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">love what we build.</span>
+          <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger} className="text-center mb-16">
+            <motion.h2 variants={fadeUp} className="text-3xl md:text-4xl font-black tracking-tight text-white mb-4">
+              Trusted by Australian Business Owners
             </motion.h2>
+            <motion.p variants={fadeUp} className="text-muted-foreground">Real people getting real hours back in their week.</motion.p>
           </motion.div>
 
           <motion.div
@@ -494,39 +328,33 @@ export default function Home() {
             {[
               {
                 quote: "I was losing two or three jobs a week just from missed calls while I was on the tools. TradieCatch fixed that overnight. Made my money back in the first week alone.",
-                name: "Jake Morrish",
-                role: "Electrician",
-                location: "Strathpine, QLD",
+                name: "Jake Morrish", role: "Electrician", location: "Strathpine, QLD"
               },
               {
                 quote: "Amy set up our booking chatbot in two days. It now handles all our after-hours enquiries and books clients straight into our calendar. We wake up with new appointments every morning.",
-                name: "Renee Alcott",
-                role: "Remedial Massage Therapist",
-                location: "Brendale, QLD",
+                name: "Renee Alcott", role: "Remedial Massage Therapist", location: "Brendale, QLD"
               },
               {
                 quote: "The workflow automation Amy built connects our quotes to our invoicing and sends follow-up texts automatically. I've saved probably 6 hours a week. Wish I did this years ago.",
-                name: "Darren Schulz",
-                role: "Plumber & Gas Fitter",
-                location: "Aspley, QLD",
+                name: "Darren Schulz", role: "Plumber & Gas Fitter", location: "Aspley, QLD"
               },
             ].map((t, i) => (
               <motion.div
                 key={i} variants={fadeUp}
-                className="flex flex-col gap-5 p-7 rounded-2xl bg-white/[0.03] border border-white/[0.08] hover:border-primary/30 hover:bg-white/[0.06] transition-all duration-300"
+                className="p-8 rounded-3xl bg-white/[0.02] border border-white/[0.06] flex flex-col h-full"
               >
-                <div className="flex gap-0.5">
+                <div className="flex gap-1 mb-6">
                   {Array.from({ length: 5 }).map((_, s) => (
-                    <span key={s} className="text-yellow-400 text-sm">★</span>
+                    <span key={s} className="text-primary text-lg">★</span>
                   ))}
                 </div>
-                <p className="text-white/80 leading-relaxed text-sm flex-1">"{t.quote}"</p>
-                <div className="flex items-center gap-3 pt-2 border-t border-white/[0.06]">
-                  <div className="w-9 h-9 rounded-full bg-primary/20 border border-primary/30 flex items-center justify-center shrink-0 text-primary font-black text-sm">
+                <p className="text-white/90 leading-relaxed text-sm flex-1 mb-8">"{t.quote}"</p>
+                <div className="flex items-center gap-4 pt-6 border-t border-white/[0.06]">
+                  <div className="w-10 h-10 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center text-primary font-bold text-sm">
                     {t.name.charAt(0)}
                   </div>
                   <div>
-                    <p className="text-white font-bold text-sm leading-tight">{t.name}</p>
+                    <p className="text-white font-bold text-sm">{t.name}</p>
                     <p className="text-muted-foreground text-xs">{t.role} · {t.location}</p>
                   </div>
                 </div>
@@ -536,25 +364,37 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ─── FOOTER ───────────────────────────────────────────────── */}
-      <footer className="border-t border-white/[0.06] bg-background py-10 px-6">
-        <div className="container mx-auto max-w-6xl flex flex-col md:flex-row items-center justify-between gap-5 text-sm">
-          <div className="flex items-center gap-3">
-            <img src={logoMark} alt="Done By Amy" className="w-7 h-7 object-contain grayscale opacity-50" />
-            <span className="font-black text-white tracking-tight">Done By Amy</span>
-          </div>
-          <div className="text-muted-foreground/60 text-center">
-            <p>Australia-based · Working with businesses nationally</p>
-            <p className="mt-1">
-              <a href="mailto:admin@donebyamy.com" className="hover:text-primary transition-colors">admin@donebyamy.com</a>
-              {" · "}
-              <a href="https://www.donebyamy.com" className="hover:text-primary transition-colors">www.donebyamy.com</a>
-            </p>
-          </div>
-          <p className="text-muted-foreground/40">&copy; {new Date().getFullYear()} Done By Amy.</p>
+      {/* ─── FINAL CTA ────────────────────────────────────────────── */}
+      <section className="py-32 px-6 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-primary/10 pointer-events-none" />
+        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-primary/20 rounded-t-full blur-[120px] pointer-events-none" />
+        
+        <div className="container mx-auto max-w-3xl text-center relative z-10">
+          <motion.h2 
+            initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
+            className="text-4xl md:text-6xl font-black text-white mb-6 tracking-tight"
+          >
+            Stop doing it all yourself.
+          </motion.h2>
+          <motion.p 
+            initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.1 }}
+            className="text-xl text-muted-foreground mb-10 max-w-xl mx-auto"
+          >
+            Get a free automation audit for your business. Zero pressure. Zero jargon. Just a clear roadmap to save you time.
+          </motion.p>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.2 }}
+          >
+            <Link href="/get-started">
+              <Button size="lg" className="h-16 px-10 text-lg rounded-full bg-white text-black hover:bg-white/90 font-black shadow-[0_0_40px_rgba(255,255,255,0.2)]">
+                Get Your Free Audit <ChevronRight className="w-5 h-5 ml-2" />
+              </Button>
+            </Link>
+          </motion.div>
         </div>
-      </footer>
+      </section>
 
+      <Footer />
     </div>
   );
 }
