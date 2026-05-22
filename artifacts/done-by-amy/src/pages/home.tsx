@@ -115,27 +115,6 @@ export default function Home() {
             </motion.p>
           </motion.div>
 
-          {/* Headline metrics */}
-          <motion.div
-            initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={stagger}
-            className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-16"
-          >
-            {[
-              { stat: "10+", label: "hours given back to your week", sub: "Typical client result after 30 days" },
-              { stat: "24/7", label: "lead capture, even while you sleep", sub: "Missed calls, after-hours enquiries, weekends" },
-              { stat: "1 job", label: "is all it takes to pay for itself", sub: "Most setups break even in the first week" },
-            ].map((m, i) => (
-              <motion.div
-                variants={fadeUp} key={i}
-                className="p-8 rounded-3xl bg-white/[0.03] border border-white/[0.06] hover:border-primary/40 transition-all duration-500"
-              >
-                <div className="text-5xl md:text-6xl font-black text-primary mb-3 tracking-tight">{m.stat}</div>
-                <div className="text-white font-semibold mb-2 leading-snug">{m.label}</div>
-                <div className="text-muted-foreground text-sm leading-relaxed">{m.sub}</div>
-              </motion.div>
-            ))}
-          </motion.div>
-
           {/* Six concrete benefits */}
           <motion.div
             initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={stagger}
