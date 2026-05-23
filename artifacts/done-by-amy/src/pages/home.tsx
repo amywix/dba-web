@@ -97,7 +97,7 @@ export default function Home() {
       </section>
 
       {/* ─── WHY AUTOMATE (BENEFITS) ──────────────────────────────── */}
-      <section id="benefits" className="py-16 px-6 relative overflow-hidden">
+      <section id="benefits" className="pt-8 pb-10 px-6 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/[0.03] to-transparent pointer-events-none" />
         <div className="container mx-auto max-w-6xl relative z-10">
           <motion.div
@@ -169,7 +169,7 @@ export default function Home() {
       </section>
 
       {/* ─── SERVICES OVERVIEW ────────────────────────────────────── */}
-      <section id="services" className="py-16 px-6 bg-white/[0.01] border-y border-white/[0.04]">
+      <section id="services" className="pt-10 pb-16 px-6 bg-white/[0.01] border-y border-white/[0.04]">
         <div className="container mx-auto max-w-6xl">
           <motion.div
             initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={stagger}
