@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
-import linkBanner from "@assets/link_img_1779201943317.png";
+import linkBanner from "@assets/link_img_nobg.png";
 
 const links = [
   { label: "Home",      href: "/"             },

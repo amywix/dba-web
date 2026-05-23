@@ -1,5 +1,5 @@
 import { Link } from "wouter";
-import daLogoWordmark from "@assets/da_logo_1779201943317.png";
+import daLogoWordmark from "@assets/da_logo_nobg.png";
 
 export default function Footer() {
   return (
