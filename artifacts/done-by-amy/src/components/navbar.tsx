@@ -7,7 +7,6 @@ import linkBanner from "@assets/link_img_nobg.png";
 const links = [
   { label: "Home",      href: "/"             },
   { label: "Services",  href: "/#services"    },
-  { label: "Pricing",   href: "/#pricing"     },
   { label: "About",     href: "/about"        },
   { label: "Blog",      href: "/blog"         },
   { label: "FAQ",       href: "/faq"          },
