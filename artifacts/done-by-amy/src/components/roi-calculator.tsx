@@ -48,7 +48,7 @@ export default function RoiCalculator() {
   const [missedCalls, setMissedCalls] = useState(8);
   const [avgJob, setAvgJob] = useState(650);
 
-  const { hoursSavedMonthly, adminSavings, leadRecovery, totalMonthly, paybackDays } = useMemo(() => {
+  const { hoursSavedMonthly, adminSavings, leadRecovery, totalMonthly } = useMemo(() => {
     const ADMIN_AUTOMATION_RATE = 0.7;
     const MISSED_CALL_CONVERSION = 0.3;
     const WEEKS_PER_MONTH = 4.3;
@@ -57,8 +57,7 @@ export default function RoiCalculator() {
     const adminSavings = hoursSavedMonthly * hourlyValue;
     const leadRecovery = missedCalls * MISSED_CALL_CONVERSION * avgJob * WEEKS_PER_MONTH;
     const totalMonthly = adminSavings + leadRecovery;
-    const paybackDays = totalMonthly > 0 ? Math.max(1, Math.round((99 / totalMonthly) * 30)) : 30;
-    return { hoursSavedMonthly, adminSavings, leadRecovery, totalMonthly, paybackDays };
+    return { hoursSavedMonthly, adminSavings, leadRecovery, totalMonthly };
   }, [adminHours, hourlyValue, missedCalls, avgJob]);
 
   return (
@@ -153,7 +152,7 @@ export default function RoiCalculator() {
             <div className="mt-6 pt-6 border-t border-white/10">
               <div className="flex items-center gap-2 text-white/80 text-sm mb-5">
                 <TrendingUp className="w-4 h-4 text-primary" />
-                <span>TradieCatch ($99/mo) pays for itself in <span className="font-black text-primary">{paybackDays} {paybackDays === 1 ? "day" : "days"}</span></span>
+                <span>TradieCatch ($99/mo) <span className="font-black text-primary">pays for itself.</span></span>
               </div>
               <Link href="/get-started">
                 <Button className="w-full h-12 rounded-full bg-white text-black hover:bg-white/90 font-bold">
