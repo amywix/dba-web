@@ -6,7 +6,7 @@ import Footer from "@/components/footer";
 import { Button } from "@/components/ui/button";
 import { CheckCircle2, PhoneCall, MessageSquare, Clock, ShieldCheck, ChevronRight } from "lucide-react";
 
-import tcLogo from "@assets/tc_logo_1779201943317.png";
+import tcLogo from "@assets/tradiecatch_logo_nobg.png";
 import tcScreen from "@assets/tc_screen_1779201943317.png";
 
 const fadeUp: Variants = {

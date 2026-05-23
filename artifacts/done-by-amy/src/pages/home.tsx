@@ -10,7 +10,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-import tcLogo from "@assets/tc_logo_1779201943317.png";
+import tcLogo from "@assets/tradiecatch_logo_nobg.png";
 import tcScreen from "@assets/tc_screen_1779201943317.png";
 import autoDialScreen from "../assets/autodial_nobg.png";
 import yardYakkaApp from "../assets/yard_yakka_app_nobg.png";
