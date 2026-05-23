@@ -3,6 +3,7 @@ import { Link } from "wouter";
 import { useSEO } from "@/hooks/use-seo";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
+import RoiCalculator from "@/components/roi-calculator";
 import { 
   Bot, PhoneCall, Globe, ArrowRight, Zap, PhoneOutgoing, Users, CheckCircle2, ChevronRight,
   Clock, TrendingUp, Wallet, MoonStar, ShieldCheck
@@ -312,6 +313,8 @@ export default function Home() {
           </motion.div>
         </div>
       </section>
+
+      <RoiCalculator />
 
       {/* ─── TESTIMONIALS ─────────────────────────────────────────── */}
       <section className="py-16 px-6 bg-white/[0.01] border-t border-white/[0.04]">
