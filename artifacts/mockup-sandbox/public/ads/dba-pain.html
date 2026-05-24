@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Done By Amy — Missed Calls</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  html, body { margin: 0; padding: 0; width: 100vw; height: 100vh; overflow: hidden; background: #0e0e11; }
+  .ad {
+    width: 100vw; height: 100vh;
+    background: #0e0e11;
+    display: flex; flex-direction: column;
+    justify-content: space-between;
+    padding: 6vh 7vw;
+    box-sizing: border-box;
+    position: relative;
+  }
+  .glow {
+    position: absolute; top: -20vh; right: -20vw;
+    width: 70vw; height: 70vw;
+    background: radial-gradient(circle, rgba(168,85,247,0.18), transparent 60%);
+    pointer-events: none;
+  }
+  .logo img { height: 5vh; width: auto; display: block; }
+  .middle { display: flex; flex-direction: column; gap: 3vh; position: relative; z-index: 1; }
+  .headline {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 7.4vw;
+    line-height: 1.05;
+    color: #ffffff;
+    letter-spacing: -0.02em;
+  }
+  .headline .accent { color: #D946EF; }
+  .benefit {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 2.6vw;
+    line-height: 1.4;
+    color: rgba(255,255,255,0.75);
+    max-width: 80%;
+  }
+  .cta {
+    align-self: flex-start;
+    background: #A855F7;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 2.4vw;
+    padding: 2.2vh 5vw;
+    border-radius: 1.2vw;
+    text-decoration: none;
+  }
+  .footer {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6vw;
+    color: rgba(255,255,255,0.45);
+    letter-spacing: 0.05em;
+    position: relative; z-index: 1;
+  }
+</style>
+</head>
+<body>
+  <div class="ad">
+    <div class="glow"></div>
+    <div class="logo" style="position:relative;z-index:1;">
+      <img src="/__mockup/images/dba_logo.png" alt="Done By Amy" />
+    </div>
+    <div class="middle">
+      <div class="headline">Every missed call is a job going to your <span class="accent">competitor.</span></div>
+      <div class="benefit">TradieCatch answers, books, and follows up — 24/7.</div>
+      <a class="cta" href="#">Get Your Free Audit →</a>
+    </div>
+    <span class="footer">doneByAmy.com.au</span>
+  </div>
+</body>
+</html>
