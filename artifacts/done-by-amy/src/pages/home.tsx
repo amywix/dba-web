@@ -6,7 +6,7 @@ import Footer from "@/components/footer";
 import RoiCalculator from "@/components/roi-calculator";
 import { 
   Bot, PhoneCall, Globe, ArrowRight, Zap, PhoneOutgoing, Users, CheckCircle2, ChevronRight,
-  Clock, TrendingUp, Wallet, MoonStar, ShieldCheck
+  Clock, TrendingUp, Wallet, MoonStar, ShieldCheck, Calculator
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -238,16 +238,16 @@ export default function Home() {
           >
             <motion.div variants={fadeUp} className="flex justify-center"><SectionBadge>Featured Work</SectionBadge></motion.div>
             <motion.h2 variants={fadeUp} className="text-4xl md:text-5xl font-black tracking-tight text-white leading-tight mb-6">
-              Two flagship products. One real-world result.
+              Flagship products. Hands-on support. Real results.
             </motion.h2>
             <motion.p variants={fadeUp} className="text-lg text-muted-foreground leading-relaxed">
-              Dive into the systems we're best known for — and see what they look like in the wild.
+              Dive into the systems we're best known for — and the weekly admin help that keeps the wheels turning.
             </motion.p>
           </motion.div>
 
           <motion.div
             initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={stagger}
-            className="grid md:grid-cols-3 gap-6"
+            className="grid md:grid-cols-2 lg:grid-cols-4 gap-6"
           >
             {/* TradieCatch card */}
             <motion.div variants={fadeUp} className="group flex flex-col p-8 rounded-3xl bg-white/[0.02] border border-white/[0.06] hover:border-primary/40 hover:bg-white/[0.04] transition-all duration-500 relative overflow-hidden">
@@ -307,6 +307,33 @@ export default function Home() {
                 </div>
                 <Link href="/case-studies/yard-yakka" className="inline-flex items-center gap-2 text-white font-bold text-sm group-hover:text-primary transition-colors">
                   Read the case study <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+                </Link>
+              </div>
+            </motion.div>
+
+            {/* Admin / Bookkeeping card */}
+            <motion.div variants={fadeUp} className="group flex flex-col p-8 rounded-3xl bg-white/[0.02] border border-white/[0.06] hover:border-primary/40 hover:bg-white/[0.04] transition-all duration-500 relative overflow-hidden">
+              <div className="absolute -top-12 -right-12 w-48 h-48 bg-primary/10 rounded-full blur-3xl pointer-events-none" />
+              <div className="relative z-10 flex flex-col h-full">
+                <div className="text-xs font-bold tracking-[0.2em] text-primary mb-4">SERVICE · $400/WK</div>
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="w-10 h-10 rounded-2xl bg-primary/15 border border-primary/30 flex items-center justify-center">
+                    <Calculator className="w-5 h-5 text-primary" />
+                  </div>
+                  <span className="text-2xl font-black text-white tracking-tight">Admin &amp; Bookkeeping</span>
+                </div>
+                <h3 className="text-2xl font-black text-white mb-3 tracking-tight leading-snug">10 hours of weekly admin, done for you.</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed mb-8">
+                  Invoicing, reconciliations, inbox triage, supplier follow-ups and reporting — handled every week so you can stay on the tools.
+                </p>
+                <div className="mt-auto pt-6 flex flex-col gap-2 h-48 items-start justify-end mb-6 text-sm text-white/80">
+                  <div className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Weekly bookkeeping &amp; reconciliations</div>
+                  <div className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Invoicing &amp; debtor follow-ups</div>
+                  <div className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Inbox triage &amp; supplier comms</div>
+                  <div className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Weekly summary report</div>
+                </div>
+                <Link href="/get-started" className="inline-flex items-center gap-2 text-white font-bold text-sm group-hover:text-primary transition-colors">
+                  Book this package <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
                 </Link>
               </div>
             </motion.div>
