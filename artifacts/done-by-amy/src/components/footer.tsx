@@ -31,6 +31,7 @@ export default function Footer() {
               <h4 className="text-white font-bold mb-5 text-xs tracking-widest uppercase">Services</h4>
               <ul className="space-y-4 text-sm text-muted-foreground">
                 <li><Link href="/#services" className="hover:text-white transition-colors">Workflow Automation</Link></li>
+                <li><Link href="/#services" className="hover:text-white transition-colors">Weekly Admin & Bookkeeping</Link></li>
                 <li><Link href="/#services" className="hover:text-white transition-colors">Websites</Link></li>
                 <li><Link href="/#services" className="hover:text-white transition-colors">Custom Apps</Link></li>
               </ul>

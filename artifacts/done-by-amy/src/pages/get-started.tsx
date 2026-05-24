@@ -20,7 +20,7 @@ import {
 } from "@/components/ui/select";
 
 const serviceOptions = [
-  "AI Automations", "TradieCatch — Missed Call SMS", "AI Caller (AutoDial)", "Website", "App", "Not sure — help me decide"
+  "AI Automations", "TradieCatch — Missed Call SMS", "AI Caller (AutoDial)", "Weekly Admin & Bookkeeping ($400 / 10 hrs)", "Website", "App", "Not sure — help me decide"
 ];
 
 const timeWasterOptions = [

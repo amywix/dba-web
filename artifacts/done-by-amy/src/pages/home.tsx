@@ -6,7 +6,7 @@ import Footer from "@/components/footer";
 import RoiCalculator from "@/components/roi-calculator";
 import { 
   Bot, PhoneCall, Globe, ArrowRight, Zap, PhoneOutgoing, Users, CheckCircle2, ChevronRight,
-  Clock, TrendingUp, Wallet, MoonStar, ShieldCheck
+  Clock, TrendingUp, Wallet, MoonStar, ShieldCheck, ClipboardList
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -189,7 +189,7 @@ export default function Home() {
 
           <motion.div
             initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={stagger}
-            className="grid grid-cols-1 md:grid-cols-3 gap-6"
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
           >
             {[
               { 
@@ -197,6 +197,12 @@ export default function Home() {
                 title: "AI Automations", 
                 price: "From $99 + setup", 
                 desc: "Intelligent chatbots, CRM syncs, and 24/7 virtual assistants that handle the repetitive work." 
+              },
+              { 
+                icon: ClipboardList, 
+                title: "Weekly Admin & Bookkeeping", 
+                price: "$400 / 10 hrs per week", 
+                desc: "A done-for-you admin partner handling invoicing, reconciliation, inbox triage and bookkeeping so you stay on the tools." 
               },
               { 
                 icon: Globe, 
