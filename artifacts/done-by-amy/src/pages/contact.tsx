@@ -29,7 +29,7 @@ const fadeIn: Variants = {
 export default function Contact() {
   useSEO({
     title: "Contact | Done By Amy",
-    description: "Get in touch with Done By Amy for AI automation, TradieCatch, and custom workflow enquiries.",
+    description: "Get in touch with Done By Amy for AI automation, LeadCatch, and custom workflow enquiries.",
     canonical: "https://www.donebyamy.com/contact",
   });
 

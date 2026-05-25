@@ -20,7 +20,7 @@ import {
 } from "@/components/ui/select";
 
 const serviceOptions = [
-  "AI Automations", "TradieCatch — Missed Call SMS", "AI Caller (AutoDial)", "Website", "App", "Not sure — help me decide"
+  "AI Automations", "LeadCatch — Missed Call SMS", "AI Caller (AutoDial)", "Website", "App", "Not sure — help me decide"
 ];
 
 const timeWasterOptions = [
@@ -69,7 +69,7 @@ export default function GetStarted() {
   useSEO({
     title: "Get Started | Done By Amy Automation Audit",
     description: "Tell Done By Amy about your business and get a tailored AI automation plan. Zero obligation, zero jargon.",
-    keywords: "get started AI automation, TradieCatch sign up, AutoDial intake, automation quote Australia",
+    keywords: "get started AI automation, LeadCatch sign up, AutoDial intake, automation quote Australia",
   });
 
   const [submitted, setSubmitted] = useState(false);

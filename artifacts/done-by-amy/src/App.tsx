@@ -10,7 +10,7 @@ import Contact from "@/pages/contact";
 import FAQ from "@/pages/faq";
 import Blog from "@/pages/blog";
 import BlogPost from "@/pages/blog-post";
-import TradieCatch from "@/pages/tradiecatch";
+import LeadCatch from "@/pages/leadcatch";
 import AutoDial from "@/pages/autodial";
 import YardYakka from "@/pages/yard-yakka";
 
@@ -26,7 +26,7 @@ function Router() {
       <Route path="/faq" component={FAQ} />
       <Route path="/blog" component={Blog} />
       <Route path="/blog/:slug" component={BlogPost} />
-      <Route path="/tradiecatch" component={TradieCatch} />
+      <Route path="/leadcatch" component={LeadCatch} />
       <Route path="/autodial" component={AutoDial} />
       <Route path="/case-studies/yard-yakka" component={YardYakka} />
       <Route component={NotFound} />

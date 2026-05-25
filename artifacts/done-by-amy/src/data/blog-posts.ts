@@ -25,7 +25,7 @@ export const posts: BlogPost[] = [
     description:
       "How Australian small businesses are using AI automation to win back 10+ hours a week — chatbots, missed call systems, workflow automations and what to set up first.",
     keywords:
-      "AI automation Australia, small business automation, AI chatbot Australia, missed call automation, workflow automation, TradieCatch, business automation 2026",
+      "AI automation Australia, small business automation, AI chatbot Australia, missed call automation, workflow automation, LeadCatch, business automation 2026",
     date: "2026-05-21",
     readTime: "8 min read",
     category: "AI Automation",
@@ -57,7 +57,7 @@ export const posts: BlogPost[] = [
       { type: "h3", text: "1. Missed call SMS automation" },
       {
         type: "p",
-        text: "The single highest-ROI automation for any business that takes phone enquiries. When a call goes unanswered, an instant SMS goes out: 'Hey, sorry I missed you — what's the job and where are you based?' Most tradies recover two to three lost jobs a week from this alone. That's the system behind TradieCatch.",
+        text: "The single highest-ROI automation for any business that takes phone enquiries. When a call goes unanswered, an instant SMS goes out: 'Hey, sorry I missed you — what's the job and where are you based?' Most tradies recover two to three lost jobs a week from this alone. That's the system behind LeadCatch.",
       },
 
       { type: "h3", text: "2. AI chatbot for your website and socials" },

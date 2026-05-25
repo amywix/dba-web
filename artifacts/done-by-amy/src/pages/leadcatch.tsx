@@ -6,8 +6,7 @@ import Footer from "@/components/footer";
 import { Button } from "@/components/ui/button";
 import { CheckCircle2, PhoneCall, MessageSquare, Clock, ShieldCheck, ChevronRight } from "lucide-react";
 
-import tcLogo from "@assets/tradiecatch_logo_nobg.png";
-import tcScreen from "@assets/tc_screen_1779201943317.png";
+import lcPhone from "../assets/leadcatch_phone_nobg.png";
 
 const fadeUp: Variants = {
   hidden: { opacity: 0, y: 30 },
@@ -26,12 +25,12 @@ function SectionBadge({ children }: { children: React.ReactNode }) {
   );
 }
 
-export default function TradieCatch() {
+export default function LeadCatch() {
   useSEO({
-    title: "TradieCatch — Never miss a job again | Done By Amy",
-    description: "TradieCatch is the $99/mo missed-call SMS auto-responder built for Australian tradies. Capture every lead, even when you can't pick up.",
-    keywords: "TradieCatch, missed call SMS, tradie automation, Australia, lead capture",
-    canonical: "https://donebyamy.com/tradiecatch",
+    title: "LeadCatch — Never miss a job again | Done By Amy",
+    description: "LeadCatch is the $99/mo missed-call SMS auto-responder built for Australian tradies. Capture every lead, even when you can't pick up.",
+    keywords: "LeadCatch, missed call SMS, tradie automation, Australia, lead capture",
+    canonical: "https://donebyamy.com/leadcatch",
   });
 
   return (
@@ -48,20 +47,19 @@ export default function TradieCatch() {
               className="space-y-8"
             >
               <motion.div variants={fadeUp}>
-                <img src={tcLogo} alt="TradieCatch" className="h-12 sm:h-14 object-contain mb-8" />
                 <SectionBadge>Flagship Product · $99/mo</SectionBadge>
                 <h1 className="text-5xl md:text-6xl font-black leading-[1.05] tracking-tight text-white mb-6">
                   Never lose a job to a missed call again.
                 </h1>
                 <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-xl">
-                  When you're on the tools, you can't always pick up. TradieCatch instantly fires a custom SMS back to every missed caller — capturing the lead before they ring your competitor.
+                  When you're on the tools, you can't always pick up. LeadCatch instantly fires a custom SMS back to every missed caller — capturing the lead before they ring your competitor.
                 </p>
               </motion.div>
 
               <motion.div variants={fadeUp} className="flex flex-col sm:flex-row gap-4 pt-2">
-                <Link href="/get-started?service=TradieCatch">
+                <Link href="/get-started?service=LeadCatch">
                   <Button className="h-14 px-8 rounded-full bg-white text-black hover:bg-white/90 font-bold w-full sm:w-auto">
-                    Get TradieCatch — $99/mo
+                    Get LeadCatch — $99/mo
                   </Button>
                 </Link>
                 <Button variant="outline" className="h-14 px-8 rounded-full border-white/10 hover:bg-white/5 hover:border-white/20 w-full sm:w-auto text-white">
@@ -76,7 +74,7 @@ export default function TradieCatch() {
             >
               <div className="relative w-full max-w-[440px]">
                 <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-secondary/20 rounded-[40px] blur-2xl transform rotate-6 scale-95" />
-                <img src={tcScreen} alt="TradieCatch Interface" className="relative z-10 w-full object-contain drop-shadow-2xl" />
+                <img src={lcPhone} alt="LeadCatch Interface" className="relative z-10 w-full object-contain drop-shadow-2xl" />
               </div>
             </motion.div>
           </div>
@@ -165,9 +163,9 @@ export default function TradieCatch() {
               <p className="text-muted-foreground mb-10 max-w-md mx-auto">
                 Plus a one-time setup. Cancel any time. Save one job and it's already paid for itself.
               </p>
-              <Link href="/get-started?service=TradieCatch">
+              <Link href="/get-started?service=LeadCatch">
                 <Button className="h-16 px-10 text-lg rounded-full bg-white text-black hover:bg-white/90 font-black shadow-[0_0_40px_rgba(255,255,255,0.15)]">
-                  Get TradieCatch <ChevronRight className="w-5 h-5 ml-2" />
+                  Get LeadCatch <ChevronRight className="w-5 h-5 ml-2" />
                 </Button>
               </Link>
             </div>

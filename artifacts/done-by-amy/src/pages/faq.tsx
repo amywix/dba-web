@@ -11,16 +11,16 @@ const faqs = [
   {
     category: "General",
     items: [
-      { q: "What exactly does Done By Amy do?", a: "We build AI-powered automation systems for small businesses across Australia. This includes AI chatbots, TradieCatch missed call SMS systems, AutoDial AI calling agents, and custom workflow automations." },
+      { q: "What exactly does Done By Amy do?", a: "We build AI-powered automation systems for small businesses across Australia. This includes AI chatbots, LeadCatch missed call SMS systems, AutoDial AI calling agents, and custom workflow automations." },
       { q: "Do I need to be tech-savvy?", a: "Not at all. We handle every technical aspect of the setup, configuration, and integration. You get handed a fully working system with plain-English instructions." },
       { q: "How quickly can I get set up?", a: "Most standalone systems are set up within 48 hours of your intake form being submitted. Complex multi-system builds take 3–5 business days." },
     ],
   },
   {
-    category: "TradieCatch",
+    category: "LeadCatch",
     items: [
-      { q: "What is TradieCatch?", a: "A mobile web app for tradies that instantly sends a custom SMS reply to every missed call, capturing lead details before they call someone else." },
-      { q: "How much does TradieCatch cost?", a: "TradieCatch is $99/month flat. There are no lock-in contracts, and most businesses recover the cost from their first captured job." },
+      { q: "What is LeadCatch?", a: "A mobile web app for tradies that instantly sends a custom SMS reply to every missed call, capturing lead details before they call someone else." },
+      { q: "How much does LeadCatch cost?", a: "LeadCatch is $99/month flat. There are no lock-in contracts, and most businesses recover the cost from their first captured job." },
     ],
   },
   {

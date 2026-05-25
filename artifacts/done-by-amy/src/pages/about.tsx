@@ -19,8 +19,8 @@ const stagger: Variants = {
 export default function About() {
   useSEO({
     title: "About Amy | AI Automation Specialist | Done By Amy",
-    description: "Meet Amy — Australia's AI automation specialist helping small businesses scale without the overwhelm. Creator of TradieCatch and AutoDial.",
-    keywords: "Amy AI automation Australia, Done By Amy founder, small business automation expert, TradieCatch creator",
+    description: "Meet Amy — Australia's AI automation specialist helping small businesses scale without the overwhelm. Creator of LeadCatch and AutoDial.",
+    keywords: "Amy AI automation Australia, Done By Amy founder, small business automation expert, LeadCatch creator",
     canonical: "https://www.donebyamy.com/about",
   });
 

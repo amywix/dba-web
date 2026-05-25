@@ -10,8 +10,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-import tcLogo from "@assets/tradiecatch_logo_nobg.png";
-import tcScreen from "@assets/tc_screen_1779201943317.png";
+import lcPhone from "../assets/leadcatch_phone_nobg.png";
 import autoDialScreen from "../assets/autodial_nobg.png";
 import yardYakkaApp from "../assets/yard_yakka_app_nobg.png";
 
@@ -36,8 +35,8 @@ function SectionBadge({ children }: { children: React.ReactNode }) {
 export default function Home() {
   useSEO({
     title: "Done By Amy | AI Automation for Australian Small Businesses",
-    description: "Premium AI chatbots, TradieCatch missed call systems, AutoDial AI calling agents, and workflow automations for Australian small businesses. Smart Systems. Real Results. Zero Overwhelm.",
-    keywords: "AI automation Australia, TradieCatch, AI chatbot small business Australia, AutoDial AI calling, workflow automation Australia",
+    description: "Premium AI chatbots, LeadCatch missed call systems, AutoDial AI calling agents, and workflow automations for Australian small businesses. Smart Systems. Real Results. Zero Overwhelm.",
+    keywords: "AI automation Australia, LeadCatch, AI chatbot small business Australia, AutoDial AI calling, workflow automation Australia",
     canonical: "https://www.donebyamy.com",
   });
 
@@ -249,21 +248,23 @@ export default function Home() {
             initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={stagger}
             className="grid md:grid-cols-2 lg:grid-cols-4 gap-6"
           >
-            {/* TradieCatch card */}
+            {/* LeadCatch card */}
             <motion.div variants={fadeUp} className="group flex flex-col p-8 rounded-3xl bg-white/[0.02] border border-white/[0.06] hover:border-primary/40 hover:bg-white/[0.04] transition-all duration-500 relative overflow-hidden">
               <div className="absolute -top-12 -right-12 w-48 h-48 bg-secondary/10 rounded-full blur-3xl pointer-events-none" />
               <div className="relative z-10 flex flex-col h-full">
                 <div className="text-xs font-bold tracking-[0.2em] text-primary mb-4">PRODUCT · $99/MO</div>
-                <img src={tcLogo} alt="TradieCatch" className="h-9 object-contain object-left mb-6" />
+                <div className="flex items-center gap-3 mb-6">
+                  <span className="text-2xl font-black text-white tracking-tight">LeadCatch</span>
+                </div>
                 <h3 className="text-2xl font-black text-white mb-3 tracking-tight leading-snug">Never miss a job to a missed call.</h3>
                 <p className="text-muted-foreground text-sm leading-relaxed mb-8">
                   Instant SMS auto-reply to every missed call. Capture the lead before your competitor does.
                 </p>
                 <div className="mt-auto pt-6 flex justify-center h-48 items-end">
-                  <img src={tcScreen} alt="TradieCatch screen" className="max-h-44 w-auto object-contain drop-shadow-2xl mb-6" />
+                  <img src={lcPhone} alt="LeadCatch screen" className="max-h-44 w-auto object-contain drop-shadow-2xl mb-6" />
                 </div>
-                <Link href="/tradiecatch" className="inline-flex items-center gap-2 text-white font-bold text-sm group-hover:text-primary transition-colors">
-                  Explore TradieCatch <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+                <Link href="/leadcatch" className="inline-flex items-center gap-2 text-white font-bold text-sm group-hover:text-primary transition-colors">
+                  Explore LeadCatch <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
                 </Link>
               </div>
             </motion.div>
@@ -359,7 +360,7 @@ export default function Home() {
           >
             {[
               {
-                quote: "I was losing two or three jobs a week just from missed calls while I was on the tools. TradieCatch fixed that overnight. Made my money back in the first week alone.",
+                quote: "I was losing two or three jobs a week just from missed calls while I was on the tools. LeadCatch fixed that overnight. Made my money back in the first week alone.",
                 name: "Jake Morrish", role: "Electrician", location: "Strathpine, QLD"
               },
               {

@@ -22,7 +22,7 @@ export default function Footer() {
             <div>
               <h4 className="text-white font-bold mb-5 text-xs tracking-widest uppercase">Products</h4>
               <ul className="space-y-4 text-sm text-muted-foreground">
-                <li><Link href="/tradiecatch" className="hover:text-white transition-colors">TradieCatch</Link></li>
+                <li><Link href="/leadcatch" className="hover:text-white transition-colors">LeadCatch</Link></li>
                 <li><Link href="/autodial" className="hover:text-white transition-colors">AutoDial</Link></li>
                 <li><Link href="/get-started" className="hover:text-white transition-colors">Admin &amp; Bookkeeping</Link></li>
                 <li><Link href="/case-studies/yard-yakka" className="hover:text-white transition-colors">Yard Yakka Case Study</Link></li>
