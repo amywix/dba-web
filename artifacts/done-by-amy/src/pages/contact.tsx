@@ -34,14 +34,32 @@ export default function Contact() {
   });
 
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
   const form = useForm<FormData>({
     resolver: zodResolver(formSchema),
     defaultValues: { name: "", email: "", subject: "", message: "" },
   });
 
-  function onSubmit(data: FormData) {
-    console.log("Contact form submitted:", data);
-    setSubmitted(true);
+  async function onSubmit(data: FormData) {
+    setSubmitting(true);
+    setSubmitError(null);
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+      if (!res.ok) {
+        const body = await res.json().catch(() => ({}));
+        throw new Error(body?.error ?? "Something went wrong. Please try again.");
+      }
+      setSubmitted(true);
+    } catch (err) {
+      setSubmitError(err instanceof Error ? err.message : "Something went wrong. Please try again.");
+    } finally {
+      setSubmitting(false);
+    }
   }
 
   return (
@@ -117,8 +135,11 @@ export default function Contact() {
                       <FormField control={form.control} name="message" render={({ field }) => (
                         <FormItem><FormLabel className="text-white/70">Message</FormLabel><FormControl><Textarea className="bg-background border-white/10 text-white rounded-xl min-h-[160px] resize-none p-4" {...field} /></FormControl><FormMessage className="text-red-400" /></FormItem>
                       )} />
-                      <Button type="submit" className="w-full h-12 rounded-xl bg-white text-black hover:bg-white/90 font-bold shadow-md">
-                        Send Message <Send className="w-4 h-4 ml-2" />
+                      {submitError && (
+                        <p className="text-sm text-red-400 -mt-2">{submitError}</p>
+                      )}
+                      <Button type="submit" disabled={submitting} className="w-full h-12 rounded-xl bg-white text-black hover:bg-white/90 font-bold shadow-md disabled:opacity-60">
+                        {submitting ? "Sending…" : <>Send Message <Send className="w-4 h-4 ml-2" /></>}
                       </Button>
                     </form>
                   </Form>

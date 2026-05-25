@@ -73,6 +73,8 @@ export default function GetStarted() {
   });
 
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
   const search = useSearch();
   const serviceParam = new URLSearchParams(search).get("service") ?? "";
 
@@ -85,9 +87,25 @@ export default function GetStarted() {
     },
   });
 
-  function onSubmit(data: FormData) {
-    console.log("Form submitted:", data);
-    setSubmitted(true);
+  async function onSubmit(data: FormData) {
+    setSubmitting(true);
+    setSubmitError(null);
+    try {
+      const res = await fetch("/api/get-started", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+      if (!res.ok) {
+        const body = await res.json().catch(() => ({}));
+        throw new Error(body?.error ?? "Something went wrong. Please try again.");
+      }
+      setSubmitted(true);
+    } catch (err) {
+      setSubmitError(err instanceof Error ? err.message : "Something went wrong. Please try again.");
+    } finally {
+      setSubmitting(false);
+    }
   }
 
   return (
@@ -265,8 +283,11 @@ export default function GetStarted() {
                       )} />
                     </div>
 
-                    <Button type="submit" size="lg" className="w-full h-14 rounded-xl bg-white text-black hover:bg-white/90 font-bold text-base shadow-[0_0_20px_rgba(255,255,255,0.1)]">
-                      Submit Audit Request <ChevronRight className="w-5 h-5 ml-2" />
+                    {submitError && (
+                      <p className="text-sm text-red-400">{submitError}</p>
+                    )}
+                    <Button type="submit" size="lg" disabled={submitting} className="w-full h-14 rounded-xl bg-white text-black hover:bg-white/90 font-bold text-base shadow-[0_0_20px_rgba(255,255,255,0.1)] disabled:opacity-60">
+                      {submitting ? "Sending…" : <>Submit Audit Request <ChevronRight className="w-5 h-5 ml-2" /></>}
                     </Button>
                   </form>
                 </Form>
