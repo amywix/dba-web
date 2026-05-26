@@ -6,3 +6,9 @@ id = "UUaa4EwNl5cs9RAJLmpKW"
 uri = "file://exports/done-by-amy-prospects.csv"
 type = "table"
 title = "Done By Amy — 99 Australian prospects"
+
+[[outputs]]
+id = "RT7kgt8BAFqyJDdqPUSLG"
+uri = "file://exports/done-by-amy-brisbane-solar.csv"
+type = "table"
+title = "Done By Amy — 98 Brisbane/SEQ solar prospects"
