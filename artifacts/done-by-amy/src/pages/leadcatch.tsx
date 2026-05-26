@@ -38,20 +38,20 @@ export default function LeadCatch() {
       <Navbar />
 
       {/* HERO */}
-      <section className="pt-32 pb-20 px-6 relative overflow-hidden">
+      <section className="pt-24 pb-14 sm:pt-32 sm:pb-20 px-4 sm:px-6 relative overflow-hidden">
         <div className="absolute right-0 top-1/3 w-[700px] h-[700px] bg-secondary/10 rounded-full blur-[160px] pointer-events-none" />
         <div className="container mx-auto max-w-6xl relative z-10">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="grid lg:grid-cols-2 gap-10 sm:gap-16 items-center">
             <motion.div
               initial="hidden" animate="visible" variants={stagger}
               className="space-y-8"
             >
               <motion.div variants={fadeUp}>
                 <SectionBadge>Flagship Product · $99/mo</SectionBadge>
-                <h1 className="text-5xl md:text-6xl font-black leading-[1.05] tracking-tight text-white mb-6">
+                <h1 className="text-4xl sm:text-5xl md:text-6xl font-black leading-[1.05] tracking-tight text-white mb-6">
                   Never lose a job to a missed call again.
                 </h1>
-                <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-xl">
+                <p className="text-base sm:text-lg md:text-xl text-muted-foreground leading-relaxed max-w-xl">
                   When you're on the tools, you can't always pick up. LeadCatch instantly fires a custom SMS back to every missed caller — capturing the lead before they ring your competitor.
                 </p>
               </motion.div>
@@ -82,11 +82,11 @@ export default function LeadCatch() {
       </section>
 
       {/* HOW IT WORKS */}
-      <section className="py-16 px-6 bg-white/[0.01] border-y border-white/[0.04]">
+      <section className="py-12 sm:py-16 px-4 sm:px-6 bg-white/[0.01] border-y border-white/[0.04]">
         <div className="container mx-auto max-w-5xl">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={stagger} className="text-center mb-16">
             <motion.div variants={fadeUp} className="flex justify-center"><SectionBadge>How It Works</SectionBadge></motion.div>
-            <motion.h2 variants={fadeUp} className="text-4xl md:text-5xl font-black tracking-tight text-white leading-tight">
+            <motion.h2 variants={fadeUp} className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight text-white leading-tight">
               Set it up once. Win jobs forever.
             </motion.h2>
           </motion.div>
@@ -100,7 +100,7 @@ export default function LeadCatch() {
               { icon: MessageSquare, step: "02", title: "Instant SMS fires back", desc: "Within seconds, your custom auto-reply lands in their pocket. Friendly, on-brand, and asking the right questions." },
               { icon: CheckCircle2, step: "03", title: "Lead books itself", desc: "They text back with the job details. You reply when you're off the tools. The competitor never gets the chance." },
             ].map((s, i) => (
-              <motion.div variants={fadeUp} key={i} className="p-8 rounded-3xl bg-white/[0.02] border border-white/[0.06] hover:border-primary/40 transition-all duration-500">
+              <motion.div variants={fadeUp} key={i} className="p-6 sm:p-8 rounded-3xl bg-white/[0.02] border border-white/[0.06] hover:border-primary/40 transition-all duration-500">
                 <div className="text-xs font-bold tracking-[0.2em] text-primary mb-6">{s.step}</div>
                 <div className="w-12 h-12 rounded-2xl bg-primary/10 border border-primary/20 flex items-center justify-center mb-6">
                   <s.icon className="w-5 h-5 text-primary" />
@@ -114,12 +114,12 @@ export default function LeadCatch() {
       </section>
 
       {/* FEATURES */}
-      <section className="py-16 px-6">
+      <section className="py-12 sm:py-16 px-4 sm:px-6">
         <div className="container mx-auto max-w-6xl">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={stagger} className="grid lg:grid-cols-2 gap-16 items-start">
             <motion.div variants={fadeUp}>
               <SectionBadge>What You Get</SectionBadge>
-              <h2 className="text-4xl md:text-5xl font-black tracking-tight text-white leading-tight mb-6">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight text-white leading-tight mb-6">
                 Everything in. No add-ons. No surprises.
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
@@ -147,24 +147,24 @@ export default function LeadCatch() {
       </section>
 
       {/* PRICING CALLOUT */}
-      <section className="py-16 px-6 bg-white/[0.01] border-y border-white/[0.04]">
+      <section className="py-12 sm:py-16 px-4 sm:px-6 bg-white/[0.01] border-y border-white/[0.04]">
         <div className="container mx-auto max-w-4xl">
           <motion.div
             initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}
-            className="p-10 md:p-14 rounded-[40px] bg-gradient-to-br from-primary/10 to-secondary/5 border border-primary/30 text-center relative overflow-hidden"
+            className="p-6 sm:p-10 md:p-14 rounded-[40px] bg-gradient-to-br from-primary/10 to-secondary/5 border border-primary/30 text-center relative overflow-hidden"
           >
             <div className="absolute inset-0 bg-primary/5 rounded-[40px] blur-2xl pointer-events-none" />
             <div className="relative z-10">
               <SectionBadge>Simple Pricing</SectionBadge>
               <div className="flex items-baseline justify-center gap-2 mb-4">
-                <span className="text-6xl md:text-7xl font-black text-white tracking-tight">$99</span>
+                <span className="text-5xl sm:text-6xl md:text-7xl font-black text-white tracking-tight">$99</span>
                 <span className="text-xl text-muted-foreground">/month</span>
               </div>
               <p className="text-muted-foreground mb-10 max-w-md mx-auto">
                 Plus a one-time setup. Cancel any time. Save one job and it's already paid for itself.
               </p>
               <Link href="/get-started?service=LeadCatch">
-                <Button className="h-16 px-10 text-lg rounded-full bg-white text-black hover:bg-white/90 font-black shadow-[0_0_40px_rgba(255,255,255,0.15)]">
+                <Button className="h-14 sm:h-16 px-8 sm:px-10 text-base sm:text-lg rounded-full bg-white text-black hover:bg-white/90 font-black shadow-[0_0_40px_rgba(255,255,255,0.15)]">
                   Get LeadCatch <ChevronRight className="w-5 h-5 ml-2" />
                 </Button>
               </Link>
@@ -174,7 +174,7 @@ export default function LeadCatch() {
       </section>
 
       {/* TRUST STRIP */}
-      <section className="py-14 px-6">
+      <section className="py-12 sm:py-14 px-4 sm:px-6">
         <div className="container mx-auto max-w-5xl grid sm:grid-cols-3 gap-8 text-center">
           {[
             { icon: Clock, label: "Live within 48 hours of signup" },

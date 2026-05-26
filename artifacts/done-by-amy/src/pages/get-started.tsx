@@ -112,14 +112,14 @@ export default function GetStarted() {
     <div className="min-h-screen flex flex-col bg-background text-foreground">
       <Navbar />
 
-      <div className="flex-1 pt-32 pb-24 px-6 relative">
+      <div className="flex-1 pt-24 pb-16 sm:pt-32 sm:pb-24 px-4 sm:px-6 relative">
         <div className="absolute top-0 right-1/4 w-[600px] h-[600px] bg-primary/10 rounded-full blur-[140px] pointer-events-none" />
         
         <div className="container mx-auto max-w-3xl relative z-10">
           {!submitted ? (
             <>
               <motion.div initial="hidden" animate="visible" variants={fadeIn} className="mb-12">
-                <h1 className="text-4xl md:text-5xl font-black text-white tracking-tight mb-4">
+                <h1 className="text-3xl sm:text-4xl md:text-5xl font-black text-white tracking-tight mb-4">
                   Request your free audit.
                 </h1>
                 <p className="text-lg text-muted-foreground">
@@ -129,7 +129,7 @@ export default function GetStarted() {
 
               <motion.div
                 initial="hidden" animate="visible" variants={{ ...fadeIn, visible: { ...fadeIn.visible, transition: { delay: 0.1 } } }}
-                className="bg-white/[0.02] border border-white/[0.06] rounded-[32px] p-8 md:p-12 shadow-xl"
+                className="bg-white/[0.02] border border-white/[0.06] rounded-[32px] p-6 sm:p-8 md:p-12 shadow-xl"
               >
                 <Form {...form}>
                   <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-12">
@@ -294,7 +294,7 @@ export default function GetStarted() {
               </motion.div>
             </>
           ) : (
-            <motion.div initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} className="bg-white/[0.02] border border-white/[0.06] rounded-[32px] p-12 text-center">
+            <motion.div initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} className="bg-white/[0.02] border border-white/[0.06] rounded-[32px] p-8 sm:p-12 text-center">
               <div className="w-20 h-20 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center mx-auto mb-6">
                 <CheckCircle2 className="w-10 h-10 text-primary" />
               </div>

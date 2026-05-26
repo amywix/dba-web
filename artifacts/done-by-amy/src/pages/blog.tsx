@@ -20,12 +20,12 @@ export default function Blog() {
     <div className="min-h-screen flex flex-col bg-background text-foreground">
       <Navbar />
 
-      <div className="flex-1 pt-32 pb-24 px-6 relative">
+      <div className="flex-1 pt-24 pb-16 sm:pt-32 sm:pb-24 px-4 sm:px-6 relative">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[500px] bg-primary/10 rounded-full blur-[150px] pointer-events-none" />
         
         <div className="container mx-auto max-w-4xl relative z-10">
           <motion.div initial="hidden" animate="visible" variants={stagger} className="text-center mb-16">
-            <motion.h1 variants={fadeIn} className="text-5xl md:text-6xl font-black text-white mb-6 tracking-tight">The Playbook.</motion.h1>
+            <motion.h1 variants={fadeIn} className="text-4xl sm:text-5xl md:text-6xl font-black text-white mb-6 tracking-tight">The Playbook.</motion.h1>
             <motion.p variants={fadeIn} className="text-lg text-muted-foreground max-w-xl mx-auto">
               Real guides and case studies on implementing AI automation in Australian small businesses. Zero fluff.
             </motion.p>
@@ -35,8 +35,8 @@ export default function Blog() {
             {posts.map((post) => (
               <motion.div key={post.slug} variants={fadeIn}>
                 <Link href={`/blog/${post.slug}`}>
-                  <article className="group block p-8 md:p-10 rounded-[32px] bg-white/[0.02] border border-white/[0.06] hover:bg-white/[0.04] hover:border-primary/30 transition-all duration-300">
-                    <div className="flex items-center gap-4 text-xs font-medium text-muted-foreground mb-6">
+                  <article className="group block p-6 sm:p-8 md:p-10 rounded-[32px] bg-white/[0.02] border border-white/[0.06] hover:bg-white/[0.04] hover:border-primary/30 transition-all duration-300">
+                    <div className="flex flex-wrap items-center gap-x-3 gap-y-2 text-xs font-medium text-muted-foreground mb-6">
                       <span className="text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full bg-white/[0.04] text-white">
                         {post.category}
                       </span>

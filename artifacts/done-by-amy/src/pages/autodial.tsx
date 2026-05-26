@@ -38,10 +38,10 @@ export default function AutoDial() {
       <Navbar />
 
       {/* HERO */}
-      <section className="pt-32 pb-20 px-6 relative overflow-hidden">
+      <section className="pt-24 pb-14 sm:pt-32 sm:pb-20 px-4 sm:px-6 relative overflow-hidden">
         <div className="absolute left-0 top-1/3 w-[700px] h-[700px] bg-primary/10 rounded-full blur-[160px] pointer-events-none" />
         <div className="container mx-auto max-w-6xl relative z-10">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="grid lg:grid-cols-2 gap-10 sm:gap-16 items-center">
             <motion.div
               initial={{ opacity: 0, x: -30 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, ease: "easeOut" }}
               className="order-2 lg:order-1 flex justify-center lg:justify-start relative"
@@ -58,10 +58,10 @@ export default function AutoDial() {
             >
               <motion.div variants={fadeUp}>
                 <SectionBadge>AI Outbound Calling</SectionBadge>
-                <h1 className="text-5xl md:text-6xl font-black leading-[1.05] tracking-tight text-white mb-6">
+                <h1 className="text-4xl sm:text-5xl md:text-6xl font-black leading-[1.05] tracking-tight text-white mb-6">
                   AutoDial. Your tireless telemarketing agent.
                 </h1>
-                <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-xl">
+                <p className="text-base sm:text-lg md:text-xl text-muted-foreground leading-relaxed max-w-xl">
                   An AI voice agent that sounds human, works 24/7, handles objections, qualifies leads and books appointments straight into your calendar. Scale your outreach instantly — no headcount required.
                 </p>
               </motion.div>
@@ -84,11 +84,11 @@ export default function AutoDial() {
       </section>
 
       {/* CAPABILITIES */}
-      <section className="py-16 px-6 bg-white/[0.01] border-y border-white/[0.04]">
+      <section className="py-12 sm:py-16 px-4 sm:px-6 bg-white/[0.01] border-y border-white/[0.04]">
         <div className="container mx-auto max-w-6xl">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={stagger} className="max-w-3xl mb-16">
             <motion.div variants={fadeUp}><SectionBadge>Capabilities</SectionBadge></motion.div>
-            <motion.h2 variants={fadeUp} className="text-4xl md:text-5xl font-black tracking-tight text-white leading-tight">
+            <motion.h2 variants={fadeUp} className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight text-white leading-tight">
               The salesperson that never sleeps, never tires, never quits.
             </motion.h2>
           </motion.div>
@@ -103,7 +103,7 @@ export default function AutoDial() {
               { icon: CalendarCheck, title: "Direct booking", desc: "Integrates with Calendly and your existing calendar to drop appointments straight in." },
               { icon: TrendingUp, title: "Endless scale", desc: "Make 10 calls or 10,000 simultaneously. Outreach volume stops being limited by headcount." },
             ].map((c, i) => (
-              <motion.div variants={fadeUp} key={i} className="p-8 rounded-3xl bg-white/[0.02] border border-white/[0.06] hover:border-primary/40 hover:bg-white/[0.04] transition-all duration-500">
+              <motion.div variants={fadeUp} key={i} className="p-6 sm:p-8 rounded-3xl bg-white/[0.02] border border-white/[0.06] hover:border-primary/40 hover:bg-white/[0.04] transition-all duration-500">
                 <div className="w-12 h-12 rounded-2xl bg-primary/10 border border-primary/20 flex items-center justify-center mb-6">
                   <c.icon className="w-5 h-5 text-primary" />
                 </div>
@@ -116,11 +116,11 @@ export default function AutoDial() {
       </section>
 
       {/* USE CASES */}
-      <section className="py-16 px-6">
+      <section className="py-12 sm:py-16 px-4 sm:px-6">
         <div className="container mx-auto max-w-6xl">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={stagger} className="text-center max-w-3xl mx-auto mb-16">
             <motion.div variants={fadeUp} className="flex justify-center"><SectionBadge>Where It Works Best</SectionBadge></motion.div>
-            <motion.h2 variants={fadeUp} className="text-4xl md:text-5xl font-black tracking-tight text-white leading-tight">
+            <motion.h2 variants={fadeUp} className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight text-white leading-tight">
               Built for businesses that live on the phone.
             </motion.h2>
           </motion.div>
@@ -147,15 +147,15 @@ export default function AutoDial() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 px-6 bg-white/[0.01] border-t border-white/[0.04]">
+      <section className="py-12 sm:py-16 px-4 sm:px-6 bg-white/[0.01] border-t border-white/[0.04]">
         <div className="container mx-auto max-w-4xl text-center">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}>
-            <h2 className="text-4xl md:text-5xl font-black text-white mb-6 tracking-tight">Put an AI on the phones this month.</h2>
-            <p className="text-lg text-muted-foreground mb-10 max-w-2xl mx-auto">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white mb-6 tracking-tight">Put an AI on the phones this month.</h2>
+            <p className="text-base sm:text-lg text-muted-foreground mb-10 max-w-2xl mx-auto">
               Tell us what you want AutoDial to say, who you want it to call, and what you want it to book. We'll handle the rest.
             </p>
             <Link href="/get-started?service=AutoDial">
-              <Button className="h-16 px-10 text-lg rounded-full bg-white text-black hover:bg-white/90 font-black shadow-[0_0_40px_rgba(255,255,255,0.15)]">
+              <Button className="h-14 sm:h-16 px-8 sm:px-10 text-base sm:text-lg rounded-full bg-white text-black hover:bg-white/90 font-black shadow-[0_0_40px_rgba(255,255,255,0.15)]">
                 Deploy AutoDial <ChevronRight className="w-5 h-5 ml-2" />
               </Button>
             </Link>

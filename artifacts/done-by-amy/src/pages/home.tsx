@@ -46,7 +46,7 @@ export default function Home() {
       <Navbar />
 
       {/* ─── HERO ─────────────────────────────────────────────────── */}
-      <section className="relative pt-32 pb-28 md:pt-56 md:pb-40 px-6 overflow-hidden">
+      <section className="relative pt-24 pb-16 sm:pt-32 sm:pb-28 md:pt-56 md:pb-40 px-4 sm:px-6 overflow-hidden">
         {/* Abstract Glows */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] bg-primary/20 rounded-full blur-[160px] opacity-50 pointer-events-none" />
         <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-secondary/10 rounded-full blur-[120px] pointer-events-none" />
@@ -54,7 +54,7 @@ export default function Home() {
         <div className="container mx-auto text-center relative z-10 max-w-4xl">
           <motion.div initial="hidden" animate="visible" variants={stagger}>
             <motion.div variants={fadeUp} className="mb-6 flex justify-center">
-              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-bold uppercase tracking-widest backdrop-blur-md">
+              <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-[10px] sm:text-xs font-bold uppercase tracking-wider sm:tracking-widest backdrop-blur-md text-center">
                 <span className="relative flex h-2 w-2">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
@@ -63,21 +63,21 @@ export default function Home() {
               </div>
             </motion.div>
             
-            <motion.h1 variants={fadeUp} className="text-5xl sm:text-6xl md:text-[80px] font-black text-white mb-8 leading-[1.05] tracking-tight">
+            <motion.h1 variants={fadeUp} className="text-[2.5rem] leading-[1.05] sm:text-6xl md:text-[80px] font-black text-white mb-6 sm:mb-8 tracking-tight">
               Systems that run your business. <br className="hidden md:block"/>
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">Not the other way around.</span>
             </motion.h1>
             
-            <motion.p variants={fadeUp} className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-12 leading-relaxed">
+            <motion.p variants={fadeUp} className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 sm:mb-12 leading-relaxed">
               We build AI chatbots, missed-call responders, and custom workflow automations that buy back 10+ hours of your week. Zero jargon. Zero overwhelm.
             </motion.p>
             
-            <motion.div variants={fadeUp} className="flex flex-col sm:flex-row items-center gap-4 justify-center">
+            <motion.div variants={fadeUp} className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4 justify-center max-w-md sm:max-w-none mx-auto">
               <Link href="/get-started">
                 <Button
                   data-testid="hero-cta-button"
                   size="lg"
-                  className="h-14 sm:h-16 px-8 sm:px-10 text-base sm:text-lg rounded-full bg-white text-black hover:bg-white/90 font-black shadow-[0_0_40px_rgba(255,255,255,0.15)] hover:shadow-[0_0_60px_rgba(255,255,255,0.25)] hover:-translate-y-0.5 transition-all duration-300"
+                  className="h-14 sm:h-16 px-6 sm:px-10 text-base sm:text-lg rounded-full bg-white text-black hover:bg-white/90 font-black shadow-[0_0_40px_rgba(255,255,255,0.15)] hover:shadow-[0_0_60px_rgba(255,255,255,0.25)] hover:-translate-y-0.5 transition-all duration-300 w-full sm:w-auto"
                 >
                   Get Your Free Audit
                 </Button>
@@ -86,7 +86,7 @@ export default function Home() {
                 data-testid="hero-secondary-button"
                 size="lg"
                 variant="outline"
-                className="h-14 sm:h-16 px-8 sm:px-10 text-base sm:text-lg rounded-full border-white/10 hover:bg-white/5 text-white hover:border-white/20 transition-all duration-300"
+                className="h-14 sm:h-16 px-6 sm:px-10 text-base sm:text-lg rounded-full border-white/10 hover:bg-white/5 text-white hover:border-white/20 transition-all duration-300 w-full sm:w-auto"
                 onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 Explore Services
@@ -97,7 +97,7 @@ export default function Home() {
       </section>
 
       {/* ─── WHY AUTOMATE (BENEFITS) ──────────────────────────────── */}
-      <section id="benefits" className="pt-8 pb-10 px-6 relative overflow-hidden">
+      <section id="benefits" className="pt-8 pb-10 px-4 sm:px-6 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/[0.03] to-transparent pointer-events-none" />
         <div className="container mx-auto max-w-6xl relative z-10">
           <motion.div
@@ -107,7 +107,7 @@ export default function Home() {
             <motion.div variants={fadeUp} className="flex justify-center mb-6">
               <SectionBadge>Why Automate</SectionBadge>
             </motion.div>
-            <motion.h2 variants={fadeUp} className="text-4xl md:text-5xl font-black tracking-tight text-white leading-tight mb-6">
+            <motion.h2 variants={fadeUp} className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight text-white leading-tight mb-6">
               What automation actually does for your business.
             </motion.h2>
             <motion.p variants={fadeUp} className="text-lg text-muted-foreground leading-relaxed">
@@ -118,7 +118,7 @@ export default function Home() {
           {/* Six concrete benefits */}
           <motion.div
             initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={stagger}
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6"
           >
             {[
               {
@@ -154,7 +154,7 @@ export default function Home() {
             ].map((b, i) => (
               <motion.div
                 variants={fadeUp} key={i}
-                className="group p-8 rounded-3xl bg-white/[0.02] border border-white/[0.06] hover:border-primary/40 hover:bg-white/[0.04] transition-all duration-500 flex flex-col h-full"
+                className="group p-6 sm:p-8 rounded-3xl bg-white/[0.02] border border-white/[0.06] hover:border-primary/40 hover:bg-white/[0.04] transition-all duration-500 flex flex-col h-full"
               >
                 <div className="w-12 h-12 rounded-2xl bg-primary/10 border border-primary/20 flex items-center justify-center mb-6 group-hover:bg-primary/20 group-hover:scale-110 transition-all duration-500">
                   <b.icon className="w-5 h-5 text-primary" />
@@ -169,7 +169,7 @@ export default function Home() {
       </section>
 
       {/* ─── SERVICES OVERVIEW ────────────────────────────────────── */}
-      <section id="services" className="pt-10 pb-16 px-6 bg-white/[0.01] border-y border-white/[0.04]">
+      <section id="services" className="pt-10 pb-16 px-4 sm:px-6 bg-white/[0.01] border-y border-white/[0.04]">
         <div className="container mx-auto max-w-6xl">
           <motion.div
             initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={stagger}
@@ -177,7 +177,7 @@ export default function Home() {
           >
             <div className="max-w-2xl">
               <motion.div variants={fadeUp}><SectionBadge>What We Build</SectionBadge></motion.div>
-              <motion.h2 variants={fadeUp} className="text-4xl md:text-5xl font-black tracking-tight text-white leading-tight">
+              <motion.h2 variants={fadeUp} className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight text-white leading-tight">
                 Big-business systems, built for your business.
               </motion.h2>
             </div>
@@ -188,7 +188,7 @@ export default function Home() {
 
           <motion.div
             initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={stagger}
-            className="grid grid-cols-1 md:grid-cols-3 gap-6"
+            className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6"
           >
             {[
               { 
@@ -212,7 +212,7 @@ export default function Home() {
             ].map((srv, i) => (
               <motion.div
                 variants={fadeUp} key={i}
-                className="group p-8 rounded-3xl bg-white/[0.02] border border-white/[0.06] hover:border-primary/40 transition-all duration-500 hover:bg-white/[0.04] flex flex-col h-full"
+                className="group p-6 sm:p-8 rounded-3xl bg-white/[0.02] border border-white/[0.06] hover:border-primary/40 transition-all duration-500 hover:bg-white/[0.04] flex flex-col h-full"
               >
                 <div className="w-14 h-14 rounded-2xl bg-white/[0.04] border border-white/10 flex items-center justify-center mb-8 group-hover:scale-110 group-hover:bg-primary/20 group-hover:border-primary/40 transition-all duration-500">
                   <srv.icon className="w-6 h-6 text-white group-hover:text-primary transition-colors" />
@@ -227,7 +227,7 @@ export default function Home() {
       </section>
 
       {/* ─── FEATURED PRODUCTS & CASE STUDY ───────────────────────── */}
-      <section id="featured" className="py-16 px-6 overflow-hidden relative">
+      <section id="featured" className="py-12 sm:py-16 px-4 sm:px-6 overflow-hidden relative">
         <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-secondary/10 rounded-full blur-[140px] pointer-events-none" />
         <div className="absolute left-0 bottom-0 w-[500px] h-[500px] bg-primary/10 rounded-full blur-[140px] pointer-events-none" />
         <div className="container mx-auto max-w-6xl relative z-10">
@@ -236,7 +236,7 @@ export default function Home() {
             className="text-center max-w-3xl mx-auto mb-16"
           >
             <motion.div variants={fadeUp} className="flex justify-center"><SectionBadge>Featured Work</SectionBadge></motion.div>
-            <motion.h2 variants={fadeUp} className="text-4xl md:text-5xl font-black tracking-tight text-white leading-tight mb-6">
+            <motion.h2 variants={fadeUp} className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight text-white leading-tight mb-6">
               Flagship products. Hands-on support. Real results.
             </motion.h2>
             <motion.p variants={fadeUp} className="text-lg text-muted-foreground leading-relaxed">
@@ -246,10 +246,10 @@ export default function Home() {
 
           <motion.div
             initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={stagger}
-            className="grid md:grid-cols-2 lg:grid-cols-4 gap-6"
+            className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6"
           >
             {/* LeadCatch card */}
-            <motion.div variants={fadeUp} className="group flex flex-col p-8 rounded-3xl bg-white/[0.02] border border-white/[0.06] hover:border-primary/40 hover:bg-white/[0.04] transition-all duration-500 relative overflow-hidden">
+            <motion.div variants={fadeUp} className="group flex flex-col p-6 sm:p-8 rounded-3xl bg-white/[0.02] border border-white/[0.06] hover:border-primary/40 hover:bg-white/[0.04] transition-all duration-500 relative overflow-hidden">
               <div className="absolute -top-12 -right-12 w-48 h-48 bg-secondary/10 rounded-full blur-3xl pointer-events-none" />
               <div className="relative z-10 flex flex-col h-full">
                 <div className="text-xs font-bold tracking-[0.2em] text-primary mb-4">PRODUCT · $99/MO</div>
@@ -270,7 +270,7 @@ export default function Home() {
             </motion.div>
 
             {/* AutoDial card */}
-            <motion.div variants={fadeUp} className="group flex flex-col p-8 rounded-3xl bg-white/[0.02] border border-white/[0.06] hover:border-primary/40 hover:bg-white/[0.04] transition-all duration-500 relative overflow-hidden">
+            <motion.div variants={fadeUp} className="group flex flex-col p-6 sm:p-8 rounded-3xl bg-white/[0.02] border border-white/[0.06] hover:border-primary/40 hover:bg-white/[0.04] transition-all duration-500 relative overflow-hidden">
               <div className="absolute -top-12 -left-12 w-48 h-48 bg-primary/10 rounded-full blur-3xl pointer-events-none" />
               <div className="relative z-10 flex flex-col h-full">
                 <div className="text-xs font-bold tracking-[0.2em] text-primary mb-4">PRODUCT · AI VOICE</div>
@@ -294,7 +294,7 @@ export default function Home() {
             </motion.div>
 
             {/* Yard Yakka card */}
-            <motion.div variants={fadeUp} className="group flex flex-col p-8 rounded-3xl bg-white/[0.02] border border-white/[0.06] hover:border-primary/40 hover:bg-white/[0.04] transition-all duration-500 relative overflow-hidden">
+            <motion.div variants={fadeUp} className="group flex flex-col p-6 sm:p-8 rounded-3xl bg-white/[0.02] border border-white/[0.06] hover:border-primary/40 hover:bg-white/[0.04] transition-all duration-500 relative overflow-hidden">
               <div className="absolute -bottom-12 -right-12 w-48 h-48 bg-primary/10 rounded-full blur-3xl pointer-events-none" />
               <div className="relative z-10 flex flex-col h-full">
                 <div className="text-xs font-bold tracking-[0.2em] text-primary mb-4">CASE STUDY</div>
@@ -313,7 +313,7 @@ export default function Home() {
             </motion.div>
 
             {/* Admin / Bookkeeping card */}
-            <motion.div variants={fadeUp} className="group flex flex-col p-8 rounded-3xl bg-white/[0.02] border border-white/[0.06] hover:border-primary/40 hover:bg-white/[0.04] transition-all duration-500 relative overflow-hidden">
+            <motion.div variants={fadeUp} className="group flex flex-col p-6 sm:p-8 rounded-3xl bg-white/[0.02] border border-white/[0.06] hover:border-primary/40 hover:bg-white/[0.04] transition-all duration-500 relative overflow-hidden">
               <div className="absolute -top-12 -right-12 w-48 h-48 bg-primary/10 rounded-full blur-3xl pointer-events-none" />
               <div className="relative z-10 flex flex-col h-full">
                 <div className="text-xs font-bold tracking-[0.2em] text-primary mb-4">SERVICE · $400/WK</div>
@@ -345,10 +345,10 @@ export default function Home() {
       <RoiCalculator />
 
       {/* ─── TESTIMONIALS ─────────────────────────────────────────── */}
-      <section className="py-16 px-6 bg-white/[0.01] border-t border-white/[0.04]">
+      <section className="py-12 sm:py-16 px-4 sm:px-6 bg-white/[0.01] border-t border-white/[0.04]">
         <div className="container mx-auto max-w-6xl">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger} className="text-center mb-16">
-            <motion.h2 variants={fadeUp} className="text-3xl md:text-4xl font-black tracking-tight text-white mb-4">
+            <motion.h2 variants={fadeUp} className="text-2xl sm:text-3xl md:text-4xl font-black tracking-tight text-white mb-4">
               Trusted by Australian Business Owners
             </motion.h2>
             <motion.p variants={fadeUp} className="text-muted-foreground">Real people getting real hours back in their week.</motion.p>
@@ -356,7 +356,7 @@ export default function Home() {
 
           <motion.div
             initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}
-            className="grid md:grid-cols-3 gap-6"
+            className="grid md:grid-cols-3 gap-4 sm:gap-6"
           >
             {[
               {
@@ -374,7 +374,7 @@ export default function Home() {
             ].map((t, i) => (
               <motion.div
                 key={i} variants={fadeUp}
-                className="p-8 rounded-3xl bg-white/[0.02] border border-white/[0.06] flex flex-col h-full"
+                className="p-6 sm:p-8 rounded-3xl bg-white/[0.02] border border-white/[0.06] flex flex-col h-full"
               >
                 <div className="flex gap-1 mb-6">
                   {Array.from({ length: 5 }).map((_, s) => (
@@ -398,20 +398,20 @@ export default function Home() {
       </section>
 
       {/* ─── FINAL CTA ────────────────────────────────────────────── */}
-      <section className="py-14 px-6 relative overflow-hidden">
+      <section className="py-12 sm:py-14 px-4 sm:px-6 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-primary/10 pointer-events-none" />
         <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-primary/20 rounded-t-full blur-[120px] pointer-events-none" />
         
         <div className="container mx-auto max-w-3xl text-center relative z-10">
           <motion.h2 
             initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
-            className="text-4xl md:text-6xl font-black text-white mb-6 tracking-tight"
+            className="text-3xl sm:text-4xl md:text-6xl font-black text-white mb-6 tracking-tight"
           >
             Stop doing it all yourself.
           </motion.h2>
           <motion.p 
             initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.1 }}
-            className="text-xl text-muted-foreground mb-10 max-w-xl mx-auto"
+            className="text-base sm:text-xl text-muted-foreground mb-10 max-w-xl mx-auto"
           >
             Get a free automation audit for your business. Zero pressure. Zero jargon. Just a clear roadmap to save you time.
           </motion.p>
@@ -419,7 +419,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.2 }}
           >
             <Link href="/get-started">
-              <Button size="lg" className="h-16 px-10 text-lg rounded-full bg-white text-black hover:bg-white/90 font-black shadow-[0_0_40px_rgba(255,255,255,0.2)]">
+              <Button size="lg" className="h-14 sm:h-16 px-8 sm:px-10 text-base sm:text-lg rounded-full bg-white text-black hover:bg-white/90 font-black shadow-[0_0_40px_rgba(255,255,255,0.2)]">
                 Get Your Free Audit <ChevronRight className="w-5 h-5 ml-2" />
               </Button>
             </Link>

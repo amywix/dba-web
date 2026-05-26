@@ -47,7 +47,7 @@ export default function YardYakka() {
       <Navbar />
 
       {/* HERO */}
-      <section className="pt-32 pb-20 px-6 relative overflow-hidden">
+      <section className="pt-24 pb-14 sm:pt-32 sm:pb-20 px-4 sm:px-6 relative overflow-hidden">
         <div className="absolute right-0 top-1/4 w-[700px] h-[700px] bg-primary/10 rounded-full blur-[160px] pointer-events-none" />
         <div className="container mx-auto max-w-6xl relative z-10">
           <div className="grid lg:grid-cols-12 gap-16 items-center">
@@ -57,7 +57,7 @@ export default function YardYakka() {
             >
               <motion.div variants={fadeUp}>
                 <SectionBadge>Case Study</SectionBadge>
-                <h1 className="text-5xl md:text-6xl font-black leading-[1.05] tracking-tight text-white mb-6">
+                <h1 className="text-4xl sm:text-5xl md:text-6xl font-black leading-[1.05] tracking-tight text-white mb-6">
                   The Yard Yakka Boys.
                 </h1>
                 <p className="text-muted-foreground text-lg mb-2">Lawn care & NDIS maintenance · Mackay, QLD</p>
@@ -81,7 +81,7 @@ export default function YardYakka() {
       </section>
 
       {/* THE PROBLEM */}
-      <section className="py-14 px-6 bg-white/[0.01] border-y border-white/[0.04]">
+      <section className="py-12 sm:py-14 px-4 sm:px-6 bg-white/[0.01] border-y border-white/[0.04]">
         <div className="container mx-auto max-w-4xl">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={stagger} className="space-y-6">
             <motion.div variants={fadeUp}><SectionBadge>The Problem</SectionBadge></motion.div>
@@ -96,11 +96,11 @@ export default function YardYakka() {
       </section>
 
       {/* THE BUILD */}
-      <section className="py-16 px-6">
+      <section className="py-12 sm:py-16 px-4 sm:px-6">
         <div className="container mx-auto max-w-6xl">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={stagger} className="text-center max-w-3xl mx-auto mb-16">
             <motion.div variants={fadeUp} className="flex justify-center"><SectionBadge>The Build</SectionBadge></motion.div>
-            <motion.h2 variants={fadeUp} className="text-4xl md:text-5xl font-black tracking-tight text-white leading-tight mb-6">
+            <motion.h2 variants={fadeUp} className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight text-white leading-tight mb-6">
               A bespoke app + a 6-step workflow that runs itself.
             </motion.h2>
             <motion.p variants={fadeUp} className="text-muted-foreground text-lg leading-relaxed">
@@ -143,12 +143,12 @@ export default function YardYakka() {
       </section>
 
       {/* RESULTS + QUOTE */}
-      <section className="py-16 px-6 bg-white/[0.01] border-y border-white/[0.04]">
+      <section className="py-12 sm:py-16 px-4 sm:px-6 bg-white/[0.01] border-y border-white/[0.04]">
         <div className="container mx-auto max-w-6xl">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={stagger} className="grid lg:grid-cols-2 gap-16 items-center">
             <motion.div variants={fadeUp}>
               <SectionBadge>The Result</SectionBadge>
-              <h2 className="text-4xl md:text-5xl font-black tracking-tight text-white leading-tight mb-10">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight text-white leading-tight mb-10">
                 Half a week back. Zero invoices missed. Cash flow on autopilot.
               </h2>
               <div className="grid grid-cols-2 gap-6">
@@ -159,7 +159,7 @@ export default function YardYakka() {
                   { stat: "24/7", label: "payment reconciliation" },
                 ].map((m, i) => (
                   <div key={i} className="p-6 rounded-2xl bg-white/[0.02] border border-white/[0.06]">
-                    <div className="text-4xl md:text-5xl font-black text-primary mb-2 tracking-tight">{m.stat}</div>
+                    <div className="text-3xl sm:text-4xl md:text-5xl font-black text-primary mb-2 tracking-tight">{m.stat}</div>
                     <div className="text-muted-foreground text-sm leading-snug">{m.label}</div>
                   </div>
                 ))}
@@ -168,7 +168,7 @@ export default function YardYakka() {
 
             <motion.div variants={fadeUp} className="relative">
               <div className="absolute -inset-4 bg-primary/10 rounded-[40px] blur-2xl pointer-events-none" />
-              <blockquote className="relative p-10 rounded-[32px] bg-white/[0.03] border border-white/[0.08]">
+              <blockquote className="relative p-6 sm:p-10 rounded-[32px] bg-white/[0.03] border border-white/[0.08]">
                 <p className="text-2xl md:text-3xl font-bold text-white leading-tight mb-8">
                   "What used to take me half a day every week now just happens. Invoices go out, the NDIS sheet fills itself, and I can actually see what's been paid without digging through emails."
                 </p>
@@ -188,10 +188,10 @@ export default function YardYakka() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 px-6">
+      <section className="py-12 sm:py-16 px-4 sm:px-6">
         <div className="container mx-auto max-w-4xl text-center">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}>
-            <h2 className="text-4xl md:text-5xl font-black text-white mb-6 tracking-tight">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white mb-6 tracking-tight">
               Want a system that runs your business while you run the work?
             </h2>
             <p className="text-lg text-muted-foreground mb-10 max-w-2xl mx-auto">

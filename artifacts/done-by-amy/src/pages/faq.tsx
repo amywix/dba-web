@@ -67,12 +67,12 @@ export default function FAQ() {
     <div className="min-h-screen flex flex-col bg-background text-foreground">
       <Navbar />
 
-      <div className="flex-1 pt-32 pb-24 px-6 relative">
+      <div className="flex-1 pt-24 pb-16 sm:pt-32 sm:pb-24 px-4 sm:px-6 relative">
         <div className="absolute top-20 right-0 w-[500px] h-[500px] bg-primary/5 rounded-full blur-[150px] pointer-events-none" />
         
         <div className="container mx-auto max-w-3xl relative z-10">
           <motion.div initial="hidden" animate="visible" variants={fadeIn} className="text-center mb-16">
-            <h1 className="text-4xl md:text-5xl font-black text-white tracking-tight mb-4">Questions? Answered.</h1>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-black text-white tracking-tight mb-4">Questions? Answered.</h1>
             <p className="text-lg text-muted-foreground">Everything you need to know about working with us.</p>
           </motion.div>
 
@@ -104,7 +104,7 @@ export default function FAQ() {
             ))}
           </motion.div>
 
-          <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeIn} className="mt-20 p-10 text-center bg-white/[0.02] border border-white/[0.06] rounded-[32px]">
+          <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeIn} className="mt-16 sm:mt-20 p-6 sm:p-10 text-center bg-white/[0.02] border border-white/[0.06] rounded-[32px]">
             <h2 className="text-2xl font-black text-white mb-3 tracking-tight">Still have questions?</h2>
             <p className="text-muted-foreground mb-8">We're happy to chat through your specific needs.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

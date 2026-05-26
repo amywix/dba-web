@@ -29,7 +29,7 @@ export default function About() {
       <Navbar />
 
       {/* Hero */}
-      <section className="pt-32 pb-24 px-6 relative overflow-hidden">
+      <section className="pt-24 pb-16 sm:pt-32 sm:pb-24 px-4 sm:px-6 relative overflow-hidden">
         <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-primary/10 rounded-full blur-[150px] pointer-events-none" />
         
         <div className="container mx-auto max-w-4xl relative z-10">
@@ -40,7 +40,7 @@ export default function About() {
             <motion.div variants={fadeIn} className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/[0.03] border border-white/[0.08] text-white/70 text-xs font-bold uppercase tracking-widest mb-8">
               The person behind the systems
             </motion.div>
-            <motion.h1 variants={fadeIn} className="text-5xl md:text-7xl font-black leading-[1.05] tracking-tight mb-8 text-white">
+            <motion.h1 variants={fadeIn} className="text-4xl sm:text-5xl md:text-7xl font-black leading-[1.05] tracking-tight mb-8 text-white">
               I build systems that <br className="hidden md:block" />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">run themselves.</span>
             </motion.h1>

@@ -61,7 +61,7 @@ export default function RoiCalculator() {
   }, [adminHours, hourlyValue, missedCalls, avgJob]);
 
   return (
-    <section id="roi" className="py-16 px-6 relative overflow-hidden">
+    <section id="roi" className="py-12 sm:py-16 px-4 sm:px-6 relative overflow-hidden">
       <div className="absolute -top-32 right-0 w-[600px] h-[600px] bg-primary/10 rounded-full blur-[160px] pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-secondary/10 rounded-full blur-[160px] pointer-events-none" />
 
@@ -73,10 +73,10 @@ export default function RoiCalculator() {
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/[0.03] border border-white/[0.08] text-white/70 text-xs font-bold uppercase tracking-widest mb-8">
             ROI Calculator
           </div>
-          <h2 className="text-4xl md:text-5xl font-black tracking-tight text-white leading-tight mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight text-white leading-tight mb-6">
             See what automation is worth to <span className="text-primary">your</span> business.
           </h2>
-          <p className="text-lg text-muted-foreground leading-relaxed">
+          <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
             Move the sliders. Watch what you're really leaving on the table every month.
           </p>
         </motion.div>
@@ -86,7 +86,7 @@ export default function RoiCalculator() {
           className="grid lg:grid-cols-5 gap-6"
         >
           {/* INPUTS */}
-          <div className="lg:col-span-3 p-8 md:p-10 rounded-3xl bg-white/[0.02] border border-white/[0.08] space-y-8">
+          <div className="lg:col-span-3 p-6 sm:p-8 md:p-10 rounded-3xl bg-white/[0.02] border border-white/[0.08] space-y-8">
             <NumberField
               label="Hours/week spent on admin"
               value={adminHours} onChange={setAdminHours}
@@ -110,9 +110,9 @@ export default function RoiCalculator() {
           </div>
 
           {/* RESULTS */}
-          <div className="lg:col-span-2 p-8 md:p-10 rounded-3xl bg-gradient-to-br from-primary/15 to-secondary/10 border border-primary/30 flex flex-col">
+          <div className="lg:col-span-2 p-6 sm:p-8 md:p-10 rounded-3xl bg-gradient-to-br from-primary/15 to-secondary/10 border border-primary/30 flex flex-col">
             <div className="text-xs font-bold tracking-[0.2em] text-primary mb-2">YOUR ESTIMATED LIFT</div>
-            <div className="text-5xl md:text-6xl font-black text-white tracking-tight mb-1 tabular-nums">
+            <div className="text-4xl sm:text-5xl md:text-6xl font-black text-white tracking-tight mb-1 tabular-nums break-all">
               {AUD(totalMonthly)}
             </div>
             <div className="text-muted-foreground text-sm mb-8">recovered every month</div>

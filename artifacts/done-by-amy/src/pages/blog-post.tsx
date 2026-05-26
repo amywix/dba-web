@@ -26,7 +26,7 @@ export default function BlogPost() {
     <div className="min-h-screen flex flex-col bg-background text-foreground">
       <Navbar />
 
-      <article className="flex-1 pt-32 pb-24 px-6 relative">
+      <article className="flex-1 pt-24 pb-16 sm:pt-32 sm:pb-24 px-4 sm:px-6 relative">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[500px] bg-primary/5 rounded-full blur-[140px] pointer-events-none" />
 
         <div className="container mx-auto max-w-3xl relative z-10">
@@ -35,12 +35,12 @@ export default function BlogPost() {
           </Link>
 
           <motion.header initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} className="mb-14">
-            <div className="flex items-center gap-4 text-xs font-medium text-muted-foreground mb-6">
+            <div className="flex flex-wrap items-center gap-x-3 gap-y-2 text-xs font-medium text-muted-foreground mb-6">
               <span className="text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full bg-white/[0.04] text-white">{post.category}</span>
               <span className="flex items-center gap-1.5"><Calendar className="w-3.5 h-3.5" />{new Date(post.date).toLocaleDateString("en-AU", { day: "numeric", month: "short", year: "numeric" })}</span>
               <span className="flex items-center gap-1.5"><Clock className="w-3.5 h-3.5" />{post.readTime}</span>
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-[56px] font-black text-white tracking-tight leading-[1.1] mb-6">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[56px] font-black text-white tracking-tight leading-[1.1] mb-6">
               {post.title}
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">{post.excerpt}</p>
@@ -66,7 +66,7 @@ export default function BlogPost() {
             })}
           </motion.div>
 
-          <div className="mt-20 p-10 md:p-12 rounded-[32px] bg-white/[0.02] border border-white/[0.06] text-center">
+          <div className="mt-16 sm:mt-20 p-6 sm:p-10 md:p-12 rounded-[32px] bg-white/[0.02] border border-white/[0.06] text-center">
             <h3 className="text-2xl md:text-3xl font-black text-white mb-4 tracking-tight">Ready to map out your own system?</h3>
             <p className="text-muted-foreground mb-8 max-w-md mx-auto">Get a free automation audit for your business. We'll show you exactly what to automate first.</p>
             <Link href="/get-started">

@@ -66,18 +66,18 @@ export default function Contact() {
     <div className="min-h-screen flex flex-col bg-background text-foreground">
       <Navbar />
 
-      <div className="flex-1 pt-32 pb-24 px-6 relative overflow-hidden">
+      <div className="flex-1 pt-24 pb-16 sm:pt-32 sm:pb-24 px-4 sm:px-6 relative overflow-hidden">
         <div className="absolute top-0 left-1/4 w-[500px] h-[500px] bg-primary/10 rounded-full blur-[140px] pointer-events-none" />
 
         <div className="container mx-auto max-w-5xl relative z-10">
           <motion.div initial="hidden" animate="visible" variants={fadeIn} className="text-center mb-16">
-            <h1 className="text-4xl md:text-5xl font-black text-white tracking-tight mb-4">Let's connect.</h1>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-black text-white tracking-tight mb-4">Let's connect.</h1>
             <p className="text-lg text-muted-foreground max-w-xl mx-auto">
               Questions about our services? Need support? We're here to help.
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-12 gap-10 items-start">
+          <div className="grid md:grid-cols-12 gap-8 md:gap-10 items-start">
             
             {/* Contact Info Sidebar */}
             <motion.div initial="hidden" animate="visible" variants={{...fadeIn, visible: {...fadeIn.visible, transition: {delay: 0.1}}}} className="md:col-span-5 space-y-6">
@@ -118,7 +118,7 @@ export default function Contact() {
             {/* Form */}
             <motion.div initial="hidden" animate="visible" variants={{...fadeIn, visible: {...fadeIn.visible, transition: {delay: 0.2}}}} className="md:col-span-7">
               {!submitted ? (
-                <div className="bg-white/[0.02] border border-white/[0.06] rounded-[24px] p-8 md:p-10 shadow-xl">
+                <div className="bg-white/[0.02] border border-white/[0.06] rounded-[24px] p-6 sm:p-8 md:p-10 shadow-xl">
                   <Form {...form}>
                     <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
                       <div className="grid sm:grid-cols-2 gap-6">
@@ -145,7 +145,7 @@ export default function Contact() {
                   </Form>
                 </div>
               ) : (
-                <div className="bg-white/[0.02] border border-white/[0.06] rounded-[24px] p-12 text-center flex flex-col items-center justify-center h-full min-h-[400px]">
+                <div className="bg-white/[0.02] border border-white/[0.06] rounded-[24px] p-8 sm:p-12 text-center flex flex-col items-center justify-center h-full min-h-[400px]">
                   <div className="w-16 h-16 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center mb-6">
                     <CheckCircle2 className="w-8 h-8 text-primary" />
                   </div>

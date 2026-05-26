@@ -48,7 +48,7 @@ export default function Navbar() {
           : "bg-transparent py-5"
       }`}
     >
-      <div className="container mx-auto px-6 flex items-center justify-between">
+      <div className="container mx-auto px-4 sm:px-6 flex items-center justify-between">
         <Link href="/" className="flex items-center group" data-testid="nav-logo">
           <img 
             src={linkBanner} 
@@ -103,7 +103,7 @@ export default function Navbar() {
           open ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0 border-transparent"
         }`}
       >
-        <div className="container mx-auto px-6 py-8 flex flex-col gap-2">
+        <div className="container mx-auto px-4 sm:px-6 py-6 sm:py-8 flex flex-col gap-2">
           {links.map(({ label, href }) => (
             <a
               key={label}
