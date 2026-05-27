@@ -46,7 +46,7 @@ export default function Home() {
       <Navbar />
 
       {/* ─── HERO ─────────────────────────────────────────────────── */}
-      <section className="relative pt-24 pb-16 sm:pt-32 sm:pb-28 md:pt-56 md:pb-40 px-4 sm:px-6 overflow-hidden">
+      <section className="relative pt-24 pb-6 sm:pt-32 sm:pb-12 md:pt-56 md:pb-16 px-4 sm:px-6 overflow-hidden">
         {/* Abstract Glows */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] bg-primary/20 rounded-full blur-[160px] opacity-50 pointer-events-none" />
         <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-secondary/10 rounded-full blur-[120px] pointer-events-none" />
@@ -97,7 +97,7 @@ export default function Home() {
       </section>
 
       {/* ─── WHY AUTOMATE (BENEFITS) ──────────────────────────────── */}
-      <section id="benefits" className="pt-8 pb-10 px-4 sm:px-6 relative overflow-hidden">
+      <section id="benefits" className="pt-2 pb-10 px-4 sm:px-6 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/[0.03] to-transparent pointer-events-none" />
         <div className="container mx-auto max-w-6xl relative z-10">
           <motion.div
