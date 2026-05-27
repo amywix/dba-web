@@ -1,5 +1,40 @@
 uploads = []
-generated = []
+
+[[generated]]
+id = "dOAi5thr0slHXhf-LOB2O"
+uri = "file://attached_assets/storyboard/shot1_hook.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "cmwhrdVGZLJ1oNxF6YhTl"
+uri = "file://attached_assets/storyboard/shot2_reveal.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "TJi_Hsu7VrmUvlIykQLNi"
+uri = "file://attached_assets/storyboard/shot3_problem.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "4F8KTfIqNn6c4U7noH_np"
+uri = "file://attached_assets/storyboard/shot4_demo.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "mTBN70aEQ_ZgtCQeKxN1J"
+uri = "file://attached_assets/storyboard/shot5_punchline.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "5SkPPaWC9FCKiLPZ3ATf-"
+uri = "file://attached_assets/storyboard/shot6_cta.png"
+type = "image"
+title = "generated_image"
 
 [[outputs]]
 id = "UUaa4EwNl5cs9RAJLmpKW"
@@ -12,3 +47,9 @@ id = "RT7kgt8BAFqyJDdqPUSLG"
 uri = "file://exports/done-by-amy-brisbane-solar.csv"
 type = "table"
 title = "Done By Amy — 98 Brisbane/SEQ solar prospects"
+
+[[outputs]]
+id = "FJuDeiJBLuORsUQywH6Xw"
+uri = "file://attached_assets/creator_brief_amys_first_day.md"
+type = "text"
+title = "Creator Brief — Amy's First Day (Episode 1)"
