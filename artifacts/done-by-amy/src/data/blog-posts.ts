@@ -20,6 +20,122 @@ export type BlogBlock =
 
 export const posts: BlogPost[] = [
   {
+    slug: "best-ai-automation-tools-australian-small-business-2026",
+    title: "The 9 Best AI Automation Tools for Australian Small Businesses (2026)",
+    description:
+      "The exact AI automation tools we recommend to Australian tradies, clinics and service businesses in 2026 — for accounting, scheduling, AI chat, workflow automation and getting paid faster.",
+    keywords:
+      "best AI automation tools Australia, small business software 2026, Xero automation, Zapier alternatives Australia, AI chatbot tools, Calendly, QuickBooks Australia, small business tech stack, automation software for tradies",
+    date: "2026-05-29",
+    readTime: "11 min read",
+    category: "Tools & Stack",
+    author: "Amy",
+    excerpt:
+      "There are hundreds of 'AI tools' out there and most are noise. These are the nine we actually set up for Aussie small businesses in 2026 — what each one does, what it costs, and who it's for.",
+    content: [
+      {
+        type: "p",
+        text: "Every week someone sends me a link to a new AI tool and asks 'should I be using this?' Ninety percent of the time the answer is no — it's a feature dressed up as a product, or it solves a problem you don't have. But the right stack of tools genuinely changes a small business. The trick is knowing which ones earn their keep.",
+      },
+      {
+        type: "p",
+        text: "This is the shortlist I actually recommend to clients in 2026 — tradies, clinics, agents and service businesses across Australia. For each tool I'll tell you what it does, roughly what it costs in AUD, and whether it's worth it for a business your size. A few of the links below are partner links, which means Done By Amy may earn a small commission if you sign up — at no extra cost to you. I only list tools I'd set up for my own clients.",
+      },
+
+      { type: "h2", text: "Accounting & invoicing" },
+
+      { type: "h3", text: "1. Xero — the default for Aussie small business" },
+      {
+        type: "p",
+        text: "If you're in Australia and you don't have a strong reason to use something else, [Xero](https://AFFILIATE.LINK/xero) is the accounting platform to build on. It's local, it handles GST and BAS the way the ATO expects, and almost every automation tool integrates with it natively. When we wire up quote-to-invoice flows, Xero is the system the invoice lands in nine times out of ten.",
+      },
+      {
+        type: "p",
+        text: "Cost: roughly $35–$75/month depending on the plan. Worth it the moment you're sending more than a handful of invoices a month.",
+      },
+
+      { type: "h3", text: "2. QuickBooks — the strong alternative" },
+      {
+        type: "p",
+        text: "If your bookkeeper already lives in [QuickBooks](https://AFFILIATE.LINK/quickbooks), there's no need to switch. It's just as automation-friendly as Xero and the AI-assisted reconciliation has come a long way. Pick based on what your accountant prefers — the worst option is fighting your bookkeeper over software.",
+      },
+
+      { type: "h2", text: "Workflow automation — the glue" },
+
+      { type: "h3", text: "3. Zapier — connect everything, fast" },
+      {
+        type: "p",
+        text: "[Zapier](https://AFFILIATE.LINK/zapier) is the easiest way to make your apps talk to each other without code. 'When a form is submitted, add the lead to my CRM and text me' — that's a five-minute Zap. It's the tool I reach for first when a client wants something automated this week, not this quarter.",
+      },
+      {
+        type: "p",
+        text: "Cost: free for simple stuff, $30–$90/month once you're running real volume. The time it buys back pays for it many times over.",
+      },
+
+      { type: "h3", text: "4. Make — for the more complex stuff" },
+      {
+        type: "p",
+        text: "When a workflow has branches, loops, or needs to parse a messy email, [Make](https://AFFILIATE.LINK/make) gives you more power for less money than Zapier — at the cost of a steeper learning curve. This is what sits behind the remittance-matching automation in our case studies.",
+      },
+
+      { type: "h2", text: "AI assistants & chat" },
+
+      { type: "h3", text: "5. ChatGPT — the everyday workhorse" },
+      {
+        type: "p",
+        text: "For drafting quotes, replying to tricky emails, summarising a long thread or writing your social posts, [ChatGPT](https://AFFILIATE.LINK/chatgpt) Plus is the best $30-ish a month most owners can spend. Build a few saved prompts for your common tasks and it becomes a genuine time-saver, not a novelty.",
+      },
+
+      { type: "h3", text: "6. Claude — for long documents and nuance" },
+      {
+        type: "p",
+        text: "[Claude](https://AFFILIATE.LINK/claude) is my pick when the job involves long documents — contracts, reports, big email chains — or when tone really matters. Many owners run both and use whichever suits the task. At this price, you don't have to choose just one.",
+      },
+
+      { type: "h2", text: "Getting booked & getting paid" },
+
+      { type: "h3", text: "7. Calendly — stop playing phone tag" },
+      {
+        type: "p",
+        text: "[Calendly](https://AFFILIATE.LINK/calendly) lets clients book a time straight into your calendar without the back-and-forth. Pair it with your AI chatbot and an enquiry can turn into a booked appointment at 11pm with zero input from you.",
+      },
+
+      { type: "h3", text: "8. Twilio — the SMS engine" },
+      {
+        type: "p",
+        text: "Most missed-call and reminder automations run on [Twilio](https://AFFILIATE.LINK/twilio) under the hood. You won't touch it directly — it's the plumbing — but it's the reason an instant 'sorry I missed you' text can go out the second a call drops. It's the engine behind LeadCatch.",
+      },
+
+      { type: "h3", text: "9. HubSpot — when you outgrow the spreadsheet" },
+      {
+        type: "p",
+        text: "Once you've got more leads than a spreadsheet can handle, [HubSpot](https://AFFILIATE.LINK/hubspot) gives you a real CRM with a genuinely usable free tier. It tracks every enquiry, automates follow-ups, and tells you which jobs are about to slip through the cracks.",
+      },
+
+      { type: "h2", text: "How to actually choose (don't buy all nine)" },
+      {
+        type: "p",
+        text: "You don't need every tool on this list. Most small businesses do brilliantly with four: an accounting platform, one automation tool, an AI assistant, and a way to get booked. Start there. Add the rest only when a specific bottleneck demands it.",
+      },
+      { type: "ul", items: [
+        "Just starting out: Xero + ChatGPT + Calendly. Three tools, under $100/month, massive leverage.",
+        "Drowning in missed calls: add a missed-call SMS system (the LeadCatch approach, built on Twilio).",
+        "Buried in back-office admin: add Make or Zapier to connect your accounting, calendar and CRM.",
+        "Too many leads to track by hand: add HubSpot and let it chase the follow-ups for you.",
+      ]},
+
+      { type: "h2", text: "The honest truth about tools" },
+      {
+        type: "p",
+        text: "Tools don't fix a broken process — they just run it faster. Before you buy anything, get clear on the workflow you actually want. A $30 tool wired into a clear process beats a $300 tool bolted onto chaos every single time.",
+      },
+      {
+        type: "p",
+        text: "If you'd rather skip the trial-and-error, that's exactly what we do. Tell us where your week is leaking hours and you'll get a [free automation audit](/get-started) back — a one-page plan naming the specific tools to set up first, with rough costs, so you're not guessing.",
+      },
+    ],
+  },
+  {
     slug: "ai-automation-australian-small-business-2026",
     title: "AI Automation for Australian Small Business: The 2026 Playbook",
     description:

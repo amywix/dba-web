@@ -7,6 +7,37 @@ import { ArrowLeft, ChevronRight, Calendar, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import NotFound from "@/pages/not-found";
 import { getPost } from "@/data/blog-posts";
+import type { ReactNode } from "react";
+
+// Parses inline markdown links — [text](url) — so affiliate links can be dropped
+// straight into any paragraph, heading, list item or quote in blog-posts.ts.
+// External links get rel="sponsored noopener noreferrer" for affiliate compliance;
+// internal links (starting with /) render as normal same-tab links.
+function renderInline(text: string): ReactNode[] {
+  const parts: ReactNode[] = [];
+  const regex = /\[([^\]]+)\]\(([^)]+)\)/g;
+  let lastIndex = 0;
+  let key = 0;
+  let match: RegExpExecArray | null;
+  while ((match = regex.exec(text)) !== null) {
+    if (match.index > lastIndex) parts.push(text.slice(lastIndex, match.index));
+    const label = match[1];
+    const href = match[2];
+    const isInternal = href.startsWith("/");
+    const isSafeExternal = /^https?:\/\//i.test(href) || /^(mailto:|tel:)/i.test(href);
+    if (isInternal) {
+      parts.push(<a key={key++} href={href}>{label}</a>);
+    } else if (isSafeExternal) {
+      parts.push(<a key={key++} href={href} target="_blank" rel="sponsored noopener noreferrer">{label}</a>);
+    } else {
+      // Disallowed scheme (e.g. javascript:/data:) — render the label as plain text.
+      parts.push(label);
+    }
+    lastIndex = regex.lastIndex;
+  }
+  if (lastIndex < text.length) parts.push(text.slice(lastIndex));
+  return parts;
+}
 
 export default function BlogPost() {
   const [, params] = useRoute("/blog/:slug");
@@ -48,17 +79,17 @@ export default function BlogPost() {
 
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.2 }} className="prose prose-invert prose-lg max-w-none prose-headings:font-black prose-headings:tracking-tight prose-a:text-primary hover:prose-a:text-primary/80 prose-blockquote:border-primary/50 prose-blockquote:bg-white/[0.02] prose-blockquote:p-6 prose-blockquote:rounded-r-2xl prose-blockquote:not-italic prose-li:marker:text-primary">
             {post.content.map((block, i) => {
-              if (block.type === "h2") return <h2 key={i} className="text-3xl mt-12 mb-6 text-white">{block.text}</h2>;
-              if (block.type === "h3") return <h3 key={i} className="text-xl mt-8 mb-4 text-white">{block.text}</h3>;
-              if (block.type === "p") return <p key={i} className="text-muted-foreground leading-relaxed mb-6">{block.text}</p>;
+              if (block.type === "h2") return <h2 key={i} className="text-3xl mt-12 mb-6 text-white">{renderInline(block.text)}</h2>;
+              if (block.type === "h3") return <h3 key={i} className="text-xl mt-8 mb-4 text-white">{renderInline(block.text)}</h3>;
+              if (block.type === "p") return <p key={i} className="text-muted-foreground leading-relaxed mb-6">{renderInline(block.text)}</p>;
               if (block.type === "ul") return (
                 <ul key={i} className="list-disc pl-5 space-y-2 mb-8 text-muted-foreground">
-                  {block.items.map((it, j) => <li key={j}>{it}</li>)}
+                  {block.items.map((it, j) => <li key={j}>{renderInline(it)}</li>)}
                 </ul>
               );
               if (block.type === "quote") return (
                 <blockquote key={i} className="my-10 border-l-4 border-primary bg-white/[0.02] p-8 rounded-r-3xl">
-                  <p className="text-white text-lg font-medium leading-relaxed m-0 mb-4">"{block.text}"</p>
+                  <p className="text-white text-lg font-medium leading-relaxed m-0 mb-4">"{renderInline(block.text)}"</p>
                   {block.cite && <footer className="text-sm font-bold text-primary m-0">— {block.cite}</footer>}
                 </blockquote>
               );
