@@ -1,67 +1,1123 @@
-Company,Website,Location,Vertical,Est. Size,Fit Score (1-5),Buying Signal,Has Chatbot?,Contact Name,Contact Title,Email / Pattern,Phone,Why Now (cold-open line)
-Petrichor Day Spa,petrichordayspa.com.au,"Brisbane, QLD",Beauty & wellness,5-10 staff,5,"Squarespace site, bookings via contact form only, no chat widget",No,,Owner,info@petrichordayspa.com.au,,Your booking page asks people to wait for a reply — an AI chat could lock in spa bookings the moment someone lands at midnight.
-OLA Aesthetics,olaaestheticsperth.com.au,"West Perth, WA",Beauty & wellness,8-15 staff,5,"High-ticket cosmetic clinic, 'Request your appointment' form only, no chat widget",No,Dr Aleksandra Kaddour,Founder / Principal Doctor,info@olaaestheticsperth.com.au,,Every missed Morpheus8 enquiry is a $2k+ booking lost — an AI chat answers FAQs and locks in consults 24/7.
-VELOUR Skin & Beauty Parlour,velourbeautyparlour.com.au,"Dulwich Hill, NSW",Beauty & wellness,3-6 staff,5,"Inner-west boutique skin clinic, contact form + Phorest bookings, no live chat",No,,Owner,hello@velourbeautyparlour.com.au,,"Skin enquiries are personal — an AI chat that talks acne, peels and pricing books more facials than a static contact form ever will."
-Retreat Massage & Wellness,retreatwellness.com.au,"Southport, QLD",Beauty & wellness,5-12 staff,5,"'Get call back' form + phone-first, Fresha bookings, no on-site chat",No,,Owner,info@retreatwellness.com.au,07 5527 1147,You already offer a call-back form — an AI chat does the same job 24/7 and converts the 70% who won't wait for a callback.
-Kanvasd Clinic,kanvasd.com.au,"Brisbane, QLD",Beauty & wellness,4-10 staff,5,"Cosmetic injectables clinic, contact form bookings, no live chat",No,,Clinic Owner / Nurse Injector,info@kanvasd.com.au,,Injectable shoppers compare 3-4 clinics in one sitting — an AI chat that quotes pricing instantly wins the booking before they DM the next clinic.
-Barefoot Physiotherapy,barefootphysiotherapy.com.au,"Tennyson, QLD",Health & allied health clinics,5-10 staff,5,"'Please leave a voicemail, we respond within 24hrs' — clear missed-enquiry gap",No,,Practice Manager,hello@barefootphysiotherapy.com.au,1300 842 850,Your contact page asks people to leave a voicemail and wait 24 hours — an AI chat could book them on the spot before they bounce to the next Tennyson physio.
-Clifton Hill Chiropractic,cliftonhillchiro.com.au,"Clifton Hill, VIC",Health & allied health clinics,3-6 staff,5,"Owner-operated 30+ years, gmail contact, form-only enquiries, no chat widget",No,Stella Parissis,Principal Chiropractor / Owner,cliftonhillchiro167@gmail.com,03 9481 1933,"After 30 years in Clifton Hill, most new patients now Google you at 9pm — an AI chat would book them while reception is closed instead of losing them to the next chiro."
-Adelaide Podiatry Centres,adelaidepodiatrist.net.au,"North Adelaide, SA",Health & allied health clinics,10-20 staff,5,"Two locations, multiple 'Book Free Assessment' CTAs, phone-and-form only, no chat widget",No,,Practice Manager,info@adelaidepodiatrist.net.au,08 8239 1022,You're running free-assessment offers on every page but the only way to claim one is a phone call in business hours — an AI chat would lock those bookings in 24/7.
-Eye C Optometry,eyecoptometry.com.au,"South Perth, WA",Health & allied health clinics,3-6 staff,5,"790+ Google reviews, independent owner-operated, contact-form only",No,,Owner / Principal Optometrist,info@eyecoptometry.com.au,,790+ 5-star reviews means a ton of inbound — but right now those website visitors have to fill a form and wait; an AI chat could qualify and book them instantly.
-Brisbane Pet Surgery,brisbanepetsurgery.com.au,"Eagle Farm, QLD",Health & allied health clinics,8-15 staff,5,"Closed weekends + after-hours, redirects emergencies elsewhere — missing pet-owner enquiries",No,,Practice Manager,info@brisbanepetsurgery.com.au,07 3064 1064,"You're closed weekends and after 6pm — that's exactly when pet owners panic-Google vets; an AI chat could triage, quote and book Monday's consult while you sleep."
-PHYX Newcastle,phyxnewcastle.com.au,"Newcastle, NSW",Health & allied health clinics,4-8 staff,5,"Owner-led physio + pilates studio, contact form + Cliniko, no chat widget",No,Louisa Cutler,Owner / Principal Physiotherapist,admin@phyxnewcastle.com.au,0493 794 586,"People deciding between physio, pilates and massage on your site still have to fill a form to ask — an AI chat would answer 'which is right for me?' and book them then and there."
-JC Accountant,jc-accountant.com.au,"Brisbane, QLD",Professional services,2-10 staff,5,"Contact-form + phone only, no chat widget on a busy boutique accounting site",No,,Principal Accountant,info@jc-accountant.com.au,07 3341 1223,Tax-season enquiries hit after 5pm — a chatbot would book consults while you're with clients.
-Inspire Accountants,inspire.accountants,"Brisbane, QLD",Professional services,10-20 staff,5,'Book an initial chat' link goes to a form — no live chat widget,No,Ben Walker,Founder,hello@inspireca.com,07 2112 4880,Your 'Book an initial chat' button is really just a form — a real chatbot could qualify and book those leads 24/7.
-Taussig Cherrie Fildes Lawyers,tcflawyers.com.au,"Melbourne, VIC",Professional services,20-40 staff,5,"Family-law boutique with 'Enquire now' button — no chat widget, high-value matters",No,,Practice Manager,famlaw@tcflawyers.com.au,03 9605 1700,"Family-law enquiries are emotional and urgent — a chatbot triages them the moment they land, before they bounce to a competitor."
-Partners in Family Law,partnersinfamilylaw.com.au,"Melbourne, VIC",Professional services,5-15 staff,5,"High-intent family-law enquiries, contact-form + phone only",No,,Principal,info@partnersinfamilylaw.com.au,03 8596 8162,Family-law leads who reach you after hours are often gone by morning — a chatbot keeps them engaged and books the consult.
-Absolute Bookkeeping Perth,absolutebookkeepingperth.com.au,"Perth, WA",Professional services,1-5 staff,5,"Solo-owner bookkeeper, mobile-only contact, no chat — perfect missed-enquiry fit",No,Deb,Owner,deb@absolutebookkeepingperth.com.au,0437 418 399,When you're on a client's books you can't answer the phone — a $150/mo chatbot catches every enquiry that would otherwise hang up.
-Adelaide Migration Agent,adelaidemigrationagent.com.au,"Adelaide, SA",Professional services,3-10 staff,5,"Visa enquiries are urgent and international (different timezones); booking-form only, no chat",No,,Principal Migration Agent,contact@adelaidemigrationagent.com.au,08 7123 3466,Visa applicants browsing from overseas at 3am can't wait for a callback — a chatbot qualifies and books them instantly.
-Right Financial Mortgage Brokers,rightfinancial.com.au,"Newcastle, NSW",Professional services,5-15 staff,5,"Mortgage broker — buyers research at night, no chat widget on site",No,,Principal Broker,info@rightfinancial.com.au,02 9934 9735,"Homebuyers do their mortgage research at 10pm — a chatbot pre-qualifies them (deposit, income, loan size) and books the broker call."
-Hauss Realty,hauss.com.au,"Bardon, QLD",Real estate & property management,5-10 staff,5,"Boutique Brisbane West agency, contact form + info@ email, no chat widget",No,,Director,info@hauss.com.au,07 3067 7267,Buyers browsing Hauss listings at 9pm have nowhere to ask a quick question — a chatbot would catch them before they bounce to Ray White.
-ABODE Property Brisbane,abodepropertybrisbane.com.au,"Brisbane, QLD",Real estate & property management,3-8 staff,5,"Owner-operated boutique, phone + form only, no chat widget",No,Tracey Hopkirk,Director & Owner,info@abodepropertybrisbane.com.au,07 3517 2476,"As an owner-operated boutique, every missed after-hours enquiry is a listing or rental you personally lose — a chatbot books them while you sleep."
-Junction Estate Agents,junctionea.com.au,"Brisbane, QLD",Real estate & property management,3-8 staff,5,"Single hello@ inbox + phone, no chat or after-hours capture",No,Jeremy Paikaew,Founder & Selling Director,hello@junctionea.com.au,07 3110 0830,"Hello@ is great, but it doesn't answer 'is this property still available?' at 10pm — a chatbot does, instantly."
-Wallace Advocates,wallaceadvocates.com.au,"Melbourne, VIC",Real estate & property management,2-5 staff,5,"Founder-led buyers advocate, contact form + mobile only, no chat widget",No,Emily Wallace,Founder & Buyer's Advocate,emily@wallaceadvocates.com.au,0418 810 695,Buyer enquiries come in 24/7 but you can't answer your mobile mid-inspection — an AI chatbot qualifies and books discovery calls for you.
-Keeping It Realty,keepingitrealty.com.au,"Clarence Gardens, SA",Real estate & property management,5-12 staff,5,"Independent Adelaide agency, phone + form only, no chat widget",No,Christine Holowiecka,Director & Principal,info@keepingitrealty.com.au,08 8351 2776,"Owner-operated agencies live or die by responsiveness — a chatbot makes you the first to reply, every time, even on weekends."
-Mod Property Group,modpropertygroup.com.au,"Perth, WA",Real estate & property management,3-8 staff,5,"Boutique property management, hello@ + phone, no chat widget",No,,Director,hello@modpropertygroup.com.au,08 6192 3023,Tenants and landlords ask the same 5 questions on repeat — a chatbot answers them 24/7 so you can focus on growth.
-Box Property Management,boxpropertymanagement.com.au,"Perth, WA",Real estate & property management,5-12 staff,5,"Fixed-fee PM agency, contact form only, no chat widget",No,,Director,info@boxpropertymanagement.com.au,08 6557 8990,Landlords comparing PM fees at 11pm need an instant quote — a chatbot delivers it before they fill in three other forms.
-Ocean Buyers Agency,oceanbuyersagency.com,"Sunshine Coast, QLD",Real estate & property management,2-5 staff,5,"Founder-led buyers agency, hello@ + mobile, no chat widget",No,,Founder,hello@oceanbuyersagency.com,+61 488 824 142,Interstate buyers researching the Sunshine Coast at all hours need to engage now — a chatbot books their strategy call before they cool off.
-Empire Electrical Contractors,empireelectricalcontractors.com.au,"Sydney, NSW",Trades & home services,5-15 staff,5,24/7 emergency electrical promised but only a phone number + 'Get Free Quote' form — no chat widget,No,,Owner,info@empireelectricalcontractors.com.au,0468 404 608,You're promising 24/7 emergency service but every after-hours enquiry has to wait for a callback — a chatbot would book those jobs while you sleep.
-Semken Landscaping,semken.com.au,"Melbourne, VIC",Trades & home services,10-25 staff,5,High-end design+build studio relying on phone and a single quote form — no chat widget,No,,Director,info@semken.com.au,(03) 9879 3656,Your Garden Advisory enquiries all funnel through one form — an AI chat could pre-qualify design briefs before they hit your inbox.
-Stewarts Pest Control,stewartspestcontrol.com.au,"Perth, WA",Trades & home services,5-15 staff,5,Book-online flow but no chat widget; relies on phone + bookings email,No,,Owner,bookings@stewartspestcontrol.com.au,(08) 9274 8444,You've already invested in 'Book Online' — adding an AI chat on top would turn the 60% of visitors who bounce into booked jobs.
-Adelaide Roofing Co,adelaideroofingco.com.au,"Adelaide, SA",Trades & home services,5-15 staff,5,"Single 'obligation-free quote' form, no chat, high-value job type",No,,Owner,info@adelaideroofingco.com.au,(08) 7008 9340,Roof jobs are $10k+ — every missed contact-form enquiry is a five-figure loss a chatbot would have caught.
-Sydmech Air Conditioning,sydmech.com.au,"Sydney, NSW",Trades & home services,10-25 staff,5,"Residential + commercial HVAC, contact form only, no chat widget",No,Peter,Owner,peter@sydmech.com.au,(02) 8378 4555,Heatwave week = phones ringing off the hook — a chatbot triages install vs repair enquiries so your team only calls back the hot ones.
-Boost Commercial Cleaning,boostcommercialcleaning.com.au,"Melbourne, VIC",Trades & home services,10-30 staff,5,"4.9-star Google rated, 'Request a Free Quote' only, no live chat",No,,Director,hello@boostcommercialcleaning.com.au,1300 211 888,You're earning the clicks with 4.9 stars but every quote request still goes to email — a chatbot turns that into a booked walk-through same day.
-Melbourne Pilates Method Studio,melbournepilatesmethodstudio.com.au,"Melbourne, VIC",Beauty & wellness,3-8 staff,4,"Owner-operated boutique studio, enquiry form only, no live chat",No,,Owner / Lead Instructor,info@melbournepilatesmethodstudio.com.au,,New Pilates clients shop late at night — a 24/7 AI chat would book the intro session before they bounce to a competitor.
-Kabuki Hair,kabukihair.com.au,"Parkside, SA",Beauty & wellness,8-15 staff,4,"Award-winning Adelaide salon, bookings via Fresha link, no on-site chat",No,,Owner,info@kabukihair.com.au,08 8272 1175,A chat widget could answer 'do you do colour correction?' and push the booking before they click away to Fresha.
-The Open Mind Space,theopenmindspace.com.au,"Broadmeadow, NSW",Beauty & wellness,2-8 staff,4,"Wix yoga studio, Momence bookings, no chat widget on site",No,,Studio Owner,hello@theopenmindspace.com.au,,New yogis ask the same 10 questions — let an AI chat answer them instantly and sell the $40 intro pass without you lifting a finger.
-Ashley Faithful Training Studios,aftrainingstudios.com.au,"Melbourne, VIC",Beauty & wellness,5-15 staff,4,"Boutique PT studio, enquiry form only, no chat widget",No,Ashley Faithful,Founder / Head Coach,info@aftrainingstudios.com.au,,PT enquiries spike after 9pm — an AI chat books the intro session while you're with a client (or asleep).
-Station Street Fit,stationstreetfit.com.au,"Perth, WA",Beauty & wellness,3-8 staff,4,"Boutique fitness studio, free-trial enquiry form, no chat widget",No,,Owner,hello@stationstreetfit.com.au,,Every 'book a free trial' form that goes unanswered for 2 hours is a lost member — an AI chat books them on the spot.
-Infuse Health,infusehealth.au,"Adamstown, NSW",Beauty & wellness,6-15 staff,4,"Yoga/Pilates/movement studio, contact + class booking forms, no live chat",No,,Studio Owner,info@infusehealth.au,,First-time movers need hand-holding — an AI chat that explains your classes books trials your contact form misses.
-Yovanka Loria Salon,yovankaloriasalon.com.au,"Adelaide, SA",Beauty & wellness,5-12 staff,4,"Luxury hair extensions salon, consultation form only, no chat widget",No,Yovanka Loria,Owner / Master Stylist,info@yovankaloriasalon.com.au,,Extension enquiries are high-intent and high-ticket — an AI chat qualifies hair type and books the consult before they shop around.
-Alpha Physio,alphaphysio.com.au,"Sumner, QLD",Health & allied health clinics,3-8 staff,4,"Cliniko booking + contact page only, no live chat widget",No,,Practice Manager,info@alphaphysio.com.au,,"Your Cliniko booking is great after-hours, but every enquiry that isn't ready to book yet is hitting a contact form — an AI chat could capture them in seconds."
-Sydney City Psychology,sydneycitypsychology.com.au,"Sydney, NSW",Health & allied health clinics,8-15 staff,4,"Reception 'matches you by phone' — every enquiry needs a human, no chat widget",No,,Practice Manager,info@sydneycitypsychology.com.au,02 9235 3127,Your reception team currently matches every new client over the phone — an AI chat could do the initial intake and Medicare/referral Q&A so they only get warm bookings.
-Western Clinic Medical Centre,westernclinic.com.au,"Torrensville, SA",Health & allied health clinics,15-30 staff,4,"Multi-service GP + allied + cosmetic, contact-form only, no chat widget",No,,Practice Manager,reception@westernclinic.com.au,08 8450 2500,"You offer GP, physio, podiatry and cosmetic under one roof — but your website makes patients call to figure out which one they need; an AI chat could route and book them instantly."
-WestVETS Animal Hospital,westvets.com.au,"Anstead, QLD",Health & allied health clinics,15-30 staff,4,"Two clinics, Vetstoria booking but no AI chat to handle questions/triage",No,,Practice Manager,info@westvets.com.au,07 3202 7300,"Vetstoria handles bookings, but every 'is this an emergency?' or 'do you treat horses?' question still goes to your front desk — an AI chat could absorb that load 24/7."
-North Sydney Psychology Clinic,northsydneypsychology.com.au,"North Sydney, NSW",Health & allied health clinics,30+ practitioners,4,"7 locations, 30+ practitioners, 'immediate availability' CTA — high inbound, phone-led",No,,Practice Manager,info@northsydneypsychology.com.au,02 7256 7070,You're advertising 'immediate availability' across 7 clinics — an AI chat could match clients to the right psychologist and location in 30 seconds instead of a phone tag loop.
-WalkerHill Accounting,walkerhill.com.au,"Brisbane, QLD",Professional services,15-30 staff,4,"High-volume small-business accounting site, contact-form only",No,,Practice Manager,support@walkerhill.com.au,07 3367 3155,Every after-hours visitor on your site bounces to a form — a chatbot would capture and qualify them before the next morning.
-M+H Private,mhprivate.com.au,"Brisbane, QLD",Professional services,10-25 staff,4,"Boutique medical-accounting niche, no chat widget",No,,Partner,info@mhprivate.com.au,02 4050 3804,Doctors browsing your site at 10pm won't fill a form — a chatbot would book the discovery call while they're still reading.
-Velocity Legal,velocitylegal.com.au,"Melbourne, VIC",Professional services,10-25 staff,4,"Boutique tax/commercial law firm, form-only contact, no chat",No,,Office Manager,office@velocitylegal.com.au,03 7043 3311,Your contact page promises 'someone will be in touch' — a chatbot can qualify and book the meeting instantly.
-WMK Accounting,wmkaccounting.com.au,"Perth, WA",Professional services,5-12 staff,4,"Small-business accountant, owner emails published, no chat widget",No,Mandy,Director,mandy@wmkaccounting.com.au,08 9409 4774,Your contact page is just a phone and email — a chatbot would handle the basic 'how much do you charge?' questions for you.
-Advanced Bookkeeping Solutions,advancedbb.com.au,"Perth, WA",Professional services,2-8 staff,4,"Owner-operated bookkeeper, form + phone only, no chat",No,Aaron,Owner,aaron@advancedbb.com.au,08 9387 8886,"Your site invites people to 'chat about how we can help', but there's no chat — let's fix that for under $200/mo."
-Ben Aylen Migration,benaylen.com.au,"Adelaide, SA",Professional services,1-5 staff,4,"Solo migration agent, contact-form only, no chat widget",No,Ben Aylen,Owner / Migration Agent,info@benaylen.com.au,,As a solo agent every missed enquiry is a lost client — a chatbot answers FAQs and books consults while you're with applicants.
-Accomplish Wealth,accomplishwealth.com.au,"Gold Coast, QLD",Professional services,5-15 staff,4,"Boutique financial planning firm, form-only enquiry, no chat",No,,Principal Adviser,hello@accomplishwealth.com.au,,High-net-worth prospects who land on your site after hours won't fill a form — a chatbot books the first call while interest is hot.
-Mortgage Broker Sydney,mortgagebrokersydney.com.au,"Sydney, NSW",Professional services,5-20 staff,4,"Phone + 'request an appointment' form only, no live chat",No,,Principal Broker,info@mortgagebrokersydney.com.au,1300 983 670,"Your 1300 number rings out after hours — a chatbot captures the enquiry, qualifies the loan, and books the broker for the morning."
-Calibre Real Estate,calibrerealestate.com.au,"Red Hill, QLD",Real estate & property management,15-25 staff,4,Sales + rentals enquiries via contact form & phone only; no chat widget,No,Alice Hagen,Director / Principal,sales@calibrerealestate.com.au,07 3367 3411,You're handling sales and rentals enquiries through a single contact form — after-hours leads are silently bouncing.
-LP Advisory,lpadvisory.com.au,"South Yarra, VIC",Real estate & property management,3-10 staff,4,"Buyers agency, info@ + landline, contact form only, no chat widget",No,,Founder / Director,info@lpadvisory.com.au,03 9498 3131,Buyers researching Melbourne suburbs at midnight need answers now — a chatbot captures them before they DM your competitor on Instagram.
-Inview Property Group,inviewpropertygroup.com.au,"Melbourne, VIC",Real estate & property management,3-10 staff,4,"Buyers advocacy contact form, mobile only, appears no chat widget",Unverified,,Director,info@inviewpropertygroup.com.au,0418 122 296,Your contact form says 'we'll be in touch' — meanwhile the buyer's already on a call with another advocate. A chatbot closes that gap.
-Klemich Real Estate,klemich.com.au,"Dulwich, SA",Real estate & property management,20-40 staff,4,"Boutique Adelaide agency, sold@ + media@ inboxes, no chat widget",No,Matt Smith,Principal / Director,sold@klemich.com.au,08 8331 6555,You've built the reputation — now make sure no buyer enquiry ever waits more than 10 seconds for a reply.
-Bailey Property,baileypropertysa.com.au,"Adelaide, SA",Real estate & property management,10-25 staff,4,"Independent family agency, single admin@ inbox, no chat widget",No,Mark Bailey,Co-Founder & Principal,admin@baileypropertysa.com.au,08 7320 3949,One admin inbox is doing the work of a front-desk team — a chatbot triages enquiries and books inspections automatically.
-Strategia Strata,strategiastrata.com,"Sydney, NSW",Real estate & property management,5-15 staff,4,"Independent Sydney strata manager, admin@ inbox, no chat widget",No,,Director,admin@strategiastrata.com,,Owners corporations expect instant answers about levies and repairs — a chatbot handles the routine 80% and escalates the rest.
-Ross-Hunt Real Estate,rosshunt.com.au,"Surrey Hills, VIC",Real estate & property management,10-20 staff,4,"Long-standing independent agency, single shared inbox, no chat widget",No,,Director,rosshunt@rosshunt.com.au,03 9830 4044,"Your reputation pulls inbound enquiry — a chatbot makes sure every one of them gets answered in 5 seconds, not 5 hours."
-MBM Landscaping & Maintenance,mbmlandscapingmaintenance.com,"Dandenong, VIC",Trades & home services,5-15 staff,4,"Contact-form-only website, no live chat, peak spring demand",No,,Owner,info@mbmlandscapingmaintenance.com,(03) 9068 6288,Spring's your busiest window — a chatbot can capture and book quote requests at 9pm when homeowners are actually browsing.
-Allpest,allpest.com.au,"Perth, WA",Trades & home services,15-40 staff,4,'Free Proposal' button leads to a static form — no chat widget,No,,Operations Manager,info@allpest.com.au,(08) 9416 0200,Termite enquiries are urgent — losing a lead to a competitor because nobody answered the form for 6 hours is exactly what a chatbot fixes.
-Adelaide Hills Roofing,adelaidehillsroofing.com,"Adelaide Hills, SA",Trades & home services,2-8 staff,4,"Owner-operated; Squarespace site with a 'we'll call you' form, no chat",No,,Owner,adelaidehillsroofing@gmail.com,0492 178 551,"You're on the tools all day — an AI chat replies to enquiries the second they hit the site, so you don't lose them to whoever calls back first."
-Spruce It Up Painting,paintersgc.com.au,"Gold Coast, QLD",Trades & home services,3-10 staff,4,"Owner-operated painters, contact-form + phone only, no chat widget",No,,Owner,info@paintersgc.com.au,0435 767 723,Homeowners shop painters at night after work — an AI chat that books quote visits 24/7 would lock in jobs before competitors even open.
-KYC Air Conditioning,kycairconditioning.com.au,"Sydney, NSW",Trades & home services,5-15 staff,4,"reCAPTCHA-protected quote form, no live chat",No,,Owner,info@kycairconditioning.com.au,0484 595 959,Your spring specials are running — an AI chat on the page can answer 'will it fit my home?' instantly and book the install.
-Supa's Cleaning Services,supascleaning.com.au,"Melbourne, VIC",Trades & home services,15-40 staff,4,'Fast Quote' / 'Detailed Quote' popups but no chat widget,No,,Owner,info@supascleaning.com.au,(03) 9068 5777,Office managers RFQ at 5pm — a chatbot that asks 'how many sqm and how often?' would deliver a hot lead before you open tomorrow.
-Bedford Medical Clinic,bedfordmedical.com.au,"Bedford Park, SA",Health & allied health clinics,10-20 staff,3,"Independent GP + day surgery, old site, no chat widget — appears none, verify",Unverified,,Practice Manager,reception@bedfordmedical.com.au,,"Your site sends every new patient to a phone-only booking page — an AI chat could pre-screen Medicare, GP vs day-surgery enquiries and free up reception."
+Company,Website,Location,Vertical,Est. Size,Fit Score (1-5),Buying Signal,Has Chatbot?,Contact Name,Contact Title,Email / Pattern,Phone,Why Now (cold-open line),Email Subject,Email Body (ready to send),Follow-up 1 (+3 days),Follow-up 2 (+5 days)
+Petrichor Day Spa,petrichordayspa.com.au,"Brisbane, QLD",Beauty & wellness,5-10 staff,5,"Squarespace site, bookings via contact form only, no chat widget",No,,Owner,info@petrichordayspa.com.au,,Your booking page asks people to wait for a reply — an AI chat could lock in spa bookings the moment someone lands at midnight.,Petrichor Day Spa — after-hours leads,"Hi there,
+
+  Your booking page asks people to wait for a reply — an AI chat could lock in spa bookings the moment someone lands at midnight.
+
+  I'm Amy — I build AI chat assistants for Aussie beauty & wellness businesses. They sit on your website and answer enquiries, qualify the lead, and book the job straight into your calendar — 24/7, in your tone of voice.
+
+  One studio I work with was sending every enquiry to a contact form and waiting till morning to reply. Now the bot books them on the spot — they stopped losing after-hours work to whoever called back first.
+
+  Setup's done-for-you and it runs from about $99/month. No lock-in.
+
+  Worth a quick look? Reply ""demo"" and I'll send you a 60-second clip of one answering a real Petrichor Day Spa-style enquiry.
+
+  Cheers,
+  Amy
+  Done By Amy · donebyamy.com
+
+  Not for you? Just reply ""stop"" and I won't email again.","Hi there, just floating this back up. The quickest win I see for Petrichor Day Spa is catching the enquiries that land after hours — that's usually where the money leaks. Happy to send that 60-second demo if you're curious, no pressure either way. — Amy","Hi there, I'll leave it here so I'm not cluttering your inbox. If catching more website enquiries ever moves up the list, I'm one reply away. — Amy"
+OLA Aesthetics,olaaestheticsperth.com.au,"West Perth, WA",Beauty & wellness,8-15 staff,5,"High-ticket cosmetic clinic, 'Request your appointment' form only, no chat widget",No,Dr Aleksandra Kaddour,Founder / Principal Doctor,info@olaaestheticsperth.com.au,,Every missed Morpheus8 enquiry is a $2k+ booking lost — an AI chat answers FAQs and locks in consults 24/7.,OLA Aesthetics — after-hours leads,"Hi Dr,
+
+  Every missed Morpheus8 enquiry is a $2k+ booking lost — an AI chat answers FAQs and locks in consults 24/7.
+
+  I'm Amy — I build AI chat assistants for Aussie beauty & wellness businesses. They sit on your website and answer enquiries, qualify the lead, and book the job straight into your calendar — 24/7, in your tone of voice.
+
+  One studio I work with was sending every enquiry to a contact form and waiting till morning to reply. Now the bot books them on the spot — they stopped losing after-hours work to whoever called back first.
+
+  Setup's done-for-you and it runs from about $99/month. No lock-in.
+
+  Worth a quick look? Reply ""demo"" and I'll send you a 60-second clip of one answering a real OLA Aesthetics-style enquiry.
+
+  Cheers,
+  Amy
+  Done By Amy · donebyamy.com
+
+  Not for you? Just reply ""stop"" and I won't email again.","Hi Dr, just floating this back up. The quickest win I see for OLA Aesthetics is catching the enquiries that land after hours — that's usually where the money leaks. Happy to send that 60-second demo if you're curious, no pressure either way. — Amy","Hi Dr, I'll leave it here so I'm not cluttering your inbox. If catching more website enquiries ever moves up the list, I'm one reply away. — Amy"
+VELOUR Skin & Beauty Parlour,velourbeautyparlour.com.au,"Dulwich Hill, NSW",Beauty & wellness,3-6 staff,5,"Inner-west boutique skin clinic, contact form + Phorest bookings, no live chat",No,,Owner,hello@velourbeautyparlour.com.au,,"Skin enquiries are personal — an AI chat that talks acne, peels and pricing books more facials than a static contact form ever will.",VELOUR Skin & Beauty Parlour — after-hours leads,"Hi there,
+
+  Skin enquiries are personal — an AI chat that talks acne, peels and pricing books more facials than a static contact form ever will.
+
+  I'm Amy — I build AI chat assistants for Aussie beauty & wellness businesses. They sit on your website and answer enquiries, qualify the lead, and book the job straight into your calendar — 24/7, in your tone of voice.
+
+  One studio I work with was sending every enquiry to a contact form and waiting till morning to reply. Now the bot books them on the spot — they stopped losing after-hours work to whoever called back first.
+
+  Setup's done-for-you and it runs from about $99/month. No lock-in.
+
+  Worth a quick look? Reply ""demo"" and I'll send you a 60-second clip of one answering a real VELOUR Skin & Beauty Parlour-style enquiry.
+
+  Cheers,
+  Amy
+  Done By Amy · donebyamy.com
+
+  Not for you? Just reply ""stop"" and I won't email again.","Hi there, just floating this back up. The quickest win I see for VELOUR Skin & Beauty Parlour is catching the enquiries that land after hours — that's usually where the money leaks. Happy to send that 60-second demo if you're curious, no pressure either way. — Amy","Hi there, I'll leave it here so I'm not cluttering your inbox. If catching more website enquiries ever moves up the list, I'm one reply away. — Amy"
+Retreat Massage & Wellness,retreatwellness.com.au,"Southport, QLD",Beauty & wellness,5-12 staff,5,"'Get call back' form + phone-first, Fresha bookings, no on-site chat",No,,Owner,info@retreatwellness.com.au,07 5527 1147,You already offer a call-back form — an AI chat does the same job 24/7 and converts the 70% who won't wait for a callback.,Retreat Massage & Wellness — after-hours leads,"Hi there,
+
+  You already offer a call-back form — an AI chat does the same job 24/7 and converts the 70% who won't wait for a callback.
+
+  I'm Amy — I build AI chat assistants for Aussie beauty & wellness businesses. They sit on your website and answer enquiries, qualify the lead, and book the job straight into your calendar — 24/7, in your tone of voice.
+
+  One studio I work with was sending every enquiry to a contact form and waiting till morning to reply. Now the bot books them on the spot — they stopped losing after-hours work to whoever called back first.
+
+  Setup's done-for-you and it runs from about $99/month. No lock-in.
+
+  Worth a quick look? Reply ""demo"" and I'll send you a 60-second clip of one answering a real Retreat Massage & Wellness-style enquiry.
+
+  Cheers,
+  Amy
+  Done By Amy · donebyamy.com
+
+  Not for you? Just reply ""stop"" and I won't email again.","Hi there, just floating this back up. The quickest win I see for Retreat Massage & Wellness is catching the enquiries that land after hours — that's usually where the money leaks. Happy to send that 60-second demo if you're curious, no pressure either way. — Amy","Hi there, I'll leave it here so I'm not cluttering your inbox. If catching more website enquiries ever moves up the list, I'm one reply away. — Amy"
+Kanvasd Clinic,kanvasd.com.au,"Brisbane, QLD",Beauty & wellness,4-10 staff,5,"Cosmetic injectables clinic, contact form bookings, no live chat",No,,Clinic Owner / Nurse Injector,info@kanvasd.com.au,,Injectable shoppers compare 3-4 clinics in one sitting — an AI chat that quotes pricing instantly wins the booking before they DM the next clinic.,Kanvasd Clinic — after-hours leads,"Hi there,
+
+  Injectable shoppers compare 3-4 clinics in one sitting — an AI chat that quotes pricing instantly wins the booking before they DM the next clinic.
+
+  I'm Amy — I build AI chat assistants for Aussie beauty & wellness businesses. They sit on your website and answer enquiries, qualify the lead, and book the job straight into your calendar — 24/7, in your tone of voice.
+
+  One studio I work with was sending every enquiry to a contact form and waiting till morning to reply. Now the bot books them on the spot — they stopped losing after-hours work to whoever called back first.
+
+  Setup's done-for-you and it runs from about $99/month. No lock-in.
+
+  Worth a quick look? Reply ""demo"" and I'll send you a 60-second clip of one answering a real Kanvasd Clinic-style enquiry.
+
+  Cheers,
+  Amy
+  Done By Amy · donebyamy.com
+
+  Not for you? Just reply ""stop"" and I won't email again.","Hi there, just floating this back up. The quickest win I see for Kanvasd Clinic is catching the enquiries that land after hours — that's usually where the money leaks. Happy to send that 60-second demo if you're curious, no pressure either way. — Amy","Hi there, I'll leave it here so I'm not cluttering your inbox. If catching more website enquiries ever moves up the list, I'm one reply away. — Amy"
+Barefoot Physiotherapy,barefootphysiotherapy.com.au,"Tennyson, QLD",Health & allied health clinics,5-10 staff,5,"'Please leave a voicemail, we respond within 24hrs' — clear missed-enquiry gap",No,,Practice Manager,hello@barefootphysiotherapy.com.au,1300 842 850,Your contact page asks people to leave a voicemail and wait 24 hours — an AI chat could book them on the spot before they bounce to the next Tennyson physio.,Barefoot Physiotherapy — after-hours leads,"Hi there,
+
+  Your contact page asks people to leave a voicemail and wait 24 hours — an AI chat could book them on the spot before they bounce to the next Tennyson physio.
+
+  I'm Amy — I build AI chat assistants for Aussie health & allied health clinics businesses. They sit on your website and answer enquiries, qualify the lead, and book the job straight into your calendar — 24/7, in your tone of voice.
+
+  One clinic I work with was sending every enquiry to a contact form and waiting till morning to reply. Now the bot books them on the spot — they stopped losing after-hours work to whoever called back first.
+
+  Setup's done-for-you and it runs from about $99/month. No lock-in.
+
+  Worth a quick look? Reply ""demo"" and I'll send you a 60-second clip of one answering a real Barefoot Physiotherapy-style enquiry.
+
+  Cheers,
+  Amy
+  Done By Amy · donebyamy.com
+
+  Not for you? Just reply ""stop"" and I won't email again.","Hi there, just floating this back up. The quickest win I see for Barefoot Physiotherapy is catching the enquiries that land after hours — that's usually where the money leaks. Happy to send that 60-second demo if you're curious, no pressure either way. — Amy","Hi there, I'll leave it here so I'm not cluttering your inbox. If catching more website enquiries ever moves up the list, I'm one reply away. — Amy"
+Clifton Hill Chiropractic,cliftonhillchiro.com.au,"Clifton Hill, VIC",Health & allied health clinics,3-6 staff,5,"Owner-operated 30+ years, gmail contact, form-only enquiries, no chat widget",No,Stella Parissis,Principal Chiropractor / Owner,cliftonhillchiro167@gmail.com,03 9481 1933,"After 30 years in Clifton Hill, most new patients now Google you at 9pm — an AI chat would book them while reception is closed instead of losing them to the next chiro.",Clifton Hill Chiropractic — after-hours leads,"Hi Stella,
+
+  After 30 years in Clifton Hill, most new patients now Google you at 9pm — an AI chat would book them while reception is closed instead of losing them to the next chiro.
+
+  I'm Amy — I build AI chat assistants for Aussie health & allied health clinics businesses. They sit on your website and answer enquiries, qualify the lead, and book the job straight into your calendar — 24/7, in your tone of voice.
+
+  One clinic I work with was sending every enquiry to a contact form and waiting till morning to reply. Now the bot books them on the spot — they stopped losing after-hours work to whoever called back first.
+
+  Setup's done-for-you and it runs from about $99/month. No lock-in.
+
+  Worth a quick look? Reply ""demo"" and I'll send you a 60-second clip of one answering a real Clifton Hill Chiropractic-style enquiry.
+
+  Cheers,
+  Amy
+  Done By Amy · donebyamy.com
+
+  Not for you? Just reply ""stop"" and I won't email again.","Hi Stella, just floating this back up. The quickest win I see for Clifton Hill Chiropractic is catching the enquiries that land after hours — that's usually where the money leaks. Happy to send that 60-second demo if you're curious, no pressure either way. — Amy","Hi Stella, I'll leave it here so I'm not cluttering your inbox. If catching more website enquiries ever moves up the list, I'm one reply away. — Amy"
+Adelaide Podiatry Centres,adelaidepodiatrist.net.au,"North Adelaide, SA",Health & allied health clinics,10-20 staff,5,"Two locations, multiple 'Book Free Assessment' CTAs, phone-and-form only, no chat widget",No,,Practice Manager,info@adelaidepodiatrist.net.au,08 8239 1022,You're running free-assessment offers on every page but the only way to claim one is a phone call in business hours — an AI chat would lock those bookings in 24/7.,Adelaide Podiatry Centres — after-hours leads,"Hi there,
+
+  You're running free-assessment offers on every page but the only way to claim one is a phone call in business hours — an AI chat would lock those bookings in 24/7.
+
+  I'm Amy — I build AI chat assistants for Aussie health & allied health clinics businesses. They sit on your website and answer enquiries, qualify the lead, and book the job straight into your calendar — 24/7, in your tone of voice.
+
+  One clinic I work with was sending every enquiry to a contact form and waiting till morning to reply. Now the bot books them on the spot — they stopped losing after-hours work to whoever called back first.
+
+  Setup's done-for-you and it runs from about $99/month. No lock-in.
+
+  Worth a quick look? Reply ""demo"" and I'll send you a 60-second clip of one answering a real Adelaide Podiatry Centres-style enquiry.
+
+  Cheers,
+  Amy
+  Done By Amy · donebyamy.com
+
+  Not for you? Just reply ""stop"" and I won't email again.","Hi there, just floating this back up. The quickest win I see for Adelaide Podiatry Centres is catching the enquiries that land after hours — that's usually where the money leaks. Happy to send that 60-second demo if you're curious, no pressure either way. — Amy","Hi there, I'll leave it here so I'm not cluttering your inbox. If catching more website enquiries ever moves up the list, I'm one reply away. — Amy"
+Eye C Optometry,eyecoptometry.com.au,"South Perth, WA",Health & allied health clinics,3-6 staff,5,"790+ Google reviews, independent owner-operated, contact-form only",No,,Owner / Principal Optometrist,info@eyecoptometry.com.au,,790+ 5-star reviews means a ton of inbound — but right now those website visitors have to fill a form and wait; an AI chat could qualify and book them instantly.,Eye C Optometry — after-hours leads,"Hi there,
+
+  790+ 5-star reviews means a ton of inbound — but right now those website visitors have to fill a form and wait; an AI chat could qualify and book them instantly.
+
+  I'm Amy — I build AI chat assistants for Aussie health & allied health clinics businesses. They sit on your website and answer enquiries, qualify the lead, and book the job straight into your calendar — 24/7, in your tone of voice.
+
+  One clinic I work with was sending every enquiry to a contact form and waiting till morning to reply. Now the bot books them on the spot — they stopped losing after-hours work to whoever called back first.
+
+  Setup's done-for-you and it runs from about $99/month. No lock-in.
+
+  Worth a quick look? Reply ""demo"" and I'll send you a 60-second clip of one answering a real Eye C Optometry-style enquiry.
+
+  Cheers,
+  Amy
+  Done By Amy · donebyamy.com
+
+  Not for you? Just reply ""stop"" and I won't email again.","Hi there, just floating this back up. The quickest win I see for Eye C Optometry is catching the enquiries that land after hours — that's usually where the money leaks. Happy to send that 60-second demo if you're curious, no pressure either way. — Amy","Hi there, I'll leave it here so I'm not cluttering your inbox. If catching more website enquiries ever moves up the list, I'm one reply away. — Amy"
+Brisbane Pet Surgery,brisbanepetsurgery.com.au,"Eagle Farm, QLD",Health & allied health clinics,8-15 staff,5,"Closed weekends + after-hours, redirects emergencies elsewhere — missing pet-owner enquiries",No,,Practice Manager,info@brisbanepetsurgery.com.au,07 3064 1064,"You're closed weekends and after 6pm — that's exactly when pet owners panic-Google vets; an AI chat could triage, quote and book Monday's consult while you sleep.",Brisbane Pet Surgery — after-hours leads,"Hi there,
+
+  You're closed weekends and after 6pm — that's exactly when pet owners panic-Google vets; an AI chat could triage, quote and book Monday's consult while you sleep.
+
+  I'm Amy — I build AI chat assistants for Aussie health & allied health clinics businesses. They sit on your website and answer enquiries, qualify the lead, and book the job straight into your calendar — 24/7, in your tone of voice.
+
+  One clinic I work with was sending every enquiry to a contact form and waiting till morning to reply. Now the bot books them on the spot — they stopped losing after-hours work to whoever called back first.
+
+  Setup's done-for-you and it runs from about $99/month. No lock-in.
+
+  Worth a quick look? Reply ""demo"" and I'll send you a 60-second clip of one answering a real Brisbane Pet Surgery-style enquiry.
+
+  Cheers,
+  Amy
+  Done By Amy · donebyamy.com
+
+  Not for you? Just reply ""stop"" and I won't email again.","Hi there, just floating this back up. The quickest win I see for Brisbane Pet Surgery is catching the enquiries that land after hours — that's usually where the money leaks. Happy to send that 60-second demo if you're curious, no pressure either way. — Amy","Hi there, I'll leave it here so I'm not cluttering your inbox. If catching more website enquiries ever moves up the list, I'm one reply away. — Amy"
+PHYX Newcastle,phyxnewcastle.com.au,"Newcastle, NSW",Health & allied health clinics,4-8 staff,5,"Owner-led physio + pilates studio, contact form + Cliniko, no chat widget",No,Louisa Cutler,Owner / Principal Physiotherapist,admin@phyxnewcastle.com.au,0493 794 586,"People deciding between physio, pilates and massage on your site still have to fill a form to ask — an AI chat would answer 'which is right for me?' and book them then and there.",PHYX Newcastle — after-hours leads,"Hi Louisa,
+
+  People deciding between physio, pilates and massage on your site still have to fill a form to ask — an AI chat would answer 'which is right for me?' and book them then and there.
+
+  I'm Amy — I build AI chat assistants for Aussie health & allied health clinics businesses. They sit on your website and answer enquiries, qualify the lead, and book the job straight into your calendar — 24/7, in your tone of voice.
+
+  One clinic I work with was sending every enquiry to a contact form and waiting till morning to reply. Now the bot books them on the spot — they stopped losing after-hours work to whoever called back first.
+
+  Setup's done-for-you and it runs from about $99/month. No lock-in.
+
+  Worth a quick look? Reply ""demo"" and I'll send you a 60-second clip of one answering a real PHYX Newcastle-style enquiry.
+
+  Cheers,
+  Amy
+  Done By Amy · donebyamy.com
+
+  Not for you? Just reply ""stop"" and I won't email again.","Hi Louisa, just floating this back up. The quickest win I see for PHYX Newcastle is catching the enquiries that land after hours — that's usually where the money leaks. Happy to send that 60-second demo if you're curious, no pressure either way. — Amy","Hi Louisa, I'll leave it here so I'm not cluttering your inbox. If catching more website enquiries ever moves up the list, I'm one reply away. — Amy"
+JC Accountant,jc-accountant.com.au,"Brisbane, QLD",Professional services,2-10 staff,5,"Contact-form + phone only, no chat widget on a busy boutique accounting site",No,,Principal Accountant,info@jc-accountant.com.au,07 3341 1223,Tax-season enquiries hit after 5pm — a chatbot would book consults while you're with clients.,JC Accountant — after-hours leads,"Hi there,
+
+  Tax-season enquiries hit after 5pm — a chatbot would book consults while you're with clients.
+
+  I'm Amy — I build AI chat assistants for Aussie professional services businesses. They sit on your website and answer enquiries, qualify the lead, and book the job straight into your calendar — 24/7, in your tone of voice.
+
+  One firm I work with was sending every enquiry to a contact form and waiting till morning to reply. Now the bot books them on the spot — they stopped losing after-hours work to whoever called back first.
+
+  Setup's done-for-you and it runs from about $99/month. No lock-in.
+
+  Worth a quick look? Reply ""demo"" and I'll send you a 60-second clip of one answering a real JC Accountant-style enquiry.
+
+  Cheers,
+  Amy
+  Done By Amy · donebyamy.com
+
+  Not for you? Just reply ""stop"" and I won't email again.","Hi there, just floating this back up. The quickest win I see for JC Accountant is catching the enquiries that land after hours — that's usually where the money leaks. Happy to send that 60-second demo if you're curious, no pressure either way. — Amy","Hi there, I'll leave it here so I'm not cluttering your inbox. If catching more website enquiries ever moves up the list, I'm one reply away. — Amy"
+Inspire Accountants,inspire.accountants,"Brisbane, QLD",Professional services,10-20 staff,5,'Book an initial chat' link goes to a form — no live chat widget,No,Ben Walker,Founder,hello@inspireca.com,07 2112 4880,Your 'Book an initial chat' button is really just a form — a real chatbot could qualify and book those leads 24/7.,Inspire Accountants — after-hours leads,"Hi Ben,
+
+  Your 'Book an initial chat' button is really just a form — a real chatbot could qualify and book those leads 24/7.
+
+  I'm Amy — I build AI chat assistants for Aussie professional services businesses. They sit on your website and answer enquiries, qualify the lead, and book the job straight into your calendar — 24/7, in your tone of voice.
+
+  One firm I work with was sending every enquiry to a contact form and waiting till morning to reply. Now the bot books them on the spot — they stopped losing after-hours work to whoever called back first.
+
+  Setup's done-for-you and it runs from about $99/month. No lock-in.
+
+  Worth a quick look? Reply ""demo"" and I'll send you a 60-second clip of one answering a real Inspire Accountants-style enquiry.
+
+  Cheers,
+  Amy
+  Done By Amy · donebyamy.com
+
+  Not for you? Just reply ""stop"" and I won't email again.","Hi Ben, just floating this back up. The quickest win I see for Inspire Accountants is catching the enquiries that land after hours — that's usually where the money leaks. Happy to send that 60-second demo if you're curious, no pressure either way. — Amy","Hi Ben, I'll leave it here so I'm not cluttering your inbox. If catching more website enquiries ever moves up the list, I'm one reply away. — Amy"
+Taussig Cherrie Fildes Lawyers,tcflawyers.com.au,"Melbourne, VIC",Professional services,20-40 staff,5,"Family-law boutique with 'Enquire now' button — no chat widget, high-value matters",No,,Practice Manager,famlaw@tcflawyers.com.au,03 9605 1700,"Family-law enquiries are emotional and urgent — a chatbot triages them the moment they land, before they bounce to a competitor.",Taussig Cherrie Fildes Lawyers — after-hours leads,"Hi there,
+
+  Family-law enquiries are emotional and urgent — a chatbot triages them the moment they land, before they bounce to a competitor.
+
+  I'm Amy — I build AI chat assistants for Aussie professional services businesses. They sit on your website and answer enquiries, qualify the lead, and book the job straight into your calendar — 24/7, in your tone of voice.
+
+  One firm I work with was sending every enquiry to a contact form and waiting till morning to reply. Now the bot books them on the spot — they stopped losing after-hours work to whoever called back first.
+
+  Setup's done-for-you and it runs from about $99/month. No lock-in.
+
+  Worth a quick look? Reply ""demo"" and I'll send you a 60-second clip of one answering a real Taussig Cherrie Fildes Lawyers-style enquiry.
+
+  Cheers,
+  Amy
+  Done By Amy · donebyamy.com
+
+  Not for you? Just reply ""stop"" and I won't email again.","Hi there, just floating this back up. The quickest win I see for Taussig Cherrie Fildes Lawyers is catching the enquiries that land after hours — that's usually where the money leaks. Happy to send that 60-second demo if you're curious, no pressure either way. — Amy","Hi there, I'll leave it here so I'm not cluttering your inbox. If catching more website enquiries ever moves up the list, I'm one reply away. — Amy"
+Partners in Family Law,partnersinfamilylaw.com.au,"Melbourne, VIC",Professional services,5-15 staff,5,"High-intent family-law enquiries, contact-form + phone only",No,,Principal,info@partnersinfamilylaw.com.au,03 8596 8162,Family-law leads who reach you after hours are often gone by morning — a chatbot keeps them engaged and books the consult.,Partners in Family Law — after-hours leads,"Hi there,
+
+  Family-law leads who reach you after hours are often gone by morning — a chatbot keeps them engaged and books the consult.
+
+  I'm Amy — I build AI chat assistants for Aussie professional services businesses. They sit on your website and answer enquiries, qualify the lead, and book the job straight into your calendar — 24/7, in your tone of voice.
+
+  One firm I work with was sending every enquiry to a contact form and waiting till morning to reply. Now the bot books them on the spot — they stopped losing after-hours work to whoever called back first.
+
+  Setup's done-for-you and it runs from about $99/month. No lock-in.
+
+  Worth a quick look? Reply ""demo"" and I'll send you a 60-second clip of one answering a real Partners in Family Law-style enquiry.
+
+  Cheers,
+  Amy
+  Done By Amy · donebyamy.com
+
+  Not for you? Just reply ""stop"" and I won't email again.","Hi there, just floating this back up. The quickest win I see for Partners in Family Law is catching the enquiries that land after hours — that's usually where the money leaks. Happy to send that 60-second demo if you're curious, no pressure either way. — Amy","Hi there, I'll leave it here so I'm not cluttering your inbox. If catching more website enquiries ever moves up the list, I'm one reply away. — Amy"
+Absolute Bookkeeping Perth,absolutebookkeepingperth.com.au,"Perth, WA",Professional services,1-5 staff,5,"Solo-owner bookkeeper, mobile-only contact, no chat — perfect missed-enquiry fit",No,Deb,Owner,deb@absolutebookkeepingperth.com.au,0437 418 399,When you're on a client's books you can't answer the phone — a $150/mo chatbot catches every enquiry that would otherwise hang up.,Absolute Bookkeeping Perth — after-hours leads,"Hi Deb,
+
+  When you're on a client's books you can't answer the phone — a $150/mo chatbot catches every enquiry that would otherwise hang up.
+
+  I'm Amy — I build AI chat assistants for Aussie professional services businesses. They sit on your website and answer enquiries, qualify the lead, and book the job straight into your calendar — 24/7, in your tone of voice.
+
+  One firm I work with was sending every enquiry to a contact form and waiting till morning to reply. Now the bot books them on the spot — they stopped losing after-hours work to whoever called back first.
+
+  Setup's done-for-you and it runs from about $99/month. No lock-in.
+
+  Worth a quick look? Reply ""demo"" and I'll send you a 60-second clip of one answering a real Absolute Bookkeeping Perth-style enquiry.
+
+  Cheers,
+  Amy
+  Done By Amy · donebyamy.com
+
+  Not for you? Just reply ""stop"" and I won't email again.","Hi Deb, just floating this back up. The quickest win I see for Absolute Bookkeeping Perth is catching the enquiries that land after hours — that's usually where the money leaks. Happy to send that 60-second demo if you're curious, no pressure either way. — Amy","Hi Deb, I'll leave it here so I'm not cluttering your inbox. If catching more website enquiries ever moves up the list, I'm one reply away. — Amy"
+Adelaide Migration Agent,adelaidemigrationagent.com.au,"Adelaide, SA",Professional services,3-10 staff,5,"Visa enquiries are urgent and international (different timezones); booking-form only, no chat",No,,Principal Migration Agent,contact@adelaidemigrationagent.com.au,08 7123 3466,Visa applicants browsing from overseas at 3am can't wait for a callback — a chatbot qualifies and books them instantly.,Adelaide Migration Agent — after-hours leads,"Hi there,
+
+  Visa applicants browsing from overseas at 3am can't wait for a callback — a chatbot qualifies and books them instantly.
+
+  I'm Amy — I build AI chat assistants for Aussie professional services businesses. They sit on your website and answer enquiries, qualify the lead, and book the job straight into your calendar — 24/7, in your tone of voice.
+
+  One firm I work with was sending every enquiry to a contact form and waiting till morning to reply. Now the bot books them on the spot — they stopped losing after-hours work to whoever called back first.
+
+  Setup's done-for-you and it runs from about $99/month. No lock-in.
+
+  Worth a quick look? Reply ""demo"" and I'll send you a 60-second clip of one answering a real Adelaide Migration Agent-style enquiry.
+
+  Cheers,
+  Amy
+  Done By Amy · donebyamy.com
+
+  Not for you? Just reply ""stop"" and I won't email again.","Hi there, just floating this back up. The quickest win I see for Adelaide Migration Agent is catching the enquiries that land after hours — that's usually where the money leaks. Happy to send that 60-second demo if you're curious, no pressure either way. — Amy","Hi there, I'll leave it here so I'm not cluttering your inbox. If catching more website enquiries ever moves up the list, I'm one reply away. — Amy"
+Right Financial Mortgage Brokers,rightfinancial.com.au,"Newcastle, NSW",Professional services,5-15 staff,5,"Mortgage broker — buyers research at night, no chat widget on site",No,,Principal Broker,info@rightfinancial.com.au,02 9934 9735,"Homebuyers do their mortgage research at 10pm — a chatbot pre-qualifies them (deposit, income, loan size) and books the broker call.",Right Financial Mortgage Brokers — after-hours leads,"Hi there,
+
+  Homebuyers do their mortgage research at 10pm — a chatbot pre-qualifies them (deposit, income, loan size) and books the broker call.
+
+  I'm Amy — I build AI chat assistants for Aussie professional services businesses. They sit on your website and answer enquiries, qualify the lead, and book the job straight into your calendar — 24/7, in your tone of voice.
+
+  One firm I work with was sending every enquiry to a contact form and waiting till morning to reply. Now the bot books them on the spot — they stopped losing after-hours work to whoever called back first.
+
+  Setup's done-for-you and it runs from about $99/month. No lock-in.
+
+  Worth a quick look? Reply ""demo"" and I'll send you a 60-second clip of one answering a real Right Financial Mortgage Brokers-style enquiry.
+
+  Cheers,
+  Amy
+  Done By Amy · donebyamy.com
+
+  Not for you? Just reply ""stop"" and I won't email again.","Hi there, just floating this back up. The quickest win I see for Right Financial Mortgage Brokers is catching the enquiries that land after hours — that's usually where the money leaks. Happy to send that 60-second demo if you're curious, no pressure either way. — Amy","Hi there, I'll leave it here so I'm not cluttering your inbox. If catching more website enquiries ever moves up the list, I'm one reply away. — Amy"
+Hauss Realty,hauss.com.au,"Bardon, QLD",Real estate & property management,5-10 staff,5,"Boutique Brisbane West agency, contact form + info@ email, no chat widget",No,,Director,info@hauss.com.au,07 3067 7267,Buyers browsing Hauss listings at 9pm have nowhere to ask a quick question — a chatbot would catch them before they bounce to Ray White.,Hauss Realty — after-hours leads,"Hi there,
+
+  Buyers browsing Hauss listings at 9pm have nowhere to ask a quick question — a chatbot would catch them before they bounce to Ray White.
+
+  I'm Amy — I build AI chat assistants for Aussie real estate & property management businesses. They sit on your website and answer enquiries, qualify the lead, and book the job straight into your calendar — 24/7, in your tone of voice.
+
+  One agency I work with was sending every enquiry to a contact form and waiting till morning to reply. Now the bot books them on the spot — they stopped losing after-hours work to whoever called back first.
+
+  Setup's done-for-you and it runs from about $99/month. No lock-in.
+
+  Worth a quick look? Reply ""demo"" and I'll send you a 60-second clip of one answering a real Hauss Realty-style enquiry.
+
+  Cheers,
+  Amy
+  Done By Amy · donebyamy.com
+
+  Not for you? Just reply ""stop"" and I won't email again.","Hi there, just floating this back up. The quickest win I see for Hauss Realty is catching the enquiries that land after hours — that's usually where the money leaks. Happy to send that 60-second demo if you're curious, no pressure either way. — Amy","Hi there, I'll leave it here so I'm not cluttering your inbox. If catching more website enquiries ever moves up the list, I'm one reply away. — Amy"
+ABODE Property Brisbane,abodepropertybrisbane.com.au,"Brisbane, QLD",Real estate & property management,3-8 staff,5,"Owner-operated boutique, phone + form only, no chat widget",No,Tracey Hopkirk,Director & Owner,info@abodepropertybrisbane.com.au,07 3517 2476,"As an owner-operated boutique, every missed after-hours enquiry is a listing or rental you personally lose — a chatbot books them while you sleep.",ABODE Property Brisbane — after-hours leads,"Hi Tracey,
+
+  As an owner-operated boutique, every missed after-hours enquiry is a listing or rental you personally lose — a chatbot books them while you sleep.
+
+  I'm Amy — I build AI chat assistants for Aussie real estate & property management businesses. They sit on your website and answer enquiries, qualify the lead, and book the job straight into your calendar — 24/7, in your tone of voice.
+
+  One agency I work with was sending every enquiry to a contact form and waiting till morning to reply. Now the bot books them on the spot — they stopped losing after-hours work to whoever called back first.
+
+  Setup's done-for-you and it runs from about $99/month. No lock-in.
+
+  Worth a quick look? Reply ""demo"" and I'll send you a 60-second clip of one answering a real ABODE Property Brisbane-style enquiry.
+
+  Cheers,
+  Amy
+  Done By Amy · donebyamy.com
+
+  Not for you? Just reply ""stop"" and I won't email again.","Hi Tracey, just floating this back up. The quickest win I see for ABODE Property Brisbane is catching the enquiries that land after hours — that's usually where the money leaks. Happy to send that 60-second demo if you're curious, no pressure either way. — Amy","Hi Tracey, I'll leave it here so I'm not cluttering your inbox. If catching more website enquiries ever moves up the list, I'm one reply away. — Amy"
+Junction Estate Agents,junctionea.com.au,"Brisbane, QLD",Real estate & property management,3-8 staff,5,"Single hello@ inbox + phone, no chat or after-hours capture",No,Jeremy Paikaew,Founder & Selling Director,hello@junctionea.com.au,07 3110 0830,"Hello@ is great, but it doesn't answer 'is this property still available?' at 10pm — a chatbot does, instantly.",Junction Estate Agents — after-hours leads,"Hi Jeremy,
+
+  Hello@ is great, but it doesn't answer 'is this property still available?' at 10pm — a chatbot does, instantly.
+
+  I'm Amy — I build AI chat assistants for Aussie real estate & property management businesses. They sit on your website and answer enquiries, qualify the lead, and book the job straight into your calendar — 24/7, in your tone of voice.
+
+  One agency I work with was sending every enquiry to a contact form and waiting till morning to reply. Now the bot books them on the spot — they stopped losing after-hours work to whoever called back first.
+
+  Setup's done-for-you and it runs from about $99/month. No lock-in.
+
+  Worth a quick look? Reply ""demo"" and I'll send you a 60-second clip of one answering a real Junction Estate Agents-style enquiry.
+
+  Cheers,
+  Amy
+  Done By Amy · donebyamy.com
+
+  Not for you? Just reply ""stop"" and I won't email again.","Hi Jeremy, just floating this back up. The quickest win I see for Junction Estate Agents is catching the enquiries that land after hours — that's usually where the money leaks. Happy to send that 60-second demo if you're curious, no pressure either way. — Amy","Hi Jeremy, I'll leave it here so I'm not cluttering your inbox. If catching more website enquiries ever moves up the list, I'm one reply away. — Amy"
+Wallace Advocates,wallaceadvocates.com.au,"Melbourne, VIC",Real estate & property management,2-5 staff,5,"Founder-led buyers advocate, contact form + mobile only, no chat widget",No,Emily Wallace,Founder & Buyer's Advocate,emily@wallaceadvocates.com.au,0418 810 695,Buyer enquiries come in 24/7 but you can't answer your mobile mid-inspection — an AI chatbot qualifies and books discovery calls for you.,Wallace Advocates — after-hours leads,"Hi Emily,
+
+  Buyer enquiries come in 24/7 but you can't answer your mobile mid-inspection — an AI chatbot qualifies and books discovery calls for you.
+
+  I'm Amy — I build AI chat assistants for Aussie real estate & property management businesses. They sit on your website and answer enquiries, qualify the lead, and book the job straight into your calendar — 24/7, in your tone of voice.
+
+  One agency I work with was sending every enquiry to a contact form and waiting till morning to reply. Now the bot books them on the spot — they stopped losing after-hours work to whoever called back first.
+
+  Setup's done-for-you and it runs from about $99/month. No lock-in.
+
+  Worth a quick look? Reply ""demo"" and I'll send you a 60-second clip of one answering a real Wallace Advocates-style enquiry.
+
+  Cheers,
+  Amy
+  Done By Amy · donebyamy.com
+
+  Not for you? Just reply ""stop"" and I won't email again.","Hi Emily, just floating this back up. The quickest win I see for Wallace Advocates is catching the enquiries that land after hours — that's usually where the money leaks. Happy to send that 60-second demo if you're curious, no pressure either way. — Amy","Hi Emily, I'll leave it here so I'm not cluttering your inbox. If catching more website enquiries ever moves up the list, I'm one reply away. — Amy"
+Keeping It Realty,keepingitrealty.com.au,"Clarence Gardens, SA",Real estate & property management,5-12 staff,5,"Independent Adelaide agency, phone + form only, no chat widget",No,Christine Holowiecka,Director & Principal,info@keepingitrealty.com.au,08 8351 2776,"Owner-operated agencies live or die by responsiveness — a chatbot makes you the first to reply, every time, even on weekends.",Keeping It Realty — after-hours leads,"Hi Christine,
+
+  Owner-operated agencies live or die by responsiveness — a chatbot makes you the first to reply, every time, even on weekends.
+
+  I'm Amy — I build AI chat assistants for Aussie real estate & property management businesses. They sit on your website and answer enquiries, qualify the lead, and book the job straight into your calendar — 24/7, in your tone of voice.
+
+  One agency I work with was sending every enquiry to a contact form and waiting till morning to reply. Now the bot books them on the spot — they stopped losing after-hours work to whoever called back first.
+
+  Setup's done-for-you and it runs from about $99/month. No lock-in.
+
+  Worth a quick look? Reply ""demo"" and I'll send you a 60-second clip of one answering a real Keeping It Realty-style enquiry.
+
+  Cheers,
+  Amy
+  Done By Amy · donebyamy.com
+
+  Not for you? Just reply ""stop"" and I won't email again.","Hi Christine, just floating this back up. The quickest win I see for Keeping It Realty is catching the enquiries that land after hours — that's usually where the money leaks. Happy to send that 60-second demo if you're curious, no pressure either way. — Amy","Hi Christine, I'll leave it here so I'm not cluttering your inbox. If catching more website enquiries ever moves up the list, I'm one reply away. — Amy"
+Mod Property Group,modpropertygroup.com.au,"Perth, WA",Real estate & property management,3-8 staff,5,"Boutique property management, hello@ + phone, no chat widget",No,,Director,hello@modpropertygroup.com.au,08 6192 3023,Tenants and landlords ask the same 5 questions on repeat — a chatbot answers them 24/7 so you can focus on growth.,Mod Property Group — after-hours leads,"Hi there,
+
+  Tenants and landlords ask the same 5 questions on repeat — a chatbot answers them 24/7 so you can focus on growth.
+
+  I'm Amy — I build AI chat assistants for Aussie real estate & property management businesses. They sit on your website and answer enquiries, qualify the lead, and book the job straight into your calendar — 24/7, in your tone of voice.
+
+  One agency I work with was sending every enquiry to a contact form and waiting till morning to reply. Now the bot books them on the spot — they stopped losing after-hours work to whoever called back first.
+
+  Setup's done-for-you and it runs from about $99/month. No lock-in.
+
+  Worth a quick look? Reply ""demo"" and I'll send you a 60-second clip of one answering a real Mod Property Group-style enquiry.
+
+  Cheers,
+  Amy
+  Done By Amy · donebyamy.com
+
+  Not for you? Just reply ""stop"" and I won't email again.","Hi there, just floating this back up. The quickest win I see for Mod Property Group is catching the enquiries that land after hours — that's usually where the money leaks. Happy to send that 60-second demo if you're curious, no pressure either way. — Amy","Hi there, I'll leave it here so I'm not cluttering your inbox. If catching more website enquiries ever moves up the list, I'm one reply away. — Amy"
+Box Property Management,boxpropertymanagement.com.au,"Perth, WA",Real estate & property management,5-12 staff,5,"Fixed-fee PM agency, contact form only, no chat widget",No,,Director,info@boxpropertymanagement.com.au,08 6557 8990,Landlords comparing PM fees at 11pm need an instant quote — a chatbot delivers it before they fill in three other forms.,Box Property Management — after-hours leads,"Hi there,
+
+  Landlords comparing PM fees at 11pm need an instant quote — a chatbot delivers it before they fill in three other forms.
+
+  I'm Amy — I build AI chat assistants for Aussie real estate & property management businesses. They sit on your website and answer enquiries, qualify the lead, and book the job straight into your calendar — 24/7, in your tone of voice.
+
+  One agency I work with was sending every enquiry to a contact form and waiting till morning to reply. Now the bot books them on the spot — they stopped losing after-hours work to whoever called back first.
+
+  Setup's done-for-you and it runs from about $99/month. No lock-in.
+
+  Worth a quick look? Reply ""demo"" and I'll send you a 60-second clip of one answering a real Box Property Management-style enquiry.
+
+  Cheers,
+  Amy
+  Done By Amy · donebyamy.com
+
+  Not for you? Just reply ""stop"" and I won't email again.","Hi there, just floating this back up. The quickest win I see for Box Property Management is catching the enquiries that land after hours — that's usually where the money leaks. Happy to send that 60-second demo if you're curious, no pressure either way. — Amy","Hi there, I'll leave it here so I'm not cluttering your inbox. If catching more website enquiries ever moves up the list, I'm one reply away. — Amy"
+Ocean Buyers Agency,oceanbuyersagency.com,"Sunshine Coast, QLD",Real estate & property management,2-5 staff,5,"Founder-led buyers agency, hello@ + mobile, no chat widget",No,,Founder,hello@oceanbuyersagency.com,+61 488 824 142,Interstate buyers researching the Sunshine Coast at all hours need to engage now — a chatbot books their strategy call before they cool off.,Ocean Buyers Agency — after-hours leads,"Hi there,
+
+  Interstate buyers researching the Sunshine Coast at all hours need to engage now — a chatbot books their strategy call before they cool off.
+
+  I'm Amy — I build AI chat assistants for Aussie real estate & property management businesses. They sit on your website and answer enquiries, qualify the lead, and book the job straight into your calendar — 24/7, in your tone of voice.
+
+  One agency I work with was sending every enquiry to a contact form and waiting till morning to reply. Now the bot books them on the spot — they stopped losing after-hours work to whoever called back first.
+
+  Setup's done-for-you and it runs from about $99/month. No lock-in.
+
+  Worth a quick look? Reply ""demo"" and I'll send you a 60-second clip of one answering a real Ocean Buyers Agency-style enquiry.
+
+  Cheers,
+  Amy
+  Done By Amy · donebyamy.com
+
+  Not for you? Just reply ""stop"" and I won't email again.","Hi there, just floating this back up. The quickest win I see for Ocean Buyers Agency is catching the enquiries that land after hours — that's usually where the money leaks. Happy to send that 60-second demo if you're curious, no pressure either way. — Amy","Hi there, I'll leave it here so I'm not cluttering your inbox. If catching more website enquiries ever moves up the list, I'm one reply away. — Amy"
+Empire Electrical Contractors,empireelectricalcontractors.com.au,"Sydney, NSW",Trades & home services,5-15 staff,5,24/7 emergency electrical promised but only a phone number + 'Get Free Quote' form — no chat widget,No,,Owner,info@empireelectricalcontractors.com.au,0468 404 608,You're promising 24/7 emergency service but every after-hours enquiry has to wait for a callback — a chatbot would book those jobs while you sleep.,Empire Electrical Contractors — after-hours leads,"Hi there,
+
+  You're promising 24/7 emergency service but every after-hours enquiry has to wait for a callback — a chatbot would book those jobs while you sleep.
+
+  I'm Amy — I build AI chat assistants for Aussie trades & home services businesses. They sit on your website and answer enquiries, qualify the lead, and book the job straight into your calendar — 24/7, in your tone of voice.
+
+  One trades business I work with was sending every enquiry to a contact form and waiting till morning to reply. Now the bot books them on the spot — they stopped losing after-hours work to whoever called back first.
+
+  Setup's done-for-you and it runs from about $99/month. No lock-in.
+
+  Worth a quick look? Reply ""demo"" and I'll send you a 60-second clip of one answering a real Empire Electrical Contractors-style enquiry.
+
+  Cheers,
+  Amy
+  Done By Amy · donebyamy.com
+
+  Not for you? Just reply ""stop"" and I won't email again.","Hi there, just floating this back up. The quickest win I see for Empire Electrical Contractors is catching the enquiries that land after hours — that's usually where the money leaks. Happy to send that 60-second demo if you're curious, no pressure either way. — Amy","Hi there, I'll leave it here so I'm not cluttering your inbox. If catching more website enquiries ever moves up the list, I'm one reply away. — Amy"
+Semken Landscaping,semken.com.au,"Melbourne, VIC",Trades & home services,10-25 staff,5,High-end design+build studio relying on phone and a single quote form — no chat widget,No,,Director,info@semken.com.au,(03) 9879 3656,Your Garden Advisory enquiries all funnel through one form — an AI chat could pre-qualify design briefs before they hit your inbox.,Semken Landscaping — after-hours leads,"Hi there,
+
+  Your Garden Advisory enquiries all funnel through one form — an AI chat could pre-qualify design briefs before they hit your inbox.
+
+  I'm Amy — I build AI chat assistants for Aussie trades & home services businesses. They sit on your website and answer enquiries, qualify the lead, and book the job straight into your calendar — 24/7, in your tone of voice.
+
+  One trades business I work with was sending every enquiry to a contact form and waiting till morning to reply. Now the bot books them on the spot — they stopped losing after-hours work to whoever called back first.
+
+  Setup's done-for-you and it runs from about $99/month. No lock-in.
+
+  Worth a quick look? Reply ""demo"" and I'll send you a 60-second clip of one answering a real Semken Landscaping-style enquiry.
+
+  Cheers,
+  Amy
+  Done By Amy · donebyamy.com
+
+  Not for you? Just reply ""stop"" and I won't email again.","Hi there, just floating this back up. The quickest win I see for Semken Landscaping is catching the enquiries that land after hours — that's usually where the money leaks. Happy to send that 60-second demo if you're curious, no pressure either way. — Amy","Hi there, I'll leave it here so I'm not cluttering your inbox. If catching more website enquiries ever moves up the list, I'm one reply away. — Amy"
+Stewarts Pest Control,stewartspestcontrol.com.au,"Perth, WA",Trades & home services,5-15 staff,5,Book-online flow but no chat widget; relies on phone + bookings email,No,,Owner,bookings@stewartspestcontrol.com.au,(08) 9274 8444,You've already invested in 'Book Online' — adding an AI chat on top would turn the 60% of visitors who bounce into booked jobs.,Stewarts Pest Control — after-hours leads,"Hi there,
+
+  You've already invested in 'Book Online' — adding an AI chat on top would turn the 60% of visitors who bounce into booked jobs.
+
+  I'm Amy — I build AI chat assistants for Aussie trades & home services businesses. They sit on your website and answer enquiries, qualify the lead, and book the job straight into your calendar — 24/7, in your tone of voice.
+
+  One trades business I work with was sending every enquiry to a contact form and waiting till morning to reply. Now the bot books them on the spot — they stopped losing after-hours work to whoever called back first.
+
+  Setup's done-for-you and it runs from about $99/month. No lock-in.
+
+  Worth a quick look? Reply ""demo"" and I'll send you a 60-second clip of one answering a real Stewarts Pest Control-style enquiry.
+
+  Cheers,
+  Amy
+  Done By Amy · donebyamy.com
+
+  Not for you? Just reply ""stop"" and I won't email again.","Hi there, just floating this back up. The quickest win I see for Stewarts Pest Control is catching the enquiries that land after hours — that's usually where the money leaks. Happy to send that 60-second demo if you're curious, no pressure either way. — Amy","Hi there, I'll leave it here so I'm not cluttering your inbox. If catching more website enquiries ever moves up the list, I'm one reply away. — Amy"
+Adelaide Roofing Co,adelaideroofingco.com.au,"Adelaide, SA",Trades & home services,5-15 staff,5,"Single 'obligation-free quote' form, no chat, high-value job type",No,,Owner,info@adelaideroofingco.com.au,(08) 7008 9340,Roof jobs are $10k+ — every missed contact-form enquiry is a five-figure loss a chatbot would have caught.,Adelaide Roofing Co — after-hours leads,"Hi there,
+
+  Roof jobs are $10k+ — every missed contact-form enquiry is a five-figure loss a chatbot would have caught.
+
+  I'm Amy — I build AI chat assistants for Aussie trades & home services businesses. They sit on your website and answer enquiries, qualify the lead, and book the job straight into your calendar — 24/7, in your tone of voice.
+
+  One trades business I work with was sending every enquiry to a contact form and waiting till morning to reply. Now the bot books them on the spot — they stopped losing after-hours work to whoever called back first.
+
+  Setup's done-for-you and it runs from about $99/month. No lock-in.
+
+  Worth a quick look? Reply ""demo"" and I'll send you a 60-second clip of one answering a real Adelaide Roofing Co-style enquiry.
+
+  Cheers,
+  Amy
+  Done By Amy · donebyamy.com
+
+  Not for you? Just reply ""stop"" and I won't email again.","Hi there, just floating this back up. The quickest win I see for Adelaide Roofing Co is catching the enquiries that land after hours — that's usually where the money leaks. Happy to send that 60-second demo if you're curious, no pressure either way. — Amy","Hi there, I'll leave it here so I'm not cluttering your inbox. If catching more website enquiries ever moves up the list, I'm one reply away. — Amy"
+Sydmech Air Conditioning,sydmech.com.au,"Sydney, NSW",Trades & home services,10-25 staff,5,"Residential + commercial HVAC, contact form only, no chat widget",No,Peter,Owner,peter@sydmech.com.au,(02) 8378 4555,Heatwave week = phones ringing off the hook — a chatbot triages install vs repair enquiries so your team only calls back the hot ones.,Sydmech Air Conditioning — after-hours leads,"Hi Peter,
+
+  Heatwave week = phones ringing off the hook — a chatbot triages install vs repair enquiries so your team only calls back the hot ones.
+
+  I'm Amy — I build AI chat assistants for Aussie trades & home services businesses. They sit on your website and answer enquiries, qualify the lead, and book the job straight into your calendar — 24/7, in your tone of voice.
+
+  One trades business I work with was sending every enquiry to a contact form and waiting till morning to reply. Now the bot books them on the spot — they stopped losing after-hours work to whoever called back first.
+
+  Setup's done-for-you and it runs from about $99/month. No lock-in.
+
+  Worth a quick look? Reply ""demo"" and I'll send you a 60-second clip of one answering a real Sydmech Air Conditioning-style enquiry.
+
+  Cheers,
+  Amy
+  Done By Amy · donebyamy.com
+
+  Not for you? Just reply ""stop"" and I won't email again.","Hi Peter, just floating this back up. The quickest win I see for Sydmech Air Conditioning is catching the enquiries that land after hours — that's usually where the money leaks. Happy to send that 60-second demo if you're curious, no pressure either way. — Amy","Hi Peter, I'll leave it here so I'm not cluttering your inbox. If catching more website enquiries ever moves up the list, I'm one reply away. — Amy"
+Boost Commercial Cleaning,boostcommercialcleaning.com.au,"Melbourne, VIC",Trades & home services,10-30 staff,5,"4.9-star Google rated, 'Request a Free Quote' only, no live chat",No,,Director,hello@boostcommercialcleaning.com.au,1300 211 888,You're earning the clicks with 4.9 stars but every quote request still goes to email — a chatbot turns that into a booked walk-through same day.,Boost Commercial Cleaning — after-hours leads,"Hi there,
+
+  You're earning the clicks with 4.9 stars but every quote request still goes to email — a chatbot turns that into a booked walk-through same day.
+
+  I'm Amy — I build AI chat assistants for Aussie trades & home services businesses. They sit on your website and answer enquiries, qualify the lead, and book the job straight into your calendar — 24/7, in your tone of voice.
+
+  One trades business I work with was sending every enquiry to a contact form and waiting till morning to reply. Now the bot books them on the spot — they stopped losing after-hours work to whoever called back first.
+
+  Setup's done-for-you and it runs from about $99/month. No lock-in.
+
+  Worth a quick look? Reply ""demo"" and I'll send you a 60-second clip of one answering a real Boost Commercial Cleaning-style enquiry.
+
+  Cheers,
+  Amy
+  Done By Amy · donebyamy.com
+
+  Not for you? Just reply ""stop"" and I won't email again.","Hi there, just floating this back up. The quickest win I see for Boost Commercial Cleaning is catching the enquiries that land after hours — that's usually where the money leaks. Happy to send that 60-second demo if you're curious, no pressure either way. — Amy","Hi there, I'll leave it here so I'm not cluttering your inbox. If catching more website enquiries ever moves up the list, I'm one reply away. — Amy"
+Melbourne Pilates Method Studio,melbournepilatesmethodstudio.com.au,"Melbourne, VIC",Beauty & wellness,3-8 staff,4,"Owner-operated boutique studio, enquiry form only, no live chat",No,,Owner / Lead Instructor,info@melbournepilatesmethodstudio.com.au,,New Pilates clients shop late at night — a 24/7 AI chat would book the intro session before they bounce to a competitor.,quick one about Melbourne Pilates Method Studio's website,"Hi there,
+
+  New Pilates clients shop late at night — a 24/7 AI chat would book the intro session before they bounce to a competitor.
+
+  I'm Amy — I build AI chat assistants for Aussie beauty & wellness businesses. They sit on your website and answer enquiries, qualify the lead, and book the job straight into your calendar — 24/7, in your tone of voice.
+
+  One studio I work with was sending every enquiry to a contact form and waiting till morning to reply. Now the bot books them on the spot — they stopped losing after-hours work to whoever called back first.
+
+  Setup's done-for-you and it runs from about $99/month. No lock-in.
+
+  Worth a quick look? Reply ""demo"" and I'll send you a 60-second clip of one answering a real Melbourne Pilates Method Studio-style enquiry.
+
+  Cheers,
+  Amy
+  Done By Amy · donebyamy.com
+
+  Not for you? Just reply ""stop"" and I won't email again.","Hi there, just floating this back up. The quickest win I see for Melbourne Pilates Method Studio is catching the enquiries that land after hours — that's usually where the money leaks. Happy to send that 60-second demo if you're curious, no pressure either way. — Amy","Hi there, I'll leave it here so I'm not cluttering your inbox. If catching more website enquiries ever moves up the list, I'm one reply away. — Amy"
+Kabuki Hair,kabukihair.com.au,"Parkside, SA",Beauty & wellness,8-15 staff,4,"Award-winning Adelaide salon, bookings via Fresha link, no on-site chat",No,,Owner,info@kabukihair.com.au,08 8272 1175,A chat widget could answer 'do you do colour correction?' and push the booking before they click away to Fresha.,quick one about Kabuki Hair's website,"Hi there,
+
+  A chat widget could answer 'do you do colour correction?' and push the booking before they click away to Fresha.
+
+  I'm Amy — I build AI chat assistants for Aussie beauty & wellness businesses. They sit on your website and answer enquiries, qualify the lead, and book the job straight into your calendar — 24/7, in your tone of voice.
+
+  One studio I work with was sending every enquiry to a contact form and waiting till morning to reply. Now the bot books them on the spot — they stopped losing after-hours work to whoever called back first.
+
+  Setup's done-for-you and it runs from about $99/month. No lock-in.
+
+  Worth a quick look? Reply ""demo"" and I'll send you a 60-second clip of one answering a real Kabuki Hair-style enquiry.
+
+  Cheers,
+  Amy
+  Done By Amy · donebyamy.com
+
+  Not for you? Just reply ""stop"" and I won't email again.","Hi there, just floating this back up. The quickest win I see for Kabuki Hair is catching the enquiries that land after hours — that's usually where the money leaks. Happy to send that 60-second demo if you're curious, no pressure either way. — Amy","Hi there, I'll leave it here so I'm not cluttering your inbox. If catching more website enquiries ever moves up the list, I'm one reply away. — Amy"
+The Open Mind Space,theopenmindspace.com.au,"Broadmeadow, NSW",Beauty & wellness,2-8 staff,4,"Wix yoga studio, Momence bookings, no chat widget on site",No,,Studio Owner,hello@theopenmindspace.com.au,,New yogis ask the same 10 questions — let an AI chat answer them instantly and sell the $40 intro pass without you lifting a finger.,quick one about The Open Mind Space's website,"Hi there,
+
+  New yogis ask the same 10 questions — let an AI chat answer them instantly and sell the $40 intro pass without you lifting a finger.
+
+  I'm Amy — I build AI chat assistants for Aussie beauty & wellness businesses. They sit on your website and answer enquiries, qualify the lead, and book the job straight into your calendar — 24/7, in your tone of voice.
+
+  One studio I work with was sending every enquiry to a contact form and waiting till morning to reply. Now the bot books them on the spot — they stopped losing after-hours work to whoever called back first.
+
+  Setup's done-for-you and it runs from about $99/month. No lock-in.
+
+  Worth a quick look? Reply ""demo"" and I'll send you a 60-second clip of one answering a real The Open Mind Space-style enquiry.
+
+  Cheers,
+  Amy
+  Done By Amy · donebyamy.com
+
+  Not for you? Just reply ""stop"" and I won't email again.","Hi there, just floating this back up. The quickest win I see for The Open Mind Space is catching the enquiries that land after hours — that's usually where the money leaks. Happy to send that 60-second demo if you're curious, no pressure either way. — Amy","Hi there, I'll leave it here so I'm not cluttering your inbox. If catching more website enquiries ever moves up the list, I'm one reply away. — Amy"
+Ashley Faithful Training Studios,aftrainingstudios.com.au,"Melbourne, VIC",Beauty & wellness,5-15 staff,4,"Boutique PT studio, enquiry form only, no chat widget",No,Ashley Faithful,Founder / Head Coach,info@aftrainingstudios.com.au,,PT enquiries spike after 9pm — an AI chat books the intro session while you're with a client (or asleep).,quick one about Ashley Faithful Training Studios's website,"Hi Ashley,
+
+  PT enquiries spike after 9pm — an AI chat books the intro session while you're with a client (or asleep).
+
+  I'm Amy — I build AI chat assistants for Aussie beauty & wellness businesses. They sit on your website and answer enquiries, qualify the lead, and book the job straight into your calendar — 24/7, in your tone of voice.
+
+  One studio I work with was sending every enquiry to a contact form and waiting till morning to reply. Now the bot books them on the spot — they stopped losing after-hours work to whoever called back first.
+
+  Setup's done-for-you and it runs from about $99/month. No lock-in.
+
+  Worth a quick look? Reply ""demo"" and I'll send you a 60-second clip of one answering a real Ashley Faithful Training Studios-style enquiry.
+
+  Cheers,
+  Amy
+  Done By Amy · donebyamy.com
+
+  Not for you? Just reply ""stop"" and I won't email again.","Hi Ashley, just floating this back up. The quickest win I see for Ashley Faithful Training Studios is catching the enquiries that land after hours — that's usually where the money leaks. Happy to send that 60-second demo if you're curious, no pressure either way. — Amy","Hi Ashley, I'll leave it here so I'm not cluttering your inbox. If catching more website enquiries ever moves up the list, I'm one reply away. — Amy"
+Station Street Fit,stationstreetfit.com.au,"Perth, WA",Beauty & wellness,3-8 staff,4,"Boutique fitness studio, free-trial enquiry form, no chat widget",No,,Owner,hello@stationstreetfit.com.au,,Every 'book a free trial' form that goes unanswered for 2 hours is a lost member — an AI chat books them on the spot.,quick one about Station Street Fit's website,"Hi there,
+
+  Every 'book a free trial' form that goes unanswered for 2 hours is a lost member — an AI chat books them on the spot.
+
+  I'm Amy — I build AI chat assistants for Aussie beauty & wellness businesses. They sit on your website and answer enquiries, qualify the lead, and book the job straight into your calendar — 24/7, in your tone of voice.
+
+  One studio I work with was sending every enquiry to a contact form and waiting till morning to reply. Now the bot books them on the spot — they stopped losing after-hours work to whoever called back first.
+
+  Setup's done-for-you and it runs from about $99/month. No lock-in.
+
+  Worth a quick look? Reply ""demo"" and I'll send you a 60-second clip of one answering a real Station Street Fit-style enquiry.
+
+  Cheers,
+  Amy
+  Done By Amy · donebyamy.com
+
+  Not for you? Just reply ""stop"" and I won't email again.","Hi there, just floating this back up. The quickest win I see for Station Street Fit is catching the enquiries that land after hours — that's usually where the money leaks. Happy to send that 60-second demo if you're curious, no pressure either way. — Amy","Hi there, I'll leave it here so I'm not cluttering your inbox. If catching more website enquiries ever moves up the list, I'm one reply away. — Amy"
+Infuse Health,infusehealth.au,"Adamstown, NSW",Beauty & wellness,6-15 staff,4,"Yoga/Pilates/movement studio, contact + class booking forms, no live chat",No,,Studio Owner,info@infusehealth.au,,First-time movers need hand-holding — an AI chat that explains your classes books trials your contact form misses.,quick one about Infuse Health's website,"Hi there,
+
+  First-time movers need hand-holding — an AI chat that explains your classes books trials your contact form misses.
+
+  I'm Amy — I build AI chat assistants for Aussie beauty & wellness businesses. They sit on your website and answer enquiries, qualify the lead, and book the job straight into your calendar — 24/7, in your tone of voice.
+
+  One studio I work with was sending every enquiry to a contact form and waiting till morning to reply. Now the bot books them on the spot — they stopped losing after-hours work to whoever called back first.
+
+  Setup's done-for-you and it runs from about $99/month. No lock-in.
+
+  Worth a quick look? Reply ""demo"" and I'll send you a 60-second clip of one answering a real Infuse Health-style enquiry.
+
+  Cheers,
+  Amy
+  Done By Amy · donebyamy.com
+
+  Not for you? Just reply ""stop"" and I won't email again.","Hi there, just floating this back up. The quickest win I see for Infuse Health is catching the enquiries that land after hours — that's usually where the money leaks. Happy to send that 60-second demo if you're curious, no pressure either way. — Amy","Hi there, I'll leave it here so I'm not cluttering your inbox. If catching more website enquiries ever moves up the list, I'm one reply away. — Amy"
+Yovanka Loria Salon,yovankaloriasalon.com.au,"Adelaide, SA",Beauty & wellness,5-12 staff,4,"Luxury hair extensions salon, consultation form only, no chat widget",No,Yovanka Loria,Owner / Master Stylist,info@yovankaloriasalon.com.au,,Extension enquiries are high-intent and high-ticket — an AI chat qualifies hair type and books the consult before they shop around.,quick one about Yovanka Loria Salon's website,"Hi Yovanka,
+
+  Extension enquiries are high-intent and high-ticket — an AI chat qualifies hair type and books the consult before they shop around.
+
+  I'm Amy — I build AI chat assistants for Aussie beauty & wellness businesses. They sit on your website and answer enquiries, qualify the lead, and book the job straight into your calendar — 24/7, in your tone of voice.
+
+  One studio I work with was sending every enquiry to a contact form and waiting till morning to reply. Now the bot books them on the spot — they stopped losing after-hours work to whoever called back first.
+
+  Setup's done-for-you and it runs from about $99/month. No lock-in.
+
+  Worth a quick look? Reply ""demo"" and I'll send you a 60-second clip of one answering a real Yovanka Loria Salon-style enquiry.
+
+  Cheers,
+  Amy
+  Done By Amy · donebyamy.com
+
+  Not for you? Just reply ""stop"" and I won't email again.","Hi Yovanka, just floating this back up. The quickest win I see for Yovanka Loria Salon is catching the enquiries that land after hours — that's usually where the money leaks. Happy to send that 60-second demo if you're curious, no pressure either way. — Amy","Hi Yovanka, I'll leave it here so I'm not cluttering your inbox. If catching more website enquiries ever moves up the list, I'm one reply away. — Amy"
+Alpha Physio,alphaphysio.com.au,"Sumner, QLD",Health & allied health clinics,3-8 staff,4,"Cliniko booking + contact page only, no live chat widget",No,,Practice Manager,info@alphaphysio.com.au,,"Your Cliniko booking is great after-hours, but every enquiry that isn't ready to book yet is hitting a contact form — an AI chat could capture them in seconds.",quick one about Alpha Physio's website,"Hi there,
+
+  Your Cliniko booking is great after-hours, but every enquiry that isn't ready to book yet is hitting a contact form — an AI chat could capture them in seconds.
+
+  I'm Amy — I build AI chat assistants for Aussie health & allied health clinics businesses. They sit on your website and answer enquiries, qualify the lead, and book the job straight into your calendar — 24/7, in your tone of voice.
+
+  One clinic I work with was sending every enquiry to a contact form and waiting till morning to reply. Now the bot books them on the spot — they stopped losing after-hours work to whoever called back first.
+
+  Setup's done-for-you and it runs from about $99/month. No lock-in.
+
+  Worth a quick look? Reply ""demo"" and I'll send you a 60-second clip of one answering a real Alpha Physio-style enquiry.
+
+  Cheers,
+  Amy
+  Done By Amy · donebyamy.com
+
+  Not for you? Just reply ""stop"" and I won't email again.","Hi there, just floating this back up. The quickest win I see for Alpha Physio is catching the enquiries that land after hours — that's usually where the money leaks. Happy to send that 60-second demo if you're curious, no pressure either way. — Amy","Hi there, I'll leave it here so I'm not cluttering your inbox. If catching more website enquiries ever moves up the list, I'm one reply away. — Amy"
+Sydney City Psychology,sydneycitypsychology.com.au,"Sydney, NSW",Health & allied health clinics,8-15 staff,4,"Reception 'matches you by phone' — every enquiry needs a human, no chat widget",No,,Practice Manager,info@sydneycitypsychology.com.au,02 9235 3127,Your reception team currently matches every new client over the phone — an AI chat could do the initial intake and Medicare/referral Q&A so they only get warm bookings.,quick one about Sydney City Psychology's website,"Hi there,
+
+  Your reception team currently matches every new client over the phone — an AI chat could do the initial intake and Medicare/referral Q&A so they only get warm bookings.
+
+  I'm Amy — I build AI chat assistants for Aussie health & allied health clinics businesses. They sit on your website and answer enquiries, qualify the lead, and book the job straight into your calendar — 24/7, in your tone of voice.
+
+  One clinic I work with was sending every enquiry to a contact form and waiting till morning to reply. Now the bot books them on the spot — they stopped losing after-hours work to whoever called back first.
+
+  Setup's done-for-you and it runs from about $99/month. No lock-in.
+
+  Worth a quick look? Reply ""demo"" and I'll send you a 60-second clip of one answering a real Sydney City Psychology-style enquiry.
+
+  Cheers,
+  Amy
+  Done By Amy · donebyamy.com
+
+  Not for you? Just reply ""stop"" and I won't email again.","Hi there, just floating this back up. The quickest win I see for Sydney City Psychology is catching the enquiries that land after hours — that's usually where the money leaks. Happy to send that 60-second demo if you're curious, no pressure either way. — Amy","Hi there, I'll leave it here so I'm not cluttering your inbox. If catching more website enquiries ever moves up the list, I'm one reply away. — Amy"
+Western Clinic Medical Centre,westernclinic.com.au,"Torrensville, SA",Health & allied health clinics,15-30 staff,4,"Multi-service GP + allied + cosmetic, contact-form only, no chat widget",No,,Practice Manager,reception@westernclinic.com.au,08 8450 2500,"You offer GP, physio, podiatry and cosmetic under one roof — but your website makes patients call to figure out which one they need; an AI chat could route and book them instantly.",quick one about Western Clinic Medical Centre's website,"Hi there,
+
+  You offer GP, physio, podiatry and cosmetic under one roof — but your website makes patients call to figure out which one they need; an AI chat could route and book them instantly.
+
+  I'm Amy — I build AI chat assistants for Aussie health & allied health clinics businesses. They sit on your website and answer enquiries, qualify the lead, and book the job straight into your calendar — 24/7, in your tone of voice.
+
+  One clinic I work with was sending every enquiry to a contact form and waiting till morning to reply. Now the bot books them on the spot — they stopped losing after-hours work to whoever called back first.
+
+  Setup's done-for-you and it runs from about $99/month. No lock-in.
+
+  Worth a quick look? Reply ""demo"" and I'll send you a 60-second clip of one answering a real Western Clinic Medical Centre-style enquiry.
+
+  Cheers,
+  Amy
+  Done By Amy · donebyamy.com
+
+  Not for you? Just reply ""stop"" and I won't email again.","Hi there, just floating this back up. The quickest win I see for Western Clinic Medical Centre is catching the enquiries that land after hours — that's usually where the money leaks. Happy to send that 60-second demo if you're curious, no pressure either way. — Amy","Hi there, I'll leave it here so I'm not cluttering your inbox. If catching more website enquiries ever moves up the list, I'm one reply away. — Amy"
+WestVETS Animal Hospital,westvets.com.au,"Anstead, QLD",Health & allied health clinics,15-30 staff,4,"Two clinics, Vetstoria booking but no AI chat to handle questions/triage",No,,Practice Manager,info@westvets.com.au,07 3202 7300,"Vetstoria handles bookings, but every 'is this an emergency?' or 'do you treat horses?' question still goes to your front desk — an AI chat could absorb that load 24/7.",quick one about WestVETS Animal Hospital's website,"Hi there,
+
+  Vetstoria handles bookings, but every 'is this an emergency?' or 'do you treat horses?' question still goes to your front desk — an AI chat could absorb that load 24/7.
+
+  I'm Amy — I build AI chat assistants for Aussie health & allied health clinics businesses. They sit on your website and answer enquiries, qualify the lead, and book the job straight into your calendar — 24/7, in your tone of voice.
+
+  One clinic I work with was sending every enquiry to a contact form and waiting till morning to reply. Now the bot books them on the spot — they stopped losing after-hours work to whoever called back first.
+
+  Setup's done-for-you and it runs from about $99/month. No lock-in.
+
+  Worth a quick look? Reply ""demo"" and I'll send you a 60-second clip of one answering a real WestVETS Animal Hospital-style enquiry.
+
+  Cheers,
+  Amy
+  Done By Amy · donebyamy.com
+
+  Not for you? Just reply ""stop"" and I won't email again.","Hi there, just floating this back up. The quickest win I see for WestVETS Animal Hospital is catching the enquiries that land after hours — that's usually where the money leaks. Happy to send that 60-second demo if you're curious, no pressure either way. — Amy","Hi there, I'll leave it here so I'm not cluttering your inbox. If catching more website enquiries ever moves up the list, I'm one reply away. — Amy"
+North Sydney Psychology Clinic,northsydneypsychology.com.au,"North Sydney, NSW",Health & allied health clinics,30+ practitioners,4,"7 locations, 30+ practitioners, 'immediate availability' CTA — high inbound, phone-led",No,,Practice Manager,info@northsydneypsychology.com.au,02 7256 7070,You're advertising 'immediate availability' across 7 clinics — an AI chat could match clients to the right psychologist and location in 30 seconds instead of a phone tag loop.,quick one about North Sydney Psychology Clinic's website,"Hi there,
+
+  You're advertising 'immediate availability' across 7 clinics — an AI chat could match clients to the right psychologist and location in 30 seconds instead of a phone tag loop.
+
+  I'm Amy — I build AI chat assistants for Aussie health & allied health clinics businesses. They sit on your website and answer enquiries, qualify the lead, and book the job straight into your calendar — 24/7, in your tone of voice.
+
+  One clinic I work with was sending every enquiry to a contact form and waiting till morning to reply. Now the bot books them on the spot — they stopped losing after-hours work to whoever called back first.
+
+  Setup's done-for-you and it runs from about $99/month. No lock-in.
+
+  Worth a quick look? Reply ""demo"" and I'll send you a 60-second clip of one answering a real North Sydney Psychology Clinic-style enquiry.
+
+  Cheers,
+  Amy
+  Done By Amy · donebyamy.com
+
+  Not for you? Just reply ""stop"" and I won't email again.","Hi there, just floating this back up. The quickest win I see for North Sydney Psychology Clinic is catching the enquiries that land after hours — that's usually where the money leaks. Happy to send that 60-second demo if you're curious, no pressure either way. — Amy","Hi there, I'll leave it here so I'm not cluttering your inbox. If catching more website enquiries ever moves up the list, I'm one reply away. — Amy"
+WalkerHill Accounting,walkerhill.com.au,"Brisbane, QLD",Professional services,15-30 staff,4,"High-volume small-business accounting site, contact-form only",No,,Practice Manager,support@walkerhill.com.au,07 3367 3155,Every after-hours visitor on your site bounces to a form — a chatbot would capture and qualify them before the next morning.,quick one about WalkerHill Accounting's website,"Hi there,
+
+  Every after-hours visitor on your site bounces to a form — a chatbot would capture and qualify them before the next morning.
+
+  I'm Amy — I build AI chat assistants for Aussie professional services businesses. They sit on your website and answer enquiries, qualify the lead, and book the job straight into your calendar — 24/7, in your tone of voice.
+
+  One firm I work with was sending every enquiry to a contact form and waiting till morning to reply. Now the bot books them on the spot — they stopped losing after-hours work to whoever called back first.
+
+  Setup's done-for-you and it runs from about $99/month. No lock-in.
+
+  Worth a quick look? Reply ""demo"" and I'll send you a 60-second clip of one answering a real WalkerHill Accounting-style enquiry.
+
+  Cheers,
+  Amy
+  Done By Amy · donebyamy.com
+
+  Not for you? Just reply ""stop"" and I won't email again.","Hi there, just floating this back up. The quickest win I see for WalkerHill Accounting is catching the enquiries that land after hours — that's usually where the money leaks. Happy to send that 60-second demo if you're curious, no pressure either way. — Amy","Hi there, I'll leave it here so I'm not cluttering your inbox. If catching more website enquiries ever moves up the list, I'm one reply away. — Amy"
+M+H Private,mhprivate.com.au,"Brisbane, QLD",Professional services,10-25 staff,4,"Boutique medical-accounting niche, no chat widget",No,,Partner,info@mhprivate.com.au,02 4050 3804,Doctors browsing your site at 10pm won't fill a form — a chatbot would book the discovery call while they're still reading.,quick one about M+H Private's website,"Hi there,
+
+  Doctors browsing your site at 10pm won't fill a form — a chatbot would book the discovery call while they're still reading.
+
+  I'm Amy — I build AI chat assistants for Aussie professional services businesses. They sit on your website and answer enquiries, qualify the lead, and book the job straight into your calendar — 24/7, in your tone of voice.
+
+  One firm I work with was sending every enquiry to a contact form and waiting till morning to reply. Now the bot books them on the spot — they stopped losing after-hours work to whoever called back first.
+
+  Setup's done-for-you and it runs from about $99/month. No lock-in.
+
+  Worth a quick look? Reply ""demo"" and I'll send you a 60-second clip of one answering a real M+H Private-style enquiry.
+
+  Cheers,
+  Amy
+  Done By Amy · donebyamy.com
+
+  Not for you? Just reply ""stop"" and I won't email again.","Hi there, just floating this back up. The quickest win I see for M+H Private is catching the enquiries that land after hours — that's usually where the money leaks. Happy to send that 60-second demo if you're curious, no pressure either way. — Amy","Hi there, I'll leave it here so I'm not cluttering your inbox. If catching more website enquiries ever moves up the list, I'm one reply away. — Amy"
+Velocity Legal,velocitylegal.com.au,"Melbourne, VIC",Professional services,10-25 staff,4,"Boutique tax/commercial law firm, form-only contact, no chat",No,,Office Manager,office@velocitylegal.com.au,03 7043 3311,Your contact page promises 'someone will be in touch' — a chatbot can qualify and book the meeting instantly.,quick one about Velocity Legal's website,"Hi there,
+
+  Your contact page promises 'someone will be in touch' — a chatbot can qualify and book the meeting instantly.
+
+  I'm Amy — I build AI chat assistants for Aussie professional services businesses. They sit on your website and answer enquiries, qualify the lead, and book the job straight into your calendar — 24/7, in your tone of voice.
+
+  One firm I work with was sending every enquiry to a contact form and waiting till morning to reply. Now the bot books them on the spot — they stopped losing after-hours work to whoever called back first.
+
+  Setup's done-for-you and it runs from about $99/month. No lock-in.
+
+  Worth a quick look? Reply ""demo"" and I'll send you a 60-second clip of one answering a real Velocity Legal-style enquiry.
+
+  Cheers,
+  Amy
+  Done By Amy · donebyamy.com
+
+  Not for you? Just reply ""stop"" and I won't email again.","Hi there, just floating this back up. The quickest win I see for Velocity Legal is catching the enquiries that land after hours — that's usually where the money leaks. Happy to send that 60-second demo if you're curious, no pressure either way. — Amy","Hi there, I'll leave it here so I'm not cluttering your inbox. If catching more website enquiries ever moves up the list, I'm one reply away. — Amy"
+WMK Accounting,wmkaccounting.com.au,"Perth, WA",Professional services,5-12 staff,4,"Small-business accountant, owner emails published, no chat widget",No,Mandy,Director,mandy@wmkaccounting.com.au,08 9409 4774,Your contact page is just a phone and email — a chatbot would handle the basic 'how much do you charge?' questions for you.,quick one about WMK Accounting's website,"Hi Mandy,
+
+  Your contact page is just a phone and email — a chatbot would handle the basic 'how much do you charge?' questions for you.
+
+  I'm Amy — I build AI chat assistants for Aussie professional services businesses. They sit on your website and answer enquiries, qualify the lead, and book the job straight into your calendar — 24/7, in your tone of voice.
+
+  One firm I work with was sending every enquiry to a contact form and waiting till morning to reply. Now the bot books them on the spot — they stopped losing after-hours work to whoever called back first.
+
+  Setup's done-for-you and it runs from about $99/month. No lock-in.
+
+  Worth a quick look? Reply ""demo"" and I'll send you a 60-second clip of one answering a real WMK Accounting-style enquiry.
+
+  Cheers,
+  Amy
+  Done By Amy · donebyamy.com
+
+  Not for you? Just reply ""stop"" and I won't email again.","Hi Mandy, just floating this back up. The quickest win I see for WMK Accounting is catching the enquiries that land after hours — that's usually where the money leaks. Happy to send that 60-second demo if you're curious, no pressure either way. — Amy","Hi Mandy, I'll leave it here so I'm not cluttering your inbox. If catching more website enquiries ever moves up the list, I'm one reply away. — Amy"
+Advanced Bookkeeping Solutions,advancedbb.com.au,"Perth, WA",Professional services,2-8 staff,4,"Owner-operated bookkeeper, form + phone only, no chat",No,Aaron,Owner,aaron@advancedbb.com.au,08 9387 8886,"Your site invites people to 'chat about how we can help', but there's no chat — let's fix that for under $200/mo.",quick one about Advanced Bookkeeping Solutions's website,"Hi Aaron,
+
+  Your site invites people to 'chat about how we can help', but there's no chat — let's fix that for under $200/mo.
+
+  I'm Amy — I build AI chat assistants for Aussie professional services businesses. They sit on your website and answer enquiries, qualify the lead, and book the job straight into your calendar — 24/7, in your tone of voice.
+
+  One firm I work with was sending every enquiry to a contact form and waiting till morning to reply. Now the bot books them on the spot — they stopped losing after-hours work to whoever called back first.
+
+  Setup's done-for-you and it runs from about $99/month. No lock-in.
+
+  Worth a quick look? Reply ""demo"" and I'll send you a 60-second clip of one answering a real Advanced Bookkeeping Solutions-style enquiry.
+
+  Cheers,
+  Amy
+  Done By Amy · donebyamy.com
+
+  Not for you? Just reply ""stop"" and I won't email again.","Hi Aaron, just floating this back up. The quickest win I see for Advanced Bookkeeping Solutions is catching the enquiries that land after hours — that's usually where the money leaks. Happy to send that 60-second demo if you're curious, no pressure either way. — Amy","Hi Aaron, I'll leave it here so I'm not cluttering your inbox. If catching more website enquiries ever moves up the list, I'm one reply away. — Amy"
+Ben Aylen Migration,benaylen.com.au,"Adelaide, SA",Professional services,1-5 staff,4,"Solo migration agent, contact-form only, no chat widget",No,Ben Aylen,Owner / Migration Agent,info@benaylen.com.au,,As a solo agent every missed enquiry is a lost client — a chatbot answers FAQs and books consults while you're with applicants.,quick one about Ben Aylen Migration's website,"Hi Ben,
+
+  As a solo agent every missed enquiry is a lost client — a chatbot answers FAQs and books consults while you're with applicants.
+
+  I'm Amy — I build AI chat assistants for Aussie professional services businesses. They sit on your website and answer enquiries, qualify the lead, and book the job straight into your calendar — 24/7, in your tone of voice.
+
+  One firm I work with was sending every enquiry to a contact form and waiting till morning to reply. Now the bot books them on the spot — they stopped losing after-hours work to whoever called back first.
+
+  Setup's done-for-you and it runs from about $99/month. No lock-in.
+
+  Worth a quick look? Reply ""demo"" and I'll send you a 60-second clip of one answering a real Ben Aylen Migration-style enquiry.
+
+  Cheers,
+  Amy
+  Done By Amy · donebyamy.com
+
+  Not for you? Just reply ""stop"" and I won't email again.","Hi Ben, just floating this back up. The quickest win I see for Ben Aylen Migration is catching the enquiries that land after hours — that's usually where the money leaks. Happy to send that 60-second demo if you're curious, no pressure either way. — Amy","Hi Ben, I'll leave it here so I'm not cluttering your inbox. If catching more website enquiries ever moves up the list, I'm one reply away. — Amy"
+Accomplish Wealth,accomplishwealth.com.au,"Gold Coast, QLD",Professional services,5-15 staff,4,"Boutique financial planning firm, form-only enquiry, no chat",No,,Principal Adviser,hello@accomplishwealth.com.au,,High-net-worth prospects who land on your site after hours won't fill a form — a chatbot books the first call while interest is hot.,quick one about Accomplish Wealth's website,"Hi there,
+
+  High-net-worth prospects who land on your site after hours won't fill a form — a chatbot books the first call while interest is hot.
+
+  I'm Amy — I build AI chat assistants for Aussie professional services businesses. They sit on your website and answer enquiries, qualify the lead, and book the job straight into your calendar — 24/7, in your tone of voice.
+
+  One firm I work with was sending every enquiry to a contact form and waiting till morning to reply. Now the bot books them on the spot — they stopped losing after-hours work to whoever called back first.
+
+  Setup's done-for-you and it runs from about $99/month. No lock-in.
+
+  Worth a quick look? Reply ""demo"" and I'll send you a 60-second clip of one answering a real Accomplish Wealth-style enquiry.
+
+  Cheers,
+  Amy
+  Done By Amy · donebyamy.com
+
+  Not for you? Just reply ""stop"" and I won't email again.","Hi there, just floating this back up. The quickest win I see for Accomplish Wealth is catching the enquiries that land after hours — that's usually where the money leaks. Happy to send that 60-second demo if you're curious, no pressure either way. — Amy","Hi there, I'll leave it here so I'm not cluttering your inbox. If catching more website enquiries ever moves up the list, I'm one reply away. — Amy"
+Mortgage Broker Sydney,mortgagebrokersydney.com.au,"Sydney, NSW",Professional services,5-20 staff,4,"Phone + 'request an appointment' form only, no live chat",No,,Principal Broker,info@mortgagebrokersydney.com.au,1300 983 670,"Your 1300 number rings out after hours — a chatbot captures the enquiry, qualifies the loan, and books the broker for the morning.",quick one about Mortgage Broker Sydney's website,"Hi there,
+
+  Your 1300 number rings out after hours — a chatbot captures the enquiry, qualifies the loan, and books the broker for the morning.
+
+  I'm Amy — I build AI chat assistants for Aussie professional services businesses. They sit on your website and answer enquiries, qualify the lead, and book the job straight into your calendar — 24/7, in your tone of voice.
+
+  One firm I work with was sending every enquiry to a contact form and waiting till morning to reply. Now the bot books them on the spot — they stopped losing after-hours work to whoever called back first.
+
+  Setup's done-for-you and it runs from about $99/month. No lock-in.
+
+  Worth a quick look? Reply ""demo"" and I'll send you a 60-second clip of one answering a real Mortgage Broker Sydney-style enquiry.
+
+  Cheers,
+  Amy
+  Done By Amy · donebyamy.com
+
+  Not for you? Just reply ""stop"" and I won't email again.","Hi there, just floating this back up. The quickest win I see for Mortgage Broker Sydney is catching the enquiries that land after hours — that's usually where the money leaks. Happy to send that 60-second demo if you're curious, no pressure either way. — Amy","Hi there, I'll leave it here so I'm not cluttering your inbox. If catching more website enquiries ever moves up the list, I'm one reply away. — Amy"
+Calibre Real Estate,calibrerealestate.com.au,"Red Hill, QLD",Real estate & property management,15-25 staff,4,Sales + rentals enquiries via contact form & phone only; no chat widget,No,Alice Hagen,Director / Principal,sales@calibrerealestate.com.au,07 3367 3411,You're handling sales and rentals enquiries through a single contact form — after-hours leads are silently bouncing.,quick one about Calibre Real Estate's website,"Hi Alice,
+
+  You're handling sales and rentals enquiries through a single contact form — after-hours leads are silently bouncing.
+
+  I'm Amy — I build AI chat assistants for Aussie real estate & property management businesses. They sit on your website and answer enquiries, qualify the lead, and book the job straight into your calendar — 24/7, in your tone of voice.
+
+  One agency I work with was sending every enquiry to a contact form and waiting till morning to reply. Now the bot books them on the spot — they stopped losing after-hours work to whoever called back first.
+
+  Setup's done-for-you and it runs from about $99/month. No lock-in.
+
+  Worth a quick look? Reply ""demo"" and I'll send you a 60-second clip of one answering a real Calibre Real Estate-style enquiry.
+
+  Cheers,
+  Amy
+  Done By Amy · donebyamy.com
+
+  Not for you? Just reply ""stop"" and I won't email again.","Hi Alice, just floating this back up. The quickest win I see for Calibre Real Estate is catching the enquiries that land after hours — that's usually where the money leaks. Happy to send that 60-second demo if you're curious, no pressure either way. — Amy","Hi Alice, I'll leave it here so I'm not cluttering your inbox. If catching more website enquiries ever moves up the list, I'm one reply away. — Amy"
+LP Advisory,lpadvisory.com.au,"South Yarra, VIC",Real estate & property management,3-10 staff,4,"Buyers agency, info@ + landline, contact form only, no chat widget",No,,Founder / Director,info@lpadvisory.com.au,03 9498 3131,Buyers researching Melbourne suburbs at midnight need answers now — a chatbot captures them before they DM your competitor on Instagram.,quick one about LP Advisory's website,"Hi there,
+
+  Buyers researching Melbourne suburbs at midnight need answers now — a chatbot captures them before they DM your competitor on Instagram.
+
+  I'm Amy — I build AI chat assistants for Aussie real estate & property management businesses. They sit on your website and answer enquiries, qualify the lead, and book the job straight into your calendar — 24/7, in your tone of voice.
+
+  One agency I work with was sending every enquiry to a contact form and waiting till morning to reply. Now the bot books them on the spot — they stopped losing after-hours work to whoever called back first.
+
+  Setup's done-for-you and it runs from about $99/month. No lock-in.
+
+  Worth a quick look? Reply ""demo"" and I'll send you a 60-second clip of one answering a real LP Advisory-style enquiry.
+
+  Cheers,
+  Amy
+  Done By Amy · donebyamy.com
+
+  Not for you? Just reply ""stop"" and I won't email again.","Hi there, just floating this back up. The quickest win I see for LP Advisory is catching the enquiries that land after hours — that's usually where the money leaks. Happy to send that 60-second demo if you're curious, no pressure either way. — Amy","Hi there, I'll leave it here so I'm not cluttering your inbox. If catching more website enquiries ever moves up the list, I'm one reply away. — Amy"
+Inview Property Group,inviewpropertygroup.com.au,"Melbourne, VIC",Real estate & property management,3-10 staff,4,"Buyers advocacy contact form, mobile only, appears no chat widget",Unverified,,Director,info@inviewpropertygroup.com.au,0418 122 296,Your contact form says 'we'll be in touch' — meanwhile the buyer's already on a call with another advocate. A chatbot closes that gap.,quick one about Inview Property Group's website,"Hi there,
+
+  Your contact form says 'we'll be in touch' — meanwhile the buyer's already on a call with another advocate. A chatbot closes that gap.
+
+  I'm Amy — I build AI chat assistants for Aussie real estate & property management businesses. They sit on your website and answer enquiries, qualify the lead, and book the job straight into your calendar — 24/7, in your tone of voice.
+
+  One agency I work with was sending every enquiry to a contact form and waiting till morning to reply. Now the bot books them on the spot — they stopped losing after-hours work to whoever called back first.
+
+  Setup's done-for-you and it runs from about $99/month. No lock-in.
+
+  Worth a quick look? Reply ""demo"" and I'll send you a 60-second clip of one answering a real Inview Property Group-style enquiry.
+
+  Cheers,
+  Amy
+  Done By Amy · donebyamy.com
+
+  Not for you? Just reply ""stop"" and I won't email again.","Hi there, just floating this back up. The quickest win I see for Inview Property Group is catching the enquiries that land after hours — that's usually where the money leaks. Happy to send that 60-second demo if you're curious, no pressure either way. — Amy","Hi there, I'll leave it here so I'm not cluttering your inbox. If catching more website enquiries ever moves up the list, I'm one reply away. — Amy"
+Klemich Real Estate,klemich.com.au,"Dulwich, SA",Real estate & property management,20-40 staff,4,"Boutique Adelaide agency, sold@ + media@ inboxes, no chat widget",No,Matt Smith,Principal / Director,sold@klemich.com.au,08 8331 6555,You've built the reputation — now make sure no buyer enquiry ever waits more than 10 seconds for a reply.,quick one about Klemich Real Estate's website,"Hi Matt,
+
+  You've built the reputation — now make sure no buyer enquiry ever waits more than 10 seconds for a reply.
+
+  I'm Amy — I build AI chat assistants for Aussie real estate & property management businesses. They sit on your website and answer enquiries, qualify the lead, and book the job straight into your calendar — 24/7, in your tone of voice.
+
+  One agency I work with was sending every enquiry to a contact form and waiting till morning to reply. Now the bot books them on the spot — they stopped losing after-hours work to whoever called back first.
+
+  Setup's done-for-you and it runs from about $99/month. No lock-in.
+
+  Worth a quick look? Reply ""demo"" and I'll send you a 60-second clip of one answering a real Klemich Real Estate-style enquiry.
+
+  Cheers,
+  Amy
+  Done By Amy · donebyamy.com
+
+  Not for you? Just reply ""stop"" and I won't email again.","Hi Matt, just floating this back up. The quickest win I see for Klemich Real Estate is catching the enquiries that land after hours — that's usually where the money leaks. Happy to send that 60-second demo if you're curious, no pressure either way. — Amy","Hi Matt, I'll leave it here so I'm not cluttering your inbox. If catching more website enquiries ever moves up the list, I'm one reply away. — Amy"
+Bailey Property,baileypropertysa.com.au,"Adelaide, SA",Real estate & property management,10-25 staff,4,"Independent family agency, single admin@ inbox, no chat widget",No,Mark Bailey,Co-Founder & Principal,admin@baileypropertysa.com.au,08 7320 3949,One admin inbox is doing the work of a front-desk team — a chatbot triages enquiries and books inspections automatically.,quick one about Bailey Property's website,"Hi Mark,
+
+  One admin inbox is doing the work of a front-desk team — a chatbot triages enquiries and books inspections automatically.
+
+  I'm Amy — I build AI chat assistants for Aussie real estate & property management businesses. They sit on your website and answer enquiries, qualify the lead, and book the job straight into your calendar — 24/7, in your tone of voice.
+
+  One agency I work with was sending every enquiry to a contact form and waiting till morning to reply. Now the bot books them on the spot — they stopped losing after-hours work to whoever called back first.
+
+  Setup's done-for-you and it runs from about $99/month. No lock-in.
+
+  Worth a quick look? Reply ""demo"" and I'll send you a 60-second clip of one answering a real Bailey Property-style enquiry.
+
+  Cheers,
+  Amy
+  Done By Amy · donebyamy.com
+
+  Not for you? Just reply ""stop"" and I won't email again.","Hi Mark, just floating this back up. The quickest win I see for Bailey Property is catching the enquiries that land after hours — that's usually where the money leaks. Happy to send that 60-second demo if you're curious, no pressure either way. — Amy","Hi Mark, I'll leave it here so I'm not cluttering your inbox. If catching more website enquiries ever moves up the list, I'm one reply away. — Amy"
+Strategia Strata,strategiastrata.com,"Sydney, NSW",Real estate & property management,5-15 staff,4,"Independent Sydney strata manager, admin@ inbox, no chat widget",No,,Director,admin@strategiastrata.com,,Owners corporations expect instant answers about levies and repairs — a chatbot handles the routine 80% and escalates the rest.,quick one about Strategia Strata's website,"Hi there,
+
+  Owners corporations expect instant answers about levies and repairs — a chatbot handles the routine 80% and escalates the rest.
+
+  I'm Amy — I build AI chat assistants for Aussie real estate & property management businesses. They sit on your website and answer enquiries, qualify the lead, and book the job straight into your calendar — 24/7, in your tone of voice.
+
+  One agency I work with was sending every enquiry to a contact form and waiting till morning to reply. Now the bot books them on the spot — they stopped losing after-hours work to whoever called back first.
+
+  Setup's done-for-you and it runs from about $99/month. No lock-in.
+
+  Worth a quick look? Reply ""demo"" and I'll send you a 60-second clip of one answering a real Strategia Strata-style enquiry.
+
+  Cheers,
+  Amy
+  Done By Amy · donebyamy.com
+
+  Not for you? Just reply ""stop"" and I won't email again.","Hi there, just floating this back up. The quickest win I see for Strategia Strata is catching the enquiries that land after hours — that's usually where the money leaks. Happy to send that 60-second demo if you're curious, no pressure either way. — Amy","Hi there, I'll leave it here so I'm not cluttering your inbox. If catching more website enquiries ever moves up the list, I'm one reply away. — Amy"
+Ross-Hunt Real Estate,rosshunt.com.au,"Surrey Hills, VIC",Real estate & property management,10-20 staff,4,"Long-standing independent agency, single shared inbox, no chat widget",No,,Director,rosshunt@rosshunt.com.au,03 9830 4044,"Your reputation pulls inbound enquiry — a chatbot makes sure every one of them gets answered in 5 seconds, not 5 hours.",quick one about Ross-Hunt Real Estate's website,"Hi there,
+
+  Your reputation pulls inbound enquiry — a chatbot makes sure every one of them gets answered in 5 seconds, not 5 hours.
+
+  I'm Amy — I build AI chat assistants for Aussie real estate & property management businesses. They sit on your website and answer enquiries, qualify the lead, and book the job straight into your calendar — 24/7, in your tone of voice.
+
+  One agency I work with was sending every enquiry to a contact form and waiting till morning to reply. Now the bot books them on the spot — they stopped losing after-hours work to whoever called back first.
+
+  Setup's done-for-you and it runs from about $99/month. No lock-in.
+
+  Worth a quick look? Reply ""demo"" and I'll send you a 60-second clip of one answering a real Ross-Hunt Real Estate-style enquiry.
+
+  Cheers,
+  Amy
+  Done By Amy · donebyamy.com
+
+  Not for you? Just reply ""stop"" and I won't email again.","Hi there, just floating this back up. The quickest win I see for Ross-Hunt Real Estate is catching the enquiries that land after hours — that's usually where the money leaks. Happy to send that 60-second demo if you're curious, no pressure either way. — Amy","Hi there, I'll leave it here so I'm not cluttering your inbox. If catching more website enquiries ever moves up the list, I'm one reply away. — Amy"
+MBM Landscaping & Maintenance,mbmlandscapingmaintenance.com,"Dandenong, VIC",Trades & home services,5-15 staff,4,"Contact-form-only website, no live chat, peak spring demand",No,,Owner,info@mbmlandscapingmaintenance.com,(03) 9068 6288,Spring's your busiest window — a chatbot can capture and book quote requests at 9pm when homeowners are actually browsing.,quick one about MBM Landscaping & Maintenance's website,"Hi there,
+
+  Spring's your busiest window — a chatbot can capture and book quote requests at 9pm when homeowners are actually browsing.
+
+  I'm Amy — I build AI chat assistants for Aussie trades & home services businesses. They sit on your website and answer enquiries, qualify the lead, and book the job straight into your calendar — 24/7, in your tone of voice.
+
+  One trades business I work with was sending every enquiry to a contact form and waiting till morning to reply. Now the bot books them on the spot — they stopped losing after-hours work to whoever called back first.
+
+  Setup's done-for-you and it runs from about $99/month. No lock-in.
+
+  Worth a quick look? Reply ""demo"" and I'll send you a 60-second clip of one answering a real MBM Landscaping & Maintenance-style enquiry.
+
+  Cheers,
+  Amy
+  Done By Amy · donebyamy.com
+
+  Not for you? Just reply ""stop"" and I won't email again.","Hi there, just floating this back up. The quickest win I see for MBM Landscaping & Maintenance is catching the enquiries that land after hours — that's usually where the money leaks. Happy to send that 60-second demo if you're curious, no pressure either way. — Amy","Hi there, I'll leave it here so I'm not cluttering your inbox. If catching more website enquiries ever moves up the list, I'm one reply away. — Amy"
+Allpest,allpest.com.au,"Perth, WA",Trades & home services,15-40 staff,4,'Free Proposal' button leads to a static form — no chat widget,No,,Operations Manager,info@allpest.com.au,(08) 9416 0200,Termite enquiries are urgent — losing a lead to a competitor because nobody answered the form for 6 hours is exactly what a chatbot fixes.,quick one about Allpest's website,"Hi there,
+
+  Termite enquiries are urgent — losing a lead to a competitor because nobody answered the form for 6 hours is exactly what a chatbot fixes.
+
+  I'm Amy — I build AI chat assistants for Aussie trades & home services businesses. They sit on your website and answer enquiries, qualify the lead, and book the job straight into your calendar — 24/7, in your tone of voice.
+
+  One trades business I work with was sending every enquiry to a contact form and waiting till morning to reply. Now the bot books them on the spot — they stopped losing after-hours work to whoever called back first.
+
+  Setup's done-for-you and it runs from about $99/month. No lock-in.
+
+  Worth a quick look? Reply ""demo"" and I'll send you a 60-second clip of one answering a real Allpest-style enquiry.
+
+  Cheers,
+  Amy
+  Done By Amy · donebyamy.com
+
+  Not for you? Just reply ""stop"" and I won't email again.","Hi there, just floating this back up. The quickest win I see for Allpest is catching the enquiries that land after hours — that's usually where the money leaks. Happy to send that 60-second demo if you're curious, no pressure either way. — Amy","Hi there, I'll leave it here so I'm not cluttering your inbox. If catching more website enquiries ever moves up the list, I'm one reply away. — Amy"
+Adelaide Hills Roofing,adelaidehillsroofing.com,"Adelaide Hills, SA",Trades & home services,2-8 staff,4,"Owner-operated; Squarespace site with a 'we'll call you' form, no chat",No,,Owner,adelaidehillsroofing@gmail.com,0492 178 551,"You're on the tools all day — an AI chat replies to enquiries the second they hit the site, so you don't lose them to whoever calls back first.",quick one about Adelaide Hills Roofing's website,"Hi there,
+
+  You're on the tools all day — an AI chat replies to enquiries the second they hit the site, so you don't lose them to whoever calls back first.
+
+  I'm Amy — I build AI chat assistants for Aussie trades & home services businesses. They sit on your website and answer enquiries, qualify the lead, and book the job straight into your calendar — 24/7, in your tone of voice.
+
+  One trades business I work with was sending every enquiry to a contact form and waiting till morning to reply. Now the bot books them on the spot — they stopped losing after-hours work to whoever called back first.
+
+  Setup's done-for-you and it runs from about $99/month. No lock-in.
+
+  Worth a quick look? Reply ""demo"" and I'll send you a 60-second clip of one answering a real Adelaide Hills Roofing-style enquiry.
+
+  Cheers,
+  Amy
+  Done By Amy · donebyamy.com
+
+  Not for you? Just reply ""stop"" and I won't email again.","Hi there, just floating this back up. The quickest win I see for Adelaide Hills Roofing is catching the enquiries that land after hours — that's usually where the money leaks. Happy to send that 60-second demo if you're curious, no pressure either way. — Amy","Hi there, I'll leave it here so I'm not cluttering your inbox. If catching more website enquiries ever moves up the list, I'm one reply away. — Amy"
+Spruce It Up Painting,paintersgc.com.au,"Gold Coast, QLD",Trades & home services,3-10 staff,4,"Owner-operated painters, contact-form + phone only, no chat widget",No,,Owner,info@paintersgc.com.au,0435 767 723,Homeowners shop painters at night after work — an AI chat that books quote visits 24/7 would lock in jobs before competitors even open.,quick one about Spruce It Up Painting's website,"Hi there,
+
+  Homeowners shop painters at night after work — an AI chat that books quote visits 24/7 would lock in jobs before competitors even open.
+
+  I'm Amy — I build AI chat assistants for Aussie trades & home services businesses. They sit on your website and answer enquiries, qualify the lead, and book the job straight into your calendar — 24/7, in your tone of voice.
+
+  One trades business I work with was sending every enquiry to a contact form and waiting till morning to reply. Now the bot books them on the spot — they stopped losing after-hours work to whoever called back first.
+
+  Setup's done-for-you and it runs from about $99/month. No lock-in.
+
+  Worth a quick look? Reply ""demo"" and I'll send you a 60-second clip of one answering a real Spruce It Up Painting-style enquiry.
+
+  Cheers,
+  Amy
+  Done By Amy · donebyamy.com
+
+  Not for you? Just reply ""stop"" and I won't email again.","Hi there, just floating this back up. The quickest win I see for Spruce It Up Painting is catching the enquiries that land after hours — that's usually where the money leaks. Happy to send that 60-second demo if you're curious, no pressure either way. — Amy","Hi there, I'll leave it here so I'm not cluttering your inbox. If catching more website enquiries ever moves up the list, I'm one reply away. — Amy"
+KYC Air Conditioning,kycairconditioning.com.au,"Sydney, NSW",Trades & home services,5-15 staff,4,"reCAPTCHA-protected quote form, no live chat",No,,Owner,info@kycairconditioning.com.au,0484 595 959,Your spring specials are running — an AI chat on the page can answer 'will it fit my home?' instantly and book the install.,quick one about KYC Air Conditioning's website,"Hi there,
+
+  Your spring specials are running — an AI chat on the page can answer 'will it fit my home?' instantly and book the install.
+
+  I'm Amy — I build AI chat assistants for Aussie trades & home services businesses. They sit on your website and answer enquiries, qualify the lead, and book the job straight into your calendar — 24/7, in your tone of voice.
+
+  One trades business I work with was sending every enquiry to a contact form and waiting till morning to reply. Now the bot books them on the spot — they stopped losing after-hours work to whoever called back first.
+
+  Setup's done-for-you and it runs from about $99/month. No lock-in.
+
+  Worth a quick look? Reply ""demo"" and I'll send you a 60-second clip of one answering a real KYC Air Conditioning-style enquiry.
+
+  Cheers,
+  Amy
+  Done By Amy · donebyamy.com
+
+  Not for you? Just reply ""stop"" and I won't email again.","Hi there, just floating this back up. The quickest win I see for KYC Air Conditioning is catching the enquiries that land after hours — that's usually where the money leaks. Happy to send that 60-second demo if you're curious, no pressure either way. — Amy","Hi there, I'll leave it here so I'm not cluttering your inbox. If catching more website enquiries ever moves up the list, I'm one reply away. — Amy"
+Supa's Cleaning Services,supascleaning.com.au,"Melbourne, VIC",Trades & home services,15-40 staff,4,'Fast Quote' / 'Detailed Quote' popups but no chat widget,No,,Owner,info@supascleaning.com.au,(03) 9068 5777,Office managers RFQ at 5pm — a chatbot that asks 'how many sqm and how often?' would deliver a hot lead before you open tomorrow.,quick one about Supa's Cleaning Services's website,"Hi there,
+
+  Office managers RFQ at 5pm — a chatbot that asks 'how many sqm and how often?' would deliver a hot lead before you open tomorrow.
+
+  I'm Amy — I build AI chat assistants for Aussie trades & home services businesses. They sit on your website and answer enquiries, qualify the lead, and book the job straight into your calendar — 24/7, in your tone of voice.
+
+  One trades business I work with was sending every enquiry to a contact form and waiting till morning to reply. Now the bot books them on the spot — they stopped losing after-hours work to whoever called back first.
+
+  Setup's done-for-you and it runs from about $99/month. No lock-in.
+
+  Worth a quick look? Reply ""demo"" and I'll send you a 60-second clip of one answering a real Supa's Cleaning Services-style enquiry.
+
+  Cheers,
+  Amy
+  Done By Amy · donebyamy.com
+
+  Not for you? Just reply ""stop"" and I won't email again.","Hi there, just floating this back up. The quickest win I see for Supa's Cleaning Services is catching the enquiries that land after hours — that's usually where the money leaks. Happy to send that 60-second demo if you're curious, no pressure either way. — Amy","Hi there, I'll leave it here so I'm not cluttering your inbox. If catching more website enquiries ever moves up the list, I'm one reply away. — Amy"
+Bedford Medical Clinic,bedfordmedical.com.au,"Bedford Park, SA",Health & allied health clinics,10-20 staff,3,"Independent GP + day surgery, old site, no chat widget — appears none, verify",Unverified,,Practice Manager,reception@bedfordmedical.com.au,,"Your site sends every new patient to a phone-only booking page — an AI chat could pre-screen Medicare, GP vs day-surgery enquiries and free up reception.",missed enquiries at Bedford Medical Clinic?,"Hi there,
+
+  Your site sends every new patient to a phone-only booking page — an AI chat could pre-screen Medicare, GP vs day-surgery enquiries and free up reception.
+
+  I'm Amy — I build AI chat assistants for Aussie health & allied health clinics businesses. They sit on your website and answer enquiries, qualify the lead, and book the job straight into your calendar — 24/7, in your tone of voice.
+
+  One clinic I work with was sending every enquiry to a contact form and waiting till morning to reply. Now the bot books them on the spot — they stopped losing after-hours work to whoever called back first.
+
+  Setup's done-for-you and it runs from about $99/month. No lock-in.
+
+  Worth a quick look? Reply ""demo"" and I'll send you a 60-second clip of one answering a real Bedford Medical Clinic-style enquiry.
+
+  Cheers,
+  Amy
+  Done By Amy · donebyamy.com
+
+  Not for you? Just reply ""stop"" and I won't email again.","Hi there, just floating this back up. The quickest win I see for Bedford Medical Clinic is catching the enquiries that land after hours — that's usually where the money leaks. Happy to send that 60-second demo if you're curious, no pressure either way. — Amy","Hi there, I'll leave it here so I'm not cluttering your inbox. If catching more website enquiries ever moves up the list, I'm one reply away. — Amy"
