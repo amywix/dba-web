@@ -6,7 +6,7 @@ import Footer from "@/components/footer";
 import { Button } from "@/components/ui/button";
 import { CheckCircle2, PhoneCall, MessageSquare, Clock, ShieldCheck, ChevronRight } from "lucide-react";
 
-import lcPhone from "../assets/leadcatch_phone_nobg.png";
+import lcPhone from "../assets/leadcatch_phone_nobg.webp";
 
 const fadeUp: Variants = {
   hidden: { opacity: 0, y: 30 },
@@ -74,7 +74,7 @@ export default function LeadCatch() {
             >
               <div className="relative w-full max-w-[440px]">
                 <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-secondary/20 rounded-[40px] blur-2xl transform rotate-6 scale-95" />
-                <img src={lcPhone} alt="LeadCatch Interface" className="relative z-10 w-full object-contain drop-shadow-2xl" />
+                <img src={lcPhone} alt="LeadCatch Interface" decoding="async" className="relative z-10 w-full object-contain drop-shadow-2xl" />
               </div>
             </motion.div>
           </div>

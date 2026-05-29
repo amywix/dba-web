@@ -6,7 +6,7 @@ import Footer from "@/components/footer";
 import { Button } from "@/components/ui/button";
 import { CheckCircle2, PhoneOutgoing, Mic, CalendarCheck, TrendingUp, ChevronRight } from "lucide-react";
 
-import autoDialScreen from "../assets/autodial_nobg.png";
+import autoDialScreen from "../assets/autodial_nobg.webp";
 
 const fadeUp: Variants = {
   hidden: { opacity: 0, y: 30 },
@@ -48,7 +48,7 @@ export default function AutoDial() {
             >
               <div className="relative w-full max-w-[480px]">
                 <div className="absolute inset-0 bg-primary/15 rounded-full blur-3xl scale-75" />
-                <img src={autoDialScreen} alt="AutoDial Dashboard" className="relative z-10 w-full object-contain drop-shadow-2xl" />
+                <img src={autoDialScreen} alt="AutoDial Dashboard" decoding="async" className="relative z-10 w-full object-contain drop-shadow-2xl" />
               </div>
             </motion.div>
 

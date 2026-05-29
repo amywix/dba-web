@@ -6,7 +6,7 @@ import Footer from "@/components/footer";
 import { Button } from "@/components/ui/button";
 import { ChevronRight, ClipboardCheck, FileText, Database, Bell, Wallet, CheckCircle2 } from "lucide-react";
 
-import yardYakkaApp from "../assets/yard_yakka_app_nobg.png";
+import yardYakkaApp from "../assets/yard_yakka_app_nobg.webp";
 
 const fadeUp: Variants = {
   hidden: { opacity: 0, y: 30 },
@@ -73,7 +73,7 @@ export default function YardYakka() {
             >
               <div className="relative w-full max-w-[300px]">
                 <div className="absolute inset-0 bg-primary/20 rounded-full blur-3xl scale-90" />
-                <img src={yardYakkaApp} alt="Yard Yakka App" className="relative z-10 w-full object-contain drop-shadow-2xl" />
+                <img src={yardYakkaApp} alt="Yard Yakka App" decoding="async" className="relative z-10 w-full object-contain drop-shadow-2xl" />
               </div>
             </motion.div>
           </div>

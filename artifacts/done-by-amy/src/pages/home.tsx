@@ -10,9 +10,9 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-import lcPhone from "../assets/leadcatch_phone_nobg.png";
-import autoDialScreen from "../assets/autodial_nobg.png";
-import yardYakkaApp from "../assets/yard_yakka_app_nobg.png";
+import lcPhone from "../assets/leadcatch_phone_nobg.webp";
+import autoDialScreen from "../assets/autodial_nobg.webp";
+import yardYakkaApp from "../assets/yard_yakka_app_nobg.webp";
 
 const fadeUp: Variants = {
   hidden: { opacity: 0, y: 30 },
@@ -261,7 +261,7 @@ export default function Home() {
                   Instant SMS auto-reply to every missed call. Capture the lead before your competitor does.
                 </p>
                 <div className="mt-auto pt-6 flex justify-center h-48 items-end">
-                  <img src={lcPhone} alt="LeadCatch screen" className="max-h-44 w-auto object-contain drop-shadow-2xl mb-6" />
+                  <img src={lcPhone} alt="LeadCatch screen" loading="lazy" decoding="async" className="max-h-44 w-auto object-contain drop-shadow-2xl mb-6" />
                 </div>
                 <Link href="/leadcatch" className="inline-flex items-center gap-2 text-white font-bold text-sm group-hover:text-primary transition-colors">
                   Explore LeadCatch <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
@@ -285,7 +285,7 @@ export default function Home() {
                   A human-sounding voice agent that qualifies leads, handles objections and books appointments — 24/7.
                 </p>
                 <div className="mt-auto pt-6 flex justify-center h-48 items-end">
-                  <img src={autoDialScreen} alt="AutoDial" className="max-h-44 w-auto object-contain drop-shadow-2xl mb-6" />
+                  <img src={autoDialScreen} alt="AutoDial" loading="lazy" decoding="async" className="max-h-44 w-auto object-contain drop-shadow-2xl mb-6" />
                 </div>
                 <Link href="/autodial" className="inline-flex items-center gap-2 text-white font-bold text-sm group-hover:text-primary transition-colors">
                   Explore AutoDial <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
@@ -304,7 +304,7 @@ export default function Home() {
                   A bespoke mobile app + 6-step workflow gave Lucas back half a week — invoicing, NDIS reporting and reconciliation, all hands-off.
                 </p>
                 <div className="mt-auto pt-6 flex justify-center h-48 items-end">
-                  <img src={yardYakkaApp} alt="Yard Yakka App" className="max-h-44 w-auto object-contain drop-shadow-2xl mb-6" />
+                  <img src={yardYakkaApp} alt="Yard Yakka App" loading="lazy" decoding="async" className="max-h-44 w-auto object-contain drop-shadow-2xl mb-6" />
                 </div>
                 <Link href="/case-studies/yard-yakka" className="inline-flex items-center gap-2 text-white font-bold text-sm group-hover:text-primary transition-colors">
                   Read the case study <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
