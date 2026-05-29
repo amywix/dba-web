@@ -4,6 +4,8 @@ import { useSEO } from "@/hooks/use-seo";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import RoiCalculator from "@/components/roi-calculator";
+import AutomationFlow from "@/components/home/automation-flow";
+import ProductShowcase from "@/components/home/product-showcase";
 import { 
   Bot, PhoneCall, Globe, ArrowRight, Zap, PhoneOutgoing, Users, CheckCircle2, ChevronRight,
   Clock, TrendingUp, Wallet, MoonStar, ShieldCheck
@@ -226,6 +228,8 @@ export default function Home() {
         </div>
       </section>
 
+      <AutomationFlow />
+
       {/* ─── FEATURED PRODUCTS & CASE STUDY ───────────────────────── */}
       <section id="featured" className="py-12 sm:py-16 px-4 sm:px-6 overflow-hidden relative">
         <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-secondary/10 rounded-full blur-[140px] pointer-events-none" />
@@ -314,6 +318,8 @@ export default function Home() {
           </motion.div>
         </div>
       </section>
+
+      <ProductShowcase />
 
       <RoiCalculator />
 
