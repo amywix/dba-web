@@ -20,14 +20,14 @@ const faqs = [
     category: "LeadCatch",
     items: [
       { q: "What is LeadCatch?", a: "A mobile web app for tradies that instantly sends a custom SMS reply to every missed call, capturing lead details before they call someone else." },
-      { q: "How much does LeadCatch cost?", a: "LeadCatch is $99/month flat. There are no lock-in contracts, and most businesses recover the cost from their first captured job." },
+      { q: "How much does LeadCatch cost?", a: "LeadCatch is $199/month flat. There are no lock-in contracts, and most businesses recover the cost from their first captured job." },
     ],
   },
   {
     category: "AutoDial",
     items: [
       { q: "What is AutoDial?", a: "An AI telemarketing agent that makes outbound calls on your behalf. It dials leads, handles objections naturally, and books appointments into your calendar." },
-      { q: "How much does it cost?", a: "AutoDial starts from $99/month based on call volume." },
+      { q: "How much does it cost?", a: "AutoDial starts from $199/month based on call volume." },
     ],
   },
 ];

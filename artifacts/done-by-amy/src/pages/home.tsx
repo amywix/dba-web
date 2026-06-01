@@ -196,19 +196,19 @@ export default function Home() {
               { 
                 icon: Bot, 
                 title: "AI Automations", 
-                price: "From $99 + setup", 
+                price: "$199/month", 
                 desc: "Intelligent chatbots, CRM syncs, and 24/7 virtual assistants that handle the repetitive work." 
               },
               { 
                 icon: Globe, 
                 title: "Conversion Websites", 
-                price: "From $199", 
+                price: "$199/month", 
                 desc: "Lightning-fast, SEO-optimized sites designed specifically to turn visitors into booked jobs." 
               },
               { 
                 icon: Zap, 
                 title: "Custom Apps", 
-                price: "From $199", 
+                price: "$199/month", 
                 desc: "Bespoke web tools that bridge the gap between your existing software stack." 
               },
             ].map((srv, i) => (
@@ -256,7 +256,7 @@ export default function Home() {
             <motion.div variants={fadeUp} className="group flex flex-col p-6 sm:p-8 rounded-3xl bg-white/[0.02] border border-white/[0.06] hover:border-primary/40 hover:bg-white/[0.04] transition-all duration-500 relative overflow-hidden">
               <div className="absolute -top-12 -right-12 w-48 h-48 bg-secondary/10 rounded-full blur-3xl pointer-events-none" />
               <div className="relative z-10 flex flex-col h-full">
-                <div className="text-xs font-bold tracking-[0.2em] text-primary mb-4">PRODUCT · $99/MO</div>
+                <div className="text-xs font-bold tracking-[0.2em] text-primary mb-4">PRODUCT · $199/MO</div>
                 <div className="flex items-center gap-3 mb-6">
                   <span className="text-2xl font-black text-white tracking-tight">LeadCatch</span>
                 </div>

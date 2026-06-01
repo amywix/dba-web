@@ -28,7 +28,7 @@ function SectionBadge({ children }: { children: React.ReactNode }) {
 export default function LeadCatch() {
   useSEO({
     title: "LeadCatch — Never miss a job again | Done By Amy",
-    description: "LeadCatch is the $99/mo missed-call SMS auto-responder built for Australian tradies. Capture every lead, even when you can't pick up.",
+    description: "LeadCatch is the $199/mo missed-call SMS auto-responder built for Australian tradies. Capture every lead, even when you can't pick up.",
     keywords: "LeadCatch, missed call SMS, tradie automation, Australia, lead capture",
     canonical: "https://donebyamy.com/leadcatch",
   });
@@ -47,7 +47,7 @@ export default function LeadCatch() {
               className="space-y-8"
             >
               <motion.div variants={fadeUp}>
-                <SectionBadge>Flagship Product · $99/mo</SectionBadge>
+                <SectionBadge>Flagship Product · $199/mo</SectionBadge>
                 <h1 className="text-4xl sm:text-5xl md:text-6xl font-black leading-[1.05] tracking-tight text-white mb-6">
                   Never lose a job to a missed call again.
                 </h1>
@@ -59,7 +59,7 @@ export default function LeadCatch() {
               <motion.div variants={fadeUp} className="flex flex-col sm:flex-row gap-4 pt-2">
                 <Link href="/get-started?service=LeadCatch">
                   <Button className="h-14 px-8 rounded-full bg-white text-black hover:bg-white/90 font-bold w-full sm:w-auto">
-                    Get LeadCatch — $99/mo
+                    Get LeadCatch — $199/mo
                   </Button>
                 </Link>
                 <Button variant="outline" className="h-14 px-8 rounded-full border-white/10 hover:bg-white/5 hover:border-white/20 w-full sm:w-auto text-white">
@@ -157,7 +157,7 @@ export default function LeadCatch() {
             <div className="relative z-10">
               <SectionBadge>Simple Pricing</SectionBadge>
               <div className="flex items-baseline justify-center gap-2 mb-4">
-                <span className="text-5xl sm:text-6xl md:text-7xl font-black text-white tracking-tight">$99</span>
+                <span className="text-5xl sm:text-6xl md:text-7xl font-black text-white tracking-tight">$199</span>
                 <span className="text-xl text-muted-foreground">/month</span>
               </div>
               <p className="text-muted-foreground mb-10 max-w-md mx-auto">
