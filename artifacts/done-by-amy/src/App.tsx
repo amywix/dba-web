@@ -13,6 +13,7 @@ import BlogPost from "@/pages/blog-post";
 import LeadCatch from "@/pages/leadcatch";
 import AutoDial from "@/pages/autodial";
 import YardYakka from "@/pages/yard-yakka";
+import ChatbotDemo from "@/components/chatbot-demo";
 
 const queryClient = new QueryClient();
 
@@ -40,6 +41,7 @@ function App() {
       <TooltipProvider>
         <WouterRouter base={import.meta.env.BASE_URL.replace(/\/$/, "")}>
           <Router />
+          <ChatbotDemo />
         </WouterRouter>
         <Toaster />
       </TooltipProvider>
