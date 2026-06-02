@@ -19,7 +19,7 @@ const QUICK_REPLIES = [
 function botReply(input: string): string {
   const q = input.toLowerCase();
   if (/(price|cost|how much|\$|pricing|month)/.test(q)) {
-    return "Our AI chatbots start at $199/month — no lock-in contracts. That covers setup, training on your business, and ongoing tweaks. Most clients make it back from a single booked job.";
+    return "Our AI chatbots start at $149/month — no lock-in contracts. That covers setup, training on your business, and ongoing tweaks. Most clients make it back from a single booked job.";
   }
   if (/(book|audit|demo|call|talk|contact|started|sign)/.test(q)) {
     return "Easy — head to our 'Get Your Free Audit' page (top right) and pop in your details. Amy will map out exactly what to automate first. Zero pressure, zero jargon.";

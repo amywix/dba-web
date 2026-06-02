@@ -202,7 +202,7 @@ export default function Home() {
               { 
                 icon: MessageSquare, 
                 title: "AI Chatbots", 
-                price: "$199/month", 
+                price: "From $149/month", 
                 desc: "Smart chat assistants that answer enquiries, qualify leads, and book jobs straight from your website 24/7." 
               },
               { 
