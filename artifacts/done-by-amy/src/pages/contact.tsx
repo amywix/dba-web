@@ -110,7 +110,7 @@ export default function Contact() {
                 <p className="text-sm text-white font-bold mb-2">Want a full business assessment?</p>
                 <p className="text-sm text-muted-foreground mb-5 leading-relaxed">Fill out the detailed intake form for a custom automation roadmap.</p>
                 <Button asChild className="w-full bg-white text-black hover:bg-white/90 font-bold rounded-full h-12">
-                  <Link href="/get-started">Start Free Audit</Link>
+                  <Link href="/get-started">Tell Us About Your Business</Link>
                 </Button>
               </div>
             </motion.div>

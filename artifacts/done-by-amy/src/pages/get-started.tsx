@@ -120,7 +120,7 @@ export default function GetStarted() {
             <>
               <motion.div initial="hidden" animate="visible" variants={fadeIn} className="mb-12">
                 <h1 className="text-3xl sm:text-4xl md:text-5xl font-black text-white tracking-tight mb-4">
-                  Request your free audit.
+                  Tell us about your business.
                 </h1>
                 <p className="text-lg text-muted-foreground">
                   Fill in a few details and we'll map out exactly where automation can save you time and money. No obligations.

@@ -102,7 +102,7 @@ export default function BlogPost() {
             <p className="text-muted-foreground mb-8 max-w-md mx-auto">Get a free automation audit for your business. We'll show you exactly what to automate first.</p>
             <Link href="/get-started">
               <Button size="lg" className="h-14 px-8 rounded-full bg-white text-black hover:bg-white/90 font-bold">
-                Get Your Free Audit <ChevronRight className="w-5 h-5 ml-2" />
+                Tell Us About Your Business <ChevronRight className="w-5 h-5 ml-2" />
               </Button>
             </Link>
           </div>

@@ -108,7 +108,7 @@ export default function FAQ() {
             <h2 className="text-2xl font-black text-white mb-3 tracking-tight">Still have questions?</h2>
             <p className="text-muted-foreground mb-8">We're happy to chat through your specific needs.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/get-started"><Button className="h-12 px-8 rounded-full bg-white text-black font-bold">Start Free Audit</Button></Link>
+              <Link href="/get-started"><Button className="h-12 px-8 rounded-full bg-white text-black font-bold">Tell Us About Your Business</Button></Link>
               <Link href="/contact"><Button variant="outline" className="h-12 px-8 rounded-full border-white/10 hover:bg-white/5 text-white">Contact Us</Button></Link>
             </div>
           </motion.div>

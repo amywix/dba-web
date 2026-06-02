@@ -156,7 +156,7 @@ export default function RoiCalculator() {
               </div>
               <Link href="/get-started">
                 <Button className="w-full h-12 rounded-full bg-white text-black hover:bg-white/90 font-bold">
-                  Get my free audit <ChevronRight className="w-4 h-4 ml-1" />
+                  Tell Us About Your Business <ChevronRight className="w-4 h-4 ml-1" />
                 </Button>
               </Link>
             </div>

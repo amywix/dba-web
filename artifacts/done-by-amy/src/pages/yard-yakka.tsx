@@ -199,7 +199,7 @@ export default function YardYakka() {
             </p>
             <Link href="/get-started">
               <Button className="h-16 px-10 text-lg rounded-full bg-white text-black hover:bg-white/90 font-black shadow-[0_0_40px_rgba(255,255,255,0.15)]">
-                Get Your Free Audit <ChevronRight className="w-5 h-5 ml-2" />
+                Tell Us About Your Business <ChevronRight className="w-5 h-5 ml-2" />
               </Button>
             </Link>
           </motion.div>

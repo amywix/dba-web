@@ -81,7 +81,7 @@ export default function Home() {
                   size="lg"
                   className="h-14 sm:h-16 px-6 sm:px-10 text-base sm:text-lg rounded-full bg-white text-black hover:bg-white/90 font-black shadow-[0_0_40px_rgba(255,255,255,0.15)] hover:shadow-[0_0_60px_rgba(255,255,255,0.25)] hover:-translate-y-0.5 transition-all duration-300 w-full sm:w-auto"
                 >
-                  Get Your Free Audit
+                  Tell Us About Your Business
                 </Button>
               </Link>
               <Button
@@ -399,7 +399,7 @@ export default function Home() {
           >
             <Link href="/get-started">
               <Button size="lg" className="h-14 sm:h-16 px-8 sm:px-10 text-base sm:text-lg rounded-full bg-white text-black hover:bg-white/90 font-black shadow-[0_0_40px_rgba(255,255,255,0.2)]">
-                Get Your Free Audit <ChevronRight className="w-5 h-5 ml-2" />
+                Tell Us About Your Business <ChevronRight className="w-5 h-5 ml-2" />
               </Button>
             </Link>
           </motion.div>

@@ -22,7 +22,7 @@ function botReply(input: string): string {
     return "Our AI chatbots start at $149/month — no lock-in contracts. That covers setup, training on your business, and ongoing tweaks. Most clients make it back from a single booked job.";
   }
   if (/(book|audit|demo|call|talk|contact|started|sign)/.test(q)) {
-    return "Easy — head to our 'Get Your Free Audit' page (top right) and pop in your details. Amy will map out exactly what to automate first. Zero pressure, zero jargon.";
+    return "Easy — head to our 'Tell Us About Your Business' page (top right) and pop in your details. Amy will map out exactly what to automate first. Zero pressure, zero jargon.";
   }
   if (/(what|do|can|help|feature|capab|how does)/.test(q)) {
     return "I answer customer enquiries 24/7, qualify leads, answer FAQs about your services and pricing, and book jobs straight into your calendar — even at midnight while you're asleep.";
@@ -34,7 +34,7 @@ function botReply(input: string): string {
     return "Hey! Ask me anything about getting an AI chatbot for your business — pricing, what it does, or how to get started.";
   }
   if (/(human|person|real|amy|speak)/.test(q)) {
-    return "Amy's the real deal behind all this. The quickest way to reach her is the 'Get Your Free Audit' form — she replies personally, usually same day.";
+    return "Amy's the real deal behind all this. The quickest way to reach her is the 'Tell Us About Your Business' form — she replies personally, usually same day.";
   }
   return "Great question! This is a quick demo of the kind of chatbot we build. For the full answer, book a free audit (top-right button) and Amy will sort you out. Want to know about pricing or what a chatbot can do?";
 }
