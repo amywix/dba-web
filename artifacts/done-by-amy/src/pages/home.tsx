@@ -7,7 +7,7 @@ import RoiCalculator from "@/components/roi-calculator";
 import AutomationFlow from "@/components/home/automation-flow";
 import ProductShowcase from "@/components/home/product-showcase";
 import { 
-  Bot, PhoneCall, Globe, ArrowRight, Zap, PhoneOutgoing, Users, CheckCircle2, ChevronRight,
+  Bot, PhoneCall, MessageSquare, ArrowRight, Zap, PhoneOutgoing, Users, CheckCircle2, ChevronRight,
   Clock, TrendingUp, Wallet, MoonStar, ShieldCheck
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -200,10 +200,10 @@ export default function Home() {
                 desc: "Intelligent chatbots, CRM syncs, and 24/7 virtual assistants that handle the repetitive work." 
               },
               { 
-                icon: Globe, 
-                title: "Conversion Websites", 
+                icon: MessageSquare, 
+                title: "AI Chatbots", 
                 price: "$199/month", 
-                desc: "Lightning-fast, SEO-optimized sites designed specifically to turn visitors into booked jobs." 
+                desc: "Smart chat assistants that answer enquiries, qualify leads, and book jobs straight from your website 24/7." 
               },
               { 
                 icon: Zap, 
