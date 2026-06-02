@@ -1,0 +1,1 @@
+- [Done By Amy SEO](done-by-amy-seo.md) — static SPA: only index.html is crawler-visible; per-page meta is JS-only; no static canonical by design; sitemap/robots are the real levers.

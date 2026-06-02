@@ -39,7 +39,7 @@ export default function YardYakka() {
     title: "Case Study: The Yard Yakka Boys | Done By Amy",
     description: "How Done By Amy built a custom mobile app and 6-step automation workflow that gave Lucas back half his week — covering invoicing, NDIS reporting and remittance reconciliation.",
     keywords: "Yard Yakka, case study, NDIS automation, lawn care, QuickBooks automation, Australia",
-    canonical: "https://donebyamy.com/case-studies/yard-yakka",
+    canonical: "https://www.donebyamy.com/case-studies/yard-yakka",
   });
 
   return (

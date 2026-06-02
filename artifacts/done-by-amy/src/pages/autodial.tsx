@@ -30,7 +30,7 @@ export default function AutoDial() {
     title: "AutoDial — Your tireless AI calling agent | Done By Amy",
     description: "AutoDial is the AI voice agent that sounds human, works 24/7, qualifies leads, handles objections and books appointments directly into your calendar.",
     keywords: "AutoDial, AI dialler, AI calling, voice agent, outbound calling, automation Australia",
-    canonical: "https://donebyamy.com/autodial",
+    canonical: "https://www.donebyamy.com/autodial",
   });
 
   return (

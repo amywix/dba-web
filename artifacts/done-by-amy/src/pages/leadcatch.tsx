@@ -30,7 +30,7 @@ export default function LeadCatch() {
     title: "LeadCatch — Never miss a job again | Done By Amy",
     description: "LeadCatch is the $199/mo missed-call SMS auto-responder built for Australian tradies. Capture every lead, even when you can't pick up.",
     keywords: "LeadCatch, missed call SMS, tradie automation, Australia, lead capture",
-    canonical: "https://donebyamy.com/leadcatch",
+    canonical: "https://www.donebyamy.com/leadcatch",
   });
 
   return (
