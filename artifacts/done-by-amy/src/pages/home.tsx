@@ -7,7 +7,7 @@ import RoiCalculator from "@/components/roi-calculator";
 import AutomationFlow from "@/components/home/automation-flow";
 import ProductShowcase from "@/components/home/product-showcase";
 import { 
-  Bot, PhoneCall, MessageSquare, ArrowRight, Zap, PhoneOutgoing, Users, CheckCircle2, ChevronRight,
+  Bot, PhoneCall, MessageSquare, ArrowRight, PhoneOutgoing, Users, CheckCircle2, ChevronRight,
   Clock, TrendingUp, Wallet, MoonStar, ShieldCheck
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -204,12 +204,6 @@ export default function Home() {
                 title: "AI Chatbots", 
                 price: "From $149/month", 
                 desc: "Smart chat assistants that answer enquiries, qualify leads, and book jobs straight from your website 24/7." 
-              },
-              { 
-                icon: Zap, 
-                title: "Custom Apps", 
-                price: "$199/month", 
-                desc: "Bespoke web tools that bridge the gap between your existing software stack." 
               },
             ].map((srv, i) => (
               <motion.div

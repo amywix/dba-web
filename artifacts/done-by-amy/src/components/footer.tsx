@@ -33,7 +33,6 @@ export default function Footer() {
               <ul className="space-y-4 text-sm text-muted-foreground">
                 <li><Link href="/#services" className="hover:text-white transition-colors">Workflow Automation</Link></li>
                 <li><Link href="/#services" className="hover:text-white transition-colors">Websites</Link></li>
-                <li><Link href="/#services" className="hover:text-white transition-colors">Custom Apps</Link></li>
               </ul>
             </div>
             <div className="col-span-2 md:col-span-1">
