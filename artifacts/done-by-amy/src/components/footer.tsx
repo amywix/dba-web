@@ -31,8 +31,8 @@ export default function Footer() {
             <div>
               <h4 className="text-white font-bold mb-5 text-xs tracking-widest uppercase">Services</h4>
               <ul className="space-y-4 text-sm text-muted-foreground">
+                <li><Link href="/#services" className="hover:text-white transition-colors">AI Automations</Link></li>
                 <li><Link href="/#services" className="hover:text-white transition-colors">Workflow Automation</Link></li>
-                <li><Link href="/#services" className="hover:text-white transition-colors">Websites</Link></li>
               </ul>
             </div>
             <div className="col-span-2 md:col-span-1">
