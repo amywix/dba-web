@@ -25,7 +25,7 @@ export default function Footer() {
                 <li><Link href="/leadcatch" className="hover:text-white transition-colors">LeadCatch</Link></li>
                 <li><Link href="/autodial" className="hover:text-white transition-colors">AutoDial</Link></li>
                 <li><Link href="/get-started" className="hover:text-white transition-colors">Admin &amp; Bookkeeping</Link></li>
-                <li><Link href="/case-studies/yard-yakka" className="hover:text-white transition-colors">Yard Yakka Case Study</Link></li>
+                <li><Link href="/get-started" className="hover:text-white transition-colors">AI Chatbots</Link></li>
               </ul>
             </div>
             <div>

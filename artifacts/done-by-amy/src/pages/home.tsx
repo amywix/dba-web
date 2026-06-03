@@ -14,7 +14,6 @@ import { Button } from "@/components/ui/button";
 
 import lcPhone from "../assets/leadcatch_phone_nobg.webp";
 import autoDialScreen from "../assets/autodial_nobg.webp";
-import yardYakkaApp from "../assets/yard_yakka_app_nobg.webp";
 
 const fadeUp: Variants = {
   hidden: { opacity: 0, y: 30 },
@@ -291,21 +290,36 @@ export default function Home() {
               </div>
             </motion.div>
 
-            {/* Yard Yakka card */}
+            {/* AI Chatbot card */}
             <motion.div variants={fadeUp} className="group flex flex-col p-6 sm:p-8 rounded-3xl bg-white/[0.02] border border-white/[0.06] hover:border-primary/40 hover:bg-white/[0.04] transition-all duration-500 relative overflow-hidden">
-              <div className="absolute -bottom-12 -right-12 w-48 h-48 bg-primary/10 rounded-full blur-3xl pointer-events-none" />
+              <div className="absolute -bottom-12 -right-12 w-48 h-48 bg-secondary/10 rounded-full blur-3xl pointer-events-none" />
               <div className="relative z-10 flex flex-col h-full">
-                <div className="text-xs font-bold tracking-[0.2em] text-primary mb-4">CASE STUDY</div>
-                <h3 className="text-2xl font-black text-white mb-2 tracking-tight leading-snug">The Yard Yakka Boys</h3>
-                <p className="text-muted-foreground text-xs uppercase tracking-widest font-bold mb-6">Lawn care & NDIS · Mackay, QLD</p>
-                <p className="text-muted-foreground text-sm leading-relaxed mb-8">
-                  A bespoke mobile app + 6-step workflow gave Lucas back half a week — invoicing, NDIS reporting and reconciliation, all hands-off.
-                </p>
-                <div className="mt-auto pt-6 flex justify-center h-48 items-end">
-                  <img src={yardYakkaApp} alt="Yard Yakka App" loading="lazy" decoding="async" className="max-h-44 w-auto object-contain drop-shadow-2xl mb-6" />
+                <div className="text-xs font-bold tracking-[0.2em] text-primary mb-4">PRODUCT · FROM $149/MO</div>
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="w-10 h-10 rounded-2xl bg-primary/15 border border-primary/30 flex items-center justify-center">
+                    <MessageSquare className="w-5 h-5 text-primary" />
+                  </div>
+                  <span className="text-2xl font-black text-white tracking-tight">AI Chatbots</span>
                 </div>
-                <Link href="/case-studies/yard-yakka" className="inline-flex items-center gap-2 text-white font-bold text-sm group-hover:text-primary transition-colors">
-                  Read the case study <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+                <h3 className="text-2xl font-black text-white mb-3 tracking-tight leading-snug">Answer every enquiry, instantly.</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed mb-8">
+                  A smart chat assistant that answers questions, qualifies leads and books jobs straight from your website — 24/7.
+                </p>
+                <div className="mt-auto pt-6 flex flex-col justify-end h-48 gap-3">
+                  <div className="self-start max-w-[80%] rounded-2xl rounded-bl-md bg-white/[0.05] border border-white/10 px-4 py-2.5 text-sm text-white/90">
+                    Hi! Do you do same-day quotes?
+                  </div>
+                  <div className="self-end max-w-[85%] rounded-2xl rounded-br-md bg-primary/20 border border-primary/30 px-4 py-2.5 text-sm text-white">
+                    Absolutely — I can book you in. What's your suburb?
+                  </div>
+                  <div className="self-start flex items-center gap-1.5 rounded-2xl rounded-bl-md bg-white/[0.05] border border-white/10 px-4 py-3">
+                    <span className="w-1.5 h-1.5 rounded-full bg-primary/70 animate-pulse" />
+                    <span className="w-1.5 h-1.5 rounded-full bg-primary/70 animate-pulse [animation-delay:150ms]" />
+                    <span className="w-1.5 h-1.5 rounded-full bg-primary/70 animate-pulse [animation-delay:300ms]" />
+                  </div>
+                </div>
+                <Link href="/get-started" className="mt-6 inline-flex items-center gap-2 text-white font-bold text-sm group-hover:text-primary transition-colors">
+                  Get a chatbot <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
                 </Link>
               </div>
             </motion.div>

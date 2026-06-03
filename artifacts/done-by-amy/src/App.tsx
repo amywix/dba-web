@@ -1,4 +1,4 @@
-import { Switch, Route, Router as WouterRouter } from "wouter";
+import { Switch, Route, Redirect, Router as WouterRouter } from "wouter";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -12,7 +12,6 @@ import Blog from "@/pages/blog";
 import BlogPost from "@/pages/blog-post";
 import LeadCatch from "@/pages/leadcatch";
 import AutoDial from "@/pages/autodial";
-import YardYakka from "@/pages/yard-yakka";
 import ChatbotDemo from "@/components/chatbot-demo";
 
 const queryClient = new QueryClient();
@@ -29,7 +28,7 @@ function Router() {
       <Route path="/blog/:slug" component={BlogPost} />
       <Route path="/leadcatch" component={LeadCatch} />
       <Route path="/autodial" component={AutoDial} />
-      <Route path="/case-studies/yard-yakka" component={YardYakka} />
+      <Route path="/case-studies/yard-yakka">{() => <Redirect to="/get-started" />}</Route>
       <Route component={NotFound} />
     </Switch>
   );
