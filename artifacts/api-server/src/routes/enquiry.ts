@@ -4,7 +4,7 @@ import { sendEnquiryEmail, renderFieldsTable } from "../lib/resend";
 
 const EnquirySchema = z
   .object({
-    enquiryType: z.enum(["AI Chatbot", "AI Workflow"]),
+    enquiryType: z.enum(["AI Chatbot", "AI Workflow", "General enquiry"]),
     firstName: z.string().min(1).max(100),
     lastName: z.string().min(1).max(100),
     email: z.string().email().max(320),
@@ -23,6 +23,8 @@ const EnquirySchema = z
     currentProcess: z.string().max(5000).optional().default(""),
     hoursPerWeek: z.string().max(100).optional().default(""),
     peopleInvolved: z.string().max(100).optional().default(""),
+    // General enquiry
+    message: z.string().max(5000).optional().default(""),
     // Common
     timeline: z.string().max(100).optional().default(""),
     anythingElse: z.string().max(5000).optional().default(""),
@@ -46,6 +48,10 @@ const EnquirySchema = z
       if (!data.hoursPerWeek)
         ctx.addIssue({ code: "custom", path: ["hoursPerWeek"], message: "Required" });
     }
+    if (data.enquiryType === "General enquiry") {
+      if (!data.message || data.message.trim().length < 10)
+        ctx.addIssue({ code: "custom", path: ["message"], message: "Required" });
+    }
   });
 
 const router: IRouter = Router();
@@ -68,22 +74,26 @@ router.post("/enquiry", async (req, res) => {
     ["Website", d.websiteUrl],
   ];
 
-  const typeFields: Array<[string, string | string[]]> =
-    d.enquiryType === "AI Chatbot"
-      ? [
-          ["Where the chatbot should live", d.channels],
-          ["What it should do", d.chatbotGoals],
-          ["Enquiry volume", d.enquiryVolume],
-          ["Tone of voice", d.toneOfVoice],
-          ["Existing website / booking system", d.existingSystems],
-        ]
-      : [
-          ["Tasks to automate", d.tasksToAutomate],
-          ["Tools / apps used", d.toolsUsed],
-          ["Current manual process", d.currentProcess],
-          ["Hours spent per week", d.hoursPerWeek],
-          ["People involved", d.peopleInvolved],
-        ];
+  let typeFields: Array<[string, string | string[]]>;
+  if (d.enquiryType === "AI Chatbot") {
+    typeFields = [
+      ["Where the chatbot should live", d.channels],
+      ["What it should do", d.chatbotGoals],
+      ["Enquiry volume", d.enquiryVolume],
+      ["Tone of voice", d.toneOfVoice],
+      ["Existing website / booking system", d.existingSystems],
+    ];
+  } else if (d.enquiryType === "AI Workflow") {
+    typeFields = [
+      ["Tasks to automate", d.tasksToAutomate],
+      ["Tools / apps used", d.toolsUsed],
+      ["Current manual process", d.currentProcess],
+      ["Hours spent per week", d.hoursPerWeek],
+      ["People involved", d.peopleInvolved],
+    ];
+  } else {
+    typeFields = [["Message", d.message]];
+  }
 
   const commonFields: Array<[string, string | string[]]> = [
     ["Timeline", d.timeline],
