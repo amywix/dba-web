@@ -14,6 +14,7 @@ export default function Enquiry() {
     title: "Enquire | AI Chatbot & Workflow Intake — Done By Amy",
     description: "Tell us whether you want an AI chatbot, an automated workflow, or have a general question and we'll tailor the questions. Get a custom plan for your Aussie business.",
     keywords: "AI chatbot intake, AI workflow automation enquiry, automation quote Australia, chatbot for small business",
+    canonical: "https://www.donebyamy.com/contact",
   });
 
   return (

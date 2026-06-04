@@ -41,6 +41,8 @@ export function useSEO({ title, description, keywords, canonical }: SEOProps) {
 
     if (canonical) {
       setMeta('link[rel="canonical"]', canonical, "href");
+      setMeta('meta[property="og:url"]', canonical);
+      setMeta('meta[name="twitter:url"]', canonical);
     }
   }, [title, description, keywords, canonical]);
 }

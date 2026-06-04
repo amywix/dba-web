@@ -70,6 +70,7 @@ export default function GetStarted() {
     title: "Get Started | Done By Amy Automation Audit",
     description: "Tell Done By Amy about your business and get a tailored AI automation plan. Zero obligation, zero jargon.",
     keywords: "get started AI automation, LeadCatch sign up, AutoDial intake, automation quote Australia",
+    canonical: "https://www.donebyamy.com/get-started",
   });
 
   const [submitted, setSubmitted] = useState(false);
