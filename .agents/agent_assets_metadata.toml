@@ -281,3 +281,9 @@ id = "u6ifhxskh_NrhJiGlFieR"
 uri = "file://content/done-by-amy/posts/post-36-list.png"
 type = "image"
 title = "Post 36 — Three steps to live (CTA)"
+
+[[outputs]]
+id = "T7jm5KzP0Jnhi2CqNegy7"
+uri = "file://content/done-by-amy/done-by-amy-ai-chatbot-posts.zip"
+type = "unspecified"
+title = "Done By Amy — 36 AI Chatbot Social Posts (ZIP)"
