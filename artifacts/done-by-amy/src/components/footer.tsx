@@ -8,47 +8,136 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-12 lg:gap-8 mb-12 sm:mb-16">
           <div className="md:col-span-5 lg:col-span-4">
             <Link href="/" className="inline-block mb-6">
-              <img src={daLogoWordmark} alt="Done By Amy" className="h-10 object-contain" />
+              <img
+                src={daLogoWordmark}
+                alt="Done By Amy"
+                className="h-10 object-contain"
+              />
             </Link>
             <p className="text-muted-foreground text-sm leading-relaxed max-w-sm mb-6">
-              Premium AI automation systems for Australian small businesses. We build the infrastructure that lets you scale without the overwhelm.
+              Premium AI automation systems for Australian small businesses. We
+              build the infrastructure that lets you scale without the
+              overwhelm.
             </p>
             <p className="text-sm font-medium text-white/70">
-              <a href="mailto:admin@donebyamy.com" className="hover:text-primary transition-colors">admin@donebyamy.com</a>
+              <a
+                href="mailto:admin@donebyamy.com"
+                className="hover:text-primary transition-colors"
+              >
+                admin@donebyamy.com
+              </a>
             </p>
           </div>
-          
+
           <div className="md:col-span-7 lg:col-span-8 grid grid-cols-2 md:grid-cols-3 gap-8">
             <div>
-              <h4 className="text-white font-bold mb-5 text-xs tracking-widest uppercase">Products</h4>
+              <h4 className="text-white font-bold mb-5 text-xs tracking-widest uppercase">
+                Products
+              </h4>
               <ul className="space-y-4 text-sm text-muted-foreground">
-                <li><Link href="/leadcatch" className="hover:text-white transition-colors">LeadCatch</Link></li>
-                <li><Link href="/autodial" className="hover:text-white transition-colors">AutoDial</Link></li>
-                <li><Link href="/get-started" className="hover:text-white transition-colors">Admin &amp; Bookkeeping</Link></li>
-                <li><Link href="/get-started" className="hover:text-white transition-colors">AI Chatbots</Link></li>
+                <li>
+                  <Link
+                    href="/leadcatch"
+                    className="hover:text-white transition-colors"
+                  >
+                    LeadCatch
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/autodial"
+                    className="hover:text-white transition-colors"
+                  >
+                    AutoDial
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/get-started"
+                    className="hover:text-white transition-colors"
+                  >
+                    Admin &amp; Bookkeeping
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/get-started"
+                    className="hover:text-white transition-colors"
+                  >
+                    AI Chatbots
+                  </Link>
+                </li>
               </ul>
             </div>
             <div>
-              <h4 className="text-white font-bold mb-5 text-xs tracking-widest uppercase">Services</h4>
+              <h4 className="text-white font-bold mb-5 text-xs tracking-widest uppercase">
+                Services
+              </h4>
               <ul className="space-y-4 text-sm text-muted-foreground">
-                <li><Link href="/#services" className="hover:text-white transition-colors">AI Automations</Link></li>
-                <li><Link href="/#services" className="hover:text-white transition-colors">Workflow Automation</Link></li>
+                <li>
+                  <Link
+                    href="/#services"
+                    className="hover:text-white transition-colors"
+                  >
+                    AI Automations
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/#services"
+                    className="hover:text-white transition-colors"
+                  >
+                    Workflow Automation
+                  </Link>
+                </li>
               </ul>
             </div>
             <div className="col-span-2 md:col-span-1">
-              <h4 className="text-white font-bold mb-5 text-xs tracking-widest uppercase">Company</h4>
+              <h4 className="text-white font-bold mb-5 text-xs tracking-widest uppercase">
+                Company
+              </h4>
               <ul className="space-y-4 text-sm text-muted-foreground">
-                <li><Link href="/about" className="hover:text-white transition-colors">About Amy</Link></li>
-                <li><Link href="/blog" className="hover:text-white transition-colors">Playbooks & Blog</Link></li>
-                <li><Link href="/faq" className="hover:text-white transition-colors">FAQ</Link></li>
-                <li><Link href="/contact" className="hover:text-white transition-colors">Contact</Link></li>
+                <li>
+                  <Link
+                    href="/about"
+                    className="hover:text-white transition-colors"
+                  >
+                    About Amy
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/blog"
+                    className="hover:text-white transition-colors"
+                  >
+                    Playbooks & Blog
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/faq"
+                    className="hover:text-white transition-colors"
+                  >
+                    FAQ
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/contact"
+                    className="hover:text-white transition-colors"
+                  >
+                    Contact
+                  </Link>
+                </li>
               </ul>
             </div>
           </div>
         </div>
-        
+
         <div className="pt-8 border-t border-white/[0.04] flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-muted-foreground/60">
-          <p>&copy; {new Date().getFullYear()} Done By Amy. All rights reserved.</p>
+          <p>
+            &copy; {new Date().getFullYear()} Done By Amy. All rights reserved.
+          </p>
           <p>Australia-based, working with businesses nationally.</p>
         </div>
       </div>
