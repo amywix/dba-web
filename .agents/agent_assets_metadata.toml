@@ -59,3 +59,9 @@ id = "-ulBesfYXpLqDrrinGqZ1"
 uri = "file://attached_assets/chatbot-leads-australia.csv"
 type = "table"
 title = "Chatbot Lead Emails — $199/month pricing (66 rows)"
+
+[[outputs]]
+id = "_QVSJt8yod_hgS9Q-EO2t"
+uri = "file://content/done-by-amy/ai-chatbots-social-calendar.md"
+type = "text"
+title = "AI Chatbots — 3-Month Social Calendar (Instagram + Facebook)"
