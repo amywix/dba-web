@@ -1,2 +1,4 @@
 - [Done By Amy SEO](done-by-amy-seo.md) — static SPA: only index.html is crawler-visible; per-page meta is JS-only; no static canonical by design; sitemap/robots are the real levers.
 - [Done By Amy forms](done-by-amy-forms.md) — forms use plain fetch + hand-written zod routes (not OpenAPI codegen); valid submits 500 in dev (Resend 401), fine in prod.
+- [Done By Amy prospecting lists](done-by-amy-leads.md) — exports/ B2B lead CSVs; contact data must be real (never fabricate); AU phone: keep 07/04/13/1300/1800, blank interstate 02/03/08.
+- [code_execution notebook quirks](code-execution-notebook.md) — sandbox state wipes on restart + ~600s/call cap; persist progress to disk and process IO loops in resumable chunks.

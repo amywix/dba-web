@@ -287,3 +287,9 @@ id = "T7jm5KzP0Jnhi2CqNegy7"
 uri = "file://content/done-by-amy/done-by-amy-ai-chatbot-posts.zip"
 type = "unspecified"
 title = "Done By Amy — 36 AI Chatbot Social Posts (ZIP)"
+
+[[outputs]]
+id = "W5rjfccgGQEJtihe2k2U8"
+uri = "file://exports/done-by-amy-brisbane-chatbot-leads.csv"
+type = "table"
+title = "Brisbane Chatbot Leads (235 businesses)"
