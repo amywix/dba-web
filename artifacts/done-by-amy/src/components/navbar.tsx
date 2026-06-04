@@ -80,7 +80,7 @@ export default function Navbar() {
               data-testid="nav-cta-button"
               className="bg-white hover:bg-white/90 text-black rounded-full px-6 font-bold text-sm shadow-[0_0_20px_rgba(255,255,255,0.1)] transition-all hover:shadow-[0_0_25px_rgba(255,255,255,0.2)]"
             >
-              Tell Us About Your Business
+              Get Started
             </Button>
           </Link>
 
@@ -124,7 +124,7 @@ export default function Navbar() {
               data-testid="nav-mobile-cta-button"
               className="mt-4 w-full h-14 bg-white hover:bg-white/90 text-black rounded-full font-bold shadow-[0_0_20px_rgba(255,255,255,0.1)]"
             >
-              Tell Us About Your Business
+              Get Started
             </Button>
           </Link>
         </div>
