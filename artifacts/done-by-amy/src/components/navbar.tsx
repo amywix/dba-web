@@ -75,7 +75,7 @@ export default function Navbar() {
         </div>
 
         <div className="flex items-center gap-4">
-          <Link href="/get-started" className="hidden sm:block">
+          <Link href="/contact" className="hidden sm:block">
             <Button
               data-testid="nav-cta-button"
               className="bg-white hover:bg-white/90 text-black rounded-full px-6 font-bold text-sm shadow-[0_0_20px_rgba(255,255,255,0.1)] transition-all hover:shadow-[0_0_25px_rgba(255,255,255,0.2)]"
@@ -119,7 +119,7 @@ export default function Navbar() {
               {label}
             </a>
           ))}
-          <Link href="/get-started">
+          <Link href="/contact">
             <Button
               data-testid="nav-mobile-cta-button"
               className="mt-4 w-full h-14 bg-white hover:bg-white/90 text-black rounded-full font-bold shadow-[0_0_20px_rgba(255,255,255,0.1)]"

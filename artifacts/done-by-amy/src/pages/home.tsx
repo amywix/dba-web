@@ -74,7 +74,7 @@ export default function Home() {
             </motion.p>
             
             <motion.div variants={fadeUp} className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4 justify-center max-w-md sm:max-w-none mx-auto">
-              <Link href="/get-started">
+              <Link href="/contact">
                 <Button
                   data-testid="hero-cta-button"
                   size="lg"
@@ -405,7 +405,7 @@ export default function Home() {
           <motion.div
             initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.2 }}
           >
-            <Link href="/get-started">
+            <Link href="/contact">
               <Button size="lg" className="h-14 sm:h-16 px-8 sm:px-10 text-base sm:text-lg rounded-full bg-white text-black hover:bg-white/90 font-black shadow-[0_0_40px_rgba(255,255,255,0.2)]">
                 Tell Us About Your Business <ChevronRight className="w-5 h-5 ml-2" />
               </Button>

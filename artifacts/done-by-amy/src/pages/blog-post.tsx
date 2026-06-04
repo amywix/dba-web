@@ -100,7 +100,7 @@ export default function BlogPost() {
           <div className="mt-16 sm:mt-20 p-6 sm:p-10 md:p-12 rounded-[32px] bg-white/[0.02] border border-white/[0.06] text-center">
             <h3 className="text-2xl md:text-3xl font-black text-white mb-4 tracking-tight">Ready to map out your own system?</h3>
             <p className="text-muted-foreground mb-8 max-w-md mx-auto">Get a free automation audit for your business. We'll show you exactly what to automate first.</p>
-            <Link href="/get-started">
+            <Link href="/contact">
               <Button size="lg" className="h-14 px-8 rounded-full bg-white text-black hover:bg-white/90 font-bold">
                 Tell Us About Your Business <ChevronRight className="w-5 h-5 ml-2" />
               </Button>

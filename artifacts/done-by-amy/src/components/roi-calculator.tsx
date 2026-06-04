@@ -154,7 +154,7 @@ export default function RoiCalculator() {
                 <TrendingUp className="w-4 h-4 text-primary" />
                 <span>LeadCatch ($199/mo) <span className="font-black text-primary">pays for itself.</span></span>
               </div>
-              <Link href="/get-started">
+              <Link href="/contact">
                 <Button className="w-full h-12 rounded-full bg-white text-black hover:bg-white/90 font-bold">
                   Tell Us About Your Business <ChevronRight className="w-4 h-4 ml-1" />
                 </Button>
