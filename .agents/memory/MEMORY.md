@@ -1,1 +1,2 @@
 - [Done By Amy SEO](done-by-amy-seo.md) — static SPA: only index.html is crawler-visible; per-page meta is JS-only; no static canonical by design; sitemap/robots are the real levers.
+- [Done By Amy forms](done-by-amy-forms.md) — forms use plain fetch + hand-written zod routes (not OpenAPI codegen); valid submits 500 in dev (Resend 401), fine in prod.
