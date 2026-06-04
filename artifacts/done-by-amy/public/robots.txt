@@ -2,6 +2,8 @@
 # Search engine crawlers
 User-agent: *
 Allow: /
+# Private, invite-only client onboarding page
+Disallow: /onboarding
 
 # AI / answer-engine crawlers — explicitly welcomed so Done By Amy
 # can be cited in AI search results and assistants (GEO).

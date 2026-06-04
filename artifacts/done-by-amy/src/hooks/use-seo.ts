@@ -5,9 +5,10 @@ interface SEOProps {
   description: string;
   keywords?: string;
   canonical?: string;
+  noindex?: boolean;
 }
 
-export function useSEO({ title, description, keywords, canonical }: SEOProps) {
+export function useSEO({ title, description, keywords, canonical, noindex }: SEOProps) {
   useEffect(() => {
     document.title = title;
 
@@ -44,5 +45,12 @@ export function useSEO({ title, description, keywords, canonical }: SEOProps) {
       setMeta('meta[property="og:url"]', canonical);
       setMeta('meta[name="twitter:url"]', canonical);
     }
-  }, [title, description, keywords, canonical]);
+
+    const robotsEl = document.querySelector('meta[name="robots"]') as HTMLMetaElement | null;
+    if (noindex) {
+      setMeta('meta[name="robots"]', "noindex, nofollow");
+    } else if (robotsEl) {
+      robotsEl.setAttribute("content", "index, follow");
+    }
+  }, [title, description, keywords, canonical, noindex]);
 }

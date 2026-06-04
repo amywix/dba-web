@@ -13,6 +13,7 @@ import Blog from "@/pages/blog";
 import BlogPost from "@/pages/blog-post";
 import LeadCatch from "@/pages/leadcatch";
 import AutoDial from "@/pages/autodial";
+import Onboarding from "@/pages/onboarding";
 import ChatbotDemo from "@/components/chatbot-demo";
 
 const queryClient = new QueryClient();
@@ -30,6 +31,7 @@ function Router() {
       <Route path="/blog/:slug" component={BlogPost} />
       <Route path="/leadcatch" component={LeadCatch} />
       <Route path="/autodial" component={AutoDial} />
+      <Route path="/onboarding" component={Onboarding} />
       <Route path="/case-studies/yard-yakka">{() => <Redirect to="/get-started" />}</Route>
       <Route component={NotFound} />
     </Switch>
