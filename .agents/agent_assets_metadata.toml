@@ -36,6 +36,24 @@ uri = "file://attached_assets/storyboard/shot6_cta.png"
 type = "image"
 title = "generated_image"
 
+[[generated]]
+id = "yJ2gDrRuImCXA3qi7UmdA"
+uri = "file://artifacts/mockup-sandbox/public/images/bot_wave.png"
+type = "image"
+title = "robot waving"
+
+[[generated]]
+id = "ajXQftHjoExfNtZ6GZ2AA"
+uri = "file://artifacts/mockup-sandbox/public/images/bot_phone.png"
+type = "image"
+title = "robot phone"
+
+[[generated]]
+id = "rTvGVSPBKAm9egyDqP6i_"
+uri = "file://artifacts/mockup-sandbox/public/images/bot_thumbsup.png"
+type = "image"
+title = "robot thumbs up"
+
 [[outputs]]
 id = "UUaa4EwNl5cs9RAJLmpKW"
 uri = "file://exports/done-by-amy-prospects.csv"
@@ -293,3 +311,183 @@ id = "W5rjfccgGQEJtihe2k2U8"
 uri = "file://exports/done-by-amy-brisbane-chatbot-leads.csv"
 type = "table"
 title = "Done By Amy — Master Chatbot Leads (485)"
+
+[[outputs]]
+id = "IJt8DMhNzKNtrn-EStL_2"
+uri = "file://exports/social-posts/png/day-01.png"
+type = "image"
+title = "Day 01 — Still replying manually? (REEL cover, dark)"
+
+[[outputs]]
+id = "9dtSrVerSx1bZmA3htqcQ"
+uri = "file://exports/social-posts/png/day-02.png"
+type = "image"
+title = "Day 02 — 5 signs you need a chatbot (Carousel, light)"
+
+[[outputs]]
+id = "BES62GlS6T6XRSFGmMWOf"
+uri = "file://exports/social-posts/png/day-03.png"
+type = "image"
+title = "Day 03 (dark)"
+
+[[outputs]]
+id = "VkLvpJj14-FjQfoKREJCi"
+uri = "file://exports/social-posts/png/day-04.png"
+type = "image"
+title = "Day 04 (light)"
+
+[[outputs]]
+id = "zLrMBPyjMy54eUTUyKq8J"
+uri = "file://exports/social-posts/png/day-05.png"
+type = "image"
+title = "Day 05 (dark)"
+
+[[outputs]]
+id = "aGDLj0yCDtx6Taw1nrJBq"
+uri = "file://exports/social-posts/png/day-06.png"
+type = "image"
+title = "Day 06 (light)"
+
+[[outputs]]
+id = "CI8TVf-jajUPAQX9_FGVk"
+uri = "file://exports/social-posts/png/day-07.png"
+type = "image"
+title = "Day 07 — Never takes a break 24/7 (dark)"
+
+[[outputs]]
+id = "EGaSVewShC7no-Psot368"
+uri = "file://exports/social-posts/png/day-08.png"
+type = "image"
+title = "Day 08 (light)"
+
+[[outputs]]
+id = "5YlaR6g19K60Z99c04MK6"
+uri = "file://exports/social-posts/png/day-09.png"
+type = "image"
+title = "Day 09 (dark)"
+
+[[outputs]]
+id = "ToEZMQ7ySB7IP9UNY4ep_"
+uri = "file://exports/social-posts/png/day-10.png"
+type = "image"
+title = "Day 10 (light)"
+
+[[outputs]]
+id = "ZsUXI46f9KqFcQGcgM7Wc"
+uri = "file://exports/social-posts/png/day-11.png"
+type = "image"
+title = "Day 11 (dark)"
+
+[[outputs]]
+id = "uoYugxXWEt17WWmJLZw-L"
+uri = "file://exports/social-posts/png/day-12.png"
+type = "image"
+title = "Day 12 (light)"
+
+[[outputs]]
+id = "Y9rTrURdtuO6BH9rOtsZM"
+uri = "file://exports/social-posts/png/day-13.png"
+type = "image"
+title = "Day 13 (dark)"
+
+[[outputs]]
+id = "f1VckMHrfNwLwqJbH-i5N"
+uri = "file://exports/social-posts/png/day-14.png"
+type = "image"
+title = "Day 14 (light)"
+
+[[outputs]]
+id = "XqKAnh4QYUkVQZ1QZQSug"
+uri = "file://exports/social-posts/png/day-15.png"
+type = "image"
+title = "Day 15 — How chatbots increase sales (dark)"
+
+[[outputs]]
+id = "iffxLN9-IH0Vg10rIv88C"
+uri = "file://exports/social-posts/png/day-16.png"
+type = "image"
+title = "Day 16 (light)"
+
+[[outputs]]
+id = "2u-X_fp-WnTbv98vjyUjN"
+uri = "file://exports/social-posts/png/day-17.png"
+type = "image"
+title = "Day 17 (dark)"
+
+[[outputs]]
+id = "0xtyvkGDFWiF15sA40Frb"
+uri = "file://exports/social-posts/png/day-18.png"
+type = "image"
+title = "Day 18 (light)"
+
+[[outputs]]
+id = "iHK2YqWZg0D7SdG2qyEic"
+uri = "file://exports/social-posts/png/day-19.png"
+type = "image"
+title = "Day 19 (dark)"
+
+[[outputs]]
+id = "-kcdxbUphs-JPbfgkZn_D"
+uri = "file://exports/social-posts/png/day-20.png"
+type = "image"
+title = "Day 20 — AI chatbot FAQ time (Story, light)"
+
+[[outputs]]
+id = "D4BIE1FdxLmh9lygZK_ET"
+uri = "file://exports/social-posts/png/day-21.png"
+type = "image"
+title = "Day 21 (dark)"
+
+[[outputs]]
+id = "s1M9SFOwvRec4hjSVJM9_"
+uri = "file://exports/social-posts/png/day-22.png"
+type = "image"
+title = "Day 22 (light)"
+
+[[outputs]]
+id = "0ycwSQAuAp7NVPJhui8g7"
+uri = "file://exports/social-posts/png/day-23.png"
+type = "image"
+title = "Day 23 (dark)"
+
+[[outputs]]
+id = "5uXx1P7G6tYryg6IkzZfB"
+uri = "file://exports/social-posts/png/day-24.png"
+type = "image"
+title = "Day 24 (light)"
+
+[[outputs]]
+id = "9aMrQEHUB6vYNT9hWD4vq"
+uri = "file://exports/social-posts/png/day-25.png"
+type = "image"
+title = "Day 25 (dark)"
+
+[[outputs]]
+id = "Pz8SAHTgwRWXKEfP_zlKZ"
+uri = "file://exports/social-posts/png/day-26.png"
+type = "image"
+title = "Day 26 (light)"
+
+[[outputs]]
+id = "J28AaVL--BrHAj3nGjmID"
+uri = "file://exports/social-posts/png/day-27.png"
+type = "image"
+title = "Day 27 (dark)"
+
+[[outputs]]
+id = "Tl3s5oQSZQ7tcAliHuVbP"
+uri = "file://exports/social-posts/png/day-28.png"
+type = "image"
+title = "Day 28 (light)"
+
+[[outputs]]
+id = "WnkYSwKjFbvLXBn7t_6IF"
+uri = "file://exports/social-posts/png/day-29.png"
+type = "image"
+title = "Day 29 (dark)"
+
+[[outputs]]
+id = "BlteKtRSXEkMl6Zs6JdNK"
+uri = "file://exports/social-posts/png/day-30.png"
+type = "image"
+title = "Day 30 — Ready to automate your business? (REEL cover, light)"
