@@ -491,3 +491,9 @@ id = "BlteKtRSXEkMl6Zs6JdNK"
 uri = "file://exports/social-posts/png/day-30.png"
 type = "image"
 title = "Day 30 — Ready to automate your business? (REEL cover, light)"
+
+[[outputs]]
+id = "2GGMISRNYLfdU91toDgFE"
+uri = "file://exports/social-posts/png/done-by-amy-30-posts.zip"
+type = "unspecified"
+title = "Done By Amy — 30 Instagram Posts (ZIP)"
