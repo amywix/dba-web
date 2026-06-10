@@ -1,0 +1,31 @@
+kind = "video"
+previewPath = "/ad-1/"
+title = "Done By Amy — Chatbot Ad 1"
+version = "1.0.0"
+id = "artifacts/ad-chatbot-1"
+router = "path"
+
+[[integratedSkills]]
+name = "video-js"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/ad-1/" ]
+localPort = 24696
+
+[services.development]
+run = "pnpm --filter @workspace/ad-chatbot-1 run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/ad-chatbot-1", "run", "build" ]
+publicDir = "artifacts/ad-chatbot-1/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "24696"
+BASE_PATH = "/ad-1/"

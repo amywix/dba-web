@@ -497,3 +497,15 @@ id = "2GGMISRNYLfdU91toDgFE"
 uri = "file://exports/social-posts/png/done-by-amy-30-posts.zip"
 type = "unspecified"
 title = "Done By Amy — 30 Instagram Posts (ZIP)"
+
+[[outputs]]
+id = "1YoapZ_3sXt9ckGKcRMdk"
+uri = "file://artifacts/ad-chatbot-1/public/audio/bg_music.mp3"
+type = "audio"
+title = "ad1 background music"
+
+[[outputs]]
+id = "-9FW1NnhMcyjfYEpJjQiU"
+uri = "file://artifacts/ad-chatbot-2/public/audio/bg_music.mp3"
+type = "audio"
+title = "ad2 background music"
